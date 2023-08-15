@@ -1,0 +1,13 @@
+.idea
+
+.dart_tool
+*.g.dart
+build
+
+.flutter-plugins
+.flutter-plugins-dependencies
+
+.terraform.lock.hcl
+.terragrunt-cache
+
+terraform/keys

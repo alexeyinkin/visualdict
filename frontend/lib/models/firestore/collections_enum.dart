@@ -1,0 +1,3 @@
+enum CollectionsEnum {
+  WordPublic,
+}

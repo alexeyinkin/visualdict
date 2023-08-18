@@ -39,16 +39,15 @@ class WordPublicQueryBuilder extends QueryBuilder<WordPublic> {
   Query<WordPublic> get query => _query ?? _createEmptyQuery();
 
   WordPublicQueryBuilder(this.filter, this.loaderFactory) {
-    // _addGitHubUsername();
+    _addSearch();
   }
 
-  // void _addGitHubUsername() {
-  //   final username = filter.githubUsername;
-  //   if (username != null) {
-  //     _query = query.where('gh.login', isEqualTo: username);
-  //   }
-  // }
-  //
+  void _addSearch() {
+    if (filter.search != '') {
+      _query = query.where('ngrams', arrayContains: filter.search);
+    }
+  }
+
   Query<WordPublic> _createEmptyQuery() {
     return FirebaseFirestore.instance
         .collection(_collection.name)

@@ -1,0 +1,89 @@
+{
+  "image": {
+    "mapValue": {
+      "fields": {
+        "url": {
+          "stringValue": "https://static.visualdict.com/words/plaintive/plaintive.png"
+        },
+        "prompt": {
+          "stringValue": "a lone musician playing a plaintive melody on a weathered violin"
+        }
+      }
+    }
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {"stringValue": "p"},
+        {"stringValue": "pl"},
+        {"stringValue": "pla"},
+        {"stringValue": "plai"},
+        {"stringValue": "plain"},
+        {"stringValue": "plaint"},
+        {"stringValue": "plainti"},
+        {"stringValue": "plaintiv"},
+        {"stringValue": "plaintive"}
+      ]
+    }
+  },
+  "pronunciationUrl": {
+    "stringValue": "https://static.visualdict.com/words/plaintive/plaintive.mp3"
+  },
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "adjective"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "definition": {
+                            "stringValue": "Expressing sadness or sorrow in a mournful manner."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "stringValue": "Грустно, печально, в скорбной манере."
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "A musician playing a **plaintive** melody."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "transcription": {
+    "stringValue": "ˈpleɪntɪv"
+  }
+}

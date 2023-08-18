@@ -7,6 +7,7 @@ import 'layout/constrained_width.dart';
 import 'loading/small_circular_progress_indicator.dart';
 import 'logo.dart';
 import 'menu/top_menu.dart';
+import 'search/search_form.dart';
 
 class MyScaffold extends StatelessWidget {
   const MyScaffold({
@@ -108,13 +109,16 @@ class _WideHeader extends StatelessWidget {
       color: ext.headerColor,
       width: double.infinity,
       child: const Row(
-        mainAxisSize: MainAxisSize.min,
         children: [
+          SizedBox(width: 30),
           LogoWidget(),
-          SizedBox(
-            width: 100,
+          SizedBox(width: 30),
+          Expanded(
+            child: SearchForm(),
           ),
+          SizedBox(width: 30),
           TopMenuWidget(),
+          SizedBox(width: 30),
         ],
       ),
     );

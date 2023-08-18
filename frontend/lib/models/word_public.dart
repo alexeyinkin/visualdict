@@ -1,7 +1,8 @@
 import 'package:json_annotation/json_annotation.dart';
 import 'package:model_interfaces/model_interfaces.dart';
 
-import 'sense.dart';
+import 'image.dart';
+import 'part_of_speech_senses.dart';
 
 part 'word_public.g.dart';
 
@@ -10,11 +11,17 @@ class WordPublic implements WithId<String> {
   @override
   final String id;
 
-  final List<Sense> senses;
+  final Image? image;
+  final Uri? pronunciationUrl;
+  final List<PartOfSpeechSenses> partOfSpeechSenses;
+  final String transcription;
 
   const WordPublic({
     required this.id,
-    required this.senses,
+    required this.image,
+    required this.pronunciationUrl,
+    required this.partOfSpeechSenses,
+    required this.transcription,
   });
 
   factory WordPublic.fromJson(Map<String, dynamic> json) => _$WordPublicFromJson(json);

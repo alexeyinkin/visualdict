@@ -1,24 +1,102 @@
 {
-  "senses": {
+  "image": {
+    "mapValue": {
+      "fields": {
+        "url": {
+          "stringValue": "https://static.visualdict.com/words/perquisite/perquisite.png"
+        },
+        "prompt": {
+          "stringValue": "Convey a corporate setting: executives, attired in suits, stand before an array of gleaming company cars. Emphasize the cars' allure and the managers' contentment, visualizing the perquisite that underscores their elevated status within the organization."
+        }
+      }
+    }
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "p"
+        },
+        {
+          "stringValue": "pe"
+        },
+        {
+          "stringValue": "per"
+        },
+        {
+          "stringValue": "perq"
+        },
+        {
+          "stringValue": "perqu"
+        },
+        {
+          "stringValue": "perqui"
+        },
+        {
+          "stringValue": "perquis"
+        },
+        {
+          "stringValue": "perquisi"
+        },
+        {
+          "stringValue": "perquisit"
+        },
+        {
+          "stringValue": "perquisite"
+        }
+      ]
+    }
+  },
+  "pronunciationUrl": {
+    "stringValue": "https://static.visualdict.com/words/perquisite/perquisite.mp3"
+  },
+  "partOfSpeechSenses": {
     "arrayValue": {
       "values": [
         {
           "mapValue": {
             "fields": {
-              "definition": {
-                "stringValue": "An extra benefit, privilege, or advantage received in addition to regular compensation or salary."
-              },
-              "definitionTranslations": {
-                "mapValue": {
-                  "fields": {
-                    "ru": {
-                      "stringValue": "Пособие, привилегия или преимущество, получаемое в дополнение к зарплате."
-                    }
-                  }
-                }
-              },
               "partOfSpeech": {
                 "stringValue": "noun"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "definition": {
+                            "stringValue": "An extra benefit, privilege, or advantage received in addition to regular compensation or salary."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "stringValue": "Пособие, привилегия или преимущество, получаемое в дополнение к зарплате."
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Company car as a **perquisite** for senior managers."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
               }
             }
           }
@@ -26,10 +104,7 @@
       ]
     }
   },
-  "externalUrl": {
-    "stringValue": "https://angular.io"
-  },
-  "title": {
-    "stringValue": "Angular"
+  "transcription": {
+    "stringValue": "pərˈkwɪzɪt"
   }
 }

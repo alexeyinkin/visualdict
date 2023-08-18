@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 
-import '../constants/sizes.dart';
 import '../theme/my_theme_extension.dart';
 import '../theme/theme.dart';
-// import 'environment.dart';
+import '../util/build_context.dart';
 import 'layout/constrained_width.dart';
 import 'loading/small_circular_progress_indicator.dart';
 import 'logo.dart';
 import 'menu/top_menu.dart';
-// import 'my_padding.dart';
 
 class MyScaffold extends StatelessWidget {
   const MyScaffold({
@@ -33,8 +31,7 @@ class MyScaffold extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final screenWidth = MediaQuery.of(context).size.width;
-    final isMobile = _isMobileScreen(screenWidth);
+    final isMobile = context.isMobileScreen();
 
     Widget child = body;
 
@@ -81,10 +78,6 @@ class MyScaffold extends StatelessWidget {
       ],
     );
   }
-
-  bool _isMobileScreen(double screenWidth) {
-    return screenWidth < MySizes.minDesktopWidth;
-  }
 }
 
 class _NarrowHeader extends StatelessWidget {
@@ -114,17 +107,14 @@ class _WideHeader extends StatelessWidget {
       alignment: Alignment.center,
       color: ext.headerColor,
       width: double.infinity,
-      child: Row(
+      child: const Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text(
-            "Senior.dev",
-            style: ext.h1,
-          ),
-          const SizedBox(
+          LogoWidget(),
+          SizedBox(
             width: 100,
           ),
-          const TopMenuWidget(),
+          TopMenuWidget(),
         ],
       ),
     );

@@ -8,6 +8,6 @@ class LogoWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ext = Theme.of(context).extension<MyThemeExtension>()!;
-    return Text("VisualDict.com", style: ext.h1);
+    return Text("Visual Dict", style: ext.h1);
   }
 }

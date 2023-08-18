@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:model_fetch/model_fetch.dart';
-import 'package:visualdict/models/word_public.dart';
-import 'package:visualdict/widgets/errors/loading_error.dart';
 
+import '../../models/word_public.dart';
+import '../../util/build_context.dart';
+import '../../widgets/errors/loading_error.dart';
 import '../../widgets/loading/small_circular_progress_indicator.dart';
 import '../../widgets/my_scaffold.dart';
-
-// import '../../widgets/technologies/technology_chapter_list.dart';
+import '../../widgets/words/word_wide.dart';
 import 'state.dart';
 
 class WordScreen extends StatelessWidget {
@@ -17,7 +17,7 @@ class WordScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MyScaffold(
-      scrolls: false,
+      scrolls: true,
       body: StreamBuilder(
         stream: notifier.bloc.states,
         builder: _buildOnChange,
@@ -32,14 +32,21 @@ class WordScreen extends StatelessWidget {
     final status = snapshot.data?.status;
 
     switch (status) {
-      case null:
       case LoadStatus.error:
         return LoadingErrorWidget();
+
+      case null:
       case LoadStatus.notTried:
       case LoadStatus.loading:
-        return SmallCircularProgressIndicator();
+        return const SmallCircularProgressIndicator();
+
       case LoadStatus.ok:
-        return Text(snapshot.data!.model!.senses.first.definition);
+        final wordPublic = snapshot.data!.model!;
+        final isMobile = context.isMobileScreen();
+
+        return isMobile
+            ? Text(wordPublic.image.toString())
+            : WordWideWidget(wordPublic);
     }
   }
 }

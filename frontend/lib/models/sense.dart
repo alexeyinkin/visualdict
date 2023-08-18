@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 
-import 'part_of_speech_enum.dart';
+import 'usage.dart';
 
 part 'sense.g.dart';
 
@@ -8,12 +8,12 @@ part 'sense.g.dart';
 class Sense {
   final String definition;
   final Map<String, String> definitionTranslations;
-  final PartOfSpeechEnum partOfSpeech;
+  final List<Usage> usages;
 
   const Sense({
     required this.definition,
     required this.definitionTranslations,
-    required this.partOfSpeech,
+    required this.usages,
   });
 
   factory Sense.fromJson(Map<String, dynamic> json) => _$SenseFromJson(json);

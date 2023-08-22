@@ -4,10 +4,10 @@ import 'package:flutter/foundation.dart';
 import 'screen.dart';
 import 'state.dart';
 
-class SearchPage extends StatefulMaterialPage<void, SearchNotifier> {
-  static const classFactoryKey = 'Search';
+class WordsPage extends StatefulMaterialPage<void, SearchNotifier> {
+  static const classFactoryKey = 'Words';
 
-  SearchPage()
+  WordsPage()
       : super(
           key: const ValueKey(classFactoryKey),
           factoryKey: classFactoryKey,
@@ -16,5 +16,5 @@ class SearchPage extends StatefulMaterialPage<void, SearchNotifier> {
         );
 
   // ignore: avoid_unused_constructor_parameters
-  factory SearchPage.fromState(Map<String, dynamic> state) => SearchPage();
+  factory WordsPage.fromState(Map<String, dynamic> state) => WordsPage();
 }

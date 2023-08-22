@@ -4,21 +4,21 @@ import 'package:flutter/widgets.dart';
 import '../../router/tab_enum.dart';
 import 'page.dart';
 
-class SearchPath extends PagePath {
+class WordsPath extends PagePath {
   static const _location = '/';
 
-  const SearchPath() : super(key: SearchPage.classFactoryKey);
+  const WordsPath() : super(key: WordsPage.classFactoryKey);
 
   @override
   String get location => _location;
 
-  static SearchPath? tryParse(RouteInformation ri) {
+  static WordsPath? tryParse(RouteInformation ri) {
     final uri = Uri.parse(ri.location ?? '');
     if (uri.path != _location) return null;
 
-    return const SearchPath();
+    return const WordsPath();
   }
 
   @override
-  String get defaultStackKey => TabEnum.search.name;
+  String get defaultStackKey => TabEnum.words.name;
 }

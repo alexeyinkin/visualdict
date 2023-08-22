@@ -6,6 +6,7 @@ import '../../filters/word_public.dart';
 import '../../loader_factories/word_public.dart';
 import '../../models/word_public.dart';
 import '../../theme/my_theme_extension.dart';
+import 'search_result_line.dart';
 
 class SearchForm extends StatefulWidget {
   const SearchForm();
@@ -46,8 +47,9 @@ class _SearchFormState extends State<SearchForm> {
                 width: constraints.maxWidth,
                 child: ListView.builder(
                   itemBuilder: (_, i) {
-                    return ListTile(
-                      title: Text(options.elementAt(i).id),
+                    return SearchResultLine(
+                      onTap: (){},
+                      wordPublic: options.elementAt(i),
                     );
                   },
                   itemCount: options.length,
@@ -57,7 +59,6 @@ class _SearchFormState extends State<SearchForm> {
             ),
           );
         },
-
         fieldViewBuilder: (_, controller, focusNode, onSubmitted) {
           return TextField(
             controller: controller,

@@ -13,8 +13,8 @@ class TopMenuWidget extends StatelessWidget {
     return Row(
       children: <Widget>[
         MenuItemWidget(
-          title: "Search",
-          value: TabEnum.search,
+          title: "Words",
+          value: TabEnum.words,
         ),
         MenuItemWidget(
           title: "About",

@@ -38,5 +38,5 @@ class WordPath extends PagePath {
   }
 
   @override
-  String get defaultStackKey => TabEnum.search.name;
+  String get defaultStackKey => TabEnum.words.name;
 }

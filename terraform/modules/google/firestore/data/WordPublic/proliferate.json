@@ -1,0 +1,133 @@
+{
+  "image": {
+    "mapValue": {
+      "fields": {
+        "url": {
+          "stringValue": "https://static.visualdict.com/words/proliferate/proliferate.png"
+        },
+        "prompt": {
+          "stringValue": "Due to favorable conditions, bacteria can proliferate rapidly in a petri dish."
+        }
+      }
+    }
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {"stringValue": "p"},
+        {"stringValue": "pr"},
+        {"stringValue": "pro"},
+        {"stringValue": "prol"},
+        {"stringValue": "proli"},
+        {"stringValue": "prolif"},
+        {"stringValue": "prolife"},
+        {"stringValue": "prolifer"},
+        {"stringValue": "prolifera"},
+        {"stringValue": "proliferat"},
+        {"stringValue": "proliferate"}
+      ]
+    }
+  },
+  "pronunciationUrl": {
+    "stringValue": "https://static.visualdict.com/words/proliferate/proliferate.mp3"
+  },
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "verb"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "definition": {
+                            "stringValue": "To increase rapidly in number or abundance."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "stringValue": "Размножаться быстро по количеству или изобилию."
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Due to favorable conditions, bacteria can **proliferate** rapidly in a petri dish."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "definition": {
+                            "stringValue": "To spread or extend widely."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "stringValue": "Широко распространяться."
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The internet has allowed information to **proliferate** like never before."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The artist's work started to **proliferate** in galleries across the city."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "transcription": {
+    "stringValue": "prəˈlɪfəreɪt"
+  }
+}

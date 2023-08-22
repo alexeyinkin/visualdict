@@ -5,5 +5,5 @@ import 'path.dart';
 
 class SearchNotifier extends ChangeNotifier with PageStateMixin<void> {
   @override
-  SearchPath get path => const SearchPath();
+  WordsPath get path => const WordsPath();
 }

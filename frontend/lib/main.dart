@@ -9,7 +9,7 @@ import 'firebase_options.dart'; // Generated.
 import 'locator.dart';
 import 'pages/about/page.dart';
 import 'pages/home/screen.dart';
-import 'pages/search/page.dart';
+import 'pages/words/page.dart';
 // import 'pages/me/tabs/profile_tab_enum.dart';
 // import 'pages/technologies/page.dart';
 import 'router/page_factory.dart';
@@ -31,9 +31,9 @@ void main() async {
   await initializeServiceLocator();
 
   pageStacks.addPageStack(
-    TabEnum.search.name,
+    TabEnum.words.name,
     PageStack(
-      bottomPage: SearchPage(),
+      bottomPage: WordsPage(),
       createPage: PageFactory.createPage,
     ),
   );
@@ -60,7 +60,7 @@ class MyAppLocalizer extends StatelessWidget {
       supportedLocales: const [en],
       path: 'assets/translations',
       startLocale: en,
-      assetLoader: YamlAssetLoader(),
+      assetLoader: const YamlAssetLoader(),
       fallbackLocale: en,
       child: MyApp(),
     );

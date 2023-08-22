@@ -1,8 +1,7 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 
 import '../../models/word_public.dart';
 import '../../theme/theme.dart';
-import '../clickable.dart';
 
 class SearchResultLine extends StatelessWidget {
   final VoidCallback onTap;
@@ -18,17 +17,23 @@ class SearchResultLine extends StatelessWidget {
     final firstSenses = wordPublic.partOfSpeechSenses.first;
     final firstSense = firstSenses.senses.first;
 
-    return ClickableWidget(
-      onTap: onTap,
+    return TextButton(
+      onPressed: onTap,
       child: Row(
         children: [
-          Text(wordPublic.id),
+          Text(
+            wordPublic.id,
+            style: const TextStyle(fontWeight: FontWeight.bold),
+          ),
           const MySpacing(),
           Expanded(
-            child: Text(
-              firstSense.definition,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
+            child: Opacity(
+              opacity: .5,
+              child: Text(
+                firstSense.definition,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
             ),
           ),
         ],

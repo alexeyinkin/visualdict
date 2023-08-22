@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:visualdict/widgets/words/part_of_speech_senses.dart';
 
 import '../../models/word_public.dart';
 import '../../theme/my_theme_extension.dart';
-import 'word_sense.dart';
+import 'part_of_speech_senses.dart';
 import 'word_transcription.dart';
 
 class WordTextContentWidget extends StatelessWidget {
   final WordPublic wordPublic;
+  final bool wordVisible;
 
-  const WordTextContentWidget(this.wordPublic);
+  const WordTextContentWidget(
+    this.wordPublic, {
+    required this.wordVisible,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +20,7 @@ class WordTextContentWidget extends StatelessWidget {
 
     return Column(
       children: [
-        Text(wordPublic.id, style: ext.h2),
+        if (wordVisible) Text(wordPublic.id, style: ext.h2),
         Align(
           child: WordTranscriptionWidget(wordPublic),
         ),

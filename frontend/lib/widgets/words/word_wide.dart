@@ -18,8 +18,7 @@ class WordWideWidget extends StatelessWidget {
       children: [
         const MySpacing(),
         Expanded(
-          child:
-          Column(
+          child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               WordImageOrNotWidget(wordPublic),
@@ -31,7 +30,12 @@ class WordWideWidget extends StatelessWidget {
           ),
         ),
         const MySpacing(),
-        Expanded(child: WordTextContentWidget(wordPublic)),
+        Expanded(
+          child: WordTextContentWidget(
+            wordPublic,
+            wordVisible: true,
+          ),
+        ),
         const MySpacing(),
       ],
     );

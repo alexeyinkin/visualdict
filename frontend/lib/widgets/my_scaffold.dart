@@ -89,10 +89,20 @@ class _NarrowHeader extends StatelessWidget {
     final ext = Theme.of(context).extension<MyThemeExtension>()!;
 
     return Container(
-      alignment: Alignment.center,
       color: ext.headerColor,
-      width: double.infinity,
-      child: const LogoWidget(),
+      padding: EdgeInsets.all(10),
+      child: Row(
+        children: [
+          LogoWidget(
+            size: 44, // Empirical from search field height.
+            textVisible: false,
+          ),
+          SizedBox(width: 10),
+          Expanded(
+            child: SearchForm(),
+          ),
+        ],
+      ),
     );
   }
 }
@@ -105,13 +115,14 @@ class _WideHeader extends StatelessWidget {
     final ext = Theme.of(context).extension<MyThemeExtension>()!;
 
     return Container(
-      alignment: Alignment.center,
       color: ext.headerColor,
-      width: double.infinity,
       child: const Row(
         children: [
           SizedBox(width: 30),
-          LogoWidget(),
+          LogoWidget(
+            size: 40,
+            textVisible: true,
+          ),
           SizedBox(width: 30),
           Expanded(
             child: SearchForm(),

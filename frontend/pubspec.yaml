@@ -19,7 +19,7 @@ dependencies:
   google_fonts: ^5.1.0
   json_annotation: ^4.8.1
   keyed_collection_widgets: ^0.4.3
-  model_fetch: ^0.5.4
+  model_fetch: ^0.5.5
   model_fetch_firestore: ^0.5.4
   model_interfaces: ^0.3.1
   url_strategy: ^0.2.0
@@ -35,3 +35,4 @@ flutter:
 
   assets:
     - assets/translations/en.yaml
+    - web/icons/Icon-192.png

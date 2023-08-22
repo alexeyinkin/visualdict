@@ -28,8 +28,8 @@ class MyBottomNavigationBar extends StatelessWidget {
         //   label: "Me",
         // ),
         words: BottomNavigationBarItem(
-          icon: Icon(Icons.home),
-          label: "Search",
+          icon: Icon(Icons.search),
+          label: "Words",
         ),
         about: BottomNavigationBarItem(
           icon: Icon(Icons.info_outline),

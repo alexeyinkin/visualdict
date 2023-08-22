@@ -1,11 +1,14 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:model_fetch/model_fetch.dart';
 
 import '../../filters/word_public.dart';
 import '../../loader_factories/word_public.dart';
+import '../../main.dart';
 import '../../models/word_public.dart';
-import '../../theme/my_theme_extension.dart';
+import '../../pages/word/page.dart';
 import 'search_result_line.dart';
 
 class SearchForm extends StatefulWidget {
@@ -21,10 +24,15 @@ class _SearchFormState extends State<SearchForm> {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
-      builder: (_, constraints) => Autocomplete<WordPublic>(
+      builder: (_, constraints) => RawAutocomplete<WordPublic>(
+        //
+        textEditingController: controller.searchFieldController,
+        focusNode: controller.searchFieldFocusNode,
+
         onSelected: (WordPublic selection) {
           // debugPrint('You just selected $selection');
         },
+
         optionsBuilder: (value) async {
           final filter = WordPublicFilter(search: value.text);
           final factory = GetIt.instance.get<WordPublicLoaderFactory>();
@@ -39,6 +47,7 @@ class _SearchFormState extends State<SearchForm> {
 
           return result;
         },
+
         optionsViewBuilder: (_, onSelected, options) {
           return Align(
             alignment: Alignment.topLeft,
@@ -47,9 +56,10 @@ class _SearchFormState extends State<SearchForm> {
                 width: constraints.maxWidth,
                 child: ListView.builder(
                   itemBuilder: (_, i) {
+                    final wordPublic = options.elementAt(i);
                     return SearchResultLine(
-                      onTap: (){},
-                      wordPublic: options.elementAt(i),
+                      onTap: () => _onTap(wordPublic),
+                      wordPublic: wordPublic,
                     );
                   },
                   itemCount: options.length,
@@ -59,12 +69,12 @@ class _SearchFormState extends State<SearchForm> {
             ),
           );
         },
+
         fieldViewBuilder: (_, controller, focusNode, onSubmitted) {
           return TextField(
             controller: controller,
             focusNode: focusNode,
             onSubmitted: (_) => onSubmitted(),
-            style: TextStyle(fontSize: FontSizeEnum.m.size),
             decoration: InputDecoration(
               contentPadding: EdgeInsets.only(left: 10, right: 10),
               border: OutlineInputBorder(
@@ -85,8 +95,20 @@ class _SearchFormState extends State<SearchForm> {
       ),
     );
   }
+
+  void _onTap(WordPublic wordPublic) {
+    final page = WordPage(id: wordPublic.id);
+    unawaited(pageStacks.currentStack!.push(page));
+  }
 }
 
 class SearchFormController extends ChangeNotifier {
   final searchFieldController = TextEditingController();
+  final searchFieldFocusNode = FocusNode();
+
+  WordPublicFilter getWordPublicFilter() {
+    return WordPublicFilter(
+      search: searchFieldController.text,
+    );
+  }
 }

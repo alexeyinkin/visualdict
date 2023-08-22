@@ -8,12 +8,66 @@ final themeData = ThemeData(
     primary: MyColors.primaryColor,
     secondary: MyColors.primaryColor,
   ),
-  textTheme: GoogleFonts.firaSansExtraCondensedTextTheme(),
+  textTheme: GoogleFonts.firaSansExtraCondensedTextTheme(
+    TextTheme(
+      // Just text, TextField text
+      bodyLarge: TextStyle(
+        fontSize: FontSizeEnum.s.size,
+      ),
+      bodyMedium: TextStyle(
+        fontSize: FontSizeEnum.s.size,
+      ),
+      bodySmall: TextStyle(
+        fontSize: FontSizeEnum.s.size,
+      ),
+
+      // TODO: Find out what it affects.
+      displayLarge: TextStyle(
+        fontSize: 40,
+      ),
+      displayMedium: TextStyle(
+        fontSize: 40,
+      ),
+      displaySmall: TextStyle(
+        fontSize: 40,
+      ),
+
+      // TODO: Find out what it affects.
+      headlineLarge: TextStyle(
+        fontSize: 40,
+      ),
+      headlineMedium: TextStyle(
+        fontSize: 40,
+      ),
+      headlineSmall: TextStyle(
+        fontSize: 40,
+      ),
+
+      // Buttons
+      labelLarge: TextStyle(
+        fontSize: FontSizeEnum.s.size,
+      ),
+      labelMedium: TextStyle(
+        fontSize: FontSizeEnum.s.size,
+      ),
+      labelSmall: TextStyle(
+        fontSize: FontSizeEnum.s.size,
+      ),
+
+      titleLarge: TextStyle(
+        fontSize: FontSizeEnum.s.size,
+      ),
+      titleMedium: TextStyle(
+        fontSize: FontSizeEnum.s.size,
+      ),
+      titleSmall: TextStyle(
+        fontSize: FontSizeEnum.s.size,
+      ),
+    ),
+  ),
   textButtonTheme: TextButtonThemeData(
     style: TextButton.styleFrom(
       foregroundColor: MyColors.colorBlack,
-      // textStyle: GoogleFonts.fredokaOne(),
-      textStyle: GoogleFonts.fredoka(),
     ),
   ),
   bottomNavigationBarTheme: const BottomNavigationBarThemeData(
@@ -23,6 +77,7 @@ final themeData = ThemeData(
   extensions: <ThemeExtension<dynamic>>[
     MyThemeExtension.myThemeExtension,
   ],
+  useMaterial3: true,
 );
 
 abstract class MyColors {

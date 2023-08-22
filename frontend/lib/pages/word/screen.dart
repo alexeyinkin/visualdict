@@ -6,6 +6,7 @@ import '../../util/build_context.dart';
 import '../../widgets/errors/loading_error.dart';
 import '../../widgets/loading/small_circular_progress_indicator.dart';
 import '../../widgets/my_scaffold.dart';
+import '../../widgets/words/word_narrow.dart';
 import '../../widgets/words/word_wide.dart';
 import 'state.dart';
 
@@ -33,7 +34,7 @@ class WordScreen extends StatelessWidget {
 
     switch (status) {
       case LoadStatus.error:
-        return LoadingErrorWidget();
+        return const LoadingErrorWidget();
 
       case null:
       case LoadStatus.notTried:
@@ -45,7 +46,7 @@ class WordScreen extends StatelessWidget {
         final isMobile = context.isMobileScreen();
 
         return isMobile
-            ? Text(wordPublic.image.toString())
+            ? WordNarrowWidget(wordPublic)
             : WordWideWidget(wordPublic);
     }
   }

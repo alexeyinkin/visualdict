@@ -55,11 +55,12 @@ class MyAppLocalizer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const en = Locale('en');
+    const ru = Locale('ru');
 
     return EasyLocalization(
-      supportedLocales: const [en],
+      supportedLocales: const [en, ru],
       path: 'assets/translations',
-      startLocale: en,
+      startLocale: ru,
       assetLoader: const YamlAssetLoader(),
       fallbackLocale: en,
       child: MyApp(),

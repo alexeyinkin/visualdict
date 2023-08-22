@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 import '../../router/tab_enum.dart';
@@ -13,11 +14,11 @@ class TopMenuWidget extends StatelessWidget {
     return Row(
       children: <Widget>[
         MenuItemWidget(
-          title: "Words",
+          title: 'menu.words'.tr(),
           value: TabEnum.words,
         ),
         MenuItemWidget(
-          title: "About",
+          title: 'menu.about'.tr(),
           value: TabEnum.about,
         ),
         // const ProfileMenuItemWidget(),

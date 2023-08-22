@@ -1,6 +1,5 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 import '../../models/word_public.dart';
 import '../../theme/theme.dart';
@@ -15,12 +14,12 @@ class WordTranscriptionWidget extends StatelessWidget {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text("/${wordPublic.transcription}/"),
+        Text('/${wordPublic.transcription}/'),
         if (_canPlay()) ...[
           const MySpacing(),
           IconButton(
             onPressed: _onPlayPressed,
-            icon: Icon(Icons.volume_up),
+            icon: const Icon(Icons.volume_up),
           ),
         ],
       ],

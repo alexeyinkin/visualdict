@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 import '../theme/my_theme_extension.dart';
@@ -44,7 +45,7 @@ class LogoWidget extends StatelessWidget {
         ),
         if (textVisible) ...[
           SizedBox(width: size / 2),
-          Text("Visual Dict", style: ext.h1),
+          Text('common.title', style: ext.h1).tr(),
         ],
       ],
     );

@@ -1,4 +1,5 @@
 import 'package:app_state/app_state.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:keyed_collection_widgets/keyed_collection_widgets.dart';
 
@@ -28,12 +29,12 @@ class MyBottomNavigationBar extends StatelessWidget {
         //   label: "Me",
         // ),
         words: BottomNavigationBarItem(
-          icon: Icon(Icons.search),
-          label: "Words",
+          icon: const Icon(Icons.search),
+          label: 'menu.words'.tr(),
         ),
         about: BottomNavigationBarItem(
-          icon: Icon(Icons.info_outline),
-          label: "About",
+          icon: const Icon(Icons.info_outline),
+          label: 'menu.about'.tr(),
         ),
       ),
     );

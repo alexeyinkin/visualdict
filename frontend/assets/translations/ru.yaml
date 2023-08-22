@@ -1,0 +1,40 @@
+AboutScreen:
+  text: >-
+    Привет.
+
+    Этот словарь генерируется искусственным интеллектом.
+    Мы недавно запустились и ещё только добавляем слова.
+    Заходите к нам почаще.
+
+  title: О проекте
+
+common:
+  title: 'Visual Dict'
+
+errors:
+  loading: 'Ошибка загрузки'
+
+ImagePromptWidget:
+  midjourneyMd: '**Запрос Midjourney:** *{prompt}*'
+
+menu:
+  about: 'О проекте'
+  words: 'Слова'
+
+NoImageWidget:
+  text: 'Нет картинки'
+
+pos:
+  full:
+    adverb: 'наречие'
+    adjective: 'прилагательное'
+    article: 'артикль'
+    conjunction: 'союз'
+    interjection: 'частица'
+    noun: 'существительное'
+    preposition: 'предлог'
+    pronoun: 'местоимение'
+    verb: 'глагол'
+
+search:
+  hint: 'Поиск'

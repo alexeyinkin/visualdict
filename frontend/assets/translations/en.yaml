@@ -1,1 +1,40 @@
-common: {}
+AboutScreen:
+  text: >-
+    Hi.
+
+    This dictionary is generated with AI.
+    We just launched, so we are just filling it up with words.
+    Please visit us frequently.
+
+  title: 'About'
+
+common:
+  title: 'Visual Dict'
+
+errors:
+  loading: 'Loading Error'
+
+ImagePromptWidget:
+  midjourneyMd: '**Midjourney Prompt:** *{prompt}*'
+
+menu:
+  about: 'About'
+  words: 'Words'
+
+NoImageWidget:
+  text: 'No Image'
+
+pos:
+  full:
+    adverb: 'adverb'
+    adjective: 'adjective'
+    article: 'article'
+    conjunction: 'conjunction'
+    interjection: 'interjection'
+    noun: 'noun'
+    preposition: 'preposition'
+    pronoun: 'pronoun'
+    verb: 'verb'
+
+search:
+  hint: 'Search'

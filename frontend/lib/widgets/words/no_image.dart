@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/widgets.dart';
 
 class NoImageWidget extends StatelessWidget {
@@ -5,11 +6,11 @@ class NoImageWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const ColoredBox(
-      color: Color(0xffdddddd),
+    return ColoredBox(
+      color: const Color(0xffdddddd),
       child: AspectRatio(
         aspectRatio: 1,
-        child: Text("No Image"),
+        child: const Text('NoImageWidget.text').tr(),
       ),
     );
   }

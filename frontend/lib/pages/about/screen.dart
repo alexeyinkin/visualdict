@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 import '../../constants/sizes.dart';
@@ -5,15 +6,6 @@ import '../../theme/my_theme_extension.dart';
 import '../../theme/theme.dart';
 import '../../widgets/my_scaffold.dart';
 import 'state.dart';
-
-const _mockText = 'Senior.dev tracks your public GitHub activity and provides '
-    'the statistics that is not readily available in the GitHub UI. '
-    'Sign in and share your profile link with your friends!\n\n'
-    'Terms of use: We store only your public information that you '
-    'share on GitHub and your private email on GitHub. Your private data '
-    'is stored securely on a U.S. server. To delete your private data, '
-    'send an email to leha@inkin.ru\n\n'
-    '© Alexey Inkin, 2022–2023';
 
 class AboutScreen extends StatelessWidget {
   final AboutNotifier notifier;
@@ -31,16 +23,16 @@ class AboutScreen extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Text(
-            "About us",
+            'AboutScreen.title',
             style: ext?.h2,
             textAlign: TextAlign.center,
-          ),
+          ).tr(),
           const MySpacing(),
-          const Flexible(
-            child: Text(
-              _mockText,
+          Flexible(
+            child: const Text(
+              'AboutScreen.text',
               textAlign: TextAlign.center,
-            ),
+            ).tr(),
           ),
         ],
       ),

@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/widgets.dart' hide Image;
 import 'package:flutter_markdown/flutter_markdown.dart';
 
@@ -11,7 +12,9 @@ class ImagePromptWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Markdown(
-      data: "**Midjourney Prompt:** *${image.prompt}*",
+      data: 'ImagePromptWidget.midjourneyMd'.tr(
+        namedArgs: {'prompt': image.prompt ?? ''},
+      ),
       selectable: true,
       shrinkWrap: true,
     );

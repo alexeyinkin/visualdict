@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:model_fetch/model_fetch.dart';
@@ -76,7 +77,7 @@ class _SearchFormState extends State<SearchForm> {
             focusNode: focusNode,
             onSubmitted: (_) => onSubmitted(),
             decoration: InputDecoration(
-              contentPadding: EdgeInsets.only(left: 10, right: 10),
+              contentPadding: const EdgeInsets.only(left: 10, right: 10),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(5),
                 borderSide: BorderSide.none,
@@ -87,8 +88,8 @@ class _SearchFormState extends State<SearchForm> {
               ),
               fillColor: Colors.white,
               filled: true,
-              prefixIcon: Icon(Icons.search),
-              hintText: "Search",
+              prefixIcon: const Icon(Icons.search),
+              hintText: 'search.hint'.tr(),
             ),
           );
         },

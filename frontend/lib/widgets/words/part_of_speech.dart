@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/widgets.dart';
 
 import '../../models/part_of_speech_enum.dart';
@@ -10,10 +11,10 @@ class PartOfSpeechWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      partOfSpeech.name,
-      style: TextStyle(
+      'pos.full.${partOfSpeech.name}',
+      style: const TextStyle(
         fontWeight: FontWeight.bold,
       ),
-    );
+    ).tr();
   }
 }

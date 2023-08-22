@@ -89,6 +89,7 @@ class _MyAppState extends State<MyApp> {
       routeInformationParser: _routeInformationParser,
       routerDelegate: _routerDelegate,
       theme: themeData,
+      title: "Visual Dict",
 
       // Localization.
       locale: context.locale,

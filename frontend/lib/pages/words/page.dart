@@ -4,15 +4,15 @@ import 'package:flutter/foundation.dart';
 import 'screen.dart';
 import 'state.dart';
 
-class WordsPage extends StatefulMaterialPage<void, SearchNotifier> {
+class WordsPage extends StatefulMaterialPage<void, WordsNotifier> {
   static const classFactoryKey = 'Words';
 
   WordsPage()
       : super(
           key: const ValueKey(classFactoryKey),
           factoryKey: classFactoryKey,
-          state: SearchNotifier(),
-          createScreen: SearchScreen.new,
+          state: WordsNotifier(),
+          createScreen: WordsScreen.new,
         );
 
   // ignore: avoid_unused_constructor_parameters

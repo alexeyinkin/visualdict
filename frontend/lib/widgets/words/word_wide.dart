@@ -21,7 +21,10 @@ class WordWideWidget extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              WordImageOrNotWidget(wordPublic),
+              WordImageOrNotWidget(
+                wordPublic,
+                fontSize: WordImageFontSizes.large.size,
+              ),
               if (wordPublic.image?.prompt != null) ...[
                 const MySpacing(),
                 ImagePromptWidget(wordPublic.image!),

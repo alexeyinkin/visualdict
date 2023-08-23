@@ -218,7 +218,7 @@ packages:
     source: hosted
     version: "2.0.3"
   clock:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: clock
       sha256: cb6d7f03e1de671e34607e909a7213e31d7752be4fb66a86d29fe1eb14bfb5cf
@@ -642,10 +642,18 @@ packages:
     dependency: "direct main"
     description:
       name: model_fetch_firestore
-      sha256: a73aaec9dcda065eb53d048eba0042e58a2d6dec4c297712664acae6aa9d3879
+      sha256: e7775e1ed13b943d3356b3e925b8bca1353772432f84cab5c2e6c65db01d4811
       url: "https://pub.dev"
     source: hosted
-    version: "0.5.4"
+    version: "0.5.5"
+  model_fetch_flutter:
+    dependency: "direct main"
+    description:
+      name: model_fetch_flutter
+      sha256: efce1de36bcc5216c979536577d188cb29939193c7939688b126f350b94158b0
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.5.5"
   model_interfaces:
     dependency: "direct main"
     description:
@@ -1011,6 +1019,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.4"
+  visibility_detector:
+    dependency: transitive
+    description:
+      name: visibility_detector
+      sha256: "15c54a459ec2c17b4705450483f3d5a2858e733aee893dcee9d75fd04814940d"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.3.3"
   watcher:
     dependency: transitive
     description:

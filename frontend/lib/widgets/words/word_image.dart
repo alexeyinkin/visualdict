@@ -2,17 +2,18 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../models/word_public.dart';
-import '../../theme/my_theme_extension.dart';
 
 class WordImageWidget extends StatelessWidget {
+  final double fontSize;
   final WordPublic wordPublic;
 
-  const WordImageWidget(this.wordPublic);
+  const WordImageWidget(
+    this.wordPublic, {
+    required this.fontSize,
+  });
 
   @override
   Widget build(BuildContext context) {
-    final ext = Theme.of(context).extension<MyThemeExtension>()!;
-
     return Stack(
       children: [
         CachedNetworkImage(imageUrl: wordPublic.image!.url.toString()),
@@ -25,8 +26,11 @@ class WordImageWidget extends StatelessWidget {
             child: Align(
               child: Text(
                 wordPublic.id,
-                style: ext.h1,
-                //style: TextStyle(color: Colors.white),
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: fontSize,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
           ),

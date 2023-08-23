@@ -39,13 +39,50 @@ class WordPublicQueryBuilder extends QueryBuilder<WordPublic> {
   Query<WordPublic> get query => _query ?? _createEmptyQuery();
 
   WordPublicQueryBuilder(this.filter, this.loaderFactory) {
+    _addOfTheDay();
     _addSearch();
+    _addOrderBy();
+    _addLimit();
+  }
+
+  void _addOfTheDay() {
+    if (filter.ofTheDay == null) {
+      return;
+    }
+
+    _query = query.where('ofTheDay', isLessThanOrEqualTo: filter.ofTheDay);
   }
 
   void _addSearch() {
-    if (filter.search != '') {
-      _query = query.where('ngrams', arrayContains: filter.search);
+    final search = filter.search;
+    if (search == null || search == '') {
+      return;
     }
+
+    _query = query.where('ngrams', arrayContains: filter.search);
+  }
+
+  void _addOrderBy() {
+    final orderBy = filter.orderBy;
+    final descending = filter.orderByDescending;
+    if (orderBy == null || descending == null) {
+      assert(
+        orderBy == null && descending == null,
+        'Both "orderBy" and "descending" must be null',
+      );
+      return;
+    }
+
+    _query = query.orderBy(orderBy, descending: descending);
+  }
+
+  void _addLimit() {
+    final n = filter.limit;
+    if (n == null) {
+      return;
+    }
+
+    _query = query.limit(n);
   }
 
   Query<WordPublic> _createEmptyQuery() {

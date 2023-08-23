@@ -8,6 +8,7 @@ dependencies:
   app_state: ^0.9.4
   audioplayers: ^5.1.0
   cached_network_image: ^3.2.3
+  clock: ^1.1.1
   cloud_firestore: ^4.8.4
   easy_localization: ^3.0.2
   easy_localization_loader: { git: { url: https://github.com/aissat/easy_localization_loader.git, ref: efca2087b52198c7fbd6a59488d149a4b1ec939c} }
@@ -20,7 +21,8 @@ dependencies:
   json_annotation: ^4.8.1
   keyed_collection_widgets: ^0.4.3
   model_fetch: ^0.5.5
-  model_fetch_firestore: ^0.5.4
+  model_fetch_firestore: ^0.5.5
+  model_fetch_flutter: ^0.5.5
   model_interfaces: ^0.3.1
   url_strategy: ^0.2.0
 

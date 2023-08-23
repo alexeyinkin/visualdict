@@ -16,7 +16,10 @@ class WordNarrowWidget extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        WordImageOrNotWidget(wordPublic),
+        WordImageOrNotWidget(
+          wordPublic,
+          fontSize: WordImageFontSizes.large.size,
+        ),
         const MySpacing(),
         WordTextContentWidget(
           wordPublic,

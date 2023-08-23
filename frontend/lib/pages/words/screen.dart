@@ -1,43 +1,50 @@
 import 'package:flutter/material.dart';
 
 import '../../constants/sizes.dart';
-import '../../theme/my_theme_extension.dart';
-import '../../theme/theme.dart';
+import '../../util/build_context.dart';
 import '../../widgets/my_scaffold.dart';
+import '../../widgets/words/recent_imaged_words.dart';
+import '../../widgets/words/word_of_the_day.dart';
 import 'state.dart';
 
 const _mockText = 'Search.\n\n'
     '© Alexey Inkin, 2023';
 
-class SearchScreen extends StatelessWidget {
-  final SearchNotifier notifier;
+class WordsScreen extends StatelessWidget {
+  final WordsNotifier notifier;
 
-  const SearchScreen(this.notifier);
+  const WordsScreen(this.notifier);
 
   @override
   Widget build(BuildContext context) {
-    final ext = Theme.of(context).extension<MyThemeExtension>();
-
     return MyScaffold(
-      maxWidth: MySizes.maxPageWidth,
+      maxWidth: MySizes.maxHomePageWidth,
       scrolls: true,
-      body: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Text(
-            "Search",
-            style: ext?.h2,
-            textAlign: TextAlign.center,
-          ),
-          const MySpacing(),
-          const Flexible(
-            child: Text(
-              _mockText,
-              textAlign: TextAlign.center,
-            ),
-          ),
-        ],
-      ),
+      body: context.isMobileScreen()
+          ? const NarrowWordsWidget()
+          : const WideWordsWidget(),
     );
+  }
+}
+
+class NarrowWordsWidget extends StatelessWidget {
+  const NarrowWordsWidget();
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+
+class WideWordsWidget extends StatelessWidget {
+  const WideWordsWidget();
+
+  @override
+  Widget build(BuildContext context) {
+    return const Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      Expanded(child: WordOfTheDayWidget()),
+      SizedBox(width: 30),
+      Expanded(child: RecentImagedWordsWidget()),
+    ]);
   }
 }

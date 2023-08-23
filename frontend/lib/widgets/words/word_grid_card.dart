@@ -1,6 +1,9 @@
 import 'package:flutter/widgets.dart';
+import 'package:url_launcher/link.dart';
 
 import '../../models/word_public.dart';
+import '../../pages/word/path.dart';
+import '../clickable.dart';
 import 'word_image_or_not.dart';
 
 class WordGridCard extends StatelessWidget {
@@ -12,9 +15,17 @@ class WordGridCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return WordImageOrNotWidget(
-      wordPublic,
-      fontSize: WordImageFontSizes.grid.size,
+    return Link(
+      uri: WordPath(id: wordPublic.id).uri,
+      builder: (_, launch) {
+        return ClickableWidget(
+          onTap: launch,
+          child: WordImageOrNotWidget(
+            wordPublic,
+            fontSize: WordImageFontSizes.grid.size,
+          ),
+        );
+      }
     );
   }
 }

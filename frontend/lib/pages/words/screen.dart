@@ -7,9 +7,6 @@ import '../../widgets/words/recent_imaged_words.dart';
 import '../../widgets/words/word_of_the_day.dart';
 import 'state.dart';
 
-const _mockText = 'Search.\n\n'
-    '© Alexey Inkin, 2023';
-
 class WordsScreen extends StatelessWidget {
   final WordsNotifier notifier;
 

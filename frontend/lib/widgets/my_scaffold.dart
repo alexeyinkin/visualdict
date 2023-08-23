@@ -4,6 +4,7 @@ import '../theme/my_theme_extension.dart';
 import '../theme/theme.dart';
 import '../util/build_context.dart';
 import 'layout/constrained_width.dart';
+import 'layout/footer.dart';
 import 'loading/small_circular_progress_indicator.dart';
 import 'logo.dart';
 import 'menu/top_menu.dart';
@@ -46,6 +47,15 @@ class MyScaffold extends StatelessWidget {
     if (padding) {
       child = MyPadding(child: child);
     }
+
+    child = Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        child,
+        const HorizontalBlackLine(),
+        const FooterWidget(),
+      ],
+    );
 
     if (scrolls) {
       child = SingleChildScrollView(child: child);

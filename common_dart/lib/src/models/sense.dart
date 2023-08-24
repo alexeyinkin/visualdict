@@ -4,7 +4,7 @@ import 'usage.dart';
 
 part 'sense.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable()
 class Sense {
   final String definition;
   final Map<String, String> definitionTranslations;
@@ -17,4 +17,6 @@ class Sense {
   });
 
   factory Sense.fromJson(Map<String, dynamic> json) => _$SenseFromJson(json);
+
+  Map<String, dynamic> toJson() => _$SenseToJson(this);
 }

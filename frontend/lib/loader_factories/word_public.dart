@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:common_dart/common_dart.dart';
 import 'package:model_fetch_firestore/model_fetch_firestore.dart';
 
 import '../filters/word_public.dart';
-import '../models/firestore/collections_enum.dart';
 import '../models/word_public.dart';
 import 'abstract.dart';
 

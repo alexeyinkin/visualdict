@@ -1,7 +1,6 @@
+import 'package:common_dart/common_dart.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/widgets.dart';
-
-import '../../models/part_of_speech_enum.dart';
 
 class PartOfSpeechWidget extends StatelessWidget {
   final PartOfSpeechEnum partOfSpeech;

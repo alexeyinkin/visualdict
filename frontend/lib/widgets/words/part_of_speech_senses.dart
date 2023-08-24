@@ -1,10 +1,10 @@
+import 'package:common_dart/common_dart.dart';
 import 'package:flutter/widgets.dart';
-import 'package:visualdict/widgets/words/word_sense.dart';
 
-import '../../models/part_of_speech_senses.dart';
 import '../../models/word_public.dart';
 import '../../theme/theme.dart';
 import 'part_of_speech.dart';
+import 'word_sense.dart';
 
 class PartOfSpeechSensesWidget extends StatelessWidget {
   final PartOfSpeechSenses partOfSpeechSenses;

@@ -1,8 +1,8 @@
+import 'package:common_dart/common_dart.dart';
 import 'package:json_annotation/json_annotation.dart';
 import 'package:model_interfaces/model_interfaces.dart';
 
 import 'image.dart';
-import 'part_of_speech_senses.dart';
 
 part 'word_public.g.dart';
 
@@ -24,5 +24,6 @@ class WordPublic implements WithId<String> {
     required this.transcription,
   });
 
-  factory WordPublic.fromJson(Map<String, dynamic> json) => _$WordPublicFromJson(json);
+  factory WordPublic.fromJson(Map<String, dynamic> json) =>
+      _$WordPublicFromJson(json);
 }

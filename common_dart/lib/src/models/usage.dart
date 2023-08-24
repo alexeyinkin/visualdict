@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'usage.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable()
 class Usage {
   final String text;
 
@@ -11,4 +11,6 @@ class Usage {
   });
 
   factory Usage.fromJson(Map<String, dynamic> json) => _$UsageFromJson(json);
+
+  Map<String, dynamic> toJson() => _$UsageToJson(this);
 }

@@ -1,8 +1,7 @@
+import 'package:common_dart/common_dart.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 import '../../constants/languages.dart';
-import '../../models/sense.dart';
 import '../../models/word_public.dart';
 import '../../theme/my_theme_extension.dart';
 import '../../theme/theme.dart';
@@ -23,7 +22,6 @@ class WordSenseWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final ext = Theme.of(context).extension<MyThemeExtension>()!;
 
-    //return Container(width: 100, height: 100, color: Color(0xff8080f0));
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

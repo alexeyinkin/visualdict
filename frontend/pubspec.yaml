@@ -10,8 +10,9 @@ dependencies:
   cached_network_image: ^3.2.3
   clock: ^1.1.1
   cloud_firestore: ^4.8.4
+  common_dart: { path: ../common_dart }
   easy_localization: ^3.0.2
-  easy_localization_loader: { git: { url: https://github.com/aissat/easy_localization_loader.git, ref: efca2087b52198c7fbd6a59488d149a4b1ec939c} }
+  easy_localization_loader: { git: { url: https://github.com/aissat/easy_localization_loader.git, ref: efca2087b52198c7fbd6a59488d149a4b1ec939c } }
   enum_map: ^0.3.0
   firebase_core: ^2.15.0
   flutter: { sdk: flutter }

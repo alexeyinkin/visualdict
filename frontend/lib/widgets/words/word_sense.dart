@@ -2,7 +2,6 @@ import 'package:common_dart/common_dart.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
-import '../../constants/languages.dart';
 import '../../models/word_public.dart';
 import '../../theme/my_theme_extension.dart';
 import '../../theme/theme.dart';
@@ -57,7 +56,7 @@ class WordSenseWidget extends StatelessWidget {
   }
 
   Widget _getDefinition() {
-    if (lang == Languages.en.name) {
+    if (lang == LanguagesEnum.en.name) {
       return Text(sense.definition);
     }
 

@@ -1,4 +1,4 @@
-enum Languages {
+enum LanguagesEnum {
   ru,
   en,
 }

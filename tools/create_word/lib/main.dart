@@ -13,7 +13,7 @@ Future<void> main(List<String> rawArgs) async {
   };
 
   final jsonFile = getWordPublicJsonFile(args.word, prefix: _toRoot);
-  final jsonContent = _replacePatterns(
+  final jsonContent = replacePatterns(
     File('assets/${CollectionsEnum.WordPublic.name}.json.template')
         .readAsStringSync(),
     replacements,
@@ -21,17 +21,10 @@ Future<void> main(List<String> rawArgs) async {
   jsonFile.writeAsStringSync(jsonContent);
 
   final tfFile = getWordPublicTerraformFile(args.word, prefix: _toRoot);
-  final tfContent = _replacePatterns(
+  final tfContent = replacePatterns(
     File('assets/${CollectionsEnum.WordPublic.name}.tf.template')
         .readAsStringSync(),
     replacements,
   );
   tfFile.writeAsStringSync(tfContent);
-}
-
-String _replacePatterns(String src, Map<Pattern, String> map) {
-  for (final entry in map.entries) {
-    src = src.replaceAll(entry.key, entry.value);
-  }
-  return src;
 }

@@ -1,0 +1,4 @@
+module "{module}" {
+  source  = "./{module}"
+  PROJECT = var.PROJECT
+}

@@ -19,7 +19,7 @@ Future<void> main(List<String> rawArgs) async {
 
 Future<List<PartOfSpeechSenses>> getDefinitions(WordArgs args) async {
   final definitionsContent = args.mock
-      ? await getDefinitionsContentMock(args.word)
+      ? getDefinitionsContentMock(args.word)
       : await getDefinitionsContent(args.word);
 
   final result = <PartOfSpeechSenses>[];
@@ -54,7 +54,7 @@ Future<List<PartOfSpeechSenses>> getDefinitions(WordArgs args) async {
   return result;
 }
 
-Future<String> getDefinitionsContentMock(String word) async {
+String getDefinitionsContentMock(String word) {
   // Word: train
   return '''
 noun: A sequence of railroad cars moved as a unit by a locomotive or by integral motors.

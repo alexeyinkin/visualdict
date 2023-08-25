@@ -6,7 +6,7 @@ import 'package:common_dart_backend/common_dart_backend.dart';
 const _toRoot = '../..';
 
 Future<void> main(List<String> rawArgs) async {
-  final args = WordOnlyArgs.parse(rawArgs);
+  final args = WordArgs.parse(rawArgs);
 
   final replacements = {
     '{word}': args.word,

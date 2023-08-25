@@ -9,8 +9,15 @@ Future<void> main(List<String> rawArgs) async {
 
   final map = getWordPublicMap(args.word, prefix: _toRoot);
 
-  map['transcription'] = await getTranscription(args.word);
+  map['transcription'] = args.mock
+      ? getTranscriptionMock(args.word)
+      : await getTranscription(args.word);
+
   writeWordPublicMap(args.word, map, prefix: _toRoot);
+}
+
+String getTranscriptionMock(String word) {
+  return 'tɹeɪn';
 }
 
 Future<String> getTranscription(String word) async {

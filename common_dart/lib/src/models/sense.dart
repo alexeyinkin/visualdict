@@ -4,7 +4,7 @@ import 'usage.dart';
 
 part 'sense.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(explicitToJson: true)
 class Sense {
   final String definition;
   final Map<String, String> definitionTranslations;

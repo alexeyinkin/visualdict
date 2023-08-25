@@ -1,36 +1,27 @@
-import 'dart:convert';
-import 'dart:io';
-
 import 'package:common_dart/common_dart.dart';
 import 'package:common_dart_backend/common_dart_backend.dart';
 import 'package:dart_openai/dart_openai.dart';
 
-import 'args.dart';
-
 const _toRoot = '../..';
 
 Future<void> main(List<String> rawArgs) async {
-  _initOpenAiKey();
-  final args = Args.parse(rawArgs);
+  initOpenAiKey(_toRoot);
+  final args = WordArgs.parse(rawArgs);
 
-  final jsonFile = getWordPublicJsonFile(args.word, prefix: _toRoot);
-  final jsonContent = jsonFile.readAsStringSync();
-  final map = jsonDecode(jsonContent);
+  final map = getWordPublicMap(args.word, prefix: _toRoot);
 
-  final posSenses = await getDefinitions(args.word);
+  final posSenses = await getDefinitions(args);
   final grouped = PartOfSpeechSenses.groupByPos(posSenses);
-  map['partOfSpeechSenses'] = grouped.map((o) => o.toJson()).toList(growable: false);
-  jsonFile.writeAsStringSync(jsonEncodeFormatted(map) + '\n');
+  map['partOfSpeechSenses'] =
+      grouped.map((o) => o.toJson()).toList(growable: false);
+  writeWordPublicMap(args.word, map, prefix: _toRoot);
 }
 
-void _initOpenAiKey() {
-  final key = File('$_toRoot/keys/openai_key.txt').readAsStringSync();
-  OpenAI.apiKey = key;
-}
+Future<List<PartOfSpeechSenses>> getDefinitions(WordArgs args) async {
+  final definitionsContent = args.mock
+      ? await getDefinitionsContentMock(args.word)
+      : await getDefinitionsContent(args.word);
 
-Future<List<PartOfSpeechSenses>> getDefinitions(String word) async {
-  // final definitionsContent = await getDefinitionsContentMock(word);
-  final definitionsContent = await getDefinitionsContent(word);
   final result = <PartOfSpeechSenses>[];
   final lines = definitionsContent.split('\n');
   final re = RegExp(r'^([a-z]+): (.*)$');
@@ -95,7 +86,7 @@ Answer with only this list and nothing more.''',
   );
 
   final definitionsResponse = await OpenAI.instance.chat.create(
-    model: 'gpt-4',
+    model: OpenAiModels.gpt4,
     messages: [definitionsRequestMessage],
   );
   print('Original:');

@@ -2,7 +2,7 @@
 # See https://dart.dev/tools/pub/glossary#lockfile
 packages:
   args:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: args
       sha256: eef6c46b622e0494a36c5a12d10d77fb4e855501a91c1b9ef9339326e58f0596
@@ -17,6 +17,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.11.0"
+  clock:
+    dependency: transitive
+    description:
+      name: clock
+      sha256: cb6d7f03e1de671e34607e909a7213e31d7752be4fb66a86d29fe1eb14bfb5cf
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.1"
   collection:
     dependency: transitive
     description:
@@ -40,7 +48,7 @@ packages:
     source: path
     version: "0.0.0"
   dart_openai:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: dart_openai
       sha256: "707f6975454513f4a6197125b5a0fbe92ab7cbe4b8ea9111e529a09d7a3ce0c3"
@@ -71,6 +79,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.2"
+  firestore_api_parser:
+    dependency: transitive
+    description:
+      name: firestore_api_parser
+      sha256: "34e5beaa58aa499d09c074a17e38c09cf965257746e54c58b0545b4015de00ae"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.1"
   http:
     dependency: transitive
     description:
@@ -87,6 +103,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.0.2"
+  intl:
+    dependency: transitive
+    description:
+      name: intl
+      sha256: "3bc132a9dbce73a7e4a21a17d06e1878839ffbf975568bc875c60537824b0c4d"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.18.1"
   js:
     dependency: transitive
     description:

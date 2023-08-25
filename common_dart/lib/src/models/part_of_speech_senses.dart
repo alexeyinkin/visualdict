@@ -5,7 +5,7 @@ import 'sense.dart';
 
 part 'part_of_speech_senses.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(explicitToJson: true)
 class PartOfSpeechSenses {
   final PartOfSpeechEnum partOfSpeech;
   final List<Sense> senses;

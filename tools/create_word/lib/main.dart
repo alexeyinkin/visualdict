@@ -3,12 +3,10 @@ import 'dart:io';
 import 'package:common_dart/common_dart.dart';
 import 'package:common_dart_backend/common_dart_backend.dart';
 
-import 'args.dart';
-
 const _toRoot = '../..';
 
 Future<void> main(List<String> rawArgs) async {
-  final args = Args.parse(rawArgs);
+  final args = WordOnlyArgs.parse(rawArgs);
 
   final replacements = {
     '{word}': args.word,

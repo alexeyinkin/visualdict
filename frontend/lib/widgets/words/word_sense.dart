@@ -1,4 +1,5 @@
 import 'package:common_dart/common_dart.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 import '../../constants/languages.dart';
@@ -41,7 +42,7 @@ class WordSenseWidget extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(sense.definitionTranslations[lang]?.value ?? ''),
+              _getDefinition(),
               const MySpacing(),
               for (final usage in sense.usages)
                 UsageWidget(
@@ -52,6 +53,17 @@ class WordSenseWidget extends StatelessWidget {
           ),
         ),
       ],
+    );
+  }
+
+  Widget _getDefinition() {
+    if (lang == Languages.en.name) {
+      return Text(sense.definition);
+    }
+
+    return Text(
+      sense.definitionTranslations[lang]?.value ??
+          sense.definition + ' (' + 'common.noTranslation'.tr() + ')',
     );
   }
 }

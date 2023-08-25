@@ -1,8 +1,12 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 
 class NoImageWidget extends StatelessWidget {
-  const NoImageWidget();
+  final double fontSize;
+
+  const NoImageWidget({
+    required this.fontSize,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +14,23 @@ class NoImageWidget extends StatelessWidget {
       color: const Color(0xffdddddd),
       child: AspectRatio(
         aspectRatio: 1,
-        child: const Text('NoImageWidget.text').tr(),
+        child: Center(
+          child: SizedBox(
+            width: double.infinity,
+            child: ColoredBox(
+              color: const Color(0xffaaaaaa),
+              child: Text(
+                  'NoImageWidget.text',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: fontSize,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ).tr(),
+            ),
+          ),
+        ),
       ),
     );
   }

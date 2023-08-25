@@ -10,6 +10,7 @@ enum WordImageFontSizes {
   ;
 
   final double size;
+
   const WordImageFontSizes(this.size);
 }
 
@@ -26,7 +27,9 @@ class WordImageOrNotWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final image = wordPublic.image;
     return image == null
-        ? const NoImageWidget()
+        ? NoImageWidget(
+            fontSize: fontSize,
+          )
         : WordImageWidget(
             wordPublic,
             fontSize: fontSize,

@@ -8,7 +8,7 @@ class Translation {
   final String value;
 
   const Translation({
-    required this.isLocked,
+    this.isLocked = false,
     required this.value,
   });
 

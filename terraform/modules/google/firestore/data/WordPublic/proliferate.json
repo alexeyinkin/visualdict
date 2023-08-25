@@ -2,11 +2,14 @@
   "image": {
     "mapValue": {
       "fields": {
-        "url": {
-          "stringValue": "https://static.visualdict.com/words/proliferate/proliferate.png"
+        "dateTime": {
+          "timestampValue": "2013-08-12T08:04:00.000000Z"
         },
         "prompt": {
           "stringValue": "Due to favorable conditions, bacteria can proliferate rapidly in a petri dish."
+        },
+        "url": {
+          "stringValue": "https://static.visualdict.com/words/proliferate/proliferate.png"
         }
       }
     }
@@ -14,19 +17,44 @@
   "ngrams": {
     "arrayValue": {
       "values": [
-        {"stringValue": "p"},
-        {"stringValue": "pr"},
-        {"stringValue": "pro"},
-        {"stringValue": "prol"},
-        {"stringValue": "proli"},
-        {"stringValue": "prolif"},
-        {"stringValue": "prolife"},
-        {"stringValue": "prolifer"},
-        {"stringValue": "prolifera"},
-        {"stringValue": "proliferat"},
-        {"stringValue": "proliferate"}
+        {
+          "stringValue": "p"
+        },
+        {
+          "stringValue": "pr"
+        },
+        {
+          "stringValue": "pro"
+        },
+        {
+          "stringValue": "prol"
+        },
+        {
+          "stringValue": "proli"
+        },
+        {
+          "stringValue": "prolif"
+        },
+        {
+          "stringValue": "prolife"
+        },
+        {
+          "stringValue": "prolifer"
+        },
+        {
+          "stringValue": "prolifera"
+        },
+        {
+          "stringValue": "proliferat"
+        },
+        {
+          "stringValue": "proliferate"
+        }
       ]
     }
+  },
+  "ofTheDay": {
+    "stringValue": "2023-08-12"
   },
   "pronunciationUrl": {
     "stringValue": "https://static.visualdict.com/words/proliferate/proliferate.mp3"
@@ -53,7 +81,13 @@
                             "mapValue": {
                               "fields": {
                                 "ru": {
-                                  "stringValue": "Размножаться быстро по количеству или изобилию."
+                                  "mapValue": {
+                                    "fields": {
+                                      "value": {
+                                        "stringValue": "Размножаться быстро по количеству или изобилию."
+                                      }
+                                    }
+                                  }
                                 }
                               }
                             }
@@ -86,7 +120,16 @@
                             "mapValue": {
                               "fields": {
                                 "ru": {
-                                  "stringValue": "Широко распространяться."
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": false
+                                      },
+                                      "value": {
+                                        "stringValue": "Широко распространяться."
+                                      }
+                                    }
+                                  }
                                 }
                               }
                             }

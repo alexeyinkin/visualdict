@@ -41,7 +41,7 @@ class WordSenseWidget extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(sense.definitionTranslations[lang] ?? ''),
+              Text(sense.definitionTranslations[lang]?.value ?? ''),
               const MySpacing(),
               for (final usage in sense.usages)
                 UsageWidget(

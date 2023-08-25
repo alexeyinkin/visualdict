@@ -2,11 +2,14 @@
   "image": {
     "mapValue": {
       "fields": {
-        "url": {
-          "stringValue": "https://static.visualdict.com/words/plaintive/plaintive.png"
+        "dateTime": {
+          "timestampValue": "2023-08-05T07:10:00.000000Z"
         },
         "prompt": {
           "stringValue": "a lone musician playing a plaintive melody on a weathered violin"
+        },
+        "url": {
+          "stringValue": "https://static.visualdict.com/words/plaintive/plaintive.png"
         }
       }
     }
@@ -14,17 +17,38 @@
   "ngrams": {
     "arrayValue": {
       "values": [
-        {"stringValue": "p"},
-        {"stringValue": "pl"},
-        {"stringValue": "pla"},
-        {"stringValue": "plai"},
-        {"stringValue": "plain"},
-        {"stringValue": "plaint"},
-        {"stringValue": "plainti"},
-        {"stringValue": "plaintiv"},
-        {"stringValue": "plaintive"}
+        {
+          "stringValue": "p"
+        },
+        {
+          "stringValue": "pl"
+        },
+        {
+          "stringValue": "pla"
+        },
+        {
+          "stringValue": "plai"
+        },
+        {
+          "stringValue": "plain"
+        },
+        {
+          "stringValue": "plaint"
+        },
+        {
+          "stringValue": "plainti"
+        },
+        {
+          "stringValue": "plaintiv"
+        },
+        {
+          "stringValue": "plaintive"
+        }
       ]
     }
+  },
+  "ofTheDay": {
+    "stringValue": "2023-08-05"
   },
   "pronunciationUrl": {
     "stringValue": "https://static.visualdict.com/words/plaintive/plaintive.mp3"
@@ -51,7 +75,16 @@
                             "mapValue": {
                               "fields": {
                                 "ru": {
-                                  "stringValue": "Грустно, печально, в скорбной манере."
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": false
+                                      },
+                                      "value": {
+                                        "stringValue": "Грустно, печально, в скорбной манере."
+                                      }
+                                    }
+                                  }
                                 }
                               }
                             }

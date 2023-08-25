@@ -61,9 +61,16 @@ class WordSenseWidget extends StatelessWidget {
       return Text(sense.definition);
     }
 
+    final translation = sense.definitionTranslations[lang]?.value;
+    if (translation != null) {
+      return Text(translation);
+    }
+
     return Text(
-      sense.definitionTranslations[lang]?.value ??
-          sense.definition + ' (' + 'common.noTranslation'.tr() + ')',
+      sense.definition + ' (' + 'common.noTranslation'.tr() + ')',
+      style: const TextStyle(
+        color: Color(0xff800000),
+      ),
     );
   }
 }

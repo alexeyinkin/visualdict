@@ -90,9 +90,11 @@ packages:
   firestore_api_parser:
     dependency: "direct overridden"
     description:
-      path: "../../../dart/firestore_api_parser"
-      relative: true
-    source: path
+      path: "."
+      ref: "935e5a7c91cd7b6ab9c17b6cefc232c00a91baba"
+      resolved-ref: "935e5a7c91cd7b6ab9c17b6cefc232c00a91baba"
+      url: "https://github.com/alexeyinkin/firestore_api_parser.git"
+    source: git
     version: "1.1.1"
   http:
     dependency: transitive

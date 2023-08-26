@@ -10,7 +10,3 @@ dependencies:
   crypto: ^3.0.3
   dart_openai: ^4.0.0
   firestore_api_parser: ^1.1.1
-
-dependency_overrides:
-  firestore_api_parser:
-    path: ../../dart/firestore_api_parser

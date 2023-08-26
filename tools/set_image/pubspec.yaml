@@ -15,4 +15,6 @@ dependencies:
 
 dependency_overrides:
   firestore_api_parser:
-    path: ../../../dart/firestore_api_parser
+    git:
+      url: https://github.com/alexeyinkin/firestore_api_parser.git
+      ref: 935e5a7c91cd7b6ab9c17b6cefc232c00a91baba

@@ -29,6 +29,7 @@ class WordImageOrNotWidget extends StatelessWidget {
     return image == null
         ? NoImageWidget(
             fontSize: fontSize,
+            title: wordPublic.id,
           )
         : WordImageWidget(
             wordPublic,

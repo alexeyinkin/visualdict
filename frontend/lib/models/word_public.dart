@@ -10,15 +10,15 @@ class WordPublic implements WithId<String> {
   final String id;
 
   final Image? image;
-  final Uri? pronunciationUrl;
   final List<PartOfSpeechSenses> partOfSpeechSenses;
+  final Pronunciation? pronunciation;
   final String transcription;
 
   const WordPublic({
     required this.id,
     required this.image,
-    required this.pronunciationUrl,
     required this.partOfSpeechSenses,
+    required this.pronunciation,
     required this.transcription,
   });
 

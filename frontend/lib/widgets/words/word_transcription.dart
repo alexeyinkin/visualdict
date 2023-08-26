@@ -26,10 +26,12 @@ class WordTranscriptionWidget extends StatelessWidget {
     );
   }
 
-  bool _canPlay() => wordPublic.pronunciationUrl != null;
+  bool _canPlay() => wordPublic.pronunciation != null;
 
   Future<void> _onPlayPressed() async {
     final player = AudioPlayer();
-    await player.play(UrlSource(wordPublic.pronunciationUrl.toString()));
+    await player.play(
+      UrlSource(wordPublic.pronunciation!.getUrl(wordPublic.id).toString()),
+    );
   }
 }

@@ -26,7 +26,7 @@ class WordPublicFilter extends AbstractFilter {
   const WordPublicFilter.recentImaged(int this.limit)
       : ofTheDay = null,
         search = null,
-        orderBy = 'image.dateTime',
+        orderBy = 'image.timestamp',
         orderByDescending = true;
 
   @override

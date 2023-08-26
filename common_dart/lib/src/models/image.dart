@@ -41,6 +41,6 @@ class Image {
     }
 
     final sizePart = size == null ? '' : '-$size';
-    return '/w/${alphabeticNesting(word)}/$word-$timestamp-hash$sizePart.jpg';
+    return '/w/${alphabeticNesting(word)}/$word/$word-$timestamp-$hash$sizePart.jpg';
   }
 }

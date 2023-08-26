@@ -32,6 +32,6 @@ class Pronunciation {
       throw Exception('The image is not public.');
     }
 
-    return '/w/${alphabeticNesting(word)}/$word-$timestamp-$hash.mp3';
+    return '/w/${alphabeticNesting(word)}/$word/$word-$timestamp-$hash.mp3';
   }
 }

@@ -8,3 +8,9 @@ dependencies:
   common_dart: { path: ../../common_dart }
   common_dart_backend: { path: ../../common_dart_backend }
   dump: ^0.1.6
+
+dependency_overrides:
+  firestore_api_parser:
+    git:
+      url: https://github.com/alexeyinkin/firestore_api_parser.git
+      ref: 935e5a7c91cd7b6ab9c17b6cefc232c00a91baba

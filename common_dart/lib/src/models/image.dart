@@ -3,7 +3,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'image.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(explicitToJson: true)
 class Image {
   final int timestamp;
   final String? hash;

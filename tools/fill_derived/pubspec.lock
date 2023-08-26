@@ -47,6 +47,14 @@ packages:
       relative: true
     source: path
     version: "0.0.0"
+  crypto:
+    dependency: transitive
+    description:
+      name: crypto
+      sha256: ff625774173754681d66daaf4a448684fb04b78f902da9cb3d308c19cc5e8bab
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.3"
   dart_openai:
     dependency: transitive
     description:
@@ -80,12 +88,13 @@ packages:
     source: hosted
     version: "1.0.2"
   firestore_api_parser:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
-      name: firestore_api_parser
-      sha256: "34e5beaa58aa499d09c074a17e38c09cf965257746e54c58b0545b4015de00ae"
-      url: "https://pub.dev"
-    source: hosted
+      path: "."
+      ref: "935e5a7c91cd7b6ab9c17b6cefc232c00a91baba"
+      resolved-ref: "935e5a7c91cd7b6ab9c17b6cefc232c00a91baba"
+      url: "https://github.com/alexeyinkin/firestore_api_parser.git"
+    source: git
     version: "1.1.1"
   http:
     dependency: transitive

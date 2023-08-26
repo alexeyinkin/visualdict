@@ -199,5 +199,50 @@
   },
   "transcription": {
     "stringValue": "pɛst"
+  },
+  "pronunciation": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": 1693046966
+        },
+        "hash": {
+          "stringValue": "af78c5fa5f"
+        }
+      }
+    }
+  },
+  "image": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": 1693047060
+        },
+        "hash": {
+          "stringValue": "b4d6bb0f4f"
+        },
+        "prompt": {
+          "stringValue": "The pests damaged the cornfields and crops."
+        }
+      }
+    }
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "pest"
+        },
+        {
+          "stringValue": "pes"
+        },
+        {
+          "stringValue": "pe"
+        },
+        {
+          "stringValue": "p"
+        }
+      ]
+    }
   }
 }

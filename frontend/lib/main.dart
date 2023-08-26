@@ -1,4 +1,5 @@
 import 'package:app_state/app_state.dart';
+import 'package:common_dart/common_dart.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:easy_localization_loader/easy_localization_loader.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -56,11 +57,15 @@ class MyAppLocalizer extends StatelessWidget {
   Widget build(BuildContext context) {
     const en = Locale('en');
     const ru = Locale('ru');
+    const locales = {
+      'en': en,
+      'ru': ru,
+    };
 
     return EasyLocalization(
       supportedLocales: const [en, ru],
       path: 'assets/translations',
-      startLocale: ru,
+      startLocale: locales[lang],
       assetLoader: const YamlAssetLoader(),
       fallbackLocale: en,
       child: MyApp(),

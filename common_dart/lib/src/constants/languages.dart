@@ -3,4 +3,4 @@ enum LanguagesEnum {
   en,
 }
 
-const lang = 'ru';
+const lang = 'en';

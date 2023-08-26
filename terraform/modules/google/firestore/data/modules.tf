@@ -1,4 +1,5 @@
 module "WordPublic" {
   source  = "./WordPublic"
   PROJECT = var.PROJECT
+  FIRESTORE_COLLECTION_WORD_PUBLIC = var.FIRESTORE_COLLECTION_WORD_PUBLIC
 }

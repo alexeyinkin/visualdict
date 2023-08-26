@@ -37,7 +37,17 @@
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "He grew up in an **affluent** neighborhood in New York City."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -84,7 +94,17 @@
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The **affluent** joined the main river at the estuary."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -116,7 +136,17 @@
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The **affluent** purchased a new luxury yacht every year."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }

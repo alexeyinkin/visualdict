@@ -88,12 +88,13 @@ packages:
     source: hosted
     version: "1.0.2"
   firestore_api_parser:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
-      name: firestore_api_parser
-      sha256: "34e5beaa58aa499d09c074a17e38c09cf965257746e54c58b0545b4015de00ae"
-      url: "https://pub.dev"
-    source: hosted
+      path: "."
+      ref: "935e5a7c91cd7b6ab9c17b6cefc232c00a91baba"
+      resolved-ref: "935e5a7c91cd7b6ab9c17b6cefc232c00a91baba"
+      url: "https://github.com/alexeyinkin/firestore_api_parser.git"
+    source: git
     version: "1.1.1"
   http:
     dependency: transitive

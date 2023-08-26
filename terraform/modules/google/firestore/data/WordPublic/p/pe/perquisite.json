@@ -1,19 +1,4 @@
 {
-  "image": {
-    "mapValue": {
-      "fields": {
-        "timestamp": {
-          "integerValue": 1693039733
-        },
-        "hash": {
-          "stringValue": "eb036f4616"
-        },
-        "prompt": {
-          "stringValue": "a lone musician playing a plaintive melody on a weathered violin"
-        }
-      }
-    }
-  },
   "ngrams": {
     "arrayValue": {
       "values": [
@@ -21,37 +6,34 @@
           "stringValue": "p"
         },
         {
-          "stringValue": "pl"
+          "stringValue": "pe"
         },
         {
-          "stringValue": "pla"
+          "stringValue": "per"
         },
         {
-          "stringValue": "plai"
+          "stringValue": "perq"
         },
         {
-          "stringValue": "plain"
+          "stringValue": "perqu"
         },
         {
-          "stringValue": "plaint"
+          "stringValue": "perqui"
         },
         {
-          "stringValue": "plainti"
+          "stringValue": "perquis"
         },
         {
-          "stringValue": "plaintiv"
+          "stringValue": "perquisi"
         },
         {
-          "stringValue": "plaintive"
+          "stringValue": "perquisit"
+        },
+        {
+          "stringValue": "perquisite"
         }
       ]
     }
-  },
-  "ofTheDay": {
-    "stringValue": "2023-08-05"
-  },
-  "pronunciationUrl": {
-    "stringValue": "https://static.visualdict.com/words/plaintive/plaintive.mp3"
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -60,7 +42,7 @@
           "mapValue": {
             "fields": {
               "partOfSpeech": {
-                "stringValue": "adjective"
+                "stringValue": "noun"
               },
               "senses": {
                 "arrayValue": {
@@ -69,7 +51,7 @@
                       "mapValue": {
                         "fields": {
                           "definition": {
-                            "stringValue": "Expressing sadness or sorrow in a mournful manner."
+                            "stringValue": "An extra benefit, privilege, or advantage received in addition to regular compensation or salary."
                           },
                           "definitionTranslations": {
                             "mapValue": {
@@ -81,7 +63,7 @@
                                         "booleanValue": false
                                       },
                                       "value": {
-                                        "stringValue": "Грустно, печально, в скорбной манере."
+                                        "stringValue": "Пособие, привилегия или преимущество, получаемое в дополнение к зарплате."
                                       }
                                     }
                                   }
@@ -96,7 +78,7 @@
                                   "mapValue": {
                                     "fields": {
                                       "text": {
-                                        "stringValue": "A musician playing a **plaintive** melody."
+                                        "stringValue": "Company car as a **perquisite** for senior managers."
                                       }
                                     }
                                   }
@@ -117,6 +99,33 @@
     }
   },
   "transcription": {
-    "stringValue": "ˈpleɪntɪv"
+    "stringValue": "pərˈkwɪzɪt"
+  },
+  "image": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": 1693051985
+        },
+        "hash": {
+          "stringValue": "a062010a23"
+        },
+        "prompt": {
+          "stringValue": "Convey a corporate setting: executives, attired in suits, stand before an array of gleaming company cars. Emphasize the cars' allure and the managers' contentment, visualizing the perquisite that underscores their elevated status within the organization."
+        }
+      }
+    }
+  },
+  "pronunciation": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": 1693052244
+        },
+        "hash": {
+          "stringValue": "41ed41a538"
+        }
+      }
+    }
   }
 }

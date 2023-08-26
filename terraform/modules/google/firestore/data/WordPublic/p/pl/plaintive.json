@@ -1,4 +1,19 @@
 {
+  "image": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": 1693039733
+        },
+        "hash": {
+          "stringValue": "eb036f4616"
+        },
+        "prompt": {
+          "stringValue": "a lone musician playing a plaintive melody on a weathered violin"
+        }
+      }
+    }
+  },
   "ngrams": {
     "arrayValue": {
       "values": [
@@ -6,37 +21,34 @@
           "stringValue": "p"
         },
         {
-          "stringValue": "pe"
+          "stringValue": "pl"
         },
         {
-          "stringValue": "per"
+          "stringValue": "pla"
         },
         {
-          "stringValue": "perq"
+          "stringValue": "plai"
         },
         {
-          "stringValue": "perqu"
+          "stringValue": "plain"
         },
         {
-          "stringValue": "perqui"
+          "stringValue": "plaint"
         },
         {
-          "stringValue": "perquis"
+          "stringValue": "plainti"
         },
         {
-          "stringValue": "perquisi"
+          "stringValue": "plaintiv"
         },
         {
-          "stringValue": "perquisit"
-        },
-        {
-          "stringValue": "perquisite"
+          "stringValue": "plaintive"
         }
       ]
     }
   },
-  "pronunciationUrl": {
-    "stringValue": "https://static.visualdict.com/words/perquisite/perquisite.mp3"
+  "ofTheDay": {
+    "stringValue": "2023-08-05"
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -45,7 +57,7 @@
           "mapValue": {
             "fields": {
               "partOfSpeech": {
-                "stringValue": "noun"
+                "stringValue": "adjective"
               },
               "senses": {
                 "arrayValue": {
@@ -54,7 +66,7 @@
                       "mapValue": {
                         "fields": {
                           "definition": {
-                            "stringValue": "An extra benefit, privilege, or advantage received in addition to regular compensation or salary."
+                            "stringValue": "Expressing sadness or sorrow in a mournful manner."
                           },
                           "definitionTranslations": {
                             "mapValue": {
@@ -66,7 +78,7 @@
                                         "booleanValue": false
                                       },
                                       "value": {
-                                        "stringValue": "Пособие, привилегия или преимущество, получаемое в дополнение к зарплате."
+                                        "stringValue": "Грустно, печально, в скорбной манере."
                                       }
                                     }
                                   }
@@ -81,7 +93,7 @@
                                   "mapValue": {
                                     "fields": {
                                       "text": {
-                                        "stringValue": "Company car as a **perquisite** for senior managers."
+                                        "stringValue": "A musician playing a **plaintive** melody."
                                       }
                                     }
                                   }
@@ -102,6 +114,18 @@
     }
   },
   "transcription": {
-    "stringValue": "pərˈkwɪzɪt"
+    "stringValue": "ˈpleɪntɪv"
+  },
+  "pronunciation": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": 1693052285
+        },
+        "hash": {
+          "stringValue": "05c1a2dd7e"
+        }
+      }
+    }
   }
 }

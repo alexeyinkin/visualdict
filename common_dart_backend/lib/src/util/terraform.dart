@@ -22,7 +22,7 @@ void writeWordPublicMap(
 }) {
   final file = getWordPublicJsonFile(word, prefix: prefix);
   final content = jsonEncodeFirestoreFormatted(fields);
-  file.writeAsStringSync(content);
+  file.writeAsStringSync(content + '\n');
 }
 
 File getWordPublicJsonFile(String word, {String prefix = '.'}) {

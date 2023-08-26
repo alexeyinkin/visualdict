@@ -1,0 +1,194 @@
+{
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "adjective"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "definition": {
+                            "stringValue": "Having a lot of money."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": false
+                                      },
+                                      "value": {
+                                        "stringValue": "Имеющий большое количество денег."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": []
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "noun"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "definition": {
+                            "stringValue": "A smaller river that feeds into a bigger one."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": false
+                                      },
+                                      "value": {
+                                        "stringValue": "Меньшая река, которая впадает в большую."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": []
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "definition": {
+                            "stringValue": "A rich person."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": false
+                                      },
+                                      "value": {
+                                        "stringValue": "Богатый человек."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": []
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "affluent"
+        },
+        {
+          "stringValue": "affluen"
+        },
+        {
+          "stringValue": "afflue"
+        },
+        {
+          "stringValue": "afflu"
+        },
+        {
+          "stringValue": "affl"
+        },
+        {
+          "stringValue": "aff"
+        },
+        {
+          "stringValue": "af"
+        },
+        {
+          "stringValue": "a"
+        }
+      ]
+    }
+  },
+  "transcription": {
+    "stringValue": "ˈæfluənt"
+  },
+  "image": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": 1693053174
+        },
+        "hash": {
+          "stringValue": "5ec75348ce"
+        },
+        "prompt": {
+          "stringValue": "affluent"
+        }
+      }
+    }
+  },
+  "pronunciation": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": 1693053188
+        },
+        "hash": {
+          "stringValue": "0738d67ead"
+        }
+      }
+    }
+  }
+}

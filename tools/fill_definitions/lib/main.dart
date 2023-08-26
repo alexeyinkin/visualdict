@@ -107,11 +107,12 @@ Answer with only this list and nothing more.''',
       simplifyRequestMessage,
     ],
   );
+  final result = simplifyResponse.choices.first.message.content.trim();
   print('Simplified:');
-  print(simplifyResponse.choices.first.message.content);
+  print(result);
   print('');
 
-  return simplifyResponse.choices.first.message.content;
+  return result;
 }
 
 PartOfSpeechEnum parsePos(String pos) {

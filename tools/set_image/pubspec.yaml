@@ -1,0 +1,18 @@
+name: set_image
+description: 'Processes the image from /raw/words into the /static dir and sets its data to Terraform JSON'
+publish_to: none
+
+environment:
+  sdk: ^3.1.0
+
+dependencies:
+  clock: ^1.1.1
+  common_dart: { path: ../../common_dart }
+  common_dart_backend: { path: ../../common_dart_backend }
+  dump: ^0.1.6
+  path: ^1.8.3
+  yaml: ^3.1.2
+
+dependency_overrides:
+  firestore_api_parser:
+    path: ../../../dart/firestore_api_parser

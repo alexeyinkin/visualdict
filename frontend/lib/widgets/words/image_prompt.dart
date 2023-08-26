@@ -1,8 +1,7 @@
+import 'package:common_dart/common_dart.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/widgets.dart' hide Image;
 import 'package:flutter_markdown/flutter_markdown.dart';
-
-import '../../models/image.dart';
 
 class ImagePromptWidget extends StatelessWidget {
   final Image image;

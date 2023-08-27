@@ -14,6 +14,7 @@ class ImagePromptWidget extends StatelessWidget {
       data: 'ImagePromptWidget.midjourneyMd'.tr(
         namedArgs: {'prompt': image.prompt ?? ''},
       ),
+      physics: const NeverScrollableScrollPhysics(),
       selectable: true,
       shrinkWrap: true,
     );

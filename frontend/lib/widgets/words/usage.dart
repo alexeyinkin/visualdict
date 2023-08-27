@@ -17,8 +17,9 @@ class UsageWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Markdown(
       data: '*${usage.text}*',
-      shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
       selectable: true,
+      shrinkWrap: true,
     );
     // return RichText(
     //   text: TextSpan(

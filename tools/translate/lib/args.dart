@@ -17,14 +17,15 @@ class WordTranslateArgs {
     final parser = ArgParser();
     parser.addFlag('force');
     parser.addFlag('mock');
+    parser.addOption('lang', mandatory: true);
     final result = parser.parse(args);
 
     return WordTranslateArgs(
       force: result['force'],
       mock: result['mock'],
+      lang: result['lang'],
       //
       word: result.rest[0],
-      lang: result.rest[1],
     );
   }
 }

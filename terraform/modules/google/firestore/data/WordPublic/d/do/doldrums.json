@@ -1,0 +1,170 @@
+{
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "noun"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "definition": {
+                            "stringValue": "A state or period of stagnation or depression."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": false
+                                      },
+                                      "value": {
+                                        "stringValue": "Состояние или период застоя или депрессии."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "He's been in the **doldrums** ever since his girlfriend left him."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "definition": {
+                            "stringValue": "A section of the ocean near the equator known for its unpredictable weather and lack of wind."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": false
+                                      },
+                                      "value": {
+                                        "stringValue": "Участок океана возле экватора, известный своей непредсказуемой погодой и отсутствием ветра."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The ship sailed through the **doldrums**, struggling against stagnant conditions."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "transcription": {
+    "stringValue": "ˈdəʊldrəmz"
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "doldrums"
+        },
+        {
+          "stringValue": "doldrum"
+        },
+        {
+          "stringValue": "doldru"
+        },
+        {
+          "stringValue": "doldr"
+        },
+        {
+          "stringValue": "dold"
+        },
+        {
+          "stringValue": "dol"
+        },
+        {
+          "stringValue": "do"
+        },
+        {
+          "stringValue": "d"
+        }
+      ]
+    }
+  },
+  "ofTheDay": {
+    "stringValue": "2023-08-28"
+  },
+  "image": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": 1693114636
+        },
+        "hash": {
+          "stringValue": "58f9eb35dc"
+        },
+        "prompt": {
+          "stringValue": "mindless guy on sofa in dirty t-shirt, in dark room, watches TV, drinks from a can"
+        }
+      }
+    }
+  },
+  "pronunciation": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": 1693114639
+        },
+        "hash": {
+          "stringValue": "8c3ce688e5"
+        }
+      }
+    }
+  }
+}

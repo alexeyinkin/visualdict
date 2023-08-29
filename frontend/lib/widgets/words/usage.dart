@@ -21,12 +21,5 @@ class UsageWidget extends StatelessWidget {
       selectable: true,
       shrinkWrap: true,
     );
-    // return RichText(
-    //   text: TextSpan(
-    //     text: usage.text,
-    //     style: TextStyle(fontStyle: FontStyle.italic),
-    //   ),
-    // );
-    return Text(usage.text);
   }
 }

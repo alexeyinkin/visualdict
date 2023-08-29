@@ -34,6 +34,7 @@ class PartOfSpeechSensesWidget extends StatelessWidget {
               );
             },
             itemCount: partOfSpeechSenses.senses.length,
+            physics: const NeverScrollableScrollPhysics(),
             shrinkWrap: true,
           ),
         ),

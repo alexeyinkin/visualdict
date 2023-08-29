@@ -64,6 +64,7 @@ class _SearchFormState extends State<SearchForm> {
                     );
                   },
                   itemCount: options.length,
+                  physics: const NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
                 ),
               ),

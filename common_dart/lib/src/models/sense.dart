@@ -7,6 +7,7 @@ part 'sense.g.dart';
 
 @JsonSerializable(explicitToJson: true)
 class Sense {
+  final String? complexDefinition;
   final String definition;
   final Map<String, Translation> definitionTranslations;
   final List<Usage> usages;
@@ -15,6 +16,7 @@ class Sense {
     required this.definition,
     required this.definitionTranslations,
     required this.usages,
+    this.complexDefinition,
   });
 
   factory Sense.fromJson(Map<String, dynamic> json) => _$SenseFromJson(json);

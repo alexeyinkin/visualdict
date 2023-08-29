@@ -61,6 +61,7 @@ class WordGridWidget extends StatelessWidget {
 
         return WordGridCard(state.items[i]);
       },
+      physics: const NeverScrollableScrollPhysics(),
       shrinkWrap: true,
     );
   }

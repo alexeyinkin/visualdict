@@ -5,6 +5,7 @@ enum PartOfSpeechEnum {
   conjunction,
   interjection,
   noun,
+  particle,
   preposition,
   pronoun,
   verb,

@@ -4,6 +4,7 @@ import 'package:common_dart/common_dart.dart';
 
 const _rawWordsRoot = '/raw/words';
 const _processedWordsRoot = '/static/w';
+const _exportWordsRoot = '/export';
 
 Directory getRawWordDir(String word, {String prefix = '.'}) {
   final nesting = alphabeticNesting(word);
@@ -14,5 +15,10 @@ Directory getRawWordDir(String word, {String prefix = '.'}) {
 Directory getProcessedWordDir(String word, {String prefix = '.'}) {
   final nesting = alphabeticNesting(word);
   final path= '$prefix$_processedWordsRoot/$nesting/$word';
+  return Directory(path);
+}
+
+Directory getExportWordDir(String word, {String prefix = '.'}) {
+  final path= '$prefix$_exportWordsRoot/$word';
   return Directory(path);
 }

@@ -182,8 +182,8 @@ Future<void> _exportReelBackground({
       'assets/reel-overlay.png', '+swap',
 
       // Position the definitions.
-      '-gravity', 'center',
-      '-geometry', '+0+660',
+      '-gravity', 'north',
+      '-geometry', '+0+1412',
       '-composite',
 
       // Put the word.

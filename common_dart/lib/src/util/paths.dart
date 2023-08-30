@@ -9,3 +9,7 @@ String alphabeticNesting(String word) {
 
   return parts.join('/');
 }
+
+String wordToFileName(String word) {
+  return word.replaceAll(' ', '_');
+}

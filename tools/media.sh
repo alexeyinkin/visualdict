@@ -6,6 +6,6 @@ cd set_image
 dart lib/main.dart $word --public
 cd ..
 
-cd set_pronunciation
-dart lib/main.dart $word
-cd ..
+#cd set_pronunciation
+#dart lib/main.dart $word
+#cd ..

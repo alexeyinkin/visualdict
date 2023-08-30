@@ -8,6 +8,10 @@ import 'args.dart';
 
 const _toRoot = '../..';
 const _maxDefinitionsLength = 200;
+const _jpegQuality = 90;
+
+// Downloaded from https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed
+const _font = 'assets/fonts/FiraSansExtraCondensed-Medium.ttf';
 
 Future<void> main(List<String> rawArgs) async {
   initOpenAiKey(_toRoot);
@@ -17,13 +21,39 @@ Future<void> main(List<String> rawArgs) async {
 
   final image = Image.fromJson(map['image']);
   final partOfSpeechSenses = (map['partOfSpeechSenses'] as Iterable)
-          .map((map) => PartOfSpeechSenses.fromJson(map))
-          .toList()
-          .cast<PartOfSpeechSenses>();
+      .map((map) => PartOfSpeechSenses.fromJson(map))
+      .toList()
+      .cast<PartOfSpeechSenses>();
   final transcription = map['transcription'];
   final lang = args.lang;
   final word = args.word;
 
+  await _exportTexts(
+    image: image,
+    lang: lang,
+    partOfSpeechSenses: partOfSpeechSenses,
+    transcription: transcription,
+    word: word,
+  );
+
+  await _exportPostImage(
+    word: word,
+  );
+
+  await _exportReelBackground(
+    lang: lang,
+    sense: partOfSpeechSenses.first.senses.first,
+    word: word,
+  );
+}
+
+Future<void> _exportTexts({
+  required Image image,
+  required String lang,
+  required List<PartOfSpeechSenses> partOfSpeechSenses,
+  required String transcription,
+  required String word,
+}) async {
   final pos1 = partOfSpeechSenses.first;
   final pos1sense1 = pos1.senses.first;
   final pos1sense2 = pos1.senses.elementAtOrNull(1);
@@ -89,4 +119,84 @@ $instagramText
 ''';
   File(exportWordDir.path + '/$word-tg-$lang.txt')
       .writeAsStringSync(telegramText + '\n');
+}
+
+Future<void> _exportPostImage({
+  required String word,
+}) async {
+  final srcDir = getRawWordDir(word, prefix: _toRoot);
+  final srcFile = File('${srcDir.path}/${word}.png');
+  final exportWordDir = getExportWordDir(word, prefix: _toRoot);
+
+  final result = await Process.run(
+    'convert',
+    [
+      // Overlay the image and the grey bottom.
+      srcFile.path,
+      'assets/post-overlay.png',
+      '-composite',
+
+      // Global settings for all layers (if we add more than one).
+      '-font', 'assets/fonts/FiraSansExtraCondensed-Medium.ttf',
+      '-fill', 'white',
+
+      // Put the word.
+      '-pointsize', '98',
+      '-gravity', 'center',
+      '-annotate', '+0+441', word,
+
+      // Export.
+      '-quality', '$_jpegQuality',
+      '${exportWordDir.path}/$word.jpeg',
+    ],
+  );
+
+  if (result.exitCode != 0) {
+    throw Exception(result);
+  }
+}
+
+Future<void> _exportReelBackground({
+  required String lang,
+  required Sense sense,
+  required String word,
+}) async {
+  final exportWordDir = getExportWordDir(word, prefix: _toRoot);
+
+  final result = await Process.run(
+    'convert',
+    [
+      // Global settings for all layers.
+      '-font', _font,
+      '-fill', 'white',
+
+      // Definitions first, before any background.
+      // This is to allow "caption" to wrap lines in the given size.
+      '-background', 'none',
+      '-pointsize', '50',
+      '-size', '1000x350',
+      '-gravity', 'center',
+      'caption:' + (sense.definitionTranslations[lang]?.value ?? 'NULL'),
+
+      // Put the overlay in background ("swap").
+      'assets/reel-overlay.png', '+swap',
+
+      // Position the definitions.
+      '-gravity', 'center',
+      '-geometry', '+0+660',
+      '-composite',
+
+      // Put the word.
+      '-pointsize', '98',
+      '-gravity', 'center',
+      '-annotate', '+0+520', word,
+
+      // Export.
+      '${exportWordDir.path}/$word-bottom-$lang.png',
+    ],
+  );
+
+  if (result.exitCode != 0) {
+    throw Exception(result);
+  }
 }

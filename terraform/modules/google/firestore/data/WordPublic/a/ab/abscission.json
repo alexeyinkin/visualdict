@@ -1,0 +1,212 @@
+{
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "noun"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "The natural detachment of parts of a plant, typically dead leaves and ripe fruit."
+                          },
+                          "definition": {
+                            "stringValue": "The natural falling off of parts of a plant."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": false
+                                      },
+                                      "value": {
+                                        "stringValue": "Естественное отделение частей растения."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The **abscission** of leaves occurs annually in deciduous trees."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "The act or process of cutting off, especially in surgery."
+                          },
+                          "definition": {
+                            "stringValue": "The act of cutting something off."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": false
+                                      },
+                                      "value": {
+                                        "stringValue": "Акт отсечения чего-либо."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The surgeon's careful **abscission** removed the malignant tumor completely."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "The omission of a sound or syllable in spoken language."
+                          },
+                          "definition": {
+                            "stringValue": "Skipping a sound or syllable when speaking."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": false
+                                      },
+                                      "value": {
+                                        "stringValue": "Пропуск звука или слога при разговоре."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "His **abscission** of several letters created a unique accent."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "transcription": {
+    "stringValue": "æbˈsɪʒən"
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "abscission"
+        },
+        {
+          "stringValue": "abscissio"
+        },
+        {
+          "stringValue": "abscissi"
+        },
+        {
+          "stringValue": "absciss"
+        },
+        {
+          "stringValue": "abscis"
+        },
+        {
+          "stringValue": "absci"
+        },
+        {
+          "stringValue": "absc"
+        },
+        {
+          "stringValue": "abs"
+        },
+        {
+          "stringValue": "ab"
+        },
+        {
+          "stringValue": "a"
+        }
+      ]
+    }
+  },
+  "image": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": "1693563728"
+        },
+        "hash": {
+          "stringValue": "fe1e6ba88d"
+        },
+        "prompt": {
+          "stringValue": "yellow leafs falling off a tree in the wind"
+        }
+      }
+    }
+  }
+}

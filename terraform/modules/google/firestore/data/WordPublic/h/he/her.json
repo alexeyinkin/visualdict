@@ -1,0 +1,104 @@
+{
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "pronoun"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Used as the object of a verb or preposition to refer to a female previously mentioned or easily identified."
+                          },
+                          "definition": {
+                            "stringValue": "Refers to a previously mentioned or easily identified female."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {}
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": []
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Used in titles and forms of address."
+                          },
+                          "definition": {
+                            "stringValue": "Used in titles or addresses for females."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {}
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": []
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "adjective"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Belonging to or associated with a female person or animal previously mentioned or easily identified."
+                          },
+                          "definition": {
+                            "stringValue": "Belongs to a previously mentioned or easily identified female."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {}
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": []
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

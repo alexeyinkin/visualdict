@@ -1,0 +1,173 @@
+{
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "adjective"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Worn out or ruined because of age or neglect. "
+                          },
+                          "definition": {
+                            "stringValue": "Worn out because of age or neglect. "
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": false
+                                      },
+                                      "value": {
+                                        "stringValue": "Изношенный из-за старости или небрежности."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "His **decrepit** car barely started every morning."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Weak and in bad health, frail typically due to old age. "
+                          },
+                          "definition": {
+                            "stringValue": "Weak and unhealthy, usually due to age. "
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": false
+                                      },
+                                      "value": {
+                                        "stringValue": "Слабый и нездоровый, обычно из-за старости."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The **decrepit** old man struggled to climb the stairs."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "transcription": {
+    "stringValue": "dɪˈkrɛpɪt"
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "decrepit"
+        },
+        {
+          "stringValue": "decrepi"
+        },
+        {
+          "stringValue": "decrep"
+        },
+        {
+          "stringValue": "decre"
+        },
+        {
+          "stringValue": "decr"
+        },
+        {
+          "stringValue": "dec"
+        },
+        {
+          "stringValue": "de"
+        },
+        {
+          "stringValue": "d"
+        }
+      ]
+    }
+  },
+  "image": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": "1693378865"
+        },
+        "hash": {
+          "stringValue": "80fa8a8148"
+        },
+        "prompt": {
+          "stringValue": "worn-out car on clean road, open front doors, two men looking at it"
+        }
+      }
+    }
+  },
+  "pronunciation": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": "1693378870"
+        },
+        "hash": {
+          "stringValue": "4a835c6cde"
+        }
+      }
+    }
+  }
+}

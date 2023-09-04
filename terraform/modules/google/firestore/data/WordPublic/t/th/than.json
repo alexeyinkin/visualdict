@@ -1,0 +1,104 @@
+{
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "conjunction"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Used in comparisons to suggest that something differs in some respect."
+                          },
+                          "definition": {
+                            "stringValue": "Used to show differences in comparisons."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {}
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": []
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "preposition"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Used in expressions indicating one thing following another."
+                          },
+                          "definition": {
+                            "stringValue": "Indicates one thing following another."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {}
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": []
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Used to introduce the second element in a comparison."
+                          },
+                          "definition": {
+                            "stringValue": "Introduces the second element in a comparison."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {}
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": []
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

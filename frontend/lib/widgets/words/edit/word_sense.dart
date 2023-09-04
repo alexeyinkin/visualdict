@@ -2,9 +2,15 @@ import 'package:common_dart/common_dart.dart';
 import 'package:flutter/material.dart';
 import 'package:model_editors/model_editors.dart';
 
+import '../../../controllers/commentable.dart';
+import '../../../controllers/is_visible.dart';
 import '../../../theme/my_theme_extension.dart';
 import '../../../theme/theme.dart';
-import '../../editor_frame.dart';
+import '../../buttons/comment.dart';
+import '../../buttons/is_visible.dart';
+import '../../layout/editor_frame.dart';
+import '../../layout/is_visible_frame.dart';
+import 'comment_field.dart';
 import 'usage.dart';
 
 class WordSenseEditWidget extends StatelessWidget {
@@ -20,53 +26,53 @@ class WordSenseEditWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final ext = Theme.of(context).extension<MyThemeExtension>()!;
 
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        SizedBox(
-          width: 30,
-          child: Align(
-            alignment: Alignment.centerRight,
-            child: Text(
-              '${index + 1}',
-              style: ext.h2,
-            ),
-          ),
-        ),
-        const MySpacing(),
-        const MySpacing(),
-        Expanded(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
+    return AnimatedBuilder(
+      animation: controller,
+      builder: (context, _) {
+        return IsVisibleFrame(
+          isVisible: controller.isVisible,
+          child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const MySpacing(),
-              TextField(
-                controller: controller.complexDefinitionController,
-                decoration: const InputDecoration(
-                  labelText: "Unsimplified Definition",
-                ),
-                maxLines: null,
-              ),
-              const MySpacing(),
-              TextField(
-                controller: controller.definitionController,
-                decoration: const InputDecoration(
-                  labelText: "Definition",
-                ),
-                maxLines: null,
-              ),
-              const MySpacing(),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Text(
-                    "U:",
-                    style: TextStyle(color: MyColors.minorLabel),
+              SizedBox(
+                width: 30,
+                child: Align(
+                  alignment: Alignment.centerRight,
+                  child: Text(
+                    '${index + 1}',
+                    style: ext.h2,
                   ),
-                  const MySpacing(),
-                  Expanded(
-                    child: Column(
+                ),
+              ),
+              const MySpacing(),
+              const MySpacing(),
+              Expanded(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const MySpacing(),
+                    TextField(
+                      controller: controller.complexDefinitionController,
+                      decoration: const InputDecoration(
+                        labelText: "Unsimplified Definition",
+                      ),
+                      maxLines: null,
+                    ),
+                    const MySpacing(),
+                    TextField(
+                      controller: controller.definitionController,
+                      decoration: const InputDecoration(
+                        labelText: "Definition",
+                      ),
+                      maxLines: null,
+                    ),
+                    const MySpacing(),
+                    CommentField(
+                      controller: controller,
+                      padding: MyPaddingEnum.bottom,
+                    ),
+                    Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         ReorderableListViewEditor(
@@ -78,21 +84,36 @@ class WordSenseEditWidget extends StatelessWidget {
                         ),
                         ListAddButtonBuilder(
                           controller: controller.usagesController,
+                          enabledBuilder: (_) => IconButton(
+                            onPressed: () => controller.usagesController.add(
+                              null,
+                            ),
+                            icon: const Text('💬'),
+                          ),
                         ),
                       ],
                     ),
-                  ),
+                  ],
+                ),
+              ),
+              const MySpacing(),
+              Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  IsVisibleToggle(controller: controller),
+                  CommentToggle(controller: controller),
                 ],
               ),
             ],
           ),
-        ),
-      ],
+        );
+      },
     );
   }
 }
 
-class SenseEditingController extends ValueNotifier<Sense?> {
+class SenseEditingController extends ValueNotifier<Sense?>
+    with CommentableControllerMixin, IsVisibleControllerMixin {
   final complexDefinitionController = TextEditingController();
   final definitionController = TextEditingController();
   final usagesController = ListEditingController<Usage, UsageEditingController>(
@@ -100,33 +121,34 @@ class SenseEditingController extends ValueNotifier<Sense?> {
     maxLength: 10,
   );
 
-  SenseEditingController() : super(null);
+  SenseEditingController() : super(null) {
+    commentController.addListener(notifyListeners);
+  }
 
   @override
   Sense? get value {
-    final definition = definitionController.text;
+    final definition = definitionController.text.trim();
     if (definition.isEmpty) {
       return null;
     }
 
-    final oldValue = super.value;
-
     return Sense(
-      comment: oldValue?.comment ?? '', // TODO
-      complexDefinition: complexDefinitionController.text.isEmpty
-          ? null
-          : complexDefinitionController.text,
+      comment: commentController.text.trim(),
+      complexDefinition: complexDefinitionController.text.trim(),
       definition: definition,
-      definitionTranslations: {}, // TODO
-      isVisible: oldValue?.isVisible ?? true, // TODO
+      definitionTranslations: {},
+      // TODO
+      isVisible: isVisible,
       usages: usagesController.nonNullValues,
     );
   }
 
   @override
   set value(Sense? newValue) {
+    commentController.text = newValue?.comment ?? '';
     complexDefinitionController.text = newValue?.complexDefinition ?? '';
     definitionController.text = newValue?.definition ?? '';
+    isVisible = newValue?.isVisible ?? true;
     usagesController.value = newValue?.usages ?? [];
     super.value = newValue;
   }

@@ -10,7 +10,9 @@ class Sense {
   @JsonKey(defaultValue: '')
   final String comment;
 
-  final String? complexDefinition;
+  @JsonKey(defaultValue: '')
+  final String complexDefinition;
+
   final String definition;
   final Map<String, Translation> definitionTranslations;
 

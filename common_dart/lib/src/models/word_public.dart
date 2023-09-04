@@ -51,6 +51,7 @@ class WordPublic implements WithId<String> {
 
       switch (key) {
         case 'comment':
+        case 'complexDefinition':
           if (value == '') {
             continue;
           }

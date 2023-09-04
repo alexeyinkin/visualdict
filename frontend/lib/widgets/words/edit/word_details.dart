@@ -2,6 +2,8 @@ import 'package:common_dart/common_dart.dart';
 import 'package:flutter/widgets.dart';
 import 'package:model_editors/model_editors.dart';
 
+import '../../../controllers/commentable.dart';
+import '../../../controllers/is_visible.dart';
 import 'part_of_speech_senses.dart';
 import 'word_wide.dart';
 
@@ -16,7 +18,8 @@ class WordDetailsEditWidget extends StatelessWidget {
   }
 }
 
-class WordPublicEditingController extends ValueNotifier<WordPublic> {
+class WordPublicEditingController extends ValueNotifier<WordPublic>
+    with CommentableControllerMixin, IsVisibleControllerMixin {
   final partOfSpeechSensesController = ListEditingController<PartOfSpeechSenses,
       PartOfSpeechSensesEditingController>(
     minLength: 1,
@@ -24,12 +27,8 @@ class WordPublicEditingController extends ValueNotifier<WordPublic> {
     createItemController: PartOfSpeechSensesEditingController.new,
   );
 
-  WordPublicEditingController(super._value);
-
-  @override
-  set value(WordPublic newValue) {
-    partOfSpeechSensesController.value = newValue.partOfSpeechSenses;
-    super.value = newValue;
+  WordPublicEditingController(super._value) {
+    commentController.addListener(notifyListeners);
   }
 
   @override
@@ -37,13 +36,21 @@ class WordPublicEditingController extends ValueNotifier<WordPublic> {
     final oldValue = super.value;
 
     return WordPublic(
-      comment: oldValue.comment, // TODO
+      comment: commentController.text,
       id: oldValue.id,
       image: oldValue.image,
-      isVisible: oldValue.isVisible, // TODO
+      isVisible: isVisible,
       partOfSpeechSenses: partOfSpeechSensesController.nonNullValues,
       pronunciation: oldValue.pronunciation,
       transcription: oldValue.transcription,
     );
+  }
+
+  @override
+  set value(WordPublic newValue) {
+    commentController.text = newValue.comment;
+    isVisible = newValue.isVisible;
+    partOfSpeechSensesController.value = newValue.partOfSpeechSenses;
+    super.value = newValue;
   }
 }

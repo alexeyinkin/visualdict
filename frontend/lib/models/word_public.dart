@@ -12,7 +12,7 @@ class WordPublic implements WithId<String> {
   final Image? image;
   final List<PartOfSpeechSenses> partOfSpeechSenses;
   final Pronunciation? pronunciation;
-  final String transcription;
+  final String? transcription;
 
   const WordPublic({
     required this.id,

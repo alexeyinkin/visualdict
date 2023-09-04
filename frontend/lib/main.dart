@@ -2,12 +2,11 @@ import 'package:app_state/app_state.dart';
 import 'package:common_dart/common_dart.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:easy_localization_loader/easy_localization_loader.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:url_strategy/url_strategy.dart';
 
-import 'firebase_options.dart'; // Generated.
-import 'locator.dart';
+import 'init/data_source.dart';
+import 'init/locator.dart';
 import 'pages/about/page.dart';
 import 'pages/home/screen.dart';
 import 'pages/words/page.dart';
@@ -25,10 +24,8 @@ void main() async {
   setPathUrlStrategy();
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
 
+  await initializeDataSource();
   await initializeServiceLocator();
 
   pageStacks.addPageStack(

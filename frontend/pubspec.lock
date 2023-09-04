@@ -49,62 +49,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.11.0"
-  audioplayers:
-    dependency: "direct main"
-    description:
-      name: audioplayers
-      sha256: "8e94499b5c123df14cf17c16639de5ff3373e57e537f727e367487fbb7491363"
-      url: "https://pub.dev"
-    source: hosted
-    version: "5.1.0"
-  audioplayers_android:
-    dependency: transitive
-    description:
-      name: audioplayers_android
-      sha256: "1c12b60cc10a3b8617ca3f88b927e7e03768f470d9b4f747efd3d58a8a07ee1b"
-      url: "https://pub.dev"
-    source: hosted
-    version: "4.0.1"
-  audioplayers_darwin:
-    dependency: transitive
-    description:
-      name: audioplayers_darwin
-      sha256: "2fb6133ffcf28fb3f9d3e11f8a3ef190e5fedb2b7b95ea865b56a21d1163e670"
-      url: "https://pub.dev"
-    source: hosted
-    version: "5.0.1"
-  audioplayers_linux:
-    dependency: transitive
-    description:
-      name: audioplayers_linux
-      sha256: cca3f272c7186dd2e0025b8864e1413ac5e081d74b17e28b02ceb2df4c110235
-      url: "https://pub.dev"
-    source: hosted
-    version: "3.0.0"
-  audioplayers_platform_interface:
-    dependency: transitive
-    description:
-      name: audioplayers_platform_interface
-      sha256: "47eae55e99ced11589998cf27e4eaabf5b475a7bd8bea7516ee6c2536a2e1abf"
-      url: "https://pub.dev"
-    source: hosted
-    version: "6.0.0"
-  audioplayers_web:
-    dependency: transitive
-    description:
-      name: audioplayers_web
-      sha256: "9f155590c6ba9ba469df637f4729264e4234dc3941ece4690dad63ffac19b5af"
-      url: "https://pub.dev"
-    source: hosted
-    version: "4.0.0"
-  audioplayers_windows:
-    dependency: transitive
-    description:
-      name: audioplayers_windows
-      sha256: "8813b712ba919bb324bde5e3ba97edc81bface945953a54a3dea70b5608bcc70"
-      url: "https://pub.dev"
-    source: hosted
-    version: "3.0.0"
   boolean_selector:
     dependency: transitive
     description:
@@ -417,6 +361,15 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.6.0"
+  firestore_api_parser:
+    dependency: transitive
+    description:
+      path: "."
+      ref: df6a8aac1116d466e2e9762ea7778e9a6c8f3649
+      resolved-ref: df6a8aac1116d466e2e9762ea7778e9a6c8f3649
+      url: "https://github.com/alexeyinkin/firestore_api_parser.git"
+    source: git
+    version: "1.1.1"
   fixnum:
     dependency: transitive
     description:
@@ -645,29 +598,40 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.4"
+  model_editors:
+    dependency: "direct main"
+    description:
+      path: "../../dart/flutter-model-editors"
+      relative: true
+    source: path
+    version: "0.2.0"
   model_fetch:
     dependency: "direct main"
     description:
-      name: model_fetch
-      sha256: "36be3a92488637bc0dc6e9e6ebcc0aba7880933eaf51cf9262c9311b87434c16"
-      url: "https://pub.dev"
-    source: hosted
+      path: "../../dart/dart-model-fetch/model_fetch"
+      relative: true
+    source: path
     version: "0.5.5"
   model_fetch_firestore:
     dependency: "direct main"
     description:
-      name: model_fetch_firestore
-      sha256: e7775e1ed13b943d3356b3e925b8bca1353772432f84cab5c2e6c65db01d4811
-      url: "https://pub.dev"
-    source: hosted
+      path: "../../dart/dart-model-fetch/model_fetch_firestore"
+      relative: true
+    source: path
+    version: "0.5.5"
+  model_fetch_firestore_json_files:
+    dependency: "direct main"
+    description:
+      path: "../../dart/dart-model-fetch/model_fetch_firestore_json_files"
+      relative: true
+    source: path
     version: "0.5.5"
   model_fetch_flutter:
     dependency: "direct main"
     description:
-      name: model_fetch_flutter
-      sha256: efce1de36bcc5216c979536577d188cb29939193c7939688b126f350b94158b0
-      url: "https://pub.dev"
-    source: hosted
+      path: "../../dart/dart-model-fetch/model_fetch_flutter"
+      relative: true
+    source: path
     version: "0.5.5"
   model_interfaces:
     dependency: "direct main"

@@ -4,7 +4,7 @@ import '../../constants/sizes.dart';
 import '../../util/build_context.dart';
 import '../../widgets/my_scaffold.dart';
 import '../../widgets/words/recent_imaged_words.dart';
-import '../../widgets/words/word_of_the_day.dart';
+import '../../widgets/words/view/word_of_the_day.dart';
 import 'state.dart';
 
 class WordsScreen extends StatelessWidget {
@@ -38,10 +38,13 @@ class WideWordsWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
-      Expanded(child: WordOfTheDayWidget()),
-      SizedBox(width: 30),
-      Expanded(child: RecentImagedWordsWidget()),
-    ]);
+    return const Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Expanded(child: WordOfTheDayWidget()),
+        SizedBox(width: 30),
+        Expanded(child: RecentImagedWordsWidget()),
+      ],
+    );
   }
 }

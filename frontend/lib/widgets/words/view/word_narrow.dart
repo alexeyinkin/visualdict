@@ -1,15 +1,15 @@
 import 'package:flutter/widgets.dart';
 
-import '../../models/word_public.dart';
-import '../../theme/theme.dart';
+import '../../../models/word_public.dart';
+import '../../../theme/theme.dart';
+import '../word_image_or_not.dart';
 import 'image_prompt.dart';
-import 'word_image_or_not.dart';
 import 'word_text_content.dart';
 
-class WordNarrowWidget extends StatelessWidget {
+class WordNarrowViewWidget extends StatelessWidget {
   final WordPublic wordPublic;
 
-  const WordNarrowWidget(this.wordPublic);
+  const WordNarrowViewWidget(this.wordPublic);
 
   @override
   Widget build(BuildContext context) {
@@ -21,13 +21,13 @@ class WordNarrowWidget extends StatelessWidget {
           fontSize: WordImageFontSizes.large.size,
         ),
         const MySpacing(),
-        WordTextContentWidget(
+        WordTextContentViewWidget(
           wordPublic,
           wordVisible: false,
         ),
         if (wordPublic.image?.prompt != null) ...[
           const MySpacing(),
-          ImagePromptWidget(wordPublic.image!),
+          ImagePromptViewWidget(wordPublic.image!),
         ],
       ],
     );

@@ -1,16 +1,16 @@
 import 'package:common_dart/common_dart.dart';
 import 'package:flutter/widgets.dart';
 
-import '../../models/word_public.dart';
-import '../../theme/theme.dart';
-import 'part_of_speech.dart';
+import '../../../models/word_public.dart';
+import '../../../theme/theme.dart';
+import '../part_of_speech.dart';
 import 'word_sense.dart';
 
-class PartOfSpeechSensesWidget extends StatelessWidget {
+class PartOfSpeechSensesViewWidget extends StatelessWidget {
   final PartOfSpeechSenses partOfSpeechSenses;
   final WordPublic wordPublic;
 
-  const PartOfSpeechSensesWidget(
+  const PartOfSpeechSensesViewWidget(
     this.partOfSpeechSenses, {
     required this.wordPublic,
   });
@@ -27,7 +27,7 @@ class PartOfSpeechSensesWidget extends StatelessWidget {
           padding: const EdgeInsets.only(left: 20),
           child: ListView.builder(
             itemBuilder: (context, index) {
-              return WordSenseWidget(
+              return WordSenseViewWidget(
                 partOfSpeechSenses.senses[index],
                 index: index,
                 wordPublic: wordPublic,

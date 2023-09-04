@@ -173,6 +173,7 @@ PartOfSpeechEnum? parsePos(String pos) {
     case 'music notation':
     case 'musical note':
     case 'prefix':
+    case 'proper noun':
     case 'slang':
     case 'symbol':
       return null;

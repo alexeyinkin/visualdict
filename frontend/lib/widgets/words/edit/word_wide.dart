@@ -1,18 +1,20 @@
 import 'package:flutter/widgets.dart';
 
-import '../../models/word_public.dart';
-import '../../theme/theme.dart';
-import 'image_prompt.dart';
-import 'word_image_or_not.dart';
+import '../../../theme/theme.dart';
+import '../view/image_prompt.dart';
+import '../word_image_or_not.dart';
+import 'word_details.dart';
 import 'word_text_content.dart';
 
-class WordWideWidget extends StatelessWidget {
-  final WordPublic wordPublic;
+class WordWideEditWidget extends StatelessWidget {
+  final WordPublicEditingController controller;
 
-  const WordWideWidget(this.wordPublic);
+  const WordWideEditWidget(this.controller);
 
   @override
   Widget build(BuildContext context) {
+    final wordPublic = controller.value;
+
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -27,15 +29,15 @@ class WordWideWidget extends StatelessWidget {
               ),
               if (wordPublic.image?.prompt != null) ...[
                 const MySpacing(),
-                ImagePromptWidget(wordPublic.image!),
+                ImagePromptViewWidget(wordPublic.image!),
               ],
             ],
           ),
         ),
         const MySpacing(),
         Expanded(
-          child: WordTextContentWidget(
-            wordPublic,
+          child: WordTextContentEditWidget(
+            controller,
             wordVisible: true,
           ),
         ),

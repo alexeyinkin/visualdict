@@ -5,11 +5,11 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get_it/get_it.dart';
 
-import '../../filters/word_public.dart';
-import '../../loader_factories/word_public.dart';
-import '../../theme/theme.dart';
-import '../layout/h2.dart';
-import '../loading/small_circular_progress_indicator.dart';
+import '../../../filters/word_public.dart';
+import '../../../loader_factories/word_public.dart';
+import '../../../theme/theme.dart';
+import '../../layout/h2.dart';
+import '../../loading/small_circular_progress_indicator.dart';
 import 'word_narrow.dart';
 
 class WordOfTheDayWidget extends StatelessWidget {
@@ -38,7 +38,7 @@ class WordOfTheDayWidget extends StatelessWidget {
             const MySpacing(),
             item == null
                 ? const SmallCircularProgressIndicator()
-                : WordNarrowWidget(item)
+                : WordNarrowViewWidget(item)
           ],
         );
       },

@@ -23,6 +23,7 @@ class MyThemeExtension extends ThemeExtension<MyThemeExtension> {
     required this.h2,
     required this.headerColor,
     required this.menuItem,
+    required this.nestingColor,
     required this.normal,
     required this.onHeaderColor,
     required this.tabStyle,
@@ -34,6 +35,7 @@ class MyThemeExtension extends ThemeExtension<MyThemeExtension> {
   final TextStyle h2;
   final Color headerColor;
   final TextStyle menuItem;
+  final Color nestingColor;
   final TextStyle normal;
   final Color onHeaderColor;
   final TextStyle tabStyle;
@@ -46,6 +48,7 @@ class MyThemeExtension extends ThemeExtension<MyThemeExtension> {
     TextStyle? h2,
     Color? headerColor,
     TextStyle? menuItem,
+    Color? nestingColor,
     TextStyle? normal,
     Color? onHeaderColor,
     TextStyle? tabStyle,
@@ -58,6 +61,7 @@ class MyThemeExtension extends ThemeExtension<MyThemeExtension> {
       h2: h2 ?? this.h2,
       headerColor: headerColor ?? this.headerColor,
       menuItem: menuItem ?? this.menuItem,
+      nestingColor: nestingColor ?? this.nestingColor,
       normal: normal ?? this.normal,
       onHeaderColor: onHeaderColor ?? this.onHeaderColor,
       tabStyle: tabStyle ?? this.tabStyle,
@@ -81,6 +85,8 @@ class MyThemeExtension extends ThemeExtension<MyThemeExtension> {
       h2: TextStyle.lerp(h2, other.h2, t) ?? h2,
       headerColor: Color.lerp(headerColor, other.headerColor, t) ?? headerColor,
       menuItem: TextStyle.lerp(menuItem, other.menuItem, t) ?? menuItem,
+      nestingColor:
+          Color.lerp(nestingColor, other.nestingColor, t) ?? nestingColor,
       normal: TextStyle.lerp(normal, other.normal, t) ?? normal,
       onHeaderColor:
           Color.lerp(onHeaderColor, other.onHeaderColor, t) ?? onHeaderColor,
@@ -118,6 +124,7 @@ class MyThemeExtension extends ThemeExtension<MyThemeExtension> {
         fontWeight: FontWeight.bold,
       ),
     ),
+    nestingColor: MyColors.nestingColor,
     normal: GoogleFonts.firaSansExtraCondensed(
       textStyle: const TextStyle(),
     ),

@@ -16,7 +16,7 @@ class Sense {
     required this.definition,
     required this.definitionTranslations,
     required this.usages,
-    this.complexDefinition,
+    this.complexDefinition, // TODO: Required.
   });
 
   factory Sense.fromJson(Map<String, dynamic> json) => _$SenseFromJson(json);

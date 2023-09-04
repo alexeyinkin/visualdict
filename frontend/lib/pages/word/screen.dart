@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:model_editors/model_editors.dart';
 import 'package:model_fetch/model_fetch.dart';
 
+import '../../models/repository_engine.dart';
 import '../../models/word_public.dart';
-import '../../util/build_context.dart';
 import '../../widgets/errors/loading_error.dart';
 import '../../widgets/loading/small_circular_progress_indicator.dart';
 import '../../widgets/my_scaffold.dart';
-import '../../widgets/words/word_narrow.dart';
-import '../../widgets/words/word_wide.dart';
+import '../../widgets/words/edit/word_details.dart';
+import '../../widgets/words/view/word_details.dart';
 import 'state.dart';
 
 class WordScreen extends StatelessWidget {
@@ -43,11 +44,20 @@ class WordScreen extends StatelessWidget {
 
       case LoadStatus.ok:
         final wordPublic = snapshot.data!.model!;
-        final isMobile = context.isMobileScreen();
 
-        return isMobile
-            ? WordNarrowWidget(wordPublic)
-            : WordWideWidget(wordPublic);
+        switch (RepositoryEngineEnum.current) {
+          case RepositoryEngineEnum.flutterFire:
+            return WordDetailsViewWidget(wordPublic);
+
+          case RepositoryEngineEnum.terraformJson:
+            return ModelViewOrEditWidget(
+              createController: () => WordPublicEditingController(wordPublic),
+              editBuilder: (_, __, c) => WordDetailsEditWidget(c),
+              model: wordPublic,
+              saveCallback: (w) async => print('Saving $w'),
+              viewBuilder: (_, w) => WordDetailsViewWidget(w),
+            );
+        }
     }
   }
 }

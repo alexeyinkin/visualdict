@@ -9,24 +9,24 @@ import '../services/toast_notifier.dart';
 final _blocsWithReloaders = <LazyLoadBloc>{};
 const _interval = Duration(seconds: 15);
 
-abstract class MyLoaderFactory<T extends WithId<String>,
+abstract class MyFirestoreLoaderFactory<T extends WithId<String>,
     F extends AbstractFilter> extends AbstractFirestoreLoaderFactory<T, F> {
   @override
-  LazyLoadBloc<T> frozenListBloc(F filter) {
-    final bloc = super.frozenListBloc(filter) as FirestoreFrozenLazyLoadBloc<T>;
-
-    if (!_blocsWithReloaders.contains(bloc)) {
-      bloc.states.listen((state) async {
-        if (state.items.isEmpty && !state.hasMore) {
-          await Future.delayed(_interval);
-          await bloc.clearAndLoadFirstPage();
-        }
-      });
-      _blocsWithReloaders.add(bloc);
-    }
-
-    return bloc;
-  }
+  // FirestoreFrozenLazyLoadBloc<T> createFrozenListBloc(F filter) {
+  //   final bloc = super.createFrozenListBloc(filter);
+  //
+  //   if (!_blocsWithReloaders.contains(bloc)) {
+  //     bloc.states.listen((state) async {
+  //       if (state.items.isEmpty && !state.hasMore) {
+  //         await Future.delayed(_interval);
+  //         await bloc.clearAndLoadFirstPage();
+  //       }
+  //     });
+  //     _blocsWithReloaders.add(bloc);
+  //   }
+  //
+  //   return bloc;
+  // }
 
   @override
   void onError(Object error, StackTrace trace) {

@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-import '../../models/word_public.dart';
-import '../../theme/my_theme_extension.dart';
+import '../../../models/word_public.dart';
+import '../../../theme/my_theme_extension.dart';
 import 'part_of_speech_senses.dart';
 import 'word_transcription.dart';
 
-class WordTextContentWidget extends StatelessWidget {
+class WordTextContentViewWidget extends StatelessWidget {
   final WordPublic wordPublic;
   final bool wordVisible;
 
-  const WordTextContentWidget(
+  const WordTextContentViewWidget(
     this.wordPublic, {
     required this.wordVisible,
   });
@@ -22,10 +22,10 @@ class WordTextContentWidget extends StatelessWidget {
       children: [
         if (wordVisible) Text(wordPublic.id, style: ext.h2),
         Align(
-          child: WordTranscriptionWidget(wordPublic),
+          child: WordTranscriptionViewWidget(wordPublic),
         ),
         for (final pos in wordPublic.partOfSpeechSenses)
-          PartOfSpeechSensesWidget(pos, wordPublic: wordPublic),
+          PartOfSpeechSensesViewWidget(pos, wordPublic: wordPublic),
       ],
     );
   }

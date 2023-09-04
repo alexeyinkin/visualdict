@@ -36,11 +36,10 @@ Future<void> main(List<String> rawArgs) async {
     word: word,
   );
 
-  await _exportPostImage(
-    word: word,
-  );
+  await _exportPostImage(word: word);
+  await _exportReelBackground(word: word);
 
-  await _exportReelBackground(
+  await _exportReelOverlay(
     lang: lang,
     sense: partOfSpeechSenses.first.senses.first,
     word: word,
@@ -125,8 +124,10 @@ Future<void> _exportPostImage({
   required String word,
 }) async {
   final srcDir = getRawWordDir(word, prefix: _toRoot);
-  final srcFile = File('${srcDir.path}/${word}.png');
   final exportWordDir = getExportWordDir(word, prefix: _toRoot);
+
+  final name = wordToFileName(word);
+  final srcFile = File('${srcDir.path}/${name}.png');
 
   final result = await Process.run(
     'convert',
@@ -147,7 +148,7 @@ Future<void> _exportPostImage({
 
       // Export.
       '-quality', '$_jpegQuality',
-      '${exportWordDir.path}/$word.jpeg',
+      '${exportWordDir.path}/$name.jpeg',
     ],
   );
 
@@ -157,11 +158,34 @@ Future<void> _exportPostImage({
 }
 
 Future<void> _exportReelBackground({
+  required String word,
+}) async {
+  final srcDir = getRawWordDir(word, prefix: _toRoot);
+  final exportWordDir = getExportWordDir(word, prefix: _toRoot);
+
+  final name = wordToFileName(word);
+  final srcFiles = [
+    File('${srcDir.path}/${name}-vertical.png'),
+    File('${srcDir.path}/${name}.png'),
+  ];
+
+  for (final srcFile in srcFiles) {
+    if (srcFile.existsSync()) {
+      srcFile.copy('${exportWordDir.path}/$name-vertical.png');
+      return;
+    }
+  }
+
+  throw Exception('None of the candidate files exists: $srcFiles');
+}
+
+Future<void> _exportReelOverlay({
   required String lang,
   required Sense sense,
   required String word,
 }) async {
   final exportWordDir = getExportWordDir(word, prefix: _toRoot);
+  final name = wordToFileName(word);
 
   final result = await Process.run(
     'convert',
@@ -192,7 +216,7 @@ Future<void> _exportReelBackground({
       '-annotate', '+0+520', word,
 
       // Export.
-      '${exportWordDir.path}/$word-bottom-$lang.png',
+      '${exportWordDir.path}/$name-bottom-$lang.png',
     ],
   );
 

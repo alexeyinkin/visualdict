@@ -2,13 +2,13 @@ import 'package:common_dart/common_dart.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 
-import '../../models/word_public.dart';
+import '../../../models/word_public.dart';
 
-class UsageWidget extends StatelessWidget {
+class UsageViewWidget extends StatelessWidget {
   final Usage usage;
   final WordPublic wordPublic;
 
-  const UsageWidget(
+  const UsageViewWidget(
     this.usage, {
     required this.wordPublic,
   });
@@ -16,7 +16,7 @@ class UsageWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Markdown(
-      data: '*${usage.text}*',
+      data: '*💬 ${usage.text}*',
       physics: const NeverScrollableScrollPhysics(),
       selectable: true,
       shrinkWrap: true,

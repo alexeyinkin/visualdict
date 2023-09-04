@@ -2,17 +2,17 @@ import 'package:common_dart/common_dart.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
-import '../../models/word_public.dart';
-import '../../theme/my_theme_extension.dart';
-import '../../theme/theme.dart';
+import '../../../models/word_public.dart';
+import '../../../theme/my_theme_extension.dart';
+import '../../../theme/theme.dart';
 import 'usage.dart';
 
-class WordSenseWidget extends StatelessWidget {
+class WordSenseViewWidget extends StatelessWidget {
   final int index;
   final Sense sense;
   final WordPublic wordPublic;
 
-  const WordSenseWidget(
+  const WordSenseViewWidget(
     this.sense, {
     required this.index,
     required this.wordPublic,
@@ -44,7 +44,7 @@ class WordSenseWidget extends StatelessWidget {
               _getDefinition(),
               const MySpacing(),
               for (final usage in sense.usages)
-                UsageWidget(
+                UsageViewWidget(
                   usage,
                   wordPublic: wordPublic,
                 ),

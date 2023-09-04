@@ -7,10 +7,18 @@ part 'part_of_speech_senses.g.dart';
 
 @JsonSerializable(explicitToJson: true)
 class PartOfSpeechSenses {
+  @JsonKey(defaultValue: '')
+  final String comment;
+
+  @JsonKey(defaultValue: true)
+  final bool isVisible;
+
   final PartOfSpeechEnum partOfSpeech;
   final List<Sense> senses;
 
   const PartOfSpeechSenses({
+    required this.comment,
+    required this.isVisible,
     required this.partOfSpeech,
     required this.senses,
   });
@@ -29,6 +37,8 @@ class PartOfSpeechSenses {
       final pos = one.partOfSpeech;
       final existing = result[pos] ??
           PartOfSpeechSenses(
+            comment: '',
+            isVisible: true,
             partOfSpeech: pos,
             senses: [],
           );

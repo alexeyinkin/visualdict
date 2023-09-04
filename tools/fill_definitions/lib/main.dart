@@ -50,12 +50,16 @@ Future<List<PartOfSpeechSenses>> getDefinitions(WordArgs args) async {
     if (pos != null) {
       result.add(
         PartOfSpeechSenses(
+          comment: '',
+          isVisible: true,
           partOfSpeech: pos,
           senses: [
             Sense(
+              comment: '',
               complexDefinition: complexDefinition,
               definition: definition,
               definitionTranslations: {},
+              isVisible: true,
               usages: [],
             ),
           ],

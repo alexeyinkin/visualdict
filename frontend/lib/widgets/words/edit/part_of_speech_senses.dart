@@ -70,6 +70,8 @@ class PartOfSpeechSensesEditingController
     }
 
     return PartOfSpeechSenses(
+      comment: oldValue.comment, // TODO
+      isVisible: oldValue.isVisible, // TODO
       partOfSpeech: oldValue.partOfSpeech,
       senses: sensesController.nonNullValues,
     );

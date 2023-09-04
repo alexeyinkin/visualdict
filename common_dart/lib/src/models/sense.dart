@@ -7,16 +7,25 @@ part 'sense.g.dart';
 
 @JsonSerializable(explicitToJson: true)
 class Sense {
+  @JsonKey(defaultValue: '')
+  final String comment;
+
   final String? complexDefinition;
   final String definition;
   final Map<String, Translation> definitionTranslations;
+
+  @JsonKey(defaultValue: true)
+  final bool isVisible;
+
   final List<Usage> usages;
 
   const Sense({
+    required this.comment,
+    required this.complexDefinition,
     required this.definition,
     required this.definitionTranslations,
+    required this.isVisible,
     required this.usages,
-    this.complexDefinition, // TODO: Required.
   });
 
   factory Sense.fromJson(Map<String, dynamic> json) => _$SenseFromJson(json);

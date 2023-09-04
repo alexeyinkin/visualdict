@@ -23,6 +23,7 @@ class UsageEditingController extends ValueNotifier<Usage?> {
 
   @override
   Usage? get value {
+    final oldValue = super.value;
     final text = valueController.text.trim();
 
     if (text.isEmpty) {
@@ -30,6 +31,8 @@ class UsageEditingController extends ValueNotifier<Usage?> {
     }
 
     return Usage(
+      comment: oldValue?.comment ?? '', // TODO
+      isVisible: oldValue?.isVisible ?? true, // TODO
       text: text,
     );
   }

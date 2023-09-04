@@ -109,12 +109,16 @@ class SenseEditingController extends ValueNotifier<Sense?> {
       return null;
     }
 
+    final oldValue = super.value;
+
     return Sense(
+      comment: oldValue?.comment ?? '', // TODO
       complexDefinition: complexDefinitionController.text.isEmpty
           ? null
           : complexDefinitionController.text,
       definition: definition,
       definitionTranslations: {}, // TODO
+      isVisible: oldValue?.isVisible ?? true, // TODO
       usages: usagesController.nonNullValues,
     );
   }
@@ -124,5 +128,6 @@ class SenseEditingController extends ValueNotifier<Sense?> {
     complexDefinitionController.text = newValue?.complexDefinition ?? '';
     definitionController.text = newValue?.definition ?? '';
     usagesController.value = newValue?.usages ?? [];
+    super.value = newValue;
   }
 }

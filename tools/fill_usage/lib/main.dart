@@ -40,6 +40,8 @@ Future<void> main(List<String> rawArgs) async {
       sense.usages.clear();
       sense.usages.add(
         Usage(
+          comment: '',
+          isVisible: true,
           text: args.mock
               ? getUsageMock(args.word)
               : await getUsage(

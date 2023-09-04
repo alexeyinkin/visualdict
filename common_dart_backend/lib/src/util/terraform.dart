@@ -22,7 +22,8 @@ void writeWordPublicMap(
   String toRepositoryRoot = '.',
 }) {
   final file = getWordPublicJsonFile(word, toRepositoryRoot: toRepositoryRoot);
-  final content = jsonEncodeFirestoreFormatted(fields);
+  final filteredFields = WordPublic.filterFields(fields);
+  final content = jsonEncodeFirestoreFormatted(filteredFields);
   file.writeAsStringSync(content + '\n');
 }
 

@@ -37,8 +37,10 @@ class WordPublicEditingController extends ValueNotifier<WordPublic> {
     final oldValue = super.value;
 
     return WordPublic(
+      comment: oldValue.comment, // TODO
       id: oldValue.id,
       image: oldValue.image,
+      isVisible: oldValue.isVisible, // TODO
       partOfSpeechSenses: partOfSpeechSensesController.nonNullValues,
       pronunciation: oldValue.pronunciation,
       transcription: oldValue.transcription,

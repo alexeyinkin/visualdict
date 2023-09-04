@@ -1,6 +1,6 @@
+import 'package:common_dart/common_dart.dart';
 import 'package:flutter/widgets.dart';
 
-import '../../../models/word_public.dart';
 import '../../../util/build_context.dart';
 import 'word_narrow.dart';
 import 'word_wide.dart';

@@ -1,6 +1,6 @@
+import 'package:common_dart/common_dart.dart';
 import 'package:flutter/material.dart';
 
-import '../../../models/word_public.dart';
 import '../../../theme/my_theme_extension.dart';
 import 'part_of_speech_senses.dart';
 import 'word_transcription.dart';

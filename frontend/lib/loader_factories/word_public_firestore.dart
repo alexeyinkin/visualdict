@@ -3,14 +3,14 @@ import 'package:common_dart/common_dart.dart';
 import 'package:model_fetch_firestore/model_fetch_firestore.dart';
 
 import '../filters/word_public.dart';
-import '../models/word_public.dart';
 import 'firestore.dart';
 import 'mixin.dart';
 
 const _collection = CollectionsEnum.WordPublic;
 
 class WordPublicFirestoreLoaderFactory
-    extends MyFirestoreLoaderFactory<WordPublic, WordPublicFilter> with LoaderFactoryMixin{
+    extends MyFirestoreLoaderFactory<WordPublic, WordPublicFilter>
+    with LoaderFactoryMixin {
   @override
   CollectionReference<Map<String, dynamic>> getCollection() {
     return FirebaseFirestore.instance.collection(_collection.name);

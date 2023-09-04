@@ -4,13 +4,14 @@ import 'package:common_dart/common_dart.dart';
 
 import 'firestore.dart';
 
-const _root = 'terraform/modules/google/firestore/data';
+const repositoryRootToFirestoreDataRoot =
+    'terraform/modules/google/firestore/data';
 
 Map<String, dynamic> getWordPublicMap(
   String word, {
-  String prefix = '.',
+  String toRepositoryRoot = '.',
 }) {
-  final file = getWordPublicJsonFile(word, prefix: prefix);
+  final file = getWordPublicJsonFile(word, toRepositoryRoot: toRepositoryRoot);
   final content = file.readAsStringSync();
   return jsonDecodeFirestoreFormatted(content);
 }
@@ -18,21 +19,21 @@ Map<String, dynamic> getWordPublicMap(
 void writeWordPublicMap(
   String word,
   Map<String, dynamic> fields, {
-  String prefix = '.',
+  String toRepositoryRoot = '.',
 }) {
-  final file = getWordPublicJsonFile(word, prefix: prefix);
+  final file = getWordPublicJsonFile(word, toRepositoryRoot: toRepositoryRoot);
   final content = jsonEncodeFirestoreFormatted(fields);
   file.writeAsStringSync(content + '\n');
 }
 
-File getWordPublicJsonFile(String word, {String prefix = '.'}) {
+File getWordPublicJsonFile(String word, {String toRepositoryRoot = '.'}) {
   return File(
-    '$prefix/$_root/${CollectionsEnum.WordPublic.name}/${alphabeticNesting(word)}/$word.json',
+    '$toRepositoryRoot/$repositoryRootToFirestoreDataRoot/${CollectionsEnum.WordPublic.name}/${alphabeticNesting(word)}/$word.json',
   );
 }
 
-File getWordPublicTerraformFile(String word, {String prefix = '.'}) {
+File getWordPublicTerraformFile(String word, {String toRepositoryRoot = '.'}) {
   return File(
-    '$prefix/$_root/${CollectionsEnum.WordPublic.name}/${alphabeticNesting(word)}/$word.tf',
+    '$toRepositoryRoot/$repositoryRootToFirestoreDataRoot/${CollectionsEnum.WordPublic.name}/${alphabeticNesting(word)}/$word.tf',
   );
 }

@@ -1,7 +1,6 @@
 import 'package:common_dart/common_dart.dart';
 import 'package:flutter/widgets.dart';
 
-import '../../../models/word_public.dart';
 import '../../../theme/theme.dart';
 import '../part_of_speech.dart';
 import 'word_sense.dart';

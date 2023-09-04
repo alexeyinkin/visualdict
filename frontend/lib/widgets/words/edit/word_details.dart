@@ -2,7 +2,6 @@ import 'package:common_dart/common_dart.dart';
 import 'package:flutter/widgets.dart';
 import 'package:model_editors/model_editors.dart';
 
-import '../../../models/word_public.dart';
 import 'part_of_speech_senses.dart';
 import 'word_wide.dart';
 

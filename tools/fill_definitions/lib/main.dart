@@ -8,13 +8,13 @@ Future<void> main(List<String> rawArgs) async {
   initOpenAiKey(_toRoot);
   final args = WordArgs.parse(rawArgs);
 
-  final map = getWordPublicMap(args.word, prefix: _toRoot);
+  final map = getWordPublicMap(args.word, toRepositoryRoot: _toRoot);
 
   final posSenses = await getDefinitions(args);
   final grouped = PartOfSpeechSenses.groupByPos(posSenses);
   map['partOfSpeechSenses'] =
       grouped.map((o) => o.toJson()).toList(growable: false);
-  writeWordPublicMap(args.word, map, prefix: _toRoot);
+  writeWordPublicMap(args.word, map, toRepositoryRoot: _toRoot);
 }
 
 Future<List<PartOfSpeechSenses>> getDefinitions(WordArgs args) async {

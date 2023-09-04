@@ -36,7 +36,7 @@ Future<void> setWordPronunciationFromRaw({
     hash: hash,
   );
 
-  final map = getWordPublicMap(word, prefix: prefix);
+  final map = getWordPublicMap(word, toRepositoryRoot: prefix);
 
   final image = Pronunciation(
     timestamp: secondsSinceEpoch,
@@ -44,7 +44,7 @@ Future<void> setWordPronunciationFromRaw({
   );
   map['pronunciation'] = image.toJson();
 
-  writeWordPublicMap(word, map, prefix: prefix);
+  writeWordPublicMap(word, map, toRepositoryRoot: prefix);
 }
 
 void _deleteOldSounds({

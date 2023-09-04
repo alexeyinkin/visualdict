@@ -7,13 +7,13 @@ Future<void> main(List<String> rawArgs) async {
   initOpenAiKey(_toRoot);
   final args = WordArgs.parse(rawArgs);
 
-  final map = getWordPublicMap(args.word, prefix: _toRoot);
+  final map = getWordPublicMap(args.word, toRepositoryRoot: _toRoot);
 
   map['transcription'] = args.mock
       ? getTranscriptionMock(args.word)
       : await getTranscription(args.word);
 
-  writeWordPublicMap(args.word, map, prefix: _toRoot);
+  writeWordPublicMap(args.word, map, toRepositoryRoot: _toRoot);
 }
 
 String getTranscriptionMock(String word) {

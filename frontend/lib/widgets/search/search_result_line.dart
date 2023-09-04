@@ -1,6 +1,6 @@
+import 'package:common_dart/common_dart.dart';
 import 'package:flutter/material.dart';
 
-import '../../models/word_public.dart';
 import '../../theme/theme.dart';
 
 class SearchResultLine extends StatelessWidget {

@@ -17,7 +17,7 @@ Future<void> main(List<String> rawArgs) async {
   initOpenAiKey(_toRoot);
   final args = WordExportArgs.parse(rawArgs);
 
-  final map = getWordPublicMap(args.word, prefix: _toRoot);
+  final map = getWordPublicMap(args.word, toRepositoryRoot: _toRoot);
 
   final image = Image.fromJson(map['image']);
   final partOfSpeechSenses = (map['partOfSpeechSenses'] as Iterable)

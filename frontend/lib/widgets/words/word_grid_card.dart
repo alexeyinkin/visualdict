@@ -1,7 +1,7 @@
+import 'package:common_dart/common_dart.dart';
 import 'package:flutter/widgets.dart';
 import 'package:url_launcher/link.dart';
 
-import '../../models/word_public.dart';
 import '../../pages/word/path.dart';
 import '../clickable.dart';
 import 'word_image_or_not.dart';

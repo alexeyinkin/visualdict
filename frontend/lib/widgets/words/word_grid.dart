@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:common_dart/common_dart.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get_it/get_it.dart';
 import 'package:model_fetch/model_fetch.dart';
@@ -7,7 +8,6 @@ import 'package:model_fetch_flutter/model_fetch_flutter.dart';
 
 import '../../filters/word_public.dart';
 import '../../loader_factories/word_public.dart';
-import '../../models/word_public.dart';
 import '../loading/small_circular_progress_indicator.dart';
 import 'word_grid_card.dart';
 

@@ -14,7 +14,7 @@ Future<void> main(List<String> rawArgs) async {
     throw Exception('Cannot translate to English because it is the original.');
   }
 
-  final map = getWordPublicMap(args.word, prefix: _toRoot);
+  final map = getWordPublicMap(args.word, toRepositoryRoot: _toRoot);
   final posSensesList = map['partOfSpeechSenses'];
 
   if (posSensesList is! List) {
@@ -56,7 +56,7 @@ Future<void> main(List<String> rawArgs) async {
   }
 
   map['partOfSpeechSenses'] = newPosSenses;
-  writeWordPublicMap(args.word, map, prefix: _toRoot);
+  writeWordPublicMap(args.word, map, toRepositoryRoot: _toRoot);
 }
 
 bool shouldPreserveTranslation(

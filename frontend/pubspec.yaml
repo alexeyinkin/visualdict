@@ -11,6 +11,7 @@ dependencies:
   clock: ^1.1.1
   cloud_firestore: ^4.8.4
   common_dart: { path: ../common_dart }
+  common_dart_backend: { path: ../common_dart_backend }
   easy_localization: ^3.0.2
   easy_localization_loader: { git: { url: https://github.com/aissat/easy_localization_loader.git, ref: efca2087b52198c7fbd6a59488d149a4b1ec939c } }
   enum_map: ^0.3.0
@@ -43,6 +44,11 @@ dependency_overrides:
   model_fetch_firestore: { path: ../../dart/dart-model-fetch/model_fetch_firestore }
   model_fetch_firestore_json_files: { path: ../../dart/dart-model-fetch/model_fetch_firestore_json_files }
   model_fetch_flutter: { path: ../../dart/dart-model-fetch/model_fetch_flutter }
+
+  firestore_api_parser:
+    git:
+      url: https://github.com/alexeyinkin/firestore_api_parser.git
+      ref: df6a8aac1116d466e2e9762ea7778e9a6c8f3649
 
 flutter:
   uses-material-design: true

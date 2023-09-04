@@ -1,6 +1,6 @@
+import 'package:common_dart/common_dart.dart';
 import 'package:flutter/widgets.dart';
 
-import '../../models/word_public.dart';
 import 'no_image.dart';
 import 'word_image.dart';
 

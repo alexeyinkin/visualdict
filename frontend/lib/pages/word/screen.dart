@@ -1,9 +1,11 @@
+import 'package:common_dart/common_dart.dart';
+import 'package:common_dart_backend/common_dart_backend.dart';
 import 'package:flutter/material.dart';
 import 'package:model_editors/model_editors.dart';
 import 'package:model_fetch/model_fetch.dart';
 
+import '../../constants/paths.dart';
 import '../../models/repository_engine.dart';
-import '../../models/word_public.dart';
 import '../../widgets/errors/loading_error.dart';
 import '../../widgets/loading/small_circular_progress_indicator.dart';
 import '../../widgets/my_scaffold.dart';
@@ -54,10 +56,18 @@ class WordScreen extends StatelessWidget {
               createController: () => WordPublicEditingController(wordPublic),
               editBuilder: (_, __, c) => WordDetailsEditWidget(c),
               model: wordPublic,
-              saveCallback: (w) async => print('Saving $w'),
+              saveCallback: _save,
               viewBuilder: (_, w) => WordDetailsViewWidget(w),
             );
         }
     }
+  }
+
+  Future<void> _save(WordPublic wordPublic) async {
+    writeWordPublicMap(
+      wordPublic.id,
+      wordPublic.toJson(),
+      toRepositoryRoot: toRepositoryRoot,
+    );
   }
 }

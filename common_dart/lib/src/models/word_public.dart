@@ -4,7 +4,7 @@ import 'package:model_interfaces/model_interfaces.dart';
 
 part 'word_public.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class WordPublic implements WithId<String> {
   @override
   final String id;
@@ -24,4 +24,6 @@ class WordPublic implements WithId<String> {
 
   factory WordPublic.fromJson(Map<String, dynamic> json) =>
       _$WordPublicFromJson(json);
+
+  Map<String, dynamic> toJson() => _$WordPublicToJson(this);
 }

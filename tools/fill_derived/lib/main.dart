@@ -6,11 +6,11 @@ Future<void> main(List<String> rawArgs) async {
   initOpenAiKey(_toRoot);
   final args = WordArgs.parse(rawArgs);
 
-  final map = getWordPublicMap(args.word, prefix: _toRoot);
+  final map = getWordPublicMap(args.word, toRepositoryRoot: _toRoot);
 
   map['ngrams'] = getNgrams(args.word);
 
-  writeWordPublicMap(args.word, map, prefix: _toRoot);
+  writeWordPublicMap(args.word, map, toRepositoryRoot: _toRoot);
 }
 
 List<String> getNgrams(String word) {

@@ -1,18 +1,19 @@
 import 'dart:io';
 
 import 'package:common_dart/common_dart.dart';
+import 'package:common_dart_backend/common_dart_backend.dart';
 import 'package:model_fetch_firestore_json_files/model_fetch_firestore_json_files.dart';
 
+import '../constants/paths.dart';
 import '../filters/word_public.dart';
-import '../models/word_public.dart';
 import 'mixin.dart';
-
-// TODO: Local path
-const _dir = '/home/alexey/work/visualdict/terraform/modules/google/firestore/data/WordPublic';
 
 class WordPublicFirestoreJsonFilesLoaderFactory
     extends AbstractFirestoreJsonFilesLoaderFactory<WordPublic,
         WordPublicFilter> with LoaderFactoryMixin {
+  static final _dir =
+      '$toRepositoryRoot/$repositoryRootToFirestoreDataRoot/${CollectionsEnum.WordPublic.name}';
+
   final re = RegExp(r'\.json$');
 
   @override

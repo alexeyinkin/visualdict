@@ -1,6 +1,5 @@
-import 'dart:async';
-
 import 'package:app_state/app_state.dart';
+import 'package:common_dart/common_dart.dart';
 import 'package:flutter/foundation.dart';
 import 'package:get_it/get_it.dart';
 import 'package:model_fetch/model_fetch.dart';
@@ -12,7 +11,6 @@ import 'package:model_fetch/model_fetch.dart';
 // import '../../loader_factories/technology_chapter.dart';
 // import '../../models/technology_chapter.dart';
 import '../../loader_factories/word_public.dart';
-import '../../models/word_public.dart';
 import 'path.dart';
 
 class WordNotifier extends ChangeNotifier with PageStateMixin<void> {

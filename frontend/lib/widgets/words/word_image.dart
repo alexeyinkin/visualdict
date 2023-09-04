@@ -1,7 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:common_dart/common_dart.dart';
 import 'package:flutter/material.dart';
-
-import '../../models/word_public.dart';
 
 class WordImageWidget extends StatelessWidget {
   final double fontSize;

@@ -12,7 +12,7 @@ Future<void> main(List<String> rawArgs) async {
     '{word}': args.word,
   };
 
-  final jsonFile = getWordPublicJsonFile(args.word, prefix: _toRoot);
+  final jsonFile = getWordPublicJsonFile(args.word, toRepositoryRoot: _toRoot);
   final jsonContent = replacePatterns(
     File('assets/${CollectionsEnum.WordPublic.name}.json.template')
         .readAsStringSync(),
@@ -20,7 +20,7 @@ Future<void> main(List<String> rawArgs) async {
   );
   jsonFile.writeAsStringSync(jsonContent);
 
-  final tfFile = getWordPublicTerraformFile(args.word, prefix: _toRoot);
+  final tfFile = getWordPublicTerraformFile(args.word, toRepositoryRoot: _toRoot);
   final tfContent = replacePatterns(
     File('assets/${CollectionsEnum.WordPublic.name}.tf.template')
         .readAsStringSync(),

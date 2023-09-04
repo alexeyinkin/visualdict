@@ -67,7 +67,7 @@ Future<void> main(List<String> rawArgs) async {
     );
   }
 
-  final map = getWordPublicMap(args.word, prefix: _toRoot);
+  final map = getWordPublicMap(args.word, toRepositoryRoot: _toRoot);
 
   final image = Image(
     timestamp: secondsSinceEpoch,
@@ -76,7 +76,7 @@ Future<void> main(List<String> rawArgs) async {
   );
   map['image'] = image.toJson();
 
-  writeWordPublicMap(args.word, map, prefix: _toRoot);
+  writeWordPublicMap(args.word, map, toRepositoryRoot: _toRoot);
 }
 
 void _deleteOldImages({

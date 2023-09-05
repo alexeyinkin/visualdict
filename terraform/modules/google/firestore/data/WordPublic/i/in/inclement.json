@@ -1,0 +1,158 @@
+{
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "adjective"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Having severe weather conditions that are unpleasant, such as heavy rain or snow."
+                          },
+                          "definition": {
+                            "stringValue": "Having bad or severe weather."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "(О погоде) Плохая или суровая."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "We canceled our picnic due to **inclement** weather."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Marked by a lack of mercy or leniency, harsh, severe, or cruel."
+                          },
+                          "definition": {
+                            "stringValue": "Being harsh or unmerciful."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Жёсткий или безжалостный."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Her **inclement** criticism crushed his budding confidence."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "transcription": {
+    "stringValue": "ɪnˈklɛmənt"
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "inclement"
+        },
+        {
+          "stringValue": "inclemen"
+        },
+        {
+          "stringValue": "incleme"
+        },
+        {
+          "stringValue": "inclem"
+        },
+        {
+          "stringValue": "incle"
+        },
+        {
+          "stringValue": "incl"
+        },
+        {
+          "stringValue": "inc"
+        },
+        {
+          "stringValue": "in"
+        },
+        {
+          "stringValue": "i"
+        }
+      ]
+    }
+  },
+  "image": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": "1693911287"
+        },
+        "hash": {
+          "stringValue": "219aa4eb35"
+        },
+        "prompt": {
+          "stringValue": "storm in forest"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "adjective"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Filled or well-supplied with something."
+                          },
+                          "definition": {
+                            "stringValue": "Full of something."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": false
+                                      },
+                                      "text": {
+                                        "stringValue": "Полный чего-то."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The fridge was **replete** with food."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Satiated, fully or excessively nourished or provided for."
+                          },
+                          "definition": {
+                            "stringValue": "Fully or overly fed."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": false
+                                      },
+                                      "text": {
+                                        "stringValue": "Полностью или чрезмерно накормленный."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The cat was **replete** after finishing the whole can of tuna."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Of a work of literature or art: filled with complex or intricate detail."
+                          },
+                          "definition": {
+                            "stringValue": "Full of complex detail in literature or art."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": false
+                                      },
+                                      "text": {
+                                        "stringValue": "Полный сложных деталей в литературе или искусстве."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Victorian novels are often **replete** with intricate subplots and symbolism."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "transcription": {
+    "stringValue": "rɪˈpliːt"
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "replete"
+        },
+        {
+          "stringValue": "replet"
+        },
+        {
+          "stringValue": "reple"
+        },
+        {
+          "stringValue": "repl"
+        },
+        {
+          "stringValue": "rep"
+        },
+        {
+          "stringValue": "re"
+        },
+        {
+          "stringValue": "r"
+        }
+      ]
+    }
+  },
+  "image": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": "1693826790"
+        },
+        "hash": {
+          "stringValue": "f713d71a21"
+        },
+        "prompt": {
+          "stringValue": "fridge full of food"
+        }
+      }
+    }
+  }
+}

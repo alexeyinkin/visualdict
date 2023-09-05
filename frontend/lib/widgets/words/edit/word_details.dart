@@ -25,7 +25,8 @@ class WordPublicEditingController extends ValueNotifier<WordPublic>
       PartOfSpeechSensesListEditingController();
   final transcriptionController = TextEditingController();
 
-  WordPublicEditingController(super._value) {
+  WordPublicEditingController(WordPublic value) : super(value) {
+    this.value = value;
     commentController.addListener(notifyListeners);
   }
 

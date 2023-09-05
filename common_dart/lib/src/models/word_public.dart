@@ -24,8 +24,8 @@ class WordPublic implements WithId<String> {
   @JsonKey(includeIfNull: false)
   final Pronunciation? pronunciation;
 
-  @JsonKey(includeIfNull: false)
-  final String? transcription;
+  @JsonKey(defaultValue: '')
+  final String transcription;
 
   const WordPublic({
     required this.comment,
@@ -52,6 +52,7 @@ class WordPublic implements WithId<String> {
       switch (key) {
         case 'comment':
         case 'complexDefinition':
+        case 'transcription':
           if (value == '') {
             continue;
           }

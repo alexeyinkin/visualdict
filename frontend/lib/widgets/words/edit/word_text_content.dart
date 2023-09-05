@@ -6,7 +6,7 @@ import '../../../theme/theme.dart';
 import '../../buttons/comment.dart';
 import '../../buttons/is_visible.dart';
 import '../../layout/is_visible_frame.dart';
-import '../view/word_transcription.dart';
+import '../edit/word_transcription.dart';
 import 'comment_field.dart';
 import 'part_of_speech_senses.dart';
 import 'word_details.dart';
@@ -47,7 +47,9 @@ class WordTextContentEditWidget extends StatelessWidget {
                 padding: MyPaddingEnum.bottom,
               ),
               Align(
-                child: WordTranscriptionViewWidget(wordPublic),
+                child: WordTranscriptionEditWidget(
+                  controller.transcriptionController,
+                ),
               ),
               ReorderableListEditor(
                 controller: controller.partOfSpeechSensesController,

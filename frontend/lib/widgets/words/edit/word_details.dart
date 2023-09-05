@@ -21,6 +21,7 @@ class WordPublicEditingController extends ValueNotifier<WordPublic>
     with CommentableControllerMixin, IsVisibleControllerMixin {
   final partOfSpeechSensesController =
       PartOfSpeechSensesListEditingController();
+  final transcriptionController = TextEditingController();
 
   WordPublicEditingController(super._value) {
     commentController.addListener(notifyListeners);
@@ -37,7 +38,7 @@ class WordPublicEditingController extends ValueNotifier<WordPublic>
       isVisible: isVisible,
       partOfSpeechSenses: partOfSpeechSensesController.nonNullValues,
       pronunciation: oldValue.pronunciation,
-      transcription: oldValue.transcription,
+      transcription: transcriptionController.text.trim(),
     );
   }
 
@@ -46,6 +47,7 @@ class WordPublicEditingController extends ValueNotifier<WordPublic>
     commentController.text = newValue.comment;
     isVisible = newValue.isVisible;
     partOfSpeechSensesController.value = newValue.partOfSpeechSenses;
+    transcriptionController.text = newValue.transcription;
     super.value = newValue;
   }
 }

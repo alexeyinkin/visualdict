@@ -13,7 +13,7 @@ class WordTranscriptionViewWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final canPlay = _canPlay();
 
-    if (!canPlay && wordPublic.transcription == null) {
+    if (!canPlay && wordPublic.transcription == '') {
       return const SizedBox();
     }
 

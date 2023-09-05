@@ -10,6 +10,7 @@ import '../../../theme/my_theme_extension.dart';
 import '../../../theme/theme.dart';
 import '../../buttons/comment.dart';
 import '../../buttons/is_visible.dart';
+import '../../buttons/settings.dart';
 import '../../layout/editor_frame.dart';
 import '../../layout/is_visible_frame.dart';
 import 'comment_field.dart';
@@ -53,20 +54,24 @@ class WordSenseEditWidget extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    const MySpacing(),
-                    TextField(
-                      controller: controller.complexDefinitionController,
-                      decoration: const InputDecoration(
-                        labelText: "Unsimplified Definition",
+                    if (controller.isAdvanced) ...[
+                      const MySpacing(),
+                      TextField(
+                        controller: controller.complexDefinitionController,
+                        decoration: const InputDecoration(
+                          labelText: "Unsimplified Definition",
+                        ),
+                        maxLines: null,
                       ),
-                      maxLines: null,
-                    ),
+                    ],
                     const MySpacing(),
                     TextField(
                       controller: controller.definitionController,
-                      decoration: const InputDecoration(
-                        labelText: "Definition",
-                      ),
+                      decoration: controller.isAdvanced
+                          ? const InputDecoration(
+                              labelText: "Definition",
+                            )
+                          : const InputDecoration(),
                       maxLines: null,
                     ),
                     const MySpacing(),
@@ -117,6 +122,10 @@ class WordSenseEditWidget extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   IsVisibleToggle(controller: controller),
+                  SettingsButton(
+                    onPressed: () =>
+                        controller.isAdvanced = !controller.isAdvanced,
+                  ),
                   CommentToggle(controller: controller),
                 ],
               ),
@@ -130,6 +139,7 @@ class WordSenseEditWidget extends StatelessWidget {
 
 class SenseEditingController extends ValueNotifier<Sense?>
     with CommentableControllerMixin, IsVisibleControllerMixin {
+  bool _isAdvanced = false;
   final complexDefinitionController = TextEditingController();
   final definitionController = TextEditingController();
   final definitionTranslationsController = MapEditingController<String,
@@ -146,6 +156,13 @@ class SenseEditingController extends ValueNotifier<Sense?>
 
   SenseEditingController() : super(null) {
     commentController.addListener(notifyListeners);
+  }
+
+  bool get isAdvanced => _isAdvanced;
+
+  set isAdvanced(bool newValue) {
+    _isAdvanced = newValue;
+    notifyListeners();
   }
 
   @override

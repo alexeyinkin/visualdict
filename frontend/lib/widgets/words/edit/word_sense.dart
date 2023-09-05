@@ -4,6 +4,8 @@ import 'package:model_editors/model_editors.dart';
 
 import '../../../controllers/commentable.dart';
 import '../../../controllers/is_visible.dart';
+import '../../../controllers/lang.dart';
+import '../../../controllers/translation.dart';
 import '../../../theme/my_theme_extension.dart';
 import '../../../theme/theme.dart';
 import '../../buttons/comment.dart';
@@ -11,6 +13,7 @@ import '../../buttons/is_visible.dart';
 import '../../layout/editor_frame.dart';
 import '../../layout/is_visible_frame.dart';
 import 'comment_field.dart';
+import 'translation_line.dart';
 import 'usage.dart';
 
 class WordSenseEditWidget extends StatelessWidget {
@@ -49,7 +52,6 @@ class WordSenseEditWidget extends StatelessWidget {
               Expanded(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const MySpacing(),
                     TextField(
@@ -72,26 +74,40 @@ class WordSenseEditWidget extends StatelessWidget {
                       controller: controller,
                       padding: MyPaddingEnum.bottom,
                     ),
-                    Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        ReorderableListViewEditor(
-                          controller: controller.usagesController,
-                          itemBuilder: (_, c, index) => EditorFrame(
-                            child: UsageEditWidget(c),
-                          ),
-                          shrinkWrap: true,
+                    ReorderableMapEditor(
+                      controller: controller.definitionTranslationsController,
+                      itemBuilder: (_, c, index) => EditorFrame(
+                        child: TranslationLineEditWidget(c),
+                      ),
+                      shrinkWrap: true,
+                    ),
+                    MapAddButtonBuilder(
+                      controller: controller.definitionTranslationsController,
+                      enabledBuilder: (_) => IconButton(
+                        onPressed: () =>
+                            controller.definitionTranslationsController.add(
+                          '',
+                          null,
                         ),
-                        ListAddButtonBuilder(
-                          controller: controller.usagesController,
-                          enabledBuilder: (_) => IconButton(
-                            onPressed: () => controller.usagesController.add(
-                              null,
-                            ),
-                            icon: const Text('💬'),
-                          ),
+                        icon: const Icon(Icons.translate),
+                      ),
+                    ),
+                    const MySpacing(),
+                    ReorderableListEditor(
+                      controller: controller.usagesController,
+                      itemBuilder: (_, c, index) => EditorFrame(
+                        child: UsageEditWidget(c),
+                      ),
+                      shrinkWrap: true,
+                    ),
+                    ListAddButtonBuilder(
+                      controller: controller.usagesController,
+                      enabledBuilder: (_) => IconButton(
+                        onPressed: () => controller.usagesController.add(
+                          null,
                         ),
-                      ],
+                        icon: const Text('💬'),
+                      ),
                     ),
                   ],
                 ),
@@ -116,6 +132,13 @@ class SenseEditingController extends ValueNotifier<Sense?>
     with CommentableControllerMixin, IsVisibleControllerMixin {
   final complexDefinitionController = TextEditingController();
   final definitionController = TextEditingController();
+  final definitionTranslationsController = MapEditingController<String,
+      LangEditingController, Translation, TranslationEditingController>(
+    createKeyController: LangEditingController.new,
+    createValueController: TranslationEditingController.new,
+    maxLength: 10000,
+    isReorderable: false,
+  );
   final usagesController = ListEditingController<Usage, UsageEditingController>(
     createItemController: UsageEditingController.new,
     maxLength: 10,
@@ -136,8 +159,7 @@ class SenseEditingController extends ValueNotifier<Sense?>
       comment: commentController.text.trim(),
       complexDefinition: complexDefinitionController.text.trim(),
       definition: definition,
-      definitionTranslations: {},
-      // TODO
+      definitionTranslations: definitionTranslationsController.nonNullValues,
       isVisible: isVisible,
       usages: usagesController.nonNullValues,
     );
@@ -148,6 +170,8 @@ class SenseEditingController extends ValueNotifier<Sense?>
     commentController.text = newValue?.comment ?? '';
     complexDefinitionController.text = newValue?.complexDefinition ?? '';
     definitionController.text = newValue?.definition ?? '';
+    definitionTranslationsController.value =
+        newValue?.definitionTranslations ?? {};
     isVisible = newValue?.isVisible ?? true;
     usagesController.value = newValue?.usages ?? [];
     super.value = newValue;

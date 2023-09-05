@@ -4,12 +4,14 @@ part 'translation.g.dart';
 
 @JsonSerializable(explicitToJson: true)
 class Translation {
+  @JsonKey(defaultValue: false)
   final bool isLocked;
-  final String value;
+
+  final String text;
 
   const Translation({
-    this.isLocked = false,
-    required this.value,
+    required this.isLocked,
+    required this.text,
   });
 
   factory Translation.fromJson(Map<String, dynamic> map) =>

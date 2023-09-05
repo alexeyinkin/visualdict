@@ -52,7 +52,7 @@ class PartOfSpeechSensesEditWidget extends StatelessWidget {
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      ReorderableListViewEditor(
+                      ReorderableListEditor(
                         controller: controller.sensesController,
                         itemBuilder: (_, c, index) => EditorFrame(
                           child: WordSenseEditWidget(c, index: index),

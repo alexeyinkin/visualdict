@@ -93,7 +93,7 @@ Future<void> _exportTexts({
   }
 
   final senses = options.values.map((record) => record.$2).cast<Sense>();
-  final definitions = senses.map((s) => s.definitionTranslations[lang]?.value);
+  final definitions = senses.map((s) => s.definitionTranslations[lang]?.text);
   final usages = senses.map((s) => s.usages).expand((usages) => usages);
 
   final exportWordDir = getExportWordDir(word, prefix: _toRoot);
@@ -200,7 +200,7 @@ Future<void> _exportReelOverlay({
       '-pointsize', '50',
       '-size', '1000x350',
       '-gravity', 'center',
-      'caption:' + (sense.definitionTranslations[lang]?.value ?? 'NULL'),
+      'caption:' + (sense.definitionTranslations[lang]?.text ?? 'NULL'),
 
       // Put the overlay in background ("swap").
       'assets/reel-overlay.png', '+swap',

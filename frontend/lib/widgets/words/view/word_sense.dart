@@ -61,7 +61,7 @@ class WordSenseViewWidget extends StatelessWidget {
       return Text(sense.definition);
     }
 
-    final translation = sense.definitionTranslations[lang]?.value;
+    final translation = sense.definitionTranslations[lang]?.text;
     if (translation != null) {
       return Text(translation);
     }

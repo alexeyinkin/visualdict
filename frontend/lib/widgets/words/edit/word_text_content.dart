@@ -49,7 +49,7 @@ class WordTextContentEditWidget extends StatelessWidget {
               Align(
                 child: WordTranscriptionViewWidget(wordPublic),
               ),
-              ReorderableListViewEditor(
+              ReorderableListEditor(
                 controller: controller.partOfSpeechSensesController,
                 itemBuilder: (_, c, index) => PartOfSpeechSensesEditWidget(c),
                 shrinkWrap: true,

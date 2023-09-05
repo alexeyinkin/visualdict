@@ -56,6 +56,11 @@ class WordPublic implements WithId<String> {
             continue;
           }
 
+        case 'isLocked':
+          if (value == false) {
+            continue;
+          }
+
         case 'isVisible':
           if (value == true) {
             continue;

@@ -29,19 +29,22 @@ Future<void> main(List<String> rawArgs) async {
     final posSenses = PartOfSpeechSenses.fromJson(posSensesMap);
 
     for (final sense in posSenses.senses) {
-      final translation =
-          sense.definitionTranslations[args.lang] ?? Translation(value: '');
+      final translation = sense.definitionTranslations[args.lang] ??
+          Translation(
+            isLocked: false,
+            text: '',
+          );
 
       if (shouldPreserveTranslation(translation, args)) {
         print(
           'Skipping existing translation for '
           '${posSenses.partOfSpeech.name}: ${sense.definition}',
         );
-        print(translation.value);
+        print(translation.text);
         continue;
       }
 
-      final value = args.mock
+      final text = args.mock
           ? translateMock(args.word, args.lang)
           : await translate(
               word: args.word,
@@ -49,7 +52,10 @@ Future<void> main(List<String> rawArgs) async {
               pos: posSenses.partOfSpeech,
               definition: sense.definition,
             );
-      sense.definitionTranslations[args.lang] = Translation(value: value);
+      sense.definitionTranslations[args.lang] = Translation(
+        isLocked: false,
+        text: text,
+      );
     }
 
     newPosSenses.add(posSenses.toJson());
@@ -67,7 +73,7 @@ bool shouldPreserveTranslation(
     return false;
   }
 
-  if (translation.value == '') {
+  if (translation.text == '') {
     return false;
   }
 

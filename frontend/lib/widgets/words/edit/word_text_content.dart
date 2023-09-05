@@ -8,6 +8,7 @@ import '../../buttons/is_visible.dart';
 import '../../layout/is_visible_frame.dart';
 import '../edit/word_transcription.dart';
 import 'comment_field.dart';
+import 'date.dart';
 import 'part_of_speech_senses.dart';
 import 'word_details.dart';
 
@@ -46,10 +47,17 @@ class WordTextContentEditWidget extends StatelessWidget {
                 controller: controller,
                 padding: MyPaddingEnum.bottom,
               ),
-              Align(
-                child: WordTranscriptionEditWidget(
-                  controller.transcriptionController,
-                ),
+              Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  WordTranscriptionEditWidget(
+                    controller.transcriptionController,
+                  ),
+                  const MySpacing(),
+                  const MySpacing(),
+                  const MySpacing(),
+                  DateEditWidget(controller: controller.ofTheDayController),
+                ],
               ),
               ReorderableListEditor(
                 controller: controller.partOfSpeechSensesController,

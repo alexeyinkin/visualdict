@@ -1,6 +1,10 @@
-import 'package:common_dart/common_dart.dart';
 import 'package:json_annotation/json_annotation.dart';
 import 'package:model_interfaces/model_interfaces.dart';
+
+import '../util/converters.dart';
+import 'image.dart';
+import 'part_of_speech_senses.dart';
+import 'pronunciation.dart';
 
 part 'word_public.g.dart';
 
@@ -19,6 +23,9 @@ class WordPublic implements WithId<String> {
   @JsonKey(defaultValue: true)
   final bool isVisible;
 
+  @JsonKey(fromJson: yyyyMmDdToUtcDateTime, toJson: dateTimeToYyyyMmDd)
+  final DateTime? ofTheDay;
+
   final List<PartOfSpeechSenses> partOfSpeechSenses;
 
   @JsonKey(includeIfNull: false)
@@ -32,6 +39,7 @@ class WordPublic implements WithId<String> {
     required this.id,
     required this.image,
     required this.isVisible,
+    required this.ofTheDay,
     required this.partOfSpeechSenses,
     required this.pronunciation,
     required this.transcription,

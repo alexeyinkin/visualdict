@@ -9,4 +9,5 @@ export 'src/models/sense.dart';
 export 'src/models/translation.dart';
 export 'src/models/usage.dart';
 export 'src/models/word_public.dart';
+export 'src/util/converters.dart';
 export 'src/util/paths.dart';

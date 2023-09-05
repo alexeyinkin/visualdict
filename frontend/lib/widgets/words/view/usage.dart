@@ -18,6 +18,7 @@ class UsageViewWidget extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       selectable: true,
       shrinkWrap: true,
+      padding: EdgeInsets.zero,
     );
   }
 }

@@ -43,10 +43,12 @@ class WordSenseViewWidget extends StatelessWidget {
               _getDefinition(),
               const MySpacing(),
               for (final usage in sense.usages)
-                UsageViewWidget(
-                  usage,
-                  wordPublic: wordPublic,
-                ),
+                if (usage.isVisible)
+                  UsageViewWidget(
+                    usage,
+                    wordPublic: wordPublic,
+                  ),
+              const MySpacing(),
             ],
           ),
         ),

@@ -1,10 +1,9 @@
 import 'package:common_dart/common_dart.dart';
 import 'package:flutter/widgets.dart';
-import 'package:model_editors/model_editors.dart';
 
 import '../../../controllers/commentable.dart';
 import '../../../controllers/is_visible.dart';
-import 'part_of_speech_senses.dart';
+import '../../../controllers/part_of_speech_senses_list.dart';
 import 'word_wide.dart';
 
 class WordDetailsEditWidget extends StatelessWidget {
@@ -20,12 +19,8 @@ class WordDetailsEditWidget extends StatelessWidget {
 
 class WordPublicEditingController extends ValueNotifier<WordPublic>
     with CommentableControllerMixin, IsVisibleControllerMixin {
-  final partOfSpeechSensesController = ListEditingController<PartOfSpeechSenses,
-      PartOfSpeechSensesEditingController>(
-    minLength: 1,
-    maxLength: 10,
-    createItemController: PartOfSpeechSensesEditingController.new,
-  );
+  final partOfSpeechSensesController =
+      PartOfSpeechSensesListEditingController();
 
   WordPublicEditingController(super._value) {
     commentController.addListener(notifyListeners);

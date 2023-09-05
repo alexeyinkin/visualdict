@@ -9,8 +9,8 @@ import '../../buttons/comment.dart';
 import '../../buttons/is_visible.dart';
 import '../../layout/editor_frame.dart';
 import '../../layout/is_visible_frame.dart';
-import '../part_of_speech.dart';
 import 'comment_field.dart';
+import 'part_of_speech_dropdown.dart';
 import 'word_sense.dart';
 
 class PartOfSpeechSensesEditWidget extends StatelessWidget {
@@ -20,12 +20,6 @@ class PartOfSpeechSensesEditWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final partOfSpeechSenses = controller.value;
-
-    if (partOfSpeechSenses == null) {
-      return Text("null");
-    }
-
     return AnimatedBuilder(
       animation: controller,
       builder: (context, _) {
@@ -38,7 +32,10 @@ class PartOfSpeechSensesEditWidget extends StatelessWidget {
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  PartOfSpeechWidget(partOfSpeechSenses.partOfSpeech),
+                  PartOfSpeechDropdown(
+                    value: controller.partOfSpeech,
+                    onChanged: (v) => controller.partOfSpeech = v,
+                  ),
                   const MySpacing(),
                   IsVisibleToggle(controller: controller),
                   CommentToggle(controller: controller),
@@ -80,6 +77,7 @@ class PartOfSpeechSensesEditWidget extends StatelessWidget {
 class PartOfSpeechSensesEditingController
     extends ValueNotifier<PartOfSpeechSenses?>
     with CommentableControllerMixin, IsVisibleControllerMixin {
+  PartOfSpeechEnum? _partOfSpeech;
   final sensesController = ListEditingController<Sense, SenseEditingController>(
     createItemController: SenseEditingController.new,
     maxLength: 30,
@@ -91,19 +89,14 @@ class PartOfSpeechSensesEditingController
 
   @override
   PartOfSpeechSenses? get value {
-    final oldValue = super.value;
-
-    if (oldValue == null) {
-      // Cannot create because we have no PoS selector widget.
-      // TODO: Allow creating new objects.
-      // TODO: Create a selector widget for enums.
+    if (_partOfSpeech == null) {
       return null;
     }
 
     return PartOfSpeechSenses(
       comment: commentController.text.trim(),
       isVisible: isVisible,
-      partOfSpeech: oldValue.partOfSpeech, // TODO
+      partOfSpeech: _partOfSpeech!,
       senses: sensesController.nonNullValues,
     );
   }
@@ -112,7 +105,15 @@ class PartOfSpeechSensesEditingController
   set value(PartOfSpeechSenses? newValue) {
     commentController.text = newValue?.comment ?? '';
     isVisible = newValue?.isVisible ?? true;
+    _partOfSpeech = newValue?.partOfSpeech;
     sensesController.value = newValue?.senses ?? [];
     super.value = newValue;
+  }
+
+  PartOfSpeechEnum? get partOfSpeech => _partOfSpeech;
+
+  set partOfSpeech(PartOfSpeechEnum? newValue) {
+    _partOfSpeech = newValue;
+    notifyListeners();
   }
 }

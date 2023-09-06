@@ -1,4 +1,55 @@
 {
+  "image": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": "1693911287"
+        },
+        "hash": {
+          "stringValue": "219aa4eb35"
+        },
+        "prompt": {
+          "stringValue": "storm in forest"
+        }
+      }
+    }
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "inclement"
+        },
+        {
+          "stringValue": "inclemen"
+        },
+        {
+          "stringValue": "incleme"
+        },
+        {
+          "stringValue": "inclem"
+        },
+        {
+          "stringValue": "incle"
+        },
+        {
+          "stringValue": "incl"
+        },
+        {
+          "stringValue": "inc"
+        },
+        {
+          "stringValue": "in"
+        },
+        {
+          "stringValue": "i"
+        }
+      ]
+    }
+  },
+  "ofTheDay": {
+    "stringValue": "2023-09-05"
+  },
   "partOfSpeechSenses": {
     "arrayValue": {
       "values": [
@@ -26,6 +77,9 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
+                                      "isLocked": {
+                                        "booleanValue": true
+                                      },
                                       "text": {
                                         "stringValue": "(О погоде) Плохая или суровая."
                                       }
@@ -68,6 +122,9 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
+                                      "isLocked": {
+                                        "booleanValue": true
+                                      },
                                       "text": {
                                         "stringValue": "Жёсткий или безжалостный."
                                       }
@@ -106,53 +163,5 @@
   },
   "transcription": {
     "stringValue": "ɪnˈklɛmənt"
-  },
-  "ngrams": {
-    "arrayValue": {
-      "values": [
-        {
-          "stringValue": "inclement"
-        },
-        {
-          "stringValue": "inclemen"
-        },
-        {
-          "stringValue": "incleme"
-        },
-        {
-          "stringValue": "inclem"
-        },
-        {
-          "stringValue": "incle"
-        },
-        {
-          "stringValue": "incl"
-        },
-        {
-          "stringValue": "inc"
-        },
-        {
-          "stringValue": "in"
-        },
-        {
-          "stringValue": "i"
-        }
-      ]
-    }
-  },
-  "image": {
-    "mapValue": {
-      "fields": {
-        "timestamp": {
-          "integerValue": "1693911287"
-        },
-        "hash": {
-          "stringValue": "219aa4eb35"
-        },
-        "prompt": {
-          "stringValue": "storm in forest"
-        }
-      }
-    }
   }
 }

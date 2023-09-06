@@ -39,6 +39,7 @@ class WordPublicEditingController extends ValueNotifier<WordPublic>
       id: oldValue.id,
       image: oldValue.image,
       isVisible: isVisible,
+      ngrams: oldValue.ngrams,
       ofTheDay: ofTheDayController.value,
       partOfSpeechSenses: partOfSpeechSensesController.nonNullValues,
       pronunciation: oldValue.pronunciation,

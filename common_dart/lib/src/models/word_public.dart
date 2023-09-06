@@ -23,6 +23,9 @@ class WordPublic implements WithId<String> {
   @JsonKey(defaultValue: true)
   final bool isVisible;
 
+  @JsonKey(defaultValue: [])
+  final List<String> ngrams;
+
   @JsonKey(fromJson: yyyyMmDdToUtcDateTime, toJson: dateTimeToYyyyMmDd)
   final DateTime? ofTheDay;
 
@@ -39,6 +42,7 @@ class WordPublic implements WithId<String> {
     required this.id,
     required this.image,
     required this.isVisible,
+    required this.ngrams,
     required this.ofTheDay,
     required this.partOfSpeechSenses,
     required this.pronunciation,

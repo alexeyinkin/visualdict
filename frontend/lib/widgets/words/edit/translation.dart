@@ -16,10 +16,12 @@ class TranslationEditWidget extends StatelessWidget {
       animation: controller,
       builder: (context, _) {
         return Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
               child: TextField(
                 controller: controller.textController,
+                maxLines: null,
               ),
             ),
             LockButton(

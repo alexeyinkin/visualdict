@@ -14,13 +14,27 @@ class WordPublicFirestoreJsonFilesLoaderFactory
   static final _dir =
       '$toRepositoryRoot/$repositoryRootToFirestoreDataRoot/${CollectionsEnum.WordPublic.name}';
 
-  final re = RegExp(r'\.json$');
+  final _reTail = r'\.json$';
+  //final re = RegExp(r'\.json$');
 
   @override
   FileIterableBuilder createFileIterableBuilder(WordPublicFilter filter) {
+    var dir = _dir;
+
+    final search = filter.search ?? '';
+    if (search != '') {
+      final firstA = search.substring(0, 1);
+      dir += '/$firstA';
+
+      if (search.length > 1) {
+        final first2A = search.substring(0, 2);
+        dir += '/$first2A';
+      }
+    }
+
     return RecursiveFileIterableBuilder(
-      directory: Directory(_dir),
-      re: re,
+      directory: Directory(dir),
+      re: RegExp('^' + RegExp.escape(search) + '.*' + _reTail),
     );
   }
 

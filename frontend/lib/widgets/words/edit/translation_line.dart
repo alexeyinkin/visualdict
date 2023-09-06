@@ -17,6 +17,7 @@ class TranslationLineEditWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MyPadding(
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
             width: 30,

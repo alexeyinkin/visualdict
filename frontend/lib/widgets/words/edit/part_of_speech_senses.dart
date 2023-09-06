@@ -59,7 +59,7 @@ class PartOfSpeechSensesEditWidget extends StatelessWidget {
                         ),
                         shrinkWrap: true,
                       ),
-                      ListAddButtonBuilder(
+                      CollectionAddButtonBuilder(
                         controller: controller.sensesController,
                       ),
                     ],

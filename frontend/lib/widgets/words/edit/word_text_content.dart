@@ -64,7 +64,7 @@ class WordTextContentEditWidget extends StatelessWidget {
                 itemBuilder: (_, c, index) => PartOfSpeechSensesEditWidget(c),
                 shrinkWrap: true,
               ),
-              ListAddButtonBuilder(
+              CollectionAddButtonBuilder(
                 controller: controller.partOfSpeechSensesController,
                 enabledBuilder: (context) => DefaultAddButton(
                   onPressed: controller

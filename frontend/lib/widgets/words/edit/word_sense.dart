@@ -86,7 +86,7 @@ class WordSenseEditWidget extends StatelessWidget {
                       ),
                       shrinkWrap: true,
                     ),
-                    MapAddButtonBuilder(
+                    CollectionAddButtonBuilder(
                       controller: controller.definitionTranslationsController,
                       enabledBuilder: (_) => IconButton(
                         onPressed: () =>
@@ -105,7 +105,7 @@ class WordSenseEditWidget extends StatelessWidget {
                       ),
                       shrinkWrap: true,
                     ),
-                    ListAddButtonBuilder(
+                    CollectionAddButtonBuilder(
                       controller: controller.usagesController,
                       enabledBuilder: (_) => IconButton(
                         onPressed: () => controller.usagesController.add(

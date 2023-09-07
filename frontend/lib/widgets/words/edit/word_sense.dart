@@ -6,6 +6,7 @@ import '../../../controllers/commentable.dart';
 import '../../../controllers/is_visible.dart';
 import '../../../controllers/lang.dart';
 import '../../../controllers/translation.dart';
+import '../../../controllers/usage_list.dart';
 import '../../../theme/my_theme_extension.dart';
 import '../../../theme/theme.dart';
 import '../../buttons/comment.dart';
@@ -14,15 +15,21 @@ import '../../buttons/settings.dart';
 import '../../layout/editor_frame.dart';
 import '../../layout/is_visible_frame.dart';
 import 'comment_field.dart';
+import 'part_of_speech_senses.dart';
 import 'translation_line.dart';
-import 'usage.dart';
+import 'usages.dart';
+import 'word_details.dart';
 
 class WordSenseEditWidget extends StatelessWidget {
   final int index;
+  final WordPublicEditingController wordController;
+  final PartOfSpeechSensesEditingController posController;
   final SenseEditingController controller;
 
   const WordSenseEditWidget(
     this.controller, {
+    required this.wordController,
+    required this.posController,
     required this.index,
   });
 
@@ -98,21 +105,11 @@ class WordSenseEditWidget extends StatelessWidget {
                       ),
                     ),
                     const MySpacing(),
-                    ReorderableListEditor(
-                      controller: controller.usagesController,
-                      itemBuilder: (_, c, index) => EditorFrame(
-                        child: UsageEditWidget(c),
-                      ),
-                      shrinkWrap: true,
-                    ),
-                    CollectionAddButtonBuilder(
-                      controller: controller.usagesController,
-                      enabledBuilder: (_) => IconButton(
-                        onPressed: () => controller.usagesController.add(
-                          null,
-                        ),
-                        icon: const Text('💬'),
-                      ),
+                    UsagesEditWidget(
+                      controller.usagesController,
+                      wordController: wordController,
+                      posController: posController,
+                      senseController: controller,
                     ),
                   ],
                 ),
@@ -149,10 +146,7 @@ class SenseEditingController extends ValueNotifier<Sense?>
     maxLength: 10000,
     isReorderable: false,
   );
-  final usagesController = ListEditingController<Usage, UsageEditingController>(
-    createItemController: UsageEditingController.new,
-    maxLength: 10,
-  );
+  final usagesController = UsageListEditingController();
 
   SenseEditingController() : super(null) {
     commentController.addListener(notifyListeners);

@@ -20,7 +20,8 @@ class WordTranscriptionViewWidget extends StatelessWidget {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text('/${wordPublic.transcription}/'),
+        if (wordPublic.transcription != '')
+          Text('/${wordPublic.transcription}/'),
         if (canPlay) ...[
           const MySpacing(),
           IconButton(

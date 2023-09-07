@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class SmallIconButton extends StatelessWidget {
   final Widget icon;
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed;
 
   const SmallIconButton({
     required this.icon,

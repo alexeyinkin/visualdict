@@ -11,12 +11,17 @@ import '../../layout/editor_frame.dart';
 import '../../layout/is_visible_frame.dart';
 import 'comment_field.dart';
 import 'part_of_speech_dropdown.dart';
+import 'word_details.dart';
 import 'word_sense.dart';
 
 class PartOfSpeechSensesEditWidget extends StatelessWidget {
+  final WordPublicEditingController wordController;
   final PartOfSpeechSensesEditingController controller;
 
-  const PartOfSpeechSensesEditWidget(this.controller);
+  const PartOfSpeechSensesEditWidget(
+    this.controller, {
+    required this.wordController,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -55,7 +60,12 @@ class PartOfSpeechSensesEditWidget extends StatelessWidget {
                       ReorderableListEditor(
                         controller: controller.sensesController,
                         itemBuilder: (_, c, index) => EditorFrame(
-                          child: WordSenseEditWidget(c, index: index),
+                          child: WordSenseEditWidget(
+                            c,
+                            wordController: wordController,
+                            posController: controller,
+                            index: index,
+                          ),
                         ),
                         shrinkWrap: true,
                       ),

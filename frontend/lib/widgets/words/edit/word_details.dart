@@ -30,6 +30,8 @@ class WordPublicEditingController extends ValueNotifier<WordPublic>
     commentController.addListener(notifyListeners);
   }
 
+  String get id => super.value.id;
+
   @override
   WordPublic get value {
     final oldValue = super.value;

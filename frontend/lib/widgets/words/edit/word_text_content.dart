@@ -61,7 +61,10 @@ class WordTextContentEditWidget extends StatelessWidget {
               ),
               ReorderableListEditor(
                 controller: controller.partOfSpeechSensesController,
-                itemBuilder: (_, c, index) => PartOfSpeechSensesEditWidget(c),
+                itemBuilder: (_, c, index) => PartOfSpeechSensesEditWidget(
+                  c,
+                  wordController: controller,
+                ),
                 shrinkWrap: true,
               ),
               CollectionAddButtonBuilder(

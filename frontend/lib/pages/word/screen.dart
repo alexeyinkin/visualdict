@@ -69,5 +69,7 @@ class WordScreen extends StatelessWidget {
       wordPublic.toJson(),
       toRepositoryRoot: toRepositoryRoot,
     );
+
+    notifier.bloc.reload();
   }
 }

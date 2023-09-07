@@ -7,6 +7,7 @@ import 'package:url_strategy/url_strategy.dart';
 
 import 'init/data_source.dart';
 import 'init/locator.dart';
+import 'init/openai.dart';
 import 'pages/about/page.dart';
 import 'pages/home/screen.dart';
 import 'pages/words/page.dart';
@@ -25,6 +26,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
 
+  initializeOpenAiBackend();
   await initializeDataSource();
   await initializeServiceLocator();
 

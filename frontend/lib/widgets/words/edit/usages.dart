@@ -67,12 +67,16 @@ class UsagesEditWidget extends StatelessWidget {
     );
   }
 
-  Future<void> _generate(int count) async {
+  Future<void> _generate({
+    required int count,
+    required String involving,
+  }) async {
     await controller.generate(
       word: wordController.id,
       pos: posController.partOfSpeech!,
       definition: senseController.definitionController.text.trim(),
       count: count,
+      involving: involving,
     );
   }
 }

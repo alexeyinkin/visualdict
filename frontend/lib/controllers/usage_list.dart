@@ -24,7 +24,7 @@ class UsageListEditingController
     required PartOfSpeechEnum pos,
     required String definition,
     required int count,
-    String? involving,
+    String involving = '',
   }) async {
     if (_isGenerating) {
       return;
@@ -40,6 +40,7 @@ class UsageListEditingController
         pos: pos,
         definition: definition,
         count: count,
+        involving: involving,
       );
 
       for (final str in result) {

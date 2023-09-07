@@ -3,16 +3,14 @@ import 'dart:io';
 
 import 'package:common_dart/common_dart.dart';
 import 'package:common_dart_backend/common_dart_backend.dart';
+import 'package:create_pronunciation/visitors/mp3_fragments.dart';
+import 'package:create_pronunciation/visitors/murf_ai_request.dart';
 
 import 'args.dart';
+import 'tokens.dart';
 
 const _toRoot = '../..';
-const _perLine = 25;
-const _silenceDb = -50;
-const _generateSilenceDuration = Duration(milliseconds: 1500);
-final _detectSilenceDuration =
-    _generateSilenceDuration + Duration(milliseconds: 0); // Natural pausing.
-final _glue = '[pause ${_generateSilenceDuration.inMilliseconds / 1000}s]';
+const _detectSilenceDuration = Duration(milliseconds: 2000);
 final _tempDir = Directory('temp');
 
 Future<void> main(List<String> rawArgs) async {
@@ -28,14 +26,12 @@ Future<void> main(List<String> rawArgs) async {
     }
   ];
 
-  if (args.generate) {
-    // Generate the input for Murf.ai
-    final paragraphs = words
-        .chunks(_perLine)
-        .map((words) => words.map((w) => '$w.').join(_glue))
-        .join('\n$_glue\n');
+  final tokensByLang = _getTokens(words, args);
 
-    print(paragraphs);
+  if (args.generate) {
+    final v = MurfAiRequestVisitor();
+    await v.visitTokens(tokensByLang);
+    print(requestToManualRequest(v.request));
     return;
   }
 
@@ -44,34 +40,111 @@ Future<void> main(List<String> rawArgs) async {
       input: File(args.split!),
       minDuration: _detectSilenceDuration,
       dstDir: _tempDir,
-      fileNames: words,
     );
 
-    for (final word in words) {
-      _moveWordFile(
-        word: word,
-        srcDir: _tempDir,
-      );
-
-      await setWordPronunciationFromRaw(word: word, prefix: _toRoot);
-    }
-
+    final v = Mp3FragmentsVisitor(directory: _tempDir);
+    await v.visitTokens(tokensByLang);
     return;
   }
 
   throw Exception('Provide either --generate, or --split.');
 }
 
-void _moveWordFile({
-  required String word,
-  required Directory srcDir,
-}) {
-  final dstDir = getRawWordDir(word, prefix: _toRoot);
-  if (!dstDir.existsSync()) {
-    dstDir.createSync(recursive: true);
+Map<String, List<PronunciationToken>> _getTokens(
+  List<String> words,
+  WordCreatePronunciationArgs args,
+) {
+  return _mergeMaps(
+    words.map((word) => _getWordTokens(word, args)),
+  );
+}
+
+Map<String, List<PronunciationToken>> _getWordTokens(
+  String word,
+  WordCreatePronunciationArgs args,
+) {
+  final result = <String, List<PronunciationToken>>{};
+
+  if (args.word) {
+    _addTokenToMap(result, WordToken(word: word));
   }
 
-  final name = wordToFileName(word);
-  final file = File('${srcDir.path}/$name.mp3');
-  file.renameSync('${dstDir.path}/$name.mp3');
+  late final wordPublic = WordPublic.fromJson(
+      {'id': word, ...getWordPublicMap(word, toRepositoryRoot: _toRoot)});
+
+  Sense _requireFirstSense() {
+    final posSenses = wordPublic.partOfSpeechSenses.firstOrNull;
+    if (posSenses == null) {
+      throw Exception('No partOfSpeechSenses in $word');
+    }
+
+    final sense = posSenses.senses.firstOrNull;
+    if (sense == null) {
+      throw Exception('No senses in $word -> ${posSenses.partOfSpeech.name}');
+    }
+
+    return sense;
+  }
+
+  if (args.usage) {
+    final sense = _requireFirstSense();
+    final usage = sense.usages.firstOrNull;
+    if (usage == null) {
+      throw Exception('No usages in $word -> ${sense.definition}');
+    }
+
+    _addTokenToMap(result, UsageToken(word: word, usage: usage.text));
+  }
+
+  for (final lang in args.defLangs) {
+    final sense = _requireFirstSense();
+    final translation = sense.definitionTranslations[lang];
+    if (translation == null) {
+      throw Exception(
+        'No translation in $word -> ${sense.definition} -> $lang',
+      );
+    }
+
+    _addTokenToMap(
+      result,
+      DefinitionToken(
+        lang: lang,
+        word: word,
+        definition: translation.text,
+      ),
+    );
+  }
+
+  return result;
+}
+
+void _addTokenToMap(
+  Map<String, List<PronunciationToken>> map,
+  PronunciationToken token,
+) {
+  final lang = token.lang;
+
+  if (!map.containsKey(lang)) {
+    map[lang] = [token];
+  } else {
+    map[lang]!.add(token);
+  }
+}
+
+Map<K, List<V>> _mergeMaps<K, V>(Iterable<Map<K, Iterable<V>>> maps) {
+  final result = <K, List<V>>{};
+
+  for (final map in maps) {
+    for (final entry in map.entries) {
+      final lang = entry.key;
+
+      if (!result.containsKey(lang)) {
+        result[lang] = [...entry.value];
+      } else {
+        result[lang]!.addAll(entry.value);
+      }
+    }
+  }
+
+  return result;
 }

@@ -202,7 +202,7 @@ Future<void> _exportReelOverlay({
       '-background', 'none',
       '-pointsize', '50',
       '-size', '1000x350',
-      '-gravity', 'center',
+      '-gravity', 'north',
       'caption:' + (sense.definitionTranslations[lang]?.text ?? 'NULL'),
 
       // Put the overlay in background ("swap").
@@ -210,7 +210,7 @@ Future<void> _exportReelOverlay({
 
       // Position the definitions.
       '-gravity', 'north',
-      '-geometry', '+0+1412',
+      '-geometry', '+0+1556',
       '-composite',
 
       // Put the word.

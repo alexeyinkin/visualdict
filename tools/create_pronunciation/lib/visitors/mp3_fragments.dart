@@ -44,7 +44,7 @@ class Mp3FragmentsVisitor extends PronunciationTokenVisitor {
   }
 
   Directory _getRawWordDir(PronunciationToken token) {
-    final result = getRawWordDir(token.word, prefix: _toRoot);
+    final result = getRawWordDir(token.word, toRepositoryRoot: _toRoot);
     if (!result.existsSync()) {
       result.createSync(recursive: true);
     }

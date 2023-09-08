@@ -1,23 +1,20 @@
-import 'dart:io';
-
-import 'package:collection/collection.dart';
 import 'package:common_dart/common_dart.dart';
 import 'package:common_dart_backend/common_dart_backend.dart';
 
 import 'args.dart';
-
-const _toRoot = '../..';
-const _maxDefinitionsLength = 200;
-const _jpegQuality = 90;
-
-// Downloaded from https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed
-const _font = 'assets/fonts/FiraSansExtraCondensed-Medium.ttf';
+import 'constants.dart';
+import 'exporters/audio_word_silence.dart';
+import 'exporters/post_image.dart';
+import 'exporters/reel.dart';
+import 'exporters/reel_audio.dart';
+import 'exporters/reel_overlay.dart';
+import 'exporters/texts.dart';
 
 Future<void> main(List<String> rawArgs) async {
-  initOpenAiKey(_toRoot);
   final args = WordExportArgs.parse(rawArgs);
 
-  final map = getWordPublicMap(args.word, toRepositoryRoot: _toRoot);
+  final map = getWordPublicMap(args.word, toRepositoryRoot: toRoot);
+  final wordRaw = getWordRaw(args.word, toRepositoryRoot: toRoot);
 
   final image = Image.fromJson(map['image']);
   final partOfSpeechSenses = (map['partOfSpeechSenses'] as Iterable)
@@ -28,255 +25,41 @@ Future<void> main(List<String> rawArgs) async {
   final lang = args.lang;
   final word = args.word;
 
-  await _exportTexts(
-    image: image,
-    lang: lang,
-    partOfSpeechSenses: partOfSpeechSenses,
-    transcription: transcription,
-    word: word,
-  );
-
-  await _exportPostImage(word: word);
-  await _exportReelBackground(word: word);
-
-  await _exportReelOverlay(
-    lang: lang,
-    sense: partOfSpeechSenses.first.senses.first,
-    word: word,
-  );
-
-  await _exportAudioWithSilence(word: word);
-  await _exportReelAudio(word: word, lang: lang);
-}
-
-Future<void> _exportTexts({
-  required Image image,
-  required String lang,
-  required List<PartOfSpeechSenses> partOfSpeechSenses,
-  required String transcription,
-  required String word,
-}) async {
-  final pos1 = partOfSpeechSenses.first;
-  final pos1sense1 = pos1.senses.first;
-  final pos1sense2 = pos1.senses.elementAtOrNull(1);
-  final pos1sense3 = pos1.senses.elementAtOrNull(2);
-
-  final pos2 = partOfSpeechSenses.elementAtOrNull(1);
-  final pos2sense1 = pos2?.senses.first;
-  final pos2sense2 = pos2?.senses.elementAtOrNull(1);
-
-  // Key is the priority for keeping.
-  final options = {
-    0: (pos1, pos1sense1),
-    2: (pos1, pos1sense2),
-    4: (pos1, pos1sense3),
-    1: (pos2, pos2sense1),
-    3: (pos2, pos2sense2),
-  };
-
-  options.removeWhere((k, record) {
-    final (pos, sense) = record;
-    return pos == null || sense == null;
-  });
-
-  // Remove items with least priority until we fit length.
-  while (options.length > 1) {
-    final length = options.values.fold(
-      0,
-      (n, record) => n + record.$2!.definition.length,
+  if (args.all || args.texts) {
+    await exportTexts(
+      image: image,
+      lang: lang,
+      partOfSpeechSenses: partOfSpeechSenses,
+      transcription: transcription,
+      word: word,
     );
-
-    if (length <= _maxDefinitionsLength) {
-      break;
-    }
-
-    final keys = [...options.keys];
-    keys.sort();
-    options.remove(keys.last);
   }
 
-  final senses = options.values.map((record) => record.$2).cast<Sense>();
-  final definitions = senses.map((s) => s.definitionTranslations[lang]?.text);
-  final usages = senses.map((s) => s.usages).expand((usages) => usages);
-
-  final exportWordDir = getExportWordDir(word, prefix: _toRoot);
-  if (!exportWordDir.existsSync()) {
-    exportWordDir.createSync(recursive: true);
+  if (args.all || args.postImage) {
+    await exportPostImage(word: word);
   }
 
-  final instagramText = '''
-$word /$transcription/ — ${definitions.join(' ')}
-
-${usages.map((u) => '💬 ${u.text.replaceAll('**', '')}').join('\n')}
-
-🪄🖼️ ${image.prompt}
-''';
-
-  File(exportWordDir.path + '/$word-ig-$lang.txt')
-      .writeAsStringSync(instagramText + '\n');
-
-  final telegramText = '''
-$instagramText
-@word_of_the_day_rus
-''';
-  File(exportWordDir.path + '/$word-tg-$lang.txt')
-      .writeAsStringSync(telegramText + '\n');
-}
-
-Future<void> _exportPostImage({
-  required String word,
-}) async {
-  final srcDir = getRawWordDir(word, prefix: _toRoot);
-  final exportWordDir = getExportWordDir(word, prefix: _toRoot);
-
-  final name = wordToFileName(word);
-  final srcFile = File('${srcDir.path}/${name}.png');
-
-  final result = await Process.run(
-    'convert',
-    [
-      // Overlay the image and the grey bottom.
-      srcFile.path,
-      'assets/overlays/post-overlay.png',
-      '-composite',
-
-      // Global settings for all layers (if we add more than one).
-      '-font', 'assets/fonts/FiraSansExtraCondensed-Medium.ttf',
-      '-fill', 'white',
-
-      // Put the word.
-      '-pointsize', '98',
-      '-gravity', 'center',
-      '-annotate', '+0+441', word,
-
-      // Export.
-      '-quality', '$_jpegQuality',
-      '${exportWordDir.path}/$name.jpeg',
-    ],
-  );
-
-  if (result.exitCode != 0) {
-    throw Exception(result);
-  }
-}
-
-Future<void> _exportReelBackground({
-  required String word,
-}) async {
-  final srcDir = getRawWordDir(word, prefix: _toRoot);
-  final exportWordDir = getExportWordDir(word, prefix: _toRoot);
-
-  final name = wordToFileName(word);
-  final srcFiles = [
-    File('${srcDir.path}/${name}-vertical.png'),
-    File('${srcDir.path}/${name}.png'),
-  ];
-
-  for (final srcFile in srcFiles) {
-    if (srcFile.existsSync()) {
-      srcFile.copy('${exportWordDir.path}/$name-vertical.png');
-      return;
-    }
+  if (args.all || args.reelOverlay) {
+    await exportReelOverlay(
+      lang: lang,
+      sense: partOfSpeechSenses.first.senses.first,
+      word: word,
+    );
   }
 
-  throw Exception('None of the candidate files exists: $srcFiles');
-}
-
-Future<void> _exportReelOverlay({
-  required String lang,
-  required Sense sense,
-  required String word,
-}) async {
-  final exportWordDir = getExportWordDir(word, prefix: _toRoot);
-  final name = wordToFileName(word);
-
-  final result = await Process.run(
-    'convert',
-    [
-      // Global settings for all layers.
-      '-font', _font,
-      '-fill', 'white',
-
-      // Definitions first, before any background.
-      // This is to allow "caption" to wrap lines in the given size.
-      '-background', 'none',
-      '-pointsize', '50',
-      '-size', '1000x350',
-      '-gravity', 'north',
-      'caption:' + (sense.definitionTranslations[lang]?.text ?? 'NULL'),
-
-      // Put the overlay in background ("swap").
-      'assets/overlays/reel-overlay.png', '+swap',
-
-      // Position the definitions.
-      '-gravity', 'north',
-      '-geometry', '+0+1556',
-      '-composite',
-
-      // Put the word.
-      '-pointsize', '98',
-      '-gravity', 'center',
-      '-annotate', '+0+520', word,
-
-      // Export.
-      '${exportWordDir.path}/$name-bottom-$lang.png',
-    ],
-  );
-
-  if (result.exitCode != 0) {
-    throw Exception(result);
+  if (args.all || args.audioWordSilence) {
+    await exportAudioWordSilence(word: word);
   }
-}
 
-Future<void> _exportAudioWithSilence({
-  required String word,
-}) async {
-  final srcDir = getRawWordDir(word, prefix: _toRoot);
-  final exportWordDir = getExportWordDir(word, prefix: _toRoot);
-  final name = wordToFileName(word);
-
-  final result = await Process.run(
-    'ffmpeg',
-    [
-      ...Ffmpeg.input('${srcDir.path}/$name.mp3'),
-      ...Ffmpeg.silence(const Duration(seconds: 4)),
-      ...Ffmpeg.concatAudio(count: 2),
-      ...Ffmpeg.exportAudio('${exportWordDir.path}/$name.mp3'),
-    ],
-  );
-
-  if (result.exitCode != 0) {
-    print(result.stderr);
-    throw Exception(result);
+  if (args.all || args.reelAudio) {
+    await exportReelAudio(word: word, lang: lang);
   }
-}
 
-Future<void> _exportReelAudio({
-  required String word,
-  required String lang,
-}) async {
-  final srcDir = getRawWordDir(word, prefix: _toRoot);
-  final exportWordDir = getExportWordDir(word, prefix: _toRoot);
-  final name = wordToFileName(word);
-
-  final result = await Process.run(
-    'ffmpeg',
-    [
-      ...Ffmpeg.silence(const Duration(milliseconds: 750)),
-      ...Ffmpeg.input('${srcDir.path}/$name.mp3'),
-      ...Ffmpeg.silence(const Duration(milliseconds: 1500)),
-      ...Ffmpeg.input('${srcDir.path}/$name-def-$lang.mp3'),
-      ...Ffmpeg.silence(const Duration(milliseconds: 1000)),
-      ...Ffmpeg.input('assets/audio/example-$lang.mp3'),
-      ...Ffmpeg.input('${srcDir.path}/$name-usage.mp3'),
-      ...Ffmpeg.silence(const Duration(milliseconds: 1500)),
-      ...Ffmpeg.concatAudio(count: 8),
-      ...Ffmpeg.exportAudio('${exportWordDir.path}/$name-reel-$lang.mp3'),
-    ],
-  );
-
-  if (result.exitCode != 0) {
-    print(result.stderr);
-    throw Exception(result);
+  if (args.all || args.reel) {
+    await exportReel(
+      lang: lang,
+      word: word,
+      x: wordRaw.verticalX,
+    );
   }
 }

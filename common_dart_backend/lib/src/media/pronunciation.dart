@@ -13,11 +13,11 @@ Future<void> setWordPronunciationFromRaw({
   required String word,
   required String prefix,
 }) async {
-  final srcDir = getRawWordDir(word, prefix: prefix);
+  final srcDir = getRawWordDir(word, toRepositoryRoot: prefix);
   final name = wordToFileName(word);
   final srcFile = File('${srcDir.path}/$name.mp3');
 
-  final dstDir = getProcessedWordDir(word, prefix: prefix);
+  final dstDir = getProcessedWordDir(word, toRepositoryRoot: prefix);
 
   final secondsSinceEpoch = clock.now().secondsSinceEpoch;
   final hash = getFileHashForName(srcFile.readAsBytesSync());

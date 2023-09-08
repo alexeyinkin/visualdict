@@ -11,4 +11,10 @@ dependencies:
   crypto: ^3.0.3
   dart_openai: ^4.0.0
   firestore_api_parser: ^1.1.1
+  json_annotation: ^4.8.1
   path: ^1.8.3
+  yaml: ^3.1.2
+
+dev_dependencies:
+  build_runner: ^2.4.6
+  json_serializable: ^6.7.1

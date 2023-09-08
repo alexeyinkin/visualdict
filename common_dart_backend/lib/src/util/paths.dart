@@ -6,19 +6,22 @@ const _rawWordsRoot = '/raw/words';
 const _processedWordsRoot = '/static/w';
 const _exportWordsRoot = '/export';
 
-Directory getRawWordDir(String word, {String prefix = '.'}) {
+Directory getRawWordDir(String word, {String toRepositoryRoot = '.'}) {
   final nesting = alphabeticNesting(word);
-  final path= '$prefix$_rawWordsRoot/$nesting/$word';
+  final name = wordToFileName(word);
+  final path = '$toRepositoryRoot$_rawWordsRoot/$nesting/$name';
   return Directory(path);
 }
 
-Directory getProcessedWordDir(String word, {String prefix = '.'}) {
+Directory getProcessedWordDir(String word, {String toRepositoryRoot = '.'}) {
   final nesting = alphabeticNesting(word);
-  final path= '$prefix$_processedWordsRoot/$nesting/$word';
+  final name = wordToFileName(word);
+  final path = '$toRepositoryRoot$_processedWordsRoot/$nesting/$name';
   return Directory(path);
 }
 
-Directory getExportWordDir(String word, {String prefix = '.'}) {
-  final path= '$prefix$_exportWordsRoot/$word';
+Directory getExportWordDir(String word, {String toRepositoryRoot = '.'}) {
+  final name = wordToFileName(word);
+  final path = '$toRepositoryRoot$_exportWordsRoot/$name';
   return Directory(path);
 }

@@ -4,7 +4,6 @@ import 'package:clock/clock.dart';
 import 'package:common_dart/common_dart.dart';
 import 'package:common_dart_backend/common_dart_backend.dart';
 import 'package:path/path.dart';
-import 'package:yaml/yaml.dart';
 
 import 'args.dart';
 
@@ -29,13 +28,10 @@ Future<void> main(List<String> rawArgs) async {
     throw UnimplementedError('Non-public words are not implemented yet.');
   }
 
-  final srcDir = getRawWordDir(args.word, prefix: _toRoot);
+  final srcDir = getRawWordDir(args.word, toRepositoryRoot: _toRoot);
   final srcFile = File('${srcDir.path}/${args.word}.png');
-  final yaml = loadYaml(
-    File('${srcDir.path}/${args.word}.yaml').readAsStringSync(),
-  );
-
-  final dstDir = getProcessedWordDir(args.word, prefix: _toRoot);
+  final wordRaw = getWordRaw(args.word, toRepositoryRoot: _toRoot);
+  final dstDir = getProcessedWordDir(args.word, toRepositoryRoot: _toRoot);
 
   final secondsSinceEpoch = clock.now().secondsSinceEpoch;
   final hash = getFileHashForName(srcFile.readAsBytesSync());
@@ -72,7 +68,7 @@ Future<void> main(List<String> rawArgs) async {
   final image = Image(
     timestamp: secondsSinceEpoch,
     hash: hash,
-    prompt: yaml['prompt'],
+    prompt: wordRaw.prompt,
   );
   map['image'] = image.toJson();
 

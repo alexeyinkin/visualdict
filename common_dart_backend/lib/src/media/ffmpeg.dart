@@ -1,36 +1,26 @@
+import 'dart:convert';
+import 'dart:io';
+
 class Ffmpeg {
-  static input(String path) {
-    return [
-      //
-      '-i', path,
-    ];
-  }
+  static Future<Duration> getDuration(String path) async {
+    final result = await Process.run(
+      'ffprobe',
+      [
+        //
+        '-loglevel', 'error',
+        '-print_format', 'json',
+        '-i', path,
+        '-show_streams',
+      ],
+    );
 
-  static silence(Duration duration) {
-    return [
-      //
-      '-t', (duration.inMilliseconds / 1000).toString(),
-      '-f', 'lavfi',
-      '-i', 'anullsrc=r=24000:cl=mono',
-    ];
-  }
+    if (result.exitCode != 0) {
+      print(result.stderr);
+      throw Exception('Cannot get the audio duration: $path');
+    }
 
-  static concatAudio({required int count}) {
-    final streams = [for (int i = 0; i < count; i++) '[$i:a]'].join();
-
-    return [
-      '-filter_complex',
-      '${streams}concat=n=$count:v=0:a=1[aout]',
-    ];
-  }
-
-  static exportAudio(String path) {
-    return [
-      //
-      '-map', '[aout]',
-      '-b:a', '192k',
-      '-y',
-      path,
-    ];
+    final map = jsonDecode(result.stdout);
+    final seconds = double.parse(map['streams'][0]['duration']);
+    return Duration(milliseconds: (seconds * 1000).floor());
   }
 }

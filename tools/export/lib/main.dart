@@ -44,6 +44,8 @@ Future<void> main(List<String> rawArgs) async {
     sense: partOfSpeechSenses.first.senses.first,
     word: word,
   );
+
+  await _exportAudioWithSilence(word: word);
 }
 
 Future<void> _exportTexts({
@@ -134,7 +136,7 @@ Future<void> _exportPostImage({
     [
       // Overlay the image and the grey bottom.
       srcFile.path,
-      'assets/post-overlay.png',
+      'assets/overlays/post-overlay.png',
       '-composite',
 
       // Global settings for all layers (if we add more than one).
@@ -203,7 +205,7 @@ Future<void> _exportReelOverlay({
       'caption:' + (sense.definitionTranslations[lang]?.text ?? 'NULL'),
 
       // Put the overlay in background ("swap").
-      'assets/reel-overlay.png', '+swap',
+      'assets/overlays/reel-overlay.png', '+swap',
 
       // Position the definitions.
       '-gravity', 'north',
@@ -221,6 +223,42 @@ Future<void> _exportReelOverlay({
   );
 
   if (result.exitCode != 0) {
+    throw Exception(result);
+  }
+}
+
+Future<void> _exportAudioWithSilence({
+  required String word,
+}) async {
+  final srcDir = getRawWordDir(word, prefix: _toRoot);
+  final exportWordDir = getExportWordDir(word, prefix: _toRoot);
+  final name = wordToFileName(word);
+
+  final result = await Process.run(
+    'ffmpeg',
+    [
+      // Original sound.
+      '-i', '${srcDir.path}/$name.mp3',
+
+      // Silence.
+      '-t', '4',
+      '-f', 'lavfi',
+      '-i', 'anullsrc=r=24000:cl=mono',
+
+      // Concatenate.
+      '-filter_complex',
+      '[0:a][1:a]concat=n=2:v=0:a=1[aout]',
+
+      // Export.
+      '-map', '[aout]',
+      '-b:a', '192k',
+      '-y',
+      '${exportWordDir.path}/$name.mp3',
+    ],
+  );
+
+  if (result.exitCode != 0) {
+    print(result.stderr);
     throw Exception(result);
   }
 }

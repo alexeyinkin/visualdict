@@ -1,20 +1,16 @@
 import 'dart:io';
 import 'dart:math';
 
-import 'package:common_dart/common_dart.dart';
-
 const _silenceDb = -50;
 
 Future<void> splitMp3BySilence({
   required File input,
   required Duration minDuration,
   required Directory dstDir,
-  required List<String> fileNames,
 }) async {
   final fragments = await _getFragments(
     input: input,
     minDuration: minDuration,
-    fileNames: fileNames,
   );
 
   for (final fragment in fragments) {
@@ -31,7 +27,7 @@ Future<void> splitMp3BySilence({
         // Output.
         '-c', 'copy',
         '-y', // Overwrite.
-        '${dstDir.path}/${fragment.name}.mp3',
+        '${dstDir.path}/${fragment.index}.mp3',
       ],
     );
 
@@ -44,17 +40,15 @@ Future<void> splitMp3BySilence({
 Future<List<MediaFragment>> _getFragments({
   required File input,
   required Duration minDuration,
-  required List<String> fileNames,
 }) async {
   final silenceDetector = await Process.run(
     'ffmpeg',
     [
-      '-i',
-      input.path,
+      //
+      '-i', input.path,
       '-af',
       'silencedetect=n=${_silenceDb}dB:d=${minDuration.inMilliseconds / 1000}',
-      '-f',
-      'null',
+      '-f', 'null',
       '-',
     ],
   );
@@ -94,25 +88,19 @@ Future<List<MediaFragment>> _getFragments({
         MediaFragment(
           start: start,
           end: end,
-          name: wordToFileName(fileNames[nextIndex++]),
+          index: nextIndex++,
         ),
       );
-
-      if (nextIndex == fileNames.length) {
-        break;
-      }
     }
   }
 
-  if (nextIndex < fileNames.length) {
-    result.add(
-      MediaFragment(
-        start: start,
-        end: null,
-        name: wordToFileName(fileNames[nextIndex]),
-      ),
-    );
-  }
+  result.add(
+    MediaFragment(
+      start: start,
+      end: null,
+      index: nextIndex,
+    ),
+  );
 
   return result;
 }
@@ -120,11 +108,11 @@ Future<List<MediaFragment>> _getFragments({
 class MediaFragment {
   final double start;
   final double? end;
-  final String name;
+  final int index;
 
   const MediaFragment({
     required this.start,
     required this.end,
-    required this.name,
+    required this.index,
   });
 }

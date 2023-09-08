@@ -11,7 +11,7 @@ class MurfAiRequestVisitor extends PronunciationTokenVisitor {
 
   @override
   Future<void> visitUsageToken(UsageToken token) async {
-    request.addText(token.lang, token.usage);
+    request.addText(token.lang, token.usage.replaceAll('**', ''));
   }
 
   @override

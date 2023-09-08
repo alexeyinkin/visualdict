@@ -46,6 +46,7 @@ Future<void> main(List<String> rawArgs) async {
   );
 
   await _exportAudioWithSilence(word: word);
+  await _exportReelAudio(word: word, lang: lang);
 }
 
 Future<void> _exportTexts({
@@ -237,23 +238,40 @@ Future<void> _exportAudioWithSilence({
   final result = await Process.run(
     'ffmpeg',
     [
-      // Original sound.
-      '-i', '${srcDir.path}/$name.mp3',
+      ...Ffmpeg.input('${srcDir.path}/$name.mp3'),
+      ...Ffmpeg.silence(const Duration(seconds: 4)),
+      ...Ffmpeg.concatAudio(count: 2),
+      ...Ffmpeg.exportAudio('${exportWordDir.path}/$name.mp3'),
+    ],
+  );
 
-      // Silence.
-      '-t', '4',
-      '-f', 'lavfi',
-      '-i', 'anullsrc=r=24000:cl=mono',
+  if (result.exitCode != 0) {
+    print(result.stderr);
+    throw Exception(result);
+  }
+}
 
-      // Concatenate.
-      '-filter_complex',
-      '[0:a][1:a]concat=n=2:v=0:a=1[aout]',
+Future<void> _exportReelAudio({
+  required String word,
+  required String lang,
+}) async {
+  final srcDir = getRawWordDir(word, prefix: _toRoot);
+  final exportWordDir = getExportWordDir(word, prefix: _toRoot);
+  final name = wordToFileName(word);
 
-      // Export.
-      '-map', '[aout]',
-      '-b:a', '192k',
-      '-y',
-      '${exportWordDir.path}/$name.mp3',
+  final result = await Process.run(
+    'ffmpeg',
+    [
+      ...Ffmpeg.silence(const Duration(milliseconds: 750)),
+      ...Ffmpeg.input('${srcDir.path}/$name.mp3'),
+      ...Ffmpeg.silence(const Duration(milliseconds: 1500)),
+      ...Ffmpeg.input('${srcDir.path}/$name-def-$lang.mp3'),
+      ...Ffmpeg.silence(const Duration(milliseconds: 1000)),
+      ...Ffmpeg.input('assets/audio/example-$lang.mp3'),
+      ...Ffmpeg.input('${srcDir.path}/$name-usage.mp3'),
+      ...Ffmpeg.silence(const Duration(milliseconds: 1500)),
+      ...Ffmpeg.concatAudio(count: 8),
+      ...Ffmpeg.exportAudio('${exportWordDir.path}/$name-reel-$lang.mp3'),
     ],
   );
 

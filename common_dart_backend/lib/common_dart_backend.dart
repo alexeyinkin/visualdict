@@ -1,6 +1,7 @@
 export 'src/ai/chat_gpt_4.dart';
 export 'src/ai/text.dart';
 export 'src/constants/openai.dart';
+export 'src/media/ffmpeg.dart';
 export 'src/media/mp3.dart';
 export 'src/media/pronunciation.dart';
 export 'src/util/args.dart';

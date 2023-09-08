@@ -1,0 +1,131 @@
+{
+  "image": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": "1693999593"
+        },
+        "hash": {
+          "stringValue": "d9c43de57e"
+        },
+        "prompt": {
+          "stringValue": "hand petting a cat, purring"
+        }
+      }
+    }
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "copacetic"
+        },
+        {
+          "stringValue": "copaceti"
+        },
+        {
+          "stringValue": "copacet"
+        },
+        {
+          "stringValue": "copace"
+        },
+        {
+          "stringValue": "copac"
+        },
+        {
+          "stringValue": "copa"
+        },
+        {
+          "stringValue": "cop"
+        },
+        {
+          "stringValue": "co"
+        },
+        {
+          "stringValue": "c"
+        }
+      ]
+    }
+  },
+  "ofTheDay": {
+    "nullValue": null
+  },
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "adjective"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Completely satisfactory or acceptable, often in an impressive or surprising way."
+                          },
+                          "definition": {
+                            "stringValue": "Fully satisfactory or acceptable."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": true
+                                      },
+                                      "text": {
+                                        "stringValue": "Полностью удовлетворяющее или приемлемое."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The cat's behavior is completely **copacetic** today."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The final report was **copacetic** with their initial project goals."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "transcription": {
+    "stringValue": "kəˌpəˈsɛtɪk"
+  }
+}

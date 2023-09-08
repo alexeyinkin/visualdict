@@ -1,0 +1,146 @@
+{
+  "image": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": "1694084422"
+        },
+        "hash": {
+          "stringValue": "b8da21e708"
+        },
+        "prompt": {
+          "stringValue": "a guy balancing on an unstable unsafe ladder, nearly falling"
+        }
+      }
+    }
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "precarious"
+        },
+        {
+          "stringValue": "precariou"
+        },
+        {
+          "stringValue": "precario"
+        },
+        {
+          "stringValue": "precari"
+        },
+        {
+          "stringValue": "precar"
+        },
+        {
+          "stringValue": "preca"
+        },
+        {
+          "stringValue": "prec"
+        },
+        {
+          "stringValue": "pre"
+        },
+        {
+          "stringValue": "pr"
+        },
+        {
+          "stringValue": "p"
+        }
+      ]
+    }
+  },
+  "ofTheDay": {
+    "nullValue": null
+  },
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "adjective"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Dependent on circumstances beyond one's control and therefore prone to sudden collapse or failure."
+                          },
+                          "definition": {
+                            "stringValue": "Dependent on circumstances beyond one's control and therefore prone to sudden collapse or failure."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": true
+                                      },
+                                      "text": {
+                                        "stringValue": "Зависящий от обстоятельств, выходящих за пределы своего контроля, склонный к внезапному коллапсу или провалу."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "His **precarious** position on the ladder made me nervous."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The family lived in **precarious** financial conditions."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "transcription": {
+    "stringValue": "prɪˈkɛərɪəs"
+  },
+  "pronunciation": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": "1694149683"
+        },
+        "hash": {
+          "stringValue": "ded1a212b1"
+        }
+      }
+    }
+  }
+}

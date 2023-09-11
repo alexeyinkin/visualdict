@@ -38,7 +38,7 @@ class MurfAiRequest {
 }
 
 MurfAiManualRequest requestToManualRequest(MurfAiRequest request) {
-  const maxCharacters = 100;
+  const maxCharacters = 500;
   const separator = '[pause 4.0s]';
 
   final linesByLang = <String, List<String>>{};

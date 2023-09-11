@@ -6,6 +6,7 @@ import 'package:model_fetch/model_fetch.dart';
 
 import '../../constants/paths.dart';
 import '../../models/repository_engine.dart';
+import '../../theme/theme.dart';
 import '../../widgets/errors/loading_error.dart';
 import '../../widgets/loading/small_circular_progress_indicator.dart';
 import '../../widgets/my_scaffold.dart';
@@ -58,6 +59,19 @@ class WordScreen extends StatelessWidget {
               model: wordPublic,
               saveCallback: _save,
               viewBuilder: (_, w) => WordDetailsViewWidget(w),
+              buttonRowBuilder: (context, row) => Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  ElevatedButton(
+                    onPressed: notifier.bloc.reload,
+                    child: Text("Reload"),
+                  ),
+                  const MySpacing(),
+                  const MySpacing(),
+                  row,
+                ],
+              ),
             );
         }
     }

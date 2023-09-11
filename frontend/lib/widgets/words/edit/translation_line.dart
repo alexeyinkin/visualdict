@@ -9,7 +9,13 @@ import 'lang.dart';
 import 'translation.dart';
 
 class TranslationLineEditWidget extends StatelessWidget {
-  final MapEntryController<String, LangEditingController, Translation, TranslationEditingController> controller;
+  final MapEntryController<
+      String,
+      Translation,
+      LangEditingController,
+      TranslationEditingController
+      //
+      > controller;
 
   const TranslationLineEditWidget(this.controller);
 

@@ -139,8 +139,13 @@ class SenseEditingController extends ValueNotifier<Sense?>
   bool _isAdvanced = false;
   final complexDefinitionController = TextEditingController();
   final definitionController = TextEditingController();
-  final definitionTranslationsController = MapEditingController<String,
-      LangEditingController, Translation, TranslationEditingController>(
+  final definitionTranslationsController = MapEditingController<
+      String,
+      Translation,
+      LangEditingController,
+      TranslationEditingController
+      //
+      >(
     createKeyController: LangEditingController.new,
     createValueController: TranslationEditingController.new,
     maxLength: 10000,

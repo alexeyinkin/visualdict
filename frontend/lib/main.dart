@@ -21,6 +21,8 @@ import 'router/route_information_parser.dart';
 import 'router/router_delegate.dart';
 import 'router/tab_enum.dart';
 import 'theme/theme.dart';
+import 'util/build_context.dart';
+import 'util/element.dart';
 
 final pageStacks = PageStacks();
 
@@ -67,7 +69,13 @@ class MyAppLocalizer extends StatelessWidget {
       startLocale: settingsNotifier.locale,
       assetLoader: const YamlAssetLoader(),
       fallbackLocale: settingsNotifier.locale,
-      child: MyApp(),
+      child: AnimatedBuilder(
+        animation: settingsNotifier,
+        builder: (context, _) {
+          (context as Element).markNeedsBuildDescendants();
+          return MyApp();
+        },
+      ),
     );
   }
 }

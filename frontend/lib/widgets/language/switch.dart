@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 
@@ -29,9 +30,12 @@ class LanguageSwitchWidget extends StatelessWidget {
                 child: LanguageLineWidget(locale: locale),
               ),
           ],
-          onChanged: (locale) async => settingsNotifier.setLang(
-            locale!.languageCode,
-          ),
+          onChanged: (locale) async {
+            await EasyLocalization.of(context)!.setLocale(locale!);
+            await settingsNotifier.setLang(
+              locale.languageCode,
+            );
+          },
           selectedItemBuilder: (context) => [
             for (final locale in Locales.all)
               FlagWidget(

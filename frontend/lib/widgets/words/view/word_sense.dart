@@ -20,6 +20,7 @@ class WordSenseViewWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ext = Theme.of(context).extension<MyThemeExtension>()!;
+    final lang = context.locale.languageCode;
 
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -40,7 +41,7 @@ class WordSenseViewWidget extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              _getDefinition(),
+              _getDefinition(lang),
               const MySpacing(),
               for (final usage in sense.usages)
                 if (usage.isVisible)
@@ -56,7 +57,7 @@ class WordSenseViewWidget extends StatelessWidget {
     );
   }
 
-  Widget _getDefinition() {
+  Widget _getDefinition(String lang) {
     if (lang == LanguagesEnum.en.name) {
       return Text(sense.definition);
     }

@@ -36,9 +36,10 @@ class WordOfTheDayWidget extends StatelessWidget {
           children: [
             H2Widget('WordOfTheDayWidget.text'.tr()),
             const MySpacing(),
-            item == null
-                ? const SmallCircularProgressIndicator()
-                : WordNarrowViewWidget(item)
+            if (item == null)
+              const SmallCircularProgressIndicator()
+            else
+              WordNarrowViewWidget(item),
           ],
         );
       },

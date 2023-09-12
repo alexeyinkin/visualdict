@@ -4,6 +4,6 @@ part 'tab_enum.g.dart';
 
 @unmodifiableEnumMap
 enum TabEnum {
+  settings,
   words,
-  about,
 }

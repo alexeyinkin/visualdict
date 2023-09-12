@@ -4,21 +4,21 @@ import 'package:flutter/widgets.dart';
 import '../../router/tab_enum.dart';
 import 'page.dart';
 
-class AboutPath extends PagePath {
-  static const _location = '/about';
+class SettingsPath extends PagePath {
+  static const _location = '/settings';
 
-  const AboutPath() : super(key: AboutPage.classFactoryKey);
+  const SettingsPath() : super(key: SettingsPage.classFactoryKey);
 
   @override
   String get location => _location;
 
-  static AboutPath? tryParse(RouteInformation ri) {
+  static SettingsPath? tryParse(RouteInformation ri) {
     final uri = Uri.parse(ri.location ?? '');
     if (uri.path != _location) return null;
 
-    return const AboutPath();
+    return const SettingsPath();
   }
 
   @override
-  String get defaultStackKey => TabEnum.about.name;
+  String get defaultStackKey => TabEnum.settings.name;
 }

@@ -1,13 +1,3 @@
-AboutScreen:
-  text: >-
-    Привет.
-
-    Этот словарь генерируется искусственным интеллектом.
-    Мы недавно запустились и ещё только добавляем слова.
-    Заходите к нам почаще.
-
-  title: О проекте
-
 common:
   footer: '© Алексей Инкин, 2023'
   noTranslation: 'Нет перевода на русский'
@@ -20,7 +10,7 @@ ImagePromptWidget:
   midjourneyMd: '**Запрос Midjourney:** *{prompt}*'
 
 menu:
-  about: 'О проекте'
+  settings: 'Настройки'
   words: 'Слова'
 
 NoImageWidget:
@@ -43,6 +33,19 @@ RecentImagedWordsWidget:
 
 search:
   hint: 'Поиск'
+
+settings:
+  language: 'Язык приложения и дефиниций'
+
+SettingsScreen:
+  text: >-
+    Привет.
+
+    Этот словарь генерируется искусственным интеллектом.
+    Мы недавно запустились и ещё только добавляем слова.
+    Заходите к нам почаще.
+
+  title: 'Настройки'
 
 WordOfTheDayWidget:
   text: 'Слово дня'

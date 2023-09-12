@@ -3,33 +3,34 @@ import 'package:flutter/material.dart';
 
 import '../../constants/sizes.dart';
 import '../../theme/theme.dart';
+import '../../widgets/language/switch.dart';
 import '../../widgets/layout/h2.dart';
 import '../../widgets/my_scaffold.dart';
 import 'state.dart';
+import 'widgets/table.dart';
 
-class AboutScreen extends StatelessWidget {
-  final AboutNotifier notifier;
+class SettingsScreen extends StatelessWidget {
+  final SettingsNotifier notifier;
 
-  const AboutScreen(this.notifier);
+  const SettingsScreen(this.notifier);
 
   @override
   Widget build(BuildContext context) {
     return MyScaffold(
       maxWidth: MySizes.maxTextPageWidth,
-      scrolls: true,
+      scrolls: false,
       body: Column(
-        mainAxisSize: MainAxisSize.min,
         children: [
           H2Widget(
-            'AboutScreen.title'.tr(),
+            'SettingsScreen.title'.tr(),
           ),
           const MySpacing(),
-          Flexible(
-            child: const Text(
-              'AboutScreen.text',
-              textAlign: TextAlign.center,
-            ).tr(),
+          const SettingsTableWidget(
+            children: {
+              'language': LanguageSwitchWidget(showText: true),
+            },
           ),
+          const Expanded(child: SizedBox()),
         ],
       ),
     );

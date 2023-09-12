@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../router/tab_enum.dart';
 import '../../util/iterable.dart';
+import '../language/switch.dart';
 import 'menu_item.dart';
 // import 'profile_menu_item_widget.dart';
 
@@ -18,8 +19,11 @@ class TopMenuWidget extends StatelessWidget {
           value: TabEnum.words,
         ),
         MenuItemWidget(
-          title: 'menu.about'.tr(),
-          value: TabEnum.about,
+          title: 'menu.settings'.tr(),
+          value: TabEnum.settings,
+        ),
+        const LanguageSwitchWidget(
+          showText: false,
         ),
         // const ProfileMenuItemWidget(),
       ].alternateWith(const SizedBox(width: 40)).toList(growable: false),

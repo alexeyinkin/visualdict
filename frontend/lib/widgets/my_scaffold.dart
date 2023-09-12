@@ -51,7 +51,7 @@ class MyScaffold extends StatelessWidget {
     child = Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        child,
+        if (scrolls) child else Expanded(child: child),
         const HorizontalBlackLine(),
         const FooterWidget(),
       ],

@@ -20,7 +20,7 @@ class MyBottomNavigationBar extends StatelessWidget {
 
     return KeyedBottomNavigationBar<TabEnum>(
       currentItemKey: tab,
-      keyOrder: const [TabEnum.words, TabEnum.about],
+      keyOrder: const [TabEnum.words, TabEnum.settings],
       onTap: _onTabTap,
       //TODO(morozov): https://github.com/alexeyinkin/flutter-keyed-collection-widgets/issues/1
       items: UnmodifiableTabEnumMap(
@@ -32,9 +32,9 @@ class MyBottomNavigationBar extends StatelessWidget {
           icon: const Icon(Icons.search),
           label: 'menu.words'.tr(),
         ),
-        about: BottomNavigationBarItem(
-          icon: const Icon(Icons.info_outline),
-          label: 'menu.about'.tr(),
+        settings: BottomNavigationBarItem(
+          icon: const Icon(Icons.settings),
+          label: 'menu.settings'.tr(),
         ),
       ),
     );

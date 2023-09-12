@@ -1,6 +1,6 @@
 import 'package:app_state/app_state.dart';
 
-import '../pages/about/page.dart';
+import '../pages/settings/page.dart';
 import '../pages/word/page.dart';
 import '../pages/words/page.dart';
 
@@ -10,8 +10,8 @@ class PageFactory {
     Map<String, dynamic> state,
   ) {
     switch (factoryKey) {
-      case AboutPage.classFactoryKey:
-        return AboutPage.fromState(state);
+      case SettingsPage.classFactoryKey:
+        return SettingsPage.fromState(state);
 
       case WordsPage.classFactoryKey:
         return WordsPage.fromState(state);

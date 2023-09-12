@@ -1,16 +1,19 @@
 import 'package:app_state/app_state.dart';
-import 'package:common_dart/common_dart.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:easy_localization_loader/easy_localization_loader.dart';
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 import 'package:url_strategy/url_strategy.dart';
 
+import 'constants/locales.dart';
+import 'controllers/settings.dart';
 import 'init/data_source.dart';
 import 'init/locator.dart';
 import 'init/openai.dart';
-import 'pages/about/page.dart';
 import 'pages/home/screen.dart';
+import 'pages/settings/page.dart';
 import 'pages/words/page.dart';
+
 // import 'pages/me/tabs/profile_tab_enum.dart';
 // import 'pages/technologies/page.dart';
 import 'router/page_factory.dart';
@@ -39,9 +42,9 @@ void main() async {
   );
 
   pageStacks.addPageStack(
-    TabEnum.about.name,
+    TabEnum.settings.name,
     PageStack(
-      bottomPage: AboutPage(),
+      bottomPage: SettingsPage(),
       createPage: PageFactory.createPage,
     ),
   );
@@ -54,19 +57,16 @@ class MyAppLocalizer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const en = Locale('en');
-    const ru = Locale('ru');
-    const locales = {
-      'en': en,
-      'ru': ru,
-    };
+    final settingsNotifier = GetIt.instance.get<SettingsNotifier>();
 
     return EasyLocalization(
-      supportedLocales: const [en, ru],
+      supportedLocales: Locales.all,
       path: 'assets/translations',
-      startLocale: locales[lang],
+      // TODO: File easy_localization bug this breaks loading and forces en.
+      // saveLocale: false,
+      startLocale: settingsNotifier.locale,
       assetLoader: const YamlAssetLoader(),
-      fallbackLocale: en,
+      fallbackLocale: settingsNotifier.locale,
       child: MyApp(),
     );
   }

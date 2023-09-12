@@ -1,13 +1,3 @@
-AboutScreen:
-  text: >-
-    Hi.
-
-    This dictionary is generated with AI.
-    We just launched, so we are just filling it up with words.
-    Please visit us frequently.
-
-  title: 'About'
-
 common:
   footer: '© Alexey Inkin, 2023'
   noTranslation: 'No translation to English'
@@ -20,7 +10,7 @@ ImagePromptWidget:
   midjourneyMd: '**Midjourney Prompt:** *{prompt}*'
 
 menu:
-  about: 'About'
+  settings: 'Settings'
   words: 'Words'
 
 NoImageWidget:
@@ -43,6 +33,19 @@ RecentImagedWordsWidget:
 
 search:
   hint: 'Search'
+
+settings:
+  language: 'Language of the app and definitions'
+
+SettingsScreen:
+  text: >-
+    Hi.
+
+    This dictionary is generated with AI.
+    We just launched, so we are just filling it up with words.
+    Please visit us frequently.
+
+  title: 'Settings'
 
 WordOfTheDayWidget:
   text: 'Word of the Day'

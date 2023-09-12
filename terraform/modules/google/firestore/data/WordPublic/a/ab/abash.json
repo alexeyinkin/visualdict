@@ -1,0 +1,128 @@
+{
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "abash"
+        },
+        {
+          "stringValue": "abas"
+        },
+        {
+          "stringValue": "aba"
+        },
+        {
+          "stringValue": "ab"
+        },
+        {
+          "stringValue": "a"
+        }
+      ]
+    }
+  },
+  "ofTheDay": {
+    "nullValue": null
+  },
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "verb"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Cause to feel embarrassed, disconcerted, or ashamed."
+                          },
+                          "definition": {
+                            "stringValue": "Make someone feel uncomfortable or embarrassed."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Заставить кого-то чувствовать себя некомфортно или смущенно."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Her constant failing substantially **abashed** her confidence at school."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Her unexpected compliment seemed to **abash** him completely."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "transcription": {
+    "stringValue": "əˈbæʃ"
+  },
+  "pronunciation": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": "1694175703"
+        },
+        "hash": {
+          "stringValue": "097c5be70c"
+        }
+      }
+    }
+  },
+  "image": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": "1694175840"
+        },
+        "hash": {
+          "stringValue": "46e57e0ad7"
+        },
+        "prompt": {
+          "stringValue": "student crying at school"
+        }
+      }
+    }
+  }
+}

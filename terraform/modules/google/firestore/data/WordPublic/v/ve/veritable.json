@@ -1,0 +1,185 @@
+{
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "veritable"
+        },
+        {
+          "stringValue": "veritabl"
+        },
+        {
+          "stringValue": "veritab"
+        },
+        {
+          "stringValue": "verita"
+        },
+        {
+          "stringValue": "verit"
+        },
+        {
+          "stringValue": "veri"
+        },
+        {
+          "stringValue": "ver"
+        },
+        {
+          "stringValue": "ve"
+        },
+        {
+          "stringValue": "v"
+        }
+      ]
+    }
+  },
+  "ofTheDay": {
+    "nullValue": null
+  },
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "adjective"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Being in fact the thing named and not false, unreal, or imaginary- often used to stress the aptness of a metaphor."
+                          },
+                          "definition": {
+                            "stringValue": "Actually being what it is named or described as."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": true
+                                      },
+                                      "text": {
+                                        "stringValue": "Фактически являющееся тем, чем оно названо или описано."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The counterfeit detector revealed a **veritable** banknote."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "His library is a **veritable** treasure trove of antique books."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Authentic and genuine in nature or character."
+                          },
+                          "definition": {
+                            "stringValue": "True and real in nature or character."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Истинный и реальный по своей природе или характеру."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "His dedication to work is a **veritable** testament of commitment."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "transcription": {
+    "stringValue": "'vɛrɪtəbəl"
+  },
+  "image": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": "1694244460"
+        },
+        "hash": {
+          "stringValue": "3beb8a030e"
+        },
+        "prompt": {
+          "stringValue": "banknote in hands, man looking at it, bright light behind the banknote"
+        }
+      }
+    }
+  },
+  "pronunciation": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": "1694244932"
+        },
+        "hash": {
+          "stringValue": "d38aaa0909"
+        }
+      }
+    }
+  }
+}

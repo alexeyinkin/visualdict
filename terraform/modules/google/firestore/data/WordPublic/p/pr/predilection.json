@@ -1,0 +1,194 @@
+{
+  "image": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": "1694244438"
+        },
+        "hash": {
+          "stringValue": "c3fdb68ccd"
+        },
+        "prompt": {
+          "stringValue": "ice cream stand with many flavours, a kid pointing at one flavour, photorealistic"
+        }
+      }
+    }
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "predilection"
+        },
+        {
+          "stringValue": "predilectio"
+        },
+        {
+          "stringValue": "predilecti"
+        },
+        {
+          "stringValue": "predilect"
+        },
+        {
+          "stringValue": "predilec"
+        },
+        {
+          "stringValue": "predile"
+        },
+        {
+          "stringValue": "predil"
+        },
+        {
+          "stringValue": "predi"
+        },
+        {
+          "stringValue": "pred"
+        },
+        {
+          "stringValue": "pre"
+        },
+        {
+          "stringValue": "pr"
+        },
+        {
+          "stringValue": "p"
+        }
+      ]
+    }
+  },
+  "ofTheDay": {
+    "nullValue": null
+  },
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "noun"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "An established preference for something."
+                          },
+                          "definition": {
+                            "stringValue": "A strong preference for something."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Сильное предпочтение чего-либо."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Predilection** made him choose chocolate ice cream every time."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A predisposition to choose or like something, often without conscious reason."
+                          },
+                          "definition": {
+                            "stringValue": "Tendency to choose something without a conscious reason."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": true
+                                      },
+                                      "text": {
+                                        "stringValue": "Склонность выбирать что-то без осознаваемой причины."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "There is a **predilection** among some people to support the underdog."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "He has a **predilection** for taking dangerous risks."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "pronunciation": {
+    "mapValue": {
+      "fields": {
+        "timestamp": {
+          "integerValue": "1694244932"
+        },
+        "hash": {
+          "stringValue": "607cec7288"
+        }
+      }
+    }
+  },
+  "transcription": {
+    "stringValue": "pɹɪdɪˈlɛkʃən"
+  }
+}

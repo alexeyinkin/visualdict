@@ -7,6 +7,7 @@ import 'package:url_strategy/url_strategy.dart';
 
 import 'constants/locales.dart';
 import 'controllers/settings.dart';
+import 'init/analytics.dart';
 import 'init/data_source.dart';
 import 'init/locator.dart';
 import 'init/openai.dart';
@@ -21,7 +22,6 @@ import 'router/route_information_parser.dart';
 import 'router/router_delegate.dart';
 import 'router/tab_enum.dart';
 import 'theme/theme.dart';
-import 'util/build_context.dart';
 import 'util/element.dart';
 
 final pageStacks = PageStacks();
@@ -33,6 +33,7 @@ void main() async {
 
   initializeOpenAiBackend();
   await initializeDataSource();
+  await initializeAnalytics();
   await initializeServiceLocator();
 
   pageStacks.addPageStack(

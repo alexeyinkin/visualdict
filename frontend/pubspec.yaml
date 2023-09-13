@@ -15,6 +15,7 @@ dependencies:
   easy_localization: ^3.0.2
   easy_localization_loader: { git: { url: https://github.com/aissat/easy_localization_loader.git, ref: efca2087b52198c7fbd6a59488d149a4b1ec939c } }
   enum_map: ^0.3.0
+  firebase_analytics: ^10.4.5
   firebase_core: ^2.15.0
   flag: ^7.0.0
   flutter: { sdk: flutter }

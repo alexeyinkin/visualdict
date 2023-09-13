@@ -1,4 +1,22 @@
 {
+  "image": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "34b0cc3a0a"
+        },
+        "prompt": {
+          "stringValue": "Due to favorable conditions, bacteria can proliferate rapidly in a petri dish."
+        },
+        "timestamp": {
+          "integerValue": "1693052151"
+        }
+      }
+    }
+  },
+  "isVisible": {
+    "booleanValue": true
+  },
   "ngrams": {
     "arrayValue": {
       "values": [
@@ -104,9 +122,6 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
                                       "text": {
                                         "stringValue": "Широко распространяться."
                                       }
@@ -152,34 +167,19 @@
       ]
     }
   },
-  "transcription": {
-    "stringValue": "prəˈlɪfəreɪt"
-  },
-  "image": {
-    "mapValue": {
-      "fields": {
-        "timestamp": {
-          "integerValue": "1693052151"
-        },
-        "hash": {
-          "stringValue": "34b0cc3a0a"
-        },
-        "prompt": {
-          "stringValue": "Due to favorable conditions, bacteria can proliferate rapidly in a petri dish."
-        }
-      }
-    }
-  },
   "pronunciation": {
     "mapValue": {
       "fields": {
-        "timestamp": {
-          "integerValue": "1693052298"
-        },
         "hash": {
           "stringValue": "97c0dfdcbf"
+        },
+        "timestamp": {
+          "integerValue": "1693052298"
         }
       }
     }
+  },
+  "transcription": {
+    "stringValue": "prəˈlɪfəreɪt"
   }
 }

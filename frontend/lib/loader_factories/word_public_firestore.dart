@@ -89,6 +89,7 @@ class WordPublicQueryBuilder extends QueryBuilder<WordPublic> {
   Query<WordPublic> _createEmptyQuery() {
     return FirebaseFirestore.instance
         .collection(_collection.name)
+        .where('isVisible', isEqualTo: true)
         .withConverter(
           fromFirestore: loaderFactory.fromFirestoreBase,
           toFirestore: (_, __) => throw UnimplementedError(),

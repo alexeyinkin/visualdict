@@ -20,7 +20,7 @@ class WordPublic implements WithId<String> {
   @JsonKey(includeIfNull: false)
   final Image? image;
 
-  @JsonKey(defaultValue: true)
+  @JsonKey(defaultValue: false)
   final bool isVisible;
 
   @JsonKey(defaultValue: [])
@@ -54,7 +54,10 @@ class WordPublic implements WithId<String> {
 
   Map<String, dynamic> toJson() => _$WordPublicToJson(this);
 
-  static Map<String, dynamic> filterFields(Map<String, dynamic> map) {
+  static Map<String, dynamic> filterFields(
+    Map<String, dynamic> map, {
+    bool dropIsVisibleTrue = false,
+  }) {
     final result = <String, dynamic>{};
 
     for (final entry in map.entries) {
@@ -69,13 +72,14 @@ class WordPublic implements WithId<String> {
             continue;
           }
 
+        case 'isHidden':
         case 'isLocked':
           if (value == false) {
             continue;
           }
 
         case 'isVisible':
-          if (value == true) {
+          if (dropIsVisibleTrue && value == true) {
             continue;
           }
       }
@@ -88,7 +92,7 @@ class WordPublic implements WithId<String> {
 
   static dynamic _filterField(dynamic value) {
     return switch (value) {
-      Map<String, dynamic>() => filterFields(value),
+      Map<String, dynamic>() => filterFields(value, dropIsVisibleTrue: true),
       List() => value.map(_filterField).toList(growable: false),
       _ => value,
     };

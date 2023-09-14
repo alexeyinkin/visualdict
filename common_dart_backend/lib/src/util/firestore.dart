@@ -1,19 +1,17 @@
 import 'dart:convert';
 
-import 'package:firestore_api_parser/firestore_api_parser.dart';
+import 'package:firestore_api_converter/firestore_api_converter.dart';
 
 const _encoder = JsonEncoder.withIndent('  ');
 
 Map<String, dynamic> jsonDecodeFirestoreFormatted(String fieldsJson) {
-  return FirestoreApiParser().parseFirestoreDocument(
-    doc: {
-      'fields': jsonDecode(fieldsJson),
-    },
-  );
+  return FirestoreApiConverter.fromFirestore({
+    'fields': jsonDecode(fieldsJson),
+  });
 }
 
 String jsonEncodeFirestoreFormatted(Map<String, dynamic> fields) {
   return _encoder.convert(
-    FirestoreApiParser().parseJson(json: fields)['fields'],
+    FirestoreApiConverter.toFirestore(fields)['fields'],
   );
 }

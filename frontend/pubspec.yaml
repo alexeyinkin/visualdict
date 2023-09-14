@@ -42,11 +42,6 @@ dev_dependencies:
   total_lints: ^3.0.0
 
 dependency_overrides:
-  firestore_api_parser:
-    git:
-      url: https://github.com/alexeyinkin/firestore_api_parser.git
-      ref: df6a8aac1116d466e2e9762ea7778e9a6c8f3649
-
   model_editors: { path: ../../dart/flutter-model-editors }
   model_fetch: { path: ../../dart/dart-model-fetch/model_fetch }
   model_fetch_firestore: { path: ../../dart/dart-model-fetch/model_fetch_firestore }

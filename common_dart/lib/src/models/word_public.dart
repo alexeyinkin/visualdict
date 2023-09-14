@@ -26,7 +26,11 @@ class WordPublic implements WithId<String> {
   @JsonKey(defaultValue: [])
   final List<String> ngrams;
 
-  @JsonKey(fromJson: yyyyMmDdToUtcDateTime, toJson: dateTimeToYyyyMmDd)
+  @JsonKey(
+    fromJson: yyyyMmDdToUtcDateTime,
+    toJson: dateTimeToYyyyMmDd,
+    includeIfNull: false,
+  )
   final DateTime? ofTheDay;
 
   final List<PartOfSpeechSenses> partOfSpeechSenses;

@@ -2,7 +2,7 @@
 # See https://dart.dev/tools/pub/glossary#lockfile
 packages:
   args:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: args
       sha256: eef6c46b622e0494a36c5a12d10d77fb4e855501a91c1b9ef9339326e58f0596
@@ -56,21 +56,13 @@ packages:
     source: hosted
     version: "3.0.3"
   dart_openai:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: dart_openai
       sha256: "707f6975454513f4a6197125b5a0fbe92ab7cbe4b8ea9111e529a09d7a3ce0c3"
       url: "https://pub.dev"
     source: hosted
     version: "4.0.0"
-  dump:
-    dependency: "direct main"
-    description:
-      name: dump
-      sha256: "3f3d4eb634539b6bdcabe1ac9c42dd96952c502785ae130b482d9c2879f78c98"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.1.6"
   fetch_api:
     dependency: transitive
     description:
@@ -87,15 +79,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.2"
-  firestore_api_parser:
-    dependency: "direct overridden"
+  firestore_api_converter:
+    dependency: transitive
     description:
-      path: "."
-      ref: df6a8aac1116d466e2e9762ea7778e9a6c8f3649
-      resolved-ref: df6a8aac1116d466e2e9762ea7778e9a6c8f3649
-      url: "https://github.com/alexeyinkin/firestore_api_parser.git"
-    source: git
-    version: "1.1.1"
+      name: firestore_api_converter
+      sha256: cef33979056bd8bb65991e081ac5fd1a05bfe150664a3656b1ba3e5a811dbbf9
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.1.0"
   http:
     dependency: transitive
     description:
@@ -112,14 +103,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.0.2"
-  intl:
-    dependency: transitive
-    description:
-      name: intl
-      sha256: "3bc132a9dbce73a7e4a21a17d06e1878839ffbf975568bc875c60537824b0c4d"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.18.1"
   js:
     dependency: transitive
     description:

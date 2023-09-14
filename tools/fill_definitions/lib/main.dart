@@ -141,6 +141,7 @@ the count, and the order.''',
 PartOfSpeechEnum? parsePos(String pos) {
   switch (pos) {
     case 'possessive adjective':
+    case 'slang adjective':
       return PartOfSpeechEnum.adjective;
 
     case 'interrogative adverb':
@@ -153,6 +154,9 @@ PartOfSpeechEnum? parsePos(String pos) {
 
     case 'exclamation':
       return PartOfSpeechEnum.conjunction;
+
+    case 'slang noun':
+      return PartOfSpeechEnum.noun;
 
     case 'infinite marker':
     case 'infinitive marker':

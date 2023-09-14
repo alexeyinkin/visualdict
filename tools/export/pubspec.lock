@@ -87,15 +87,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.2"
-  firestore_api_parser:
-    dependency: "direct overridden"
+  firestore_api_converter:
+    dependency: transitive
     description:
-      path: "."
-      ref: df6a8aac1116d466e2e9762ea7778e9a6c8f3649
-      resolved-ref: df6a8aac1116d466e2e9762ea7778e9a6c8f3649
-      url: "https://github.com/alexeyinkin/firestore_api_parser.git"
-    source: git
-    version: "1.1.1"
+      name: firestore_api_converter
+      sha256: cef33979056bd8bb65991e081ac5fd1a05bfe150664a3656b1ba3e5a811dbbf9
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.1.0"
   http:
     dependency: transitive
     description:
@@ -112,14 +111,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.0.2"
-  intl:
-    dependency: transitive
-    description:
-      name: intl
-      sha256: "3bc132a9dbce73a7e4a21a17d06e1878839ffbf975568bc875c60537824b0c4d"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.18.1"
   js:
     dependency: transitive
     description:

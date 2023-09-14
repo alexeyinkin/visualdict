@@ -1,0 +1,13 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /Global/{document=**} {
+      allow read;
+    }
+
+    match /WordPublic/{document=**} {
+      allow read;
+    }
+  }
+}

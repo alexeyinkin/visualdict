@@ -1,3 +1,4 @@
 enum CollectionsEnum {
+  Global,
   WordPublic,
 }

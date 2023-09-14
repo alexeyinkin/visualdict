@@ -7,16 +7,7 @@ resource "google_firebaserules_release" "default" {
 resource "google_firebaserules_ruleset" "default" {
   source {
     files {
-      content = <<EOT
-rules_version = '2';
-service cloud.firestore {
-  match /databases/{database}/documents {
-    match /WordPublic/{document=**} {
-      allow read;
-    }
-  }
-}
-EOT
+      content = file("${path.module}/firestore.rules")
       name    = "firestore.rules"
     }
   }

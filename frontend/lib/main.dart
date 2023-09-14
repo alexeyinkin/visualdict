@@ -11,6 +11,7 @@ import 'init/analytics.dart';
 import 'init/data_source.dart';
 import 'init/locator.dart';
 import 'init/openai.dart';
+import 'init/update_detector.dart';
 import 'pages/home/screen.dart';
 import 'pages/settings/page.dart';
 import 'pages/words/page.dart';
@@ -35,6 +36,7 @@ void main() async {
   await initializeDataSource();
   await initializeAnalytics();
   await initializeServiceLocator();
+  initializeUpdateDetector();
 
   pageStacks.addPageStack(
     TabEnum.words.name,

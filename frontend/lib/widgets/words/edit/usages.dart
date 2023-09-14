@@ -36,6 +36,7 @@ class UsagesEditWidget extends StatelessWidget {
               itemBuilder: (_, c, index) => EditorFrame(
                 child: UsageEditWidget(c),
               ),
+              showDeleteThisAndAfterButtons: true,
               shrinkWrap: true,
             ),
             Row(

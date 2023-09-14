@@ -67,6 +67,7 @@ class PartOfSpeechSensesEditWidget extends StatelessWidget {
                             index: index,
                           ),
                         ),
+                        showDeleteThisAndAfterButtons: true,
                         shrinkWrap: true,
                       ),
                       CollectionAddButtonBuilder(

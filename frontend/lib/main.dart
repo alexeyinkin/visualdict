@@ -87,7 +87,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final _routerDelegate = MyRouterDeleagate(
+  final _routerDelegate = MyRouterDelegate(
     pageStacks,
     HomeScreen(pageStacks: pageStacks),
   );

@@ -1,11 +1,13 @@
 import 'package:common_dart/common_dart.dart';
 import 'package:common_dart_backend/common_dart_backend.dart';
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 import 'package:model_editors/model_editors.dart';
 import 'package:model_fetch/model_fetch.dart';
 
 import '../../constants/paths.dart';
 import '../../models/repository_engine.dart';
+import '../../services/toast_notifier.dart';
 import '../../theme/theme.dart';
 import '../../widgets/errors/loading_error.dart';
 import '../../widgets/loading/small_circular_progress_indicator.dart';
@@ -78,6 +80,28 @@ class WordScreen extends StatelessWidget {
   }
 
   Future<void> _save(WordPublic wordPublic) async {
+    try {
+      await _trySave(wordPublic);
+    } on Object catch (ex) {
+      GetIt.instance.get<ToastNotifier>().addThrowable(ex);
+      rethrow;
+    }
+  }
+
+  Future<void> _trySave(WordPublic wordPublic) async {
+    final posCount = <PartOfSpeechEnum, int>{};
+
+    for (final one in wordPublic.partOfSpeechSenses) {
+      posCount[one.partOfSpeech] = (posCount[one.partOfSpeech] ?? 0) + 1;
+    }
+
+    posCount.removeWhere((_, value) => value == 1);
+    if (posCount.isNotEmpty) {
+      throw Exception(
+        'Duplicate parts of speech: ${posCount.keys.map((pos) => pos.name)}',
+      );
+    }
+
     writeWordPublicMap(
       wordPublic.id,
       wordPublic.toJson(),

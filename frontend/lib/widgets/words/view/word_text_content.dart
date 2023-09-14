@@ -25,7 +25,8 @@ class WordTextContentViewWidget extends StatelessWidget {
           child: WordTranscriptionViewWidget(wordPublic),
         ),
         for (final pos in wordPublic.partOfSpeechSenses)
-          PartOfSpeechSensesViewWidget(pos, wordPublic: wordPublic),
+          if (pos.isVisible)
+            PartOfSpeechSensesViewWidget(pos, wordPublic: wordPublic),
       ],
     );
   }

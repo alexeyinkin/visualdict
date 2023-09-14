@@ -16,6 +16,10 @@ class PartOfSpeechSensesViewWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final visibleSenses = partOfSpeechSenses.senses
+        .where((s) => s.isVisible)
+        .toList(growable: false);
+
     return Column(
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -27,12 +31,12 @@ class PartOfSpeechSensesViewWidget extends StatelessWidget {
           child: ListView.builder(
             itemBuilder: (context, index) {
               return WordSenseViewWidget(
-                partOfSpeechSenses.senses[index],
+                visibleSenses[index],
                 index: index,
                 wordPublic: wordPublic,
               );
             },
-            itemCount: partOfSpeechSenses.senses.length,
+            itemCount: visibleSenses.length,
             physics: const NeverScrollableScrollPhysics(),
             shrinkWrap: true,
           ),

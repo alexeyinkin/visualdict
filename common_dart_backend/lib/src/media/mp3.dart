@@ -54,6 +54,7 @@ Future<List<MediaFragment>> _getFragments({
   );
 
   if (silenceDetector.exitCode != 0) {
+    print(silenceDetector.stderr);
     throw Exception(silenceDetector);
   }
 

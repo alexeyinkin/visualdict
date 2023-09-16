@@ -1,0 +1,227 @@
+{
+  "image": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "1c6aa81789"
+        },
+        "prompt": {
+          "stringValue": "alert cat hisses, raised back, raised fur"
+        },
+        "timestamp": {
+          "integerValue": "1694792248"
+        }
+      }
+    }
+  },
+  "isVisible": {
+    "booleanValue": true
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "bristle"
+        },
+        {
+          "stringValue": "bristl"
+        },
+        {
+          "stringValue": "brist"
+        },
+        {
+          "stringValue": "bris"
+        },
+        {
+          "stringValue": "bri"
+        },
+        {
+          "stringValue": "br"
+        },
+        {
+          "stringValue": "b"
+        }
+      ]
+    }
+  },
+  "ofTheDay": {
+    "stringValue": "2023-08-22"
+  },
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "noun"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A short, stiff hair, typically one of those on an animal's skin, a man's face, or a brush."
+                          },
+                          "definition": {
+                            "stringValue": "A short, hard hair or fiber."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Короткий, жесткий волос или волокно."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "He cleaned the grill with a **bristle** brush."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "verb"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "React angrily or defensively, typically by drawing oneself up."
+                          },
+                          "definition": {
+                            "stringValue": "To respond with anger or defensiveness."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Отвечать гневом или оборонительно."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "She **bristled** at his unfair criticism."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Stand on end in anger or fear, in relation to fur or hair."
+                          },
+                          "definition": {
+                            "stringValue": "To stand stiff due to anger or fear, in reference to fur or hair."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Застыть от злости или страха, в отношении шерсти или волос."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The cat **bristled** at the sight of the barking dog."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "pronunciation": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "052b0d0d28"
+        },
+        "timestamp": {
+          "integerValue": "1694792365"
+        }
+      }
+    }
+  },
+  "transcription": {
+    "stringValue": "ˈbrɪsəl"
+  }
+}

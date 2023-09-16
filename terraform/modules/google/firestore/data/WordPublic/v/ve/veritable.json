@@ -1,4 +1,22 @@
 {
+  "image": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "3beb8a030e"
+        },
+        "prompt": {
+          "stringValue": "banknote in hands, man looking at it, bright light behind the banknote"
+        },
+        "timestamp": {
+          "integerValue": "1694244460"
+        }
+      }
+    }
+  },
+  "isVisible": {
+    "booleanValue": true
+  },
   "ngrams": {
     "arrayValue": {
       "values": [
@@ -33,7 +51,7 @@
     }
   },
   "ofTheDay": {
-    "nullValue": null
+    "stringValue": "2023-09-09"
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -152,34 +170,19 @@
       ]
     }
   },
-  "transcription": {
-    "stringValue": "'vɛrɪtəbəl"
-  },
-  "image": {
-    "mapValue": {
-      "fields": {
-        "timestamp": {
-          "integerValue": "1694244460"
-        },
-        "hash": {
-          "stringValue": "3beb8a030e"
-        },
-        "prompt": {
-          "stringValue": "banknote in hands, man looking at it, bright light behind the banknote"
-        }
-      }
-    }
-  },
   "pronunciation": {
     "mapValue": {
       "fields": {
-        "timestamp": {
-          "integerValue": "1694244932"
-        },
         "hash": {
           "stringValue": "d38aaa0909"
+        },
+        "timestamp": {
+          "integerValue": "1694244932"
         }
       }
     }
+  },
+  "transcription": {
+    "stringValue": "'vɛrɪtəbəl"
   }
 }

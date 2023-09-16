@@ -1,4 +1,52 @@
 {
+  "image": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "8734a295b1"
+        },
+        "prompt": {
+          "stringValue": "man laughing at a sad woman"
+        },
+        "timestamp": {
+          "integerValue": "1693473603"
+        }
+      }
+    }
+  },
+  "isVisible": {
+    "booleanValue": true
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "caustic"
+        },
+        {
+          "stringValue": "causti"
+        },
+        {
+          "stringValue": "caust"
+        },
+        {
+          "stringValue": "caus"
+        },
+        {
+          "stringValue": "cau"
+        },
+        {
+          "stringValue": "ca"
+        },
+        {
+          "stringValue": "c"
+        }
+      ]
+    }
+  },
+  "ofTheDay": {
+    "stringValue": "2023-08-31"
+  },
   "partOfSpeechSenses": {
     "arrayValue": {
       "values": [
@@ -26,9 +74,6 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
                                       "text": {
                                         "stringValue": "Способный сжигать или повреждать плоть."
                                       }
@@ -71,9 +116,6 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
                                       "text": {
                                         "stringValue": "Очень критичный или саркастический."
                                       }
@@ -131,9 +173,6 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
                                       "text": {
                                         "stringValue": "Вещество, которое может обжигать или повреждать плоть."
                                       }
@@ -176,9 +215,6 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
                                       "text": {
                                         "stringValue": "Траектория световых лучей, отраженных или преломленных кривой поверхностью."
                                       }
@@ -215,49 +251,19 @@
       ]
     }
   },
-  "transcription": {
-    "stringValue": "'kɔːstɪk"
-  },
-  "ngrams": {
-    "arrayValue": {
-      "values": [
-        {
-          "stringValue": "caustic"
-        },
-        {
-          "stringValue": "causti"
-        },
-        {
-          "stringValue": "caust"
-        },
-        {
-          "stringValue": "caus"
-        },
-        {
-          "stringValue": "cau"
-        },
-        {
-          "stringValue": "ca"
-        },
-        {
-          "stringValue": "c"
-        }
-      ]
-    }
-  },
-  "image": {
+  "pronunciation": {
     "mapValue": {
       "fields": {
-        "timestamp": {
-          "integerValue": "1693473603"
-        },
         "hash": {
-          "stringValue": "8734a295b1"
+          "stringValue": "d0be963649"
         },
-        "prompt": {
-          "stringValue": "man laughing at a sad woman"
+        "timestamp": {
+          "integerValue": "1694794047"
         }
       }
     }
+  },
+  "transcription": {
+    "stringValue": "'kɔːstɪk"
   }
 }

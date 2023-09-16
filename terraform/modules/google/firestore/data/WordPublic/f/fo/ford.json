@@ -1,4 +1,43 @@
 {
+  "image": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "ad8ad25e54"
+        },
+        "prompt": {
+          "stringValue": "horse fording a river"
+        },
+        "timestamp": {
+          "integerValue": "1693561813"
+        }
+      }
+    }
+  },
+  "isVisible": {
+    "booleanValue": true
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "ford"
+        },
+        {
+          "stringValue": "for"
+        },
+        {
+          "stringValue": "fo"
+        },
+        {
+          "stringValue": "f"
+        }
+      ]
+    }
+  },
+  "ofTheDay": {
+    "stringValue": "2023-09-02"
+  },
   "partOfSpeechSenses": {
     "arrayValue": {
       "values": [
@@ -86,9 +125,6 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
                                       "text": {
                                         "stringValue": "Пересекать реку или ручей в мелком месте."
                                       }
@@ -125,40 +161,19 @@
       ]
     }
   },
-  "transcription": {
-    "stringValue": "fɔrd"
-  },
-  "ngrams": {
-    "arrayValue": {
-      "values": [
-        {
-          "stringValue": "ford"
-        },
-        {
-          "stringValue": "for"
-        },
-        {
-          "stringValue": "fo"
-        },
-        {
-          "stringValue": "f"
-        }
-      ]
-    }
-  },
-  "image": {
+  "pronunciation": {
     "mapValue": {
       "fields": {
-        "timestamp": {
-          "integerValue": "1693561813"
-        },
         "hash": {
-          "stringValue": "ad8ad25e54"
+          "stringValue": "b0af3c657c"
         },
-        "prompt": {
-          "stringValue": "horse fording a river"
+        "timestamp": {
+          "integerValue": "1694794047"
         }
       }
     }
+  },
+  "transcription": {
+    "stringValue": "fɔrd"
   }
 }

@@ -1,0 +1,221 @@
+{
+  "image": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "baa1522159"
+        },
+        "prompt": {
+          "stringValue": "a stoic warrior standing tall as a vigilant guardian amidst a raging storm"
+        },
+        "timestamp": {
+          "integerValue": "1694786807"
+        }
+      }
+    }
+  },
+  "isVisible": {
+    "booleanValue": true
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "stoic"
+        },
+        {
+          "stringValue": "stoi"
+        },
+        {
+          "stringValue": "sto"
+        },
+        {
+          "stringValue": "st"
+        },
+        {
+          "stringValue": "s"
+        }
+      ]
+    }
+  },
+  "ofTheDay": {
+    "stringValue": "2023-08-04"
+  },
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "adjective"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Showing or characterized by endurance of pain or discomfort without the display of feelings and without complaint."
+                          },
+                          "definition": {
+                            "stringValue": "Calmly enduring pain, hardship, or adversity without showing emotions or complaining."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Спокойно переносить боль, трудности или невзгоды, не показывая эмоций и не жалуясь."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "A **stoic** warrior standing tall."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "noun"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A person who can endure pain or hardship without showing their feelings or complaining."
+                          },
+                          "definition": {
+                            "stringValue": "Someone who doesn't show feelings, especially when dealing with pain or hardship."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Человек, который не проявляет чувства, особенно при столкновении с болью или трудностями."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "He remained a **stoic** even during his most challenging times."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A follower of the philosophy of Stoicism."
+                          },
+                          "definition": {
+                            "stringValue": "A person who follows Stoicism philosophy."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Человек, следующий философии стоицизма."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "He considered himself a **stoic**, practicing indifference to pleasure or pain."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "pronunciation": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "ce5ff4dc67"
+        },
+        "timestamp": {
+          "integerValue": "1694787149"
+        }
+      }
+    }
+  },
+  "transcription": {
+    "stringValue": "stoɪk"
+  }
+}

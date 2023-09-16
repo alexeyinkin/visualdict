@@ -2,17 +2,20 @@
   "image": {
     "mapValue": {
       "fields": {
-        "timestamp": {
-          "integerValue": "1694084422"
-        },
         "hash": {
           "stringValue": "b8da21e708"
         },
         "prompt": {
           "stringValue": "a guy balancing on an unstable unsafe ladder, nearly falling"
+        },
+        "timestamp": {
+          "integerValue": "1694084422"
         }
       }
     }
+  },
+  "isVisible": {
+    "booleanValue": true
   },
   "ngrams": {
     "arrayValue": {
@@ -51,7 +54,7 @@
     }
   },
   "ofTheDay": {
-    "nullValue": null
+    "stringValue": "2023-09-07"
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -128,19 +131,19 @@
       ]
     }
   },
-  "transcription": {
-    "stringValue": "prɪˈkɛərɪəs"
-  },
   "pronunciation": {
     "mapValue": {
       "fields": {
-        "timestamp": {
-          "integerValue": "1694149683"
-        },
         "hash": {
           "stringValue": "ded1a212b1"
+        },
+        "timestamp": {
+          "integerValue": "1694149683"
         }
       }
     }
+  },
+  "transcription": {
+    "stringValue": "prɪˈkɛərɪəs"
   }
 }

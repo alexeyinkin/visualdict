@@ -1,4 +1,61 @@
 {
+  "image": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "fe1e6ba88d"
+        },
+        "prompt": {
+          "stringValue": "yellow leafs falling off a tree in the wind"
+        },
+        "timestamp": {
+          "integerValue": "1693563728"
+        }
+      }
+    }
+  },
+  "isVisible": {
+    "booleanValue": true
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "abscission"
+        },
+        {
+          "stringValue": "abscissio"
+        },
+        {
+          "stringValue": "abscissi"
+        },
+        {
+          "stringValue": "absciss"
+        },
+        {
+          "stringValue": "abscis"
+        },
+        {
+          "stringValue": "absci"
+        },
+        {
+          "stringValue": "absc"
+        },
+        {
+          "stringValue": "abs"
+        },
+        {
+          "stringValue": "ab"
+        },
+        {
+          "stringValue": "a"
+        }
+      ]
+    }
+  },
+  "ofTheDay": {
+    "stringValue": "2023-09-01"
+  },
   "partOfSpeechSenses": {
     "arrayValue": {
       "values": [
@@ -26,9 +83,6 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
                                       "text": {
                                         "stringValue": "Естественное отделение частей растения."
                                       }
@@ -71,9 +125,6 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
                                       "text": {
                                         "stringValue": "Акт отсечения чего-либо."
                                       }
@@ -116,9 +167,6 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
                                       "text": {
                                         "stringValue": "Пропуск звука или слога при разговоре."
                                       }
@@ -155,58 +203,19 @@
       ]
     }
   },
-  "transcription": {
-    "stringValue": "æbˈsɪʒən"
-  },
-  "ngrams": {
-    "arrayValue": {
-      "values": [
-        {
-          "stringValue": "abscission"
-        },
-        {
-          "stringValue": "abscissio"
-        },
-        {
-          "stringValue": "abscissi"
-        },
-        {
-          "stringValue": "absciss"
-        },
-        {
-          "stringValue": "abscis"
-        },
-        {
-          "stringValue": "absci"
-        },
-        {
-          "stringValue": "absc"
-        },
-        {
-          "stringValue": "abs"
-        },
-        {
-          "stringValue": "ab"
-        },
-        {
-          "stringValue": "a"
-        }
-      ]
-    }
-  },
-  "image": {
+  "pronunciation": {
     "mapValue": {
       "fields": {
-        "timestamp": {
-          "integerValue": "1693563728"
-        },
         "hash": {
-          "stringValue": "fe1e6ba88d"
+          "stringValue": "9027b0711b"
         },
-        "prompt": {
-          "stringValue": "yellow leafs falling off a tree in the wind"
+        "timestamp": {
+          "integerValue": "1694794047"
         }
       }
     }
+  },
+  "transcription": {
+    "stringValue": "æbˈsɪʒən"
   }
 }

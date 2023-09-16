@@ -1,0 +1,191 @@
+{
+  "image": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "20b5746a14"
+        },
+        "prompt": {
+          "stringValue": "brushing teeth"
+        },
+        "timestamp": {
+          "integerValue": "1694792245"
+        }
+      }
+    }
+  },
+  "isVisible": {
+    "booleanValue": true
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "quotidian"
+        },
+        {
+          "stringValue": "quotidia"
+        },
+        {
+          "stringValue": "quotidi"
+        },
+        {
+          "stringValue": "quotid"
+        },
+        {
+          "stringValue": "quoti"
+        },
+        {
+          "stringValue": "quot"
+        },
+        {
+          "stringValue": "quo"
+        },
+        {
+          "stringValue": "qu"
+        },
+        {
+          "stringValue": "q"
+        }
+      ]
+    }
+  },
+  "ofTheDay": {
+    "stringValue": "2023-08-21"
+  },
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "adjective"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Occurring or recurring daily; commonplace."
+                          },
+                          "definition": {
+                            "stringValue": "Happening every day."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Происходящий каждый день."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Quotidian** tasks feel repetitive and dull."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "noun"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Something which occurs daily, such as a medication or procedure."
+                          },
+                          "definition": {
+                            "stringValue": "A thing that happens every day."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Вещь, которая происходит каждый день."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Morning coffee is my **quotidian**."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "pronunciation": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "cb6aba4362"
+        },
+        "timestamp": {
+          "integerValue": "1694792365"
+        }
+      }
+    }
+  },
+  "transcription": {
+    "stringValue": "kwəˈtɪdi.ən"
+  }
+}

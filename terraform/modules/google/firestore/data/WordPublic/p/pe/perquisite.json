@@ -1,4 +1,22 @@
 {
+  "image": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "a062010a23"
+        },
+        "prompt": {
+          "stringValue": "Convey a corporate setting: executives, attired in suits, stand before an array of gleaming company cars. Emphasize the cars' allure and the managers' contentment, visualizing the perquisite that underscores their elevated status within the organization."
+        },
+        "timestamp": {
+          "integerValue": "1693051985"
+        }
+      }
+    }
+  },
+  "isVisible": {
+    "booleanValue": true
+  },
   "ngrams": {
     "arrayValue": {
       "values": [
@@ -35,6 +53,9 @@
       ]
     }
   },
+  "ofTheDay": {
+    "stringValue": "2023-07-29"
+  },
   "partOfSpeechSenses": {
     "arrayValue": {
       "values": [
@@ -59,9 +80,6 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
                                       "text": {
                                         "stringValue": "Пособие, привилегия или преимущество, получаемое в дополнение к зарплате."
                                       }
@@ -98,37 +116,19 @@
       ]
     }
   },
-  "transcription": {
-    "stringValue": "pərˈkwɪzɪt"
-  },
-  "image": {
-    "mapValue": {
-      "fields": {
-        "timestamp": {
-          "integerValue": "1693051985"
-        },
-        "hash": {
-          "stringValue": "a062010a23"
-        },
-        "prompt": {
-          "stringValue": "Convey a corporate setting: executives, attired in suits, stand before an array of gleaming company cars. Emphasize the cars' allure and the managers' contentment, visualizing the perquisite that underscores their elevated status within the organization."
-        }
-      }
-    }
-  },
   "pronunciation": {
     "mapValue": {
       "fields": {
-        "timestamp": {
-          "integerValue": "1693052244"
-        },
         "hash": {
           "stringValue": "41ed41a538"
+        },
+        "timestamp": {
+          "integerValue": "1693052244"
         }
       }
     }
   },
-  "ofTheDay": {
-    "stringValue": "2023-07-29"
+  "transcription": {
+    "stringValue": "pərˈkwɪzɪt"
   }
 }

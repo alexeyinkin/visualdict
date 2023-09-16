@@ -1,0 +1,185 @@
+{
+  "image": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "9665c58cb2"
+        },
+        "prompt": {
+          "stringValue": "man screaming in terrible pain"
+        },
+        "timestamp": {
+          "integerValue": "1694601332"
+        }
+      }
+    }
+  },
+  "isVisible": {
+    "booleanValue": true
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "anguish"
+        },
+        {
+          "stringValue": "anguis"
+        },
+        {
+          "stringValue": "angui"
+        },
+        {
+          "stringValue": "angu"
+        },
+        {
+          "stringValue": "ang"
+        },
+        {
+          "stringValue": "an"
+        },
+        {
+          "stringValue": "a"
+        }
+      ]
+    }
+  },
+  "ofTheDay": {
+    "nullValue": null
+  },
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "noun"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Severe mental or physical pain or suffering."
+                          },
+                          "definition": {
+                            "stringValue": "Great pain or suffering."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Сильная боль или страдание."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "His face was a mask of **anguish** after the tragic news."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "verb"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Be extremely distressed about something."
+                          },
+                          "definition": {
+                            "stringValue": "Feeling extreme distress."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Чувство крайнего отчаяния."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I **anguish** over the loss of my beloved pet."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "pronunciation": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "de2a86f6ef"
+        },
+        "timestamp": {
+          "integerValue": "1694601196"
+        }
+      }
+    }
+  },
+  "transcription": {
+    "stringValue": "ˈæŋɡwɪʃ"
+  }
+}

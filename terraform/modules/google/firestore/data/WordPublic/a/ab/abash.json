@@ -1,4 +1,22 @@
 {
+  "image": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "46e57e0ad7"
+        },
+        "prompt": {
+          "stringValue": "student crying at school"
+        },
+        "timestamp": {
+          "integerValue": "1694175840"
+        }
+      }
+    }
+  },
+  "isVisible": {
+    "booleanValue": true
+  },
   "ngrams": {
     "arrayValue": {
       "values": [
@@ -21,7 +39,7 @@
     }
   },
   "ofTheDay": {
-    "nullValue": null
+    "stringValue": "2023-09-08"
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -95,34 +113,19 @@
       ]
     }
   },
-  "transcription": {
-    "stringValue": "əˈbæʃ"
-  },
   "pronunciation": {
     "mapValue": {
       "fields": {
-        "timestamp": {
-          "integerValue": "1694175703"
-        },
         "hash": {
           "stringValue": "097c5be70c"
+        },
+        "timestamp": {
+          "integerValue": "1694175703"
         }
       }
     }
   },
-  "image": {
-    "mapValue": {
-      "fields": {
-        "timestamp": {
-          "integerValue": "1694175840"
-        },
-        "hash": {
-          "stringValue": "46e57e0ad7"
-        },
-        "prompt": {
-          "stringValue": "student crying at school"
-        }
-      }
-    }
+  "transcription": {
+    "stringValue": "əˈbæʃ"
   }
 }

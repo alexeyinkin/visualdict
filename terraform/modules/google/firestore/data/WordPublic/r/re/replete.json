@@ -1,4 +1,52 @@
 {
+  "image": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "f713d71a21"
+        },
+        "prompt": {
+          "stringValue": "fridge full of food"
+        },
+        "timestamp": {
+          "integerValue": "1693826790"
+        }
+      }
+    }
+  },
+  "isVisible": {
+    "booleanValue": true
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "replete"
+        },
+        {
+          "stringValue": "replet"
+        },
+        {
+          "stringValue": "reple"
+        },
+        {
+          "stringValue": "repl"
+        },
+        {
+          "stringValue": "rep"
+        },
+        {
+          "stringValue": "re"
+        },
+        {
+          "stringValue": "r"
+        }
+      ]
+    }
+  },
+  "ofTheDay": {
+    "stringValue": "2023-09-04"
+  },
   "partOfSpeechSenses": {
     "arrayValue": {
       "values": [
@@ -26,9 +74,6 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
                                       "text": {
                                         "stringValue": "Полный чего-то."
                                       }
@@ -71,9 +116,6 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
                                       "text": {
                                         "stringValue": "Полностью или чрезмерно накормленный."
                                       }
@@ -116,9 +158,6 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
                                       "text": {
                                         "stringValue": "Полный сложных деталей в литературе или искусстве."
                                       }
@@ -155,49 +194,19 @@
       ]
     }
   },
-  "transcription": {
-    "stringValue": "rɪˈpliːt"
-  },
-  "ngrams": {
-    "arrayValue": {
-      "values": [
-        {
-          "stringValue": "replete"
-        },
-        {
-          "stringValue": "replet"
-        },
-        {
-          "stringValue": "reple"
-        },
-        {
-          "stringValue": "repl"
-        },
-        {
-          "stringValue": "rep"
-        },
-        {
-          "stringValue": "re"
-        },
-        {
-          "stringValue": "r"
-        }
-      ]
-    }
-  },
-  "image": {
+  "pronunciation": {
     "mapValue": {
       "fields": {
-        "timestamp": {
-          "integerValue": "1693826790"
-        },
         "hash": {
-          "stringValue": "f713d71a21"
+          "stringValue": "2554ac6d29"
         },
-        "prompt": {
-          "stringValue": "fridge full of food"
+        "timestamp": {
+          "integerValue": "1694794047"
         }
       }
     }
+  },
+  "transcription": {
+    "stringValue": "rɪˈpliːt"
   }
 }

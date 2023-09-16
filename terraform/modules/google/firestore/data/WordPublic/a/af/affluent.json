@@ -1,165 +1,21 @@
 {
-  "partOfSpeechSenses": {
-    "arrayValue": {
-      "values": [
-        {
-          "mapValue": {
-            "fields": {
-              "partOfSpeech": {
-                "stringValue": "adjective"
-              },
-              "senses": {
-                "arrayValue": {
-                  "values": [
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "definition": {
-                            "stringValue": "Having a lot of money."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {
-                                "ru": {
-                                  "mapValue": {
-                                    "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
-                                      "text": {
-                                        "stringValue": "Имеющий большое количество денег."
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": [
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "He grew up in an **affluent** neighborhood in New York City."
-                                      }
-                                    }
-                                  }
-                                }
-                              ]
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              }
-            }
-          }
+  "image": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "5ec75348ce"
         },
-        {
-          "mapValue": {
-            "fields": {
-              "partOfSpeech": {
-                "stringValue": "noun"
-              },
-              "senses": {
-                "arrayValue": {
-                  "values": [
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "definition": {
-                            "stringValue": "A smaller river that feeds into a bigger one."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {
-                                "ru": {
-                                  "mapValue": {
-                                    "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
-                                      "text": {
-                                        "stringValue": "Меньшая река, которая впадает в большую."
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": [
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "The **affluent** joined the main river at the estuary."
-                                      }
-                                    }
-                                  }
-                                }
-                              ]
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "definition": {
-                            "stringValue": "A rich person."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {
-                                "ru": {
-                                  "mapValue": {
-                                    "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
-                                      "text": {
-                                        "stringValue": "Богатый человек."
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": [
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "The **affluent** purchased a new luxury yacht every year."
-                                      }
-                                    }
-                                  }
-                                }
-                              ]
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              }
-            }
-          }
+        "prompt": {
+          "stringValue": "affluent"
+        },
+        "timestamp": {
+          "integerValue": "1694792221"
         }
-      ]
+      }
     }
+  },
+  "isVisible": {
+    "booleanValue": true
   },
   "ngrams": {
     "arrayValue": {
@@ -191,34 +47,184 @@
       ]
     }
   },
-  "transcription": {
-    "stringValue": "ˈæfluənt"
+  "ofTheDay": {
+    "stringValue": "2023-08-17"
   },
-  "image": {
-    "mapValue": {
-      "fields": {
-        "timestamp": {
-          "integerValue": "1693053174"
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "adjective"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Having a great deal of money; wealthy."
+                          },
+                          "definition": {
+                            "stringValue": "Having a lot of money."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Имеющий большое количество денег."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "She comes from an **affluent** background, with wealthy parents."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
         },
-        "hash": {
-          "stringValue": "5ec75348ce"
-        },
-        "prompt": {
-          "stringValue": "affluent"
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "noun"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A stream or river flowing into a larger river or into a lake."
+                          },
+                          "definition": {
+                            "stringValue": "A river flowing into a bigger one or into a lake."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Река, впадающая в большую реку или озеро."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The **affluent** joined the main river downstream."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A person who is financially well-off."
+                          },
+                          "definition": {
+                            "stringValue": "A rich person."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Богатый человек."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The charity event was filled with **affluents** from all sectors."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
         }
-      }
+      ]
     }
   },
   "pronunciation": {
     "mapValue": {
       "fields": {
-        "timestamp": {
-          "integerValue": "1693053188"
-        },
         "hash": {
-          "stringValue": "0738d67ead"
+          "stringValue": "40494ad1a7"
+        },
+        "timestamp": {
+          "integerValue": "1694792365"
         }
       }
     }
+  },
+  "transcription": {
+    "stringValue": "ˈæfluənt"
   }
 }

@@ -1,4 +1,43 @@
 {
+  "image": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "b4d6bb0f4f"
+        },
+        "prompt": {
+          "stringValue": "The pests damaged the cornfields and crops."
+        },
+        "timestamp": {
+          "integerValue": "1694792224"
+        }
+      }
+    }
+  },
+  "isVisible": {
+    "booleanValue": true
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "pest"
+        },
+        {
+          "stringValue": "pes"
+        },
+        {
+          "stringValue": "pe"
+        },
+        {
+          "stringValue": "p"
+        }
+      ]
+    }
+  },
+  "ofTheDay": {
+    "stringValue": "2023-08-18"
+  },
   "partOfSpeechSenses": {
     "arrayValue": {
       "values": [
@@ -14,8 +53,11 @@
                     {
                       "mapValue": {
                         "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A destructive insect or other animal that attacks crops, food, livestock, etc."
+                          },
                           "definition": {
-                            "stringValue": "A creature that damages crops or food."
+                            "stringValue": "Annoying or harmful insect or animal that can damage crops, plants, or property."
                           },
                           "definitionTranslations": {
                             "mapValue": {
@@ -23,11 +65,8 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
                                       "text": {
-                                        "stringValue": "Существо, которое повреждает урожай или пищу."
+                                        "stringValue": "Назойливое или вредное насекомое или животное, вредящее растениям или имуществу."
                                       }
                                     }
                                   }
@@ -56,8 +95,11 @@
                     {
                       "mapValue": {
                         "fields": {
+                          "complexDefinition": {
+                            "stringValue": "An annoying person or thing; a nuisance."
+                          },
                           "definition": {
-                            "stringValue": "An annoying person or thing."
+                            "stringValue": "A person or thing that is irritating, bothersome, or unwelcome."
                           },
                           "definitionTranslations": {
                             "mapValue": {
@@ -66,10 +108,10 @@
                                   "mapValue": {
                                     "fields": {
                                       "isLocked": {
-                                        "booleanValue": false
+                                        "booleanValue": true
                                       },
                                       "text": {
-                                        "stringValue": "Раздражающий человек или вещь."
+                                        "stringValue": "Раздражающий человек или предмет."
                                       }
                                     }
                                   }
@@ -88,15 +130,6 @@
                                       }
                                     }
                                   }
-                                },
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "Computer crashes were a constant IT **pest**."
-                                      }
-                                    }
-                                  }
                                 }
                               ]
                             }
@@ -107,6 +140,9 @@
                     {
                       "mapValue": {
                         "fields": {
+                          "complexDefinition": {
+                            "stringValue": "An epidemic disease with a high death rate."
+                          },
                           "definition": {
                             "stringValue": "A deadly epidemic disease."
                           },
@@ -116,9 +152,6 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
                                       "text": {
                                         "stringValue": "Смертельное эпидемическое заболевание."
                                       }
@@ -135,7 +168,7 @@
                                   "mapValue": {
                                     "fields": {
                                       "text": {
-                                        "stringValue": "The **pest** claimed countless lives during the medieval era."
+                                        "stringValue": "The Black **Pest** decimated Europe during the Middle Ages."
                                       }
                                     }
                                   }
@@ -149,6 +182,9 @@
                     {
                       "mapValue": {
                         "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Any unwanted and destructive insect or other animal that interferes with human activities."
+                          },
                           "definition": {
                             "stringValue": "A destructive force or influence."
                           },
@@ -158,9 +194,6 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
                                       "text": {
                                         "stringValue": "Разрушительная сила или влияние."
                                       }
@@ -177,7 +210,7 @@
                                   "mapValue": {
                                     "fields": {
                                       "text": {
-                                        "stringValue": "Gossip can be a real **pest** within a close-knit community."
+                                        "stringValue": "Computer crashes were a constant IT **pest**."
                                       }
                                     }
                                   }
@@ -197,52 +230,19 @@
       ]
     }
   },
-  "transcription": {
-    "stringValue": "pɛst"
-  },
   "pronunciation": {
     "mapValue": {
       "fields": {
-        "timestamp": {
-          "integerValue": "1693046966"
-        },
         "hash": {
-          "stringValue": "af78c5fa5f"
+          "stringValue": "b68d748bc9"
+        },
+        "timestamp": {
+          "integerValue": "1694792365"
         }
       }
     }
   },
-  "image": {
-    "mapValue": {
-      "fields": {
-        "timestamp": {
-          "integerValue": "1693047060"
-        },
-        "hash": {
-          "stringValue": "b4d6bb0f4f"
-        },
-        "prompt": {
-          "stringValue": "The pests damaged the cornfields and crops."
-        }
-      }
-    }
-  },
-  "ngrams": {
-    "arrayValue": {
-      "values": [
-        {
-          "stringValue": "pest"
-        },
-        {
-          "stringValue": "pes"
-        },
-        {
-          "stringValue": "pe"
-        },
-        {
-          "stringValue": "p"
-        }
-      ]
-    }
+  "transcription": {
+    "stringValue": "pɛst"
   }
 }

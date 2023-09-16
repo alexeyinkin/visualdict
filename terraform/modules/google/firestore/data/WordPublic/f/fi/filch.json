@@ -1,0 +1,161 @@
+{
+  "image": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "38d1fb6527"
+        },
+        "prompt": {
+          "stringValue": "a mischievous raccoon stealing secretly a shiny gem from a jewelry store"
+        },
+        "timestamp": {
+          "integerValue": "1694750335"
+        }
+      }
+    }
+  },
+  "isVisible": {
+    "booleanValue": true
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "filch"
+        },
+        {
+          "stringValue": "filc"
+        },
+        {
+          "stringValue": "fil"
+        },
+        {
+          "stringValue": "fi"
+        },
+        {
+          "stringValue": "f"
+        }
+      ]
+    }
+  },
+  "ofTheDay": {
+    "stringValue": "2023-07-31"
+  },
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "verb"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "definition": {
+                            "stringValue": "To steal something, especially in a sly or sneaky manner."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Украсть что-то, особенно хитрым или подлым образом."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "He managed to **filch** a gem from a jewelry store unnoticed."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "To steal, especially something of small value or in a casual way."
+                          },
+                          "definition": {
+                            "stringValue": "To steal casually or items of little value."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Красть случайные вещи или предметы малой ценности."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "He was caught trying to **filch** some candy from the store."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "pronunciation": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "2b40c9678a"
+        },
+        "timestamp": {
+          "integerValue": "1694750407"
+        }
+      }
+    }
+  },
+  "transcription": {
+    "stringValue": "fɪltʃ"
+  }
+}

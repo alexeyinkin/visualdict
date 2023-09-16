@@ -2,17 +2,20 @@
   "image": {
     "mapValue": {
       "fields": {
-        "timestamp": {
-          "integerValue": "1694244438"
-        },
         "hash": {
           "stringValue": "c3fdb68ccd"
         },
         "prompt": {
           "stringValue": "ice cream stand with many flavours, a kid pointing at one flavour, photorealistic"
+        },
+        "timestamp": {
+          "integerValue": "1694244438"
         }
       }
     }
+  },
+  "isVisible": {
+    "booleanValue": true
   },
   "ngrams": {
     "arrayValue": {
@@ -57,7 +60,7 @@
     }
   },
   "ofTheDay": {
-    "nullValue": null
+    "stringValue": "2023-09-10"
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -179,11 +182,11 @@
   "pronunciation": {
     "mapValue": {
       "fields": {
-        "timestamp": {
-          "integerValue": "1694244932"
-        },
         "hash": {
           "stringValue": "607cec7288"
+        },
+        "timestamp": {
+          "integerValue": "1694244932"
         }
       }
     }

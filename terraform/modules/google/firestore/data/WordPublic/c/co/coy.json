@@ -1,4 +1,40 @@
 {
+  "image": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "902d3de361"
+        },
+        "prompt": {
+          "stringValue": "girl playful shy eyes on top, hand fan at the bottom --no asian"
+        },
+        "timestamp": {
+          "integerValue": "1693303461"
+        }
+      }
+    }
+  },
+  "isVisible": {
+    "booleanValue": true
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "coy"
+        },
+        {
+          "stringValue": "co"
+        },
+        {
+          "stringValue": "c"
+        }
+      ]
+    }
+  },
+  "ofTheDay": {
+    "stringValue": "2023-08-29"
+  },
   "partOfSpeechSenses": {
     "arrayValue": {
       "values": [
@@ -245,52 +281,19 @@
       ]
     }
   },
-  "transcription": {
-    "stringValue": "kɔɪ"
-  },
-  "ngrams": {
-    "arrayValue": {
-      "values": [
-        {
-          "stringValue": "coy"
-        },
-        {
-          "stringValue": "co"
-        },
-        {
-          "stringValue": "c"
-        }
-      ]
-    }
-  },
-  "image": {
-    "mapValue": {
-      "fields": {
-        "timestamp": {
-          "integerValue": "1693303461"
-        },
-        "hash": {
-          "stringValue": "902d3de361"
-        },
-        "prompt": {
-          "stringValue": "girl playful shy eyes on top, hand fan at the bottom --no asian"
-        }
-      }
-    }
-  },
   "pronunciation": {
     "mapValue": {
       "fields": {
-        "timestamp": {
-          "integerValue": "1694098352"
-        },
         "hash": {
           "stringValue": "24231b93ad"
+        },
+        "timestamp": {
+          "integerValue": "1694098352"
         }
       }
     }
   },
-  "ofTheDay": {
-    "stringValue": "2023-08-29"
+  "transcription": {
+    "stringValue": "kɔɪ"
   }
 }

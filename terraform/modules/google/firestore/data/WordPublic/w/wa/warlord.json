@@ -1,0 +1,128 @@
+{
+  "image": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "9d1cb6e434"
+        },
+        "prompt": {
+          "stringValue": "modern warlord in expensive civilian outfit with firearm, his army in background in varying weary casual outfit, varying in age"
+        },
+        "timestamp": {
+          "integerValue": "1694792233"
+        }
+      }
+    }
+  },
+  "isVisible": {
+    "booleanValue": true
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "warlord"
+        },
+        {
+          "stringValue": "warlor"
+        },
+        {
+          "stringValue": "warlo"
+        },
+        {
+          "stringValue": "warl"
+        },
+        {
+          "stringValue": "war"
+        },
+        {
+          "stringValue": "wa"
+        },
+        {
+          "stringValue": "w"
+        }
+      ]
+    }
+  },
+  "ofTheDay": {
+    "stringValue": "2023-08-24"
+  },
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "noun"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A military commander, especially an aggressive regional commander with individual autonomy."
+                          },
+                          "definition": {
+                            "stringValue": "A leader with a personal army, not tied to the official government."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Лидер с личной армией, не связанный с официальным правительством."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The **warlord** ruled his territory with unquestionable might and force."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "pronunciation": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "5b1a5ae588"
+        },
+        "timestamp": {
+          "integerValue": "1694792365"
+        }
+      }
+    }
+  },
+  "transcription": {
+    "stringValue": "wɔːrlɔrd"
+  }
+}

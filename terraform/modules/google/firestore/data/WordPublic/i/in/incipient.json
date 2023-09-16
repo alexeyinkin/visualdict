@@ -1,4 +1,58 @@
 {
+  "image": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "504de2eda2"
+        },
+        "prompt": {
+          "stringValue": "seedling --style raw"
+        },
+        "timestamp": {
+          "integerValue": "1693110948"
+        }
+      }
+    }
+  },
+  "isVisible": {
+    "booleanValue": true
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "incipient"
+        },
+        {
+          "stringValue": "incipien"
+        },
+        {
+          "stringValue": "incipie"
+        },
+        {
+          "stringValue": "incipi"
+        },
+        {
+          "stringValue": "incip"
+        },
+        {
+          "stringValue": "inci"
+        },
+        {
+          "stringValue": "inc"
+        },
+        {
+          "stringValue": "in"
+        },
+        {
+          "stringValue": "i"
+        }
+      ]
+    }
+  },
+  "ofTheDay": {
+    "stringValue": "2023-08-27"
+  },
   "partOfSpeechSenses": {
     "arrayValue": {
       "values": [
@@ -23,9 +77,6 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
                                       "text": {
                                         "stringValue": "Начинающий развиваться или существовать."
                                       }
@@ -65,9 +116,6 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
                                       "text": {
                                         "stringValue": "Начинающий проявляться или становиться заметным."
                                       }
@@ -104,70 +152,19 @@
       ]
     }
   },
-  "transcription": {
-    "stringValue": "ɪnˈsɪpiənt"
-  },
-  "ngrams": {
-    "arrayValue": {
-      "values": [
-        {
-          "stringValue": "incipient"
-        },
-        {
-          "stringValue": "incipien"
-        },
-        {
-          "stringValue": "incipie"
-        },
-        {
-          "stringValue": "incipi"
-        },
-        {
-          "stringValue": "incip"
-        },
-        {
-          "stringValue": "inci"
-        },
-        {
-          "stringValue": "inc"
-        },
-        {
-          "stringValue": "in"
-        },
-        {
-          "stringValue": "i"
-        }
-      ]
-    }
-  },
-  "image": {
-    "mapValue": {
-      "fields": {
-        "timestamp": {
-          "integerValue": "1693110948"
-        },
-        "hash": {
-          "stringValue": "504de2eda2"
-        },
-        "prompt": {
-          "stringValue": "seedling --style raw"
-        }
-      }
-    }
-  },
   "pronunciation": {
     "mapValue": {
       "fields": {
-        "timestamp": {
-          "integerValue": "1693110950"
-        },
         "hash": {
           "stringValue": "192deefb4b"
+        },
+        "timestamp": {
+          "integerValue": "1693110950"
         }
       }
     }
   },
-  "ofTheDay": {
-    "stringValue": "2023-08-27"
+  "transcription": {
+    "stringValue": "ɪnˈsɪpiənt"
   }
 }

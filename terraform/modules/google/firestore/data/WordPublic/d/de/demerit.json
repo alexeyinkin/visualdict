@@ -1,4 +1,22 @@
 {
+  "image": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "b3f70d993e"
+        },
+        "prompt": {
+          "stringValue": "car exhaust close up, heavy black smoke from it"
+        },
+        "timestamp": {
+          "integerValue": "1694244434"
+        }
+      }
+    }
+  },
+  "isVisible": {
+    "booleanValue": true
+  },
   "ngrams": {
     "arrayValue": {
       "values": [
@@ -27,7 +45,7 @@
     }
   },
   "ofTheDay": {
-    "nullValue": null
+    "stringValue": "2023-09-11"
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -191,34 +209,19 @@
       ]
     }
   },
-  "transcription": {
-    "stringValue": "dɪˈmɛrɪt"
-  },
-  "image": {
-    "mapValue": {
-      "fields": {
-        "timestamp": {
-          "integerValue": "1694244434"
-        },
-        "hash": {
-          "stringValue": "b3f70d993e"
-        },
-        "prompt": {
-          "stringValue": "car exhaust close up, heavy black smoke from it"
-        }
-      }
-    }
-  },
   "pronunciation": {
     "mapValue": {
       "fields": {
-        "timestamp": {
-          "integerValue": "1694244932"
-        },
         "hash": {
           "stringValue": "ea50437f78"
+        },
+        "timestamp": {
+          "integerValue": "1694244932"
         }
       }
     }
+  },
+  "transcription": {
+    "stringValue": "dɪˈmɛrɪt"
   }
 }

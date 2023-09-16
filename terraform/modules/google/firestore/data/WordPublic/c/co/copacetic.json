@@ -2,17 +2,20 @@
   "image": {
     "mapValue": {
       "fields": {
-        "timestamp": {
-          "integerValue": "1693999593"
-        },
         "hash": {
           "stringValue": "d9c43de57e"
         },
         "prompt": {
           "stringValue": "hand petting a cat, purring"
+        },
+        "timestamp": {
+          "integerValue": "1693999593"
         }
       }
     }
+  },
+  "isVisible": {
+    "booleanValue": true
   },
   "ngrams": {
     "arrayValue": {
@@ -48,7 +51,7 @@
     }
   },
   "ofTheDay": {
-    "nullValue": null
+    "stringValue": "2023-09-06"
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -123,6 +126,18 @@
           }
         }
       ]
+    }
+  },
+  "pronunciation": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "0ada7afd1b"
+        },
+        "timestamp": {
+          "integerValue": "1694794047"
+        }
+      }
     }
   },
   "transcription": {

@@ -1,4 +1,52 @@
 {
+  "image": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "ed14b07eb8"
+        },
+        "prompt": {
+          "stringValue": "man handing money to another man, a damaged car in the background"
+        },
+        "timestamp": {
+          "integerValue": "1693719793"
+        }
+      }
+    }
+  },
+  "isVisible": {
+    "booleanValue": true
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "redress"
+        },
+        {
+          "stringValue": "redres"
+        },
+        {
+          "stringValue": "redre"
+        },
+        {
+          "stringValue": "redr"
+        },
+        {
+          "stringValue": "red"
+        },
+        {
+          "stringValue": "re"
+        },
+        {
+          "stringValue": "r"
+        }
+      ]
+    }
+  },
+  "ofTheDay": {
+    "stringValue": "2023-09-03"
+  },
   "partOfSpeechSenses": {
     "arrayValue": {
       "values": [
@@ -26,9 +74,6 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
                                       "text": {
                                         "stringValue": "Оплата за вред или убытки."
                                       }
@@ -71,9 +116,6 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
                                       "text": {
                                         "stringValue": "Облегчение боли или дискомфорта."
                                       }
@@ -116,9 +158,6 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
                                       "text": {
                                         "stringValue": "Акт восстановления до нормального состояния."
                                       }
@@ -176,9 +215,6 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
                                       "text": {
                                         "stringValue": "Исправить проблему или ошибку."
                                       }
@@ -221,9 +257,6 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
-                                      "isLocked": {
-                                        "booleanValue": false
-                                      },
                                       "text": {
                                         "stringValue": "Отрегулировать или правильно выровнять."
                                       }
@@ -260,49 +293,19 @@
       ]
     }
   },
-  "transcription": {
-    "stringValue": "rɪˈdrɛs"
-  },
-  "ngrams": {
-    "arrayValue": {
-      "values": [
-        {
-          "stringValue": "redress"
-        },
-        {
-          "stringValue": "redres"
-        },
-        {
-          "stringValue": "redre"
-        },
-        {
-          "stringValue": "redr"
-        },
-        {
-          "stringValue": "red"
-        },
-        {
-          "stringValue": "re"
-        },
-        {
-          "stringValue": "r"
-        }
-      ]
-    }
-  },
-  "image": {
+  "pronunciation": {
     "mapValue": {
       "fields": {
-        "timestamp": {
-          "integerValue": "1693719793"
-        },
         "hash": {
-          "stringValue": "ed14b07eb8"
+          "stringValue": "cca98e987f"
         },
-        "prompt": {
-          "stringValue": "man handing money to another man, a damaged car in the background"
+        "timestamp": {
+          "integerValue": "1694794047"
         }
       }
     }
+  },
+  "transcription": {
+    "stringValue": "rɪˈdrɛs"
   }
 }

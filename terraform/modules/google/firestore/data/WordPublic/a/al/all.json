@@ -1,4 +1,10 @@
 {
+  "isVisible": {
+    "booleanValue": true
+  },
+  "ngrams": {
+    "arrayValue": {}
+  },
   "partOfSpeechSenses": {
     "arrayValue": {
       "values": [
@@ -21,13 +27,39 @@
                             "stringValue": "Referring to the complete amount of something."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**All** the money was stolen from the bank."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "She ate **all** the candy in one sitting."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I spent **all** my energy on the project."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -58,13 +90,39 @@
                             "stringValue": "Denoting the total number or amount."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**All** were invited to the concert."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "She gave away **all** that she had."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**All** is lost without hope."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -95,35 +153,39 @@
                             "stringValue": "Fully or completely."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "Used for emphasis when introducing a comparison."
-                          },
-                          "definition": {
-                            "stringValue": "Used for comparison with emphasis."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "She was **all** dressed up for the party."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The exam was **all** over and we were relieved."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The coffee spilled **all** over the table."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -139,50 +201,39 @@
                             "stringValue": "Despite expectations or hopes."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              }
-            }
-          }
-        },
-        {
-          "mapValue": {
-            "fields": {
-              "partOfSpeech": {
-                "stringValue": "noun"
-              },
-              "senses": {
-                "arrayValue": {
-                  "values": [
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "Used to denote everything possible or available."
-                          },
-                          "definition": {
-                            "stringValue": "Indicating everything available or possible."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**All** his efforts, he failed the exam."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**All** his promises, he didn't return."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "She stayed, **all** her friends' warnings."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }

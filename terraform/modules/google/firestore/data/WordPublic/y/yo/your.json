@@ -1,4 +1,10 @@
 {
+  "isVisible": {
+    "booleanValue": true
+  },
+  "ngrams": {
+    "arrayValue": {}
+  },
   "partOfSpeechSenses": {
     "arrayValue": {
       "values": [
@@ -18,53 +24,42 @@
                             "stringValue": "Belonging to or associated with the person or people that the speaker is addressing."
                           },
                           "definition": {
-                            "stringValue": "Something that belongs to the person you are talking to."
+                            "stringValue": "Something that belongs to the person one is talking to."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              }
-            }
-          }
-        },
-        {
-          "mapValue": {
-            "fields": {
-              "partOfSpeech": {
-                "stringValue": "pronoun"
-              },
-              "senses": {
-                "arrayValue": {
-                  "values": [
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "Used to denote someone being addressed."
-                          },
-                          "definition": {
-                            "stringValue": "Used when addressing someone."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Your** dog is very friendly."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I really love **your** sense of style."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Is this **your** book?"
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }

@@ -1,4 +1,10 @@
 {
+  "isVisible": {
+    "booleanValue": true
+  },
+  "ngrams": {
+    "arrayValue": {}
+  },
   "partOfSpeechSenses": {
     "arrayValue": {
       "values": [
@@ -21,57 +27,99 @@
                             "stringValue": "Indicates something that belongs to the speaker or writer."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**My** car needs an oil change."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**My** favorite book is 'To Kill a Mockingbird'."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**My** dinner was absolutely delicious."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
                       }
-                    },
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "interjection"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
                     {
                       "mapValue": {
                         "fields": {
-                          "complexDefinition": {
-                            "stringValue": "Used in exclamations of surprise, delight, disgust, etc."
-                          },
                           "definition": {
                             "stringValue": "Used when expressing strong emotions."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "Used in various expressions and phrases that do not correspond to the main definition."
-                          },
-                          "definition": {
-                            "stringValue": "Used in different expressions that don't match the main meaning."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**My**, what a beautiful sunset!"
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**My**, how you've grown!"
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**My** oh **my**, you've outdone yourself this time!"
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }

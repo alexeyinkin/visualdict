@@ -1,4 +1,10 @@
 {
+  "isVisible": {
+    "booleanValue": true
+  },
+  "ngrams": {
+    "arrayValue": {}
+  },
   "partOfSpeechSenses": {
     "arrayValue": {
       "values": [
@@ -15,19 +21,36 @@
                       "mapValue": {
                         "fields": {
                           "complexDefinition": {
-                            "stringValue": "Used to express extent or degree. "
+                            "stringValue": "Used to express extent or degree."
                           },
                           "definition": {
                             "stringValue": "Used to show extent or degree."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "He was feeling **so** ill he couldn't go to work."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The puppy was **so** tiny it could fit in her hand."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -37,173 +60,45 @@
                       "mapValue": {
                         "fields": {
                           "complexDefinition": {
-                            "stringValue": "To a very high degree or level of intensity. "
-                          },
-                          "definition": {
-                            "stringValue": "Means very much."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "Used to indicate truth or reality. "
-                          },
-                          "definition": {
-                            "stringValue": "Shows truth or reality."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "To the same degree or extent. "
-                          },
-                          "definition": {
-                            "stringValue": "Shows same degree or extent."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "Used for emphasis before a descriptive adjective. "
-                          },
-                          "definition": {
-                            "stringValue": "Emphasizes a descriptive word."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "Used to introduce a new topic or turn in the conversation."
-                          },
-                          "definition": {
-                            "stringValue": "Starts a new topic or turn in the conversation."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "Used in comparisons to refer to the extent or degree of something.  "
-                          },
-                          "definition": {
-                            "stringValue": "Used in comparisons to show extent or degree."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "In the way described or demonstrated; thus. "
-                          },
-                          "definition": {
-                            "stringValue": "Means in this way."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "Used to emphasize a following adjective or adverb. "
+                            "stringValue": "Used to emphasize a following adjective or adverb."
                           },
                           "definition": {
                             "stringValue": "Emphasizes a following adjective or adverb."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**So** many people attended the concert."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "She sings **so** beautifully."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I am **so** tired today."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -213,63 +108,36 @@
                       "mapValue": {
                         "fields": {
                           "complexDefinition": {
-                            "stringValue": "In that order or manner. "
+                            "stringValue": "In the way described or demonstrated; thus."
                           },
                           "definition": {
-                            "stringValue": "Means in that order or manner."
+                            "stringValue": "In this way."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "Used to express confirmation or agreement."
-                          },
-                          "definition": {
-                            "stringValue": "Expresses confirmation or agreement."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "To a certain or limited extent or degree."
-                          },
-                          "definition": {
-                            "stringValue": "Means to a certain extent or degree."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I solved the puzzle **so**."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "He explained it **so**."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -294,19 +162,45 @@
                       "mapValue": {
                         "fields": {
                           "complexDefinition": {
-                            "stringValue": "Used to introduce a clause indicating the result of something. "
+                            "stringValue": "Used to introduce a clause indicating the result of something."
                           },
                           "definition": {
                             "stringValue": "Introduces a result."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I was tired, **so** I went to bed early."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "She studied hard, **so** she passed her exam."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "He forgot his wallet, **so** he couldn't pay the bill."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -322,57 +216,39 @@
                             "stringValue": "Introduces a question or suggestion."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "By the reason or cause that; inasmuch as. "
-                          },
-                          "definition": {
-                            "stringValue": "Means because."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "Used to introduce the consequence of something. "
-                          },
-                          "definition": {
-                            "stringValue": "Introduces a consequence."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**So**, are we going out for dinner?"
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**So**, shall we start the meeting now?"
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**So**, do you think the new design is better?"
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -397,19 +273,36 @@
                       "mapValue": {
                         "fields": {
                           "complexDefinition": {
-                            "stringValue": "The thing that is true or real. "
+                            "stringValue": "The thing that is true or real."
                           },
                           "definition": {
                             "stringValue": "The true or real thing."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I was expecting lamb but this doesn't taste like **so**."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I anticipated success, but this is not **so**."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -434,19 +327,45 @@
                       "mapValue": {
                         "fields": {
                           "complexDefinition": {
-                            "stringValue": "Used to draw attention to a statement.  "
+                            "stringValue": "Used to draw attention to a statement."
                           },
                           "definition": {
                             "stringValue": "Highlights a statement."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**So**, you finally admit you were wrong!"
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I won! **So** there!"
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**So** this is the famous masterpiece everyone talks about!"
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }

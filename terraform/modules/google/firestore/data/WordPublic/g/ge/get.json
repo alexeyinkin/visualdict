@@ -1,4 +1,10 @@
 {
+  "isVisible": {
+    "booleanValue": true
+  },
+  "ngrams": {
+    "arrayValue": {}
+  },
   "partOfSpeechSenses": {
     "arrayValue": {
       "values": [
@@ -21,13 +27,30 @@
                             "stringValue": "To receive something."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I didn't **get** your message, can you resend it?"
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Did you **get** the package I sent?"
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -40,38 +63,42 @@
                             "stringValue": "To go to a place and retrieve someone or something."
                           },
                           "definition": {
-                            "stringValue": "To go and bring something."
+                            "stringValue": "To go and bring or buy something."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "To purchase or obtain through a specified action."
-                          },
-                          "definition": {
-                            "stringValue": "To buy something."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Get** me a glass of water, please."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Can you **get** the mail?"
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I'll **get** us some coffee from the shop."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -87,13 +114,39 @@
                             "stringValue": "To make someone do something."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Get** your brother to help with the dishes."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I'll **get** my assistant to schedule the meeting."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Can you **get** him to stop shouting?"
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -109,13 +162,39 @@
                             "stringValue": "To understand something."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Get** what I'm saying or should I explain more?"
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I didn't **get** the joke until he explained it."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Once she explained, I finally **get** the math problem."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -131,13 +210,39 @@
                             "stringValue": "To reach a place."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Get** to the library before they close."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I will **get** to the office by 9 o'clock."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Can you **get** to my house by 18:00?"
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -153,13 +258,39 @@
                             "stringValue": "To become something."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I really hope she doesn't **get** lost in the city."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "She's beginning to **get** serious about her fitness goals."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "After that rejection, he may **get** discouraged."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -175,13 +306,30 @@
                             "stringValue": "To hit something."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The snowball **got** him right in the back."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I **get** the nail with the hammer."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -194,16 +342,33 @@
                             "stringValue": "To catch, capture, or trap."
                           },
                           "definition": {
-                            "stringValue": "To capture something."
+                            "stringValue": "To capture something or someone."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I managed to **get** a photograph of the elusive bird."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "We'll **get** the thief who stole the painting."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -219,13 +384,39 @@
                             "stringValue": "To create offspring."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Cats often **get** kittens in spring."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Their dog often **get** puppies every year."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "She will **get** twins next year."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -241,35 +432,21 @@
                             "stringValue": "To annoy someone."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "To use a form of persuasion or influence to make someone do something."
-                          },
-                          "definition": {
-                            "stringValue": "To persuade someone."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "You're really starting to **get** me."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -285,35 +462,30 @@
                             "stringValue": "To have a chance to do something."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "To start to be in a specified state or condition."
-                          },
-                          "definition": {
-                            "stringValue": "To start being something."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Did you **get** to read the book?"
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Hope they **get** to play in the championship game."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -329,57 +501,21 @@
                             "stringValue": "To catch a disease."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "To move or go somewhere."
-                          },
-                          "definition": {
-                            "stringValue": "To go somewhere."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "To prepare or make ready for use."
-                          },
-                          "definition": {
-                            "stringValue": "To prepare something."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I think I might **get** a cold."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -395,57 +531,30 @@
                             "stringValue": "To punish someone."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "To evoke an emotional response or reaction. "
-                          },
-                          "definition": {
-                            "stringValue": "To cause an emotion."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "To manage to hear, see, or understand something."
-                          },
-                          "definition": {
-                            "stringValue": "To hear or see something."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Get** him for stealing your lunch."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "She'll **get** you for lying."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }

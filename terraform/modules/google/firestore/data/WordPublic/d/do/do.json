@@ -407,6 +407,33 @@
                     {
                       "mapValue": {
                         "fields": {
+                          "definition": {
+                            "stringValue": "To have sex with."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {}
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "She is not someone I would **do**."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
                           "complexDefinition": {
                             "stringValue": "kill."
                           },

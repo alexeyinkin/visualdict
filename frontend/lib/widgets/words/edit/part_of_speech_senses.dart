@@ -91,7 +91,7 @@ class PartOfSpeechSensesEditingController
   PartOfSpeechEnum? _partOfSpeech;
   final sensesController = ListEditingController<Sense, SenseEditingController>(
     createItemController: SenseEditingController.new,
-    maxLength: 30,
+    maxLength: 100,
   );
 
   PartOfSpeechSensesEditingController() : super(null) {

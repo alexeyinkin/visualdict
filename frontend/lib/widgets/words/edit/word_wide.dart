@@ -36,6 +36,7 @@ class WordWideEditWidget extends StatelessWidget {
         ),
         const MySpacing(),
         Expanded(
+          flex: 3,
           child: WordTextContentEditWidget(
             controller,
             wordVisible: true,

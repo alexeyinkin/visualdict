@@ -1,4 +1,10 @@
 {
+  "isVisible": {
+    "booleanValue": true
+  },
+  "ngrams": {
+    "arrayValue": {}
+  },
   "partOfSpeechSenses": {
     "arrayValue": {
       "values": [
@@ -15,41 +21,45 @@
                       "mapValue": {
                         "fields": {
                           "complexDefinition": {
-                            "stringValue": "Used in questions referring to one or more people or things mentioned or assumed to be mentioned before, in order to ascertain which one or ones the speaker is referring to."
+                            "stringValue": "Used in questions, often to ask about a choice between two or more things, people, or actions."
                           },
                           "definition": {
-                            "stringValue": "Refers to a person or thing mentioned before to clarify which one."
+                            "stringValue": "Used in questions to ask about a choice."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "Used to introduce a clause giving further information about a preceding phrase or clause."
-                          },
-                          "definition": {
-                            "stringValue": "Starts a clause providing more details about a phrase or clause before."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Which** is your favorite book?"
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Which** team do you support?"
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Which** destination do you prefer?"
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -65,7 +75,7 @@
           "mapValue": {
             "fields": {
               "partOfSpeech": {
-                "stringValue": "preposition"
+                "stringValue": "adjective"
               },
               "senses": {
                 "arrayValue": {
@@ -74,19 +84,45 @@
                       "mapValue": {
                         "fields": {
                           "complexDefinition": {
-                            "stringValue": "Identifying the specific thing mentioned."
+                            "stringValue": "Used to indicate a particular one of two or more alternatives."
                           },
                           "definition": {
-                            "stringValue": "Points out a specific thing already mentioned."
+                            "stringValue": "Used to indicate one alternative out of two or more."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Which** dress should I wear today?"
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Let's decide **which** pizza topping to choose."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Which** book is your favorite?"
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -111,100 +147,45 @@
                       "mapValue": {
                         "fields": {
                           "complexDefinition": {
-                            "stringValue": "Used to introduce a clause expressing a contrast or exception."
+                            "stringValue": "Used to introduce a clause giving extra information about something mentioned earlier in the sentence."
                           },
                           "definition": {
-                            "stringValue": "Starts a clause showing a contrast or exception."
+                            "stringValue": "Used to introduce a clause giving extra information about the subject from the previous one."
                           },
                           "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
+                            "mapValue": {}
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "Used to introduce a clause reporting someone's words."
-                          },
-                          "definition": {
-                            "stringValue": "Starts a clause reporting what someone said."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              }
-            }
-          }
-        },
-        {
-          "mapValue": {
-            "fields": {
-              "partOfSpeech": {
-                "stringValue": "article"
-              },
-              "senses": {
-                "arrayValue": {
-                  "values": [
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "Used referring to something mentioned or assumed before, in order to identify which person or thing is meant."
-                          },
-                          "definition": {
-                            "stringValue": "Identifies a person or thing that has been talked about before."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "Used to choose or indicate someone or something when what is meant is known only to the speaker, often because of information given outside the present situation."
-                          },
-                          "definition": {
-                            "stringValue": "Selects or points out a person or thing known to the speaker."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {}
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I have a dog **which** loves to play catch."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "She bought the dress **which** was on sale."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "He visited Paris **which** is known for its Eiffel tower."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }

@@ -3,7 +3,22 @@
     "booleanValue": true
   },
   "ngrams": {
-    "arrayValue": {}
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "this"
+        },
+        {
+          "stringValue": "thi"
+        },
+        {
+          "stringValue": "th"
+        },
+        {
+          "stringValue": "t"
+        }
+      ]
+    }
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -27,7 +42,19 @@
                             "stringValue": "Refers to something nearby or just mentioned."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Относится к чему-то близкому или только что упомянутому."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -75,7 +102,19 @@
                             "stringValue": "Indicates time related to speaking moment."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Указывает на время, связанное с моментом разговора."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -138,7 +177,19 @@
                             "stringValue": "Refers to a certain degree or extent, emphasizes a following phrase."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Относится к определенной степени или масштабу, акцентирует следующую фразу."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -184,5 +235,8 @@
         }
       ]
     }
+  },
+  "transcription": {
+    "stringValue": "ðɪs"
   }
 }

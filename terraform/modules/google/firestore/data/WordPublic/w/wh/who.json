@@ -3,7 +3,19 @@
     "booleanValue": true
   },
   "ngrams": {
-    "arrayValue": {}
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "who"
+        },
+        {
+          "stringValue": "wh"
+        },
+        {
+          "stringValue": "w"
+        }
+      ]
+    }
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -27,7 +39,19 @@
                             "stringValue": "Asks about a person's identity."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Спрашивает о личности человека."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -75,7 +99,19 @@
                             "stringValue": "Expresses surprise or confusion about a person."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Выражает удивление или недоумение относительно человека."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -114,7 +150,19 @@
                             "stringValue": "Refers back to a person previously mentioned."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Относится к ранее упомянутому человеку."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -160,5 +208,8 @@
         }
       ]
     }
+  },
+  "transcription": {
+    "stringValue": "hu"
   }
 }

@@ -3,7 +3,16 @@
     "booleanValue": true
   },
   "ngrams": {
-    "arrayValue": {}
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "me"
+        },
+        {
+          "stringValue": "m"
+        }
+      ]
+    }
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -27,7 +36,22 @@
                             "stringValue": "Referring to self."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": true
+                                      },
+                                      "text": {
+                                        "stringValue": "Говоря о себе."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -90,7 +114,19 @@
                             "stringValue": "My."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Мой."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -136,5 +172,8 @@
         }
       ]
     }
+  },
+  "transcription": {
+    "stringValue": "miː"
   }
 }

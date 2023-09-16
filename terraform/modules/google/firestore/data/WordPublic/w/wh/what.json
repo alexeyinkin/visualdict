@@ -3,7 +3,22 @@
     "booleanValue": true
   },
   "ngrams": {
-    "arrayValue": {}
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "what"
+        },
+        {
+          "stringValue": "wha"
+        },
+        {
+          "stringValue": "wh"
+        },
+        {
+          "stringValue": "w"
+        }
+      ]
+    }
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -27,7 +42,19 @@
                             "stringValue": "Used to ask questions about things or people."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Что."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -75,7 +102,19 @@
                             "stringValue": "Refers to anything or everything."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Относится к чему-то или всему без исключения."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -123,7 +162,19 @@
                             "stringValue": "Refers to something mentioned before."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Относится к чему-то упомянутому ранее."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -186,7 +237,19 @@
                             "stringValue": "Refers to a specific type or kind."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Относится к конкретному типу или виду."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -240,7 +303,19 @@
                             "stringValue": "Shows surprise or disbelief."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Выражает удивление или недоверие."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -285,7 +360,19 @@
                             "stringValue": "Introduces the result of something."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Представляет результат чего-то."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -331,5 +418,8 @@
         }
       ]
     }
+  },
+  "transcription": {
+    "stringValue": "wɒt"
   }
 }

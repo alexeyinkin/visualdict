@@ -3,7 +3,19 @@
     "booleanValue": true
   },
   "ngrams": {
-    "arrayValue": {}
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "all"
+        },
+        {
+          "stringValue": "al"
+        },
+        {
+          "stringValue": "a"
+        }
+      ]
+    }
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -27,7 +39,19 @@
                             "stringValue": "Referring to the complete amount of something."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Относящийся к полному количеству чего-либо."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -90,7 +114,19 @@
                             "stringValue": "Denoting the total number or amount."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Обозначающий общее число или количество."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -153,7 +189,19 @@
                             "stringValue": "Fully or completely."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Полностью или целиком."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -201,7 +249,19 @@
                             "stringValue": "Despite expectations or hopes."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Несмотря на ожидания или надежды."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -247,5 +307,8 @@
         }
       ]
     }
+  },
+  "transcription": {
+    "stringValue": "ɔːl"
   }
 }

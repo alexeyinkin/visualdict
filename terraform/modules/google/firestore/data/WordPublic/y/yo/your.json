@@ -3,7 +3,22 @@
     "booleanValue": true
   },
   "ngrams": {
-    "arrayValue": {}
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "your"
+        },
+        {
+          "stringValue": "you"
+        },
+        {
+          "stringValue": "yo"
+        },
+        {
+          "stringValue": "y"
+        }
+      ]
+    }
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -27,7 +42,19 @@
                             "stringValue": "Something that belongs to the person one is talking to."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Что-то, что принадлежит человеку, с которым вы разговариваете."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -73,5 +100,8 @@
         }
       ]
     }
+  },
+  "transcription": {
+    "stringValue": "jɔr"
   }
 }

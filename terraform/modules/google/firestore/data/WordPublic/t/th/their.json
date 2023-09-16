@@ -3,7 +3,25 @@
     "booleanValue": true
   },
   "ngrams": {
-    "arrayValue": {}
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "their"
+        },
+        {
+          "stringValue": "thei"
+        },
+        {
+          "stringValue": "the"
+        },
+        {
+          "stringValue": "th"
+        },
+        {
+          "stringValue": "t"
+        }
+      ]
+    }
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -27,7 +45,19 @@
                             "stringValue": "Owned by or linked with certain people or things."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Принадлежащий или связанный с определенными людьми или вещами."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -75,7 +105,19 @@
                             "stringValue": "Referring to a person of unknown gender."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Относящийся к человеку неизвестного пола."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -112,5 +154,8 @@
         }
       ]
     }
+  },
+  "transcription": {
+    "stringValue": "ðɛər"
   }
 }

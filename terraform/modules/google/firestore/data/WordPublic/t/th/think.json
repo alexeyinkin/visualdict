@@ -3,7 +3,25 @@
     "booleanValue": true
   },
   "ngrams": {
-    "arrayValue": {}
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "think"
+        },
+        {
+          "stringValue": "thin"
+        },
+        {
+          "stringValue": "thi"
+        },
+        {
+          "stringValue": "th"
+        },
+        {
+          "stringValue": "t"
+        }
+      ]
+    }
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -27,7 +45,19 @@
                             "stringValue": "Believe or consider something."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Верить или считать что-то."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -72,10 +102,22 @@
                             "stringValue": "Direct one's mind toward someone or something; use one's mind actively to form connected ideas."
                           },
                           "definition": {
-                            "stringValue": "Use the mind to form ideas."
+                            "stringValue": "To use the mind to form ideas."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Использовать ум для формирования идей."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -102,10 +144,25 @@
                             "stringValue": "Remember or consider."
                           },
                           "definition": {
-                            "stringValue": "Remember."
+                            "stringValue": "To remember."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": true
+                                      },
+                                      "text": {
+                                        "stringValue": "Вспоминать."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -133,5 +190,8 @@
         }
       ]
     }
+  },
+  "transcription": {
+    "stringValue": "θɪŋk"
   }
 }

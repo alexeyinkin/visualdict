@@ -3,7 +3,19 @@
     "booleanValue": true
   },
   "ngrams": {
-    "arrayValue": {}
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "the"
+        },
+        {
+          "stringValue": "th"
+        },
+        {
+          "stringValue": "t"
+        }
+      ]
+    }
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -24,7 +36,19 @@
                             "stringValue": "Used before a specific thing already known or mentioned."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Используется перед конкретной вещью, которая уже известна или упомянута."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -69,7 +93,19 @@
                             "stringValue": "Used before a superlative or a number to specify the noun."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Используется перед превосходной степенью или числом для указания на существительное."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -127,5 +163,8 @@
         }
       }
     }
+  },
+  "transcription": {
+    "stringValue": "ðə"
   }
 }

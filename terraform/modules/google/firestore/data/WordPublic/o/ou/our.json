@@ -3,7 +3,19 @@
     "booleanValue": true
   },
   "ngrams": {
-    "arrayValue": {}
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "our"
+        },
+        {
+          "stringValue": "ou"
+        },
+        {
+          "stringValue": "o"
+        }
+      ]
+    }
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -27,7 +39,19 @@
                             "stringValue": "Belonging to the speaker and at least one other person."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Принадлежащее говорящему и по крайней мере еще одному человеку."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -64,5 +88,8 @@
         }
       ]
     }
+  },
+  "transcription": {
+    "stringValue": "aʊr"
   }
 }

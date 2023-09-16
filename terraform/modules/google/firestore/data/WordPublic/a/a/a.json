@@ -3,7 +3,13 @@
     "booleanValue": true
   },
   "ngrams": {
-    "arrayValue": {}
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "a"
+        }
+      ]
+    }
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -24,7 +30,19 @@
                             "stringValue": "Used before words to indicate one unspecified person or thing."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Используется перед словами для обозначения одного неопределенного человека или предмета."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -70,5 +88,8 @@
         }
       ]
     }
+  },
+  "transcription": {
+    "stringValue": "ə"
   }
 }

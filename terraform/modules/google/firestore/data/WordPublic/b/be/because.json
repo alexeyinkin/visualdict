@@ -3,7 +3,31 @@
     "booleanValue": true
   },
   "ngrams": {
-    "arrayValue": {}
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "because"
+        },
+        {
+          "stringValue": "becaus"
+        },
+        {
+          "stringValue": "becau"
+        },
+        {
+          "stringValue": "beca"
+        },
+        {
+          "stringValue": "bec"
+        },
+        {
+          "stringValue": "be"
+        },
+        {
+          "stringValue": "b"
+        }
+      ]
+    }
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -27,7 +51,19 @@
                             "stringValue": "Introduces a reason or explanation."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Представляет причину или объяснение."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -73,5 +109,8 @@
         }
       ]
     }
+  },
+  "transcription": {
+    "stringValue": "bɪˈkɔz"
   }
 }

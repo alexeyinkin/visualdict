@@ -3,7 +3,22 @@
     "booleanValue": true
   },
   "ngrams": {
-    "arrayValue": {}
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "will"
+        },
+        {
+          "stringValue": "wil"
+        },
+        {
+          "stringValue": "wi"
+        },
+        {
+          "stringValue": "w"
+        }
+      ]
+    }
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -27,7 +42,19 @@
                             "stringValue": "The ability to choose or make decisions."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Способность выбирать или принимать решения."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -66,7 +93,19 @@
                             "stringValue": "A legal paper that says who gets your things when you die."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Юридический документ, который определяет, кто получит ваши вещи после вашей смерти."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -96,7 +135,19 @@
                             "stringValue": "What someone wants or plans."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Что кто-то хочет или планирует."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -112,24 +163,6 @@
                                 }
                               ]
                             }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "The upper part of a millstone."
-                          },
-                          "definition": {
-                            "stringValue": "The top part of a millstone."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {}
-                          },
-                          "usages": {
-                            "arrayValue": {}
                           }
                         }
                       }
@@ -159,7 +192,19 @@
                             "stringValue": "Used to talk about upcoming events."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Применительно к предстоящим событиям."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -207,7 +252,19 @@
                             "stringValue": "Used to emphasize something someone is doing on purpose."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Используется для подчеркивания того, что кто-то делает что-то нарочно."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -235,5 +292,8 @@
         }
       ]
     }
+  },
+  "transcription": {
+    "stringValue": "wɪl"
   }
 }

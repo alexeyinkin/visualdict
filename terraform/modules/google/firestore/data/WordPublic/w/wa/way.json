@@ -3,7 +3,19 @@
     "booleanValue": true
   },
   "ngrams": {
-    "arrayValue": {}
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "way"
+        },
+        {
+          "stringValue": "wa"
+        },
+        {
+          "stringValue": "w"
+        }
+      ]
+    }
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -27,7 +39,19 @@
                             "stringValue": "The method of doing something."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Способ совершения чего-либо."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -75,7 +99,19 @@
                             "stringValue": "The route to a place."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Маршрут к месту."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -123,7 +159,19 @@
                             "stringValue": "The distance between two points."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Расстояние между двумя точками."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -162,7 +210,19 @@
                             "stringValue": "A habit or custom."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Привычка или обычай."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -201,7 +261,19 @@
                             "stringValue": "Right to cross someone’s property."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Право пересекать чье-то имущество."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -240,61 +312,25 @@
                       "mapValue": {
                         "fields": {
                           "complexDefinition": {
-                            "stringValue": "A considerable time or period."
-                          },
-                          "definition": {
-                            "stringValue": "A long time."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {}
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": [
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "She moved to Paris **way** back in the 70s."
-                                      }
-                                    }
-                                  }
-                                },
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "I finished my dinner **way** before everyone else."
-                                      }
-                                    }
-                                  }
-                                },
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "The package arrived **way** earlier than expected."
-                                      }
-                                    }
-                                  }
-                                }
-                              ]
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
                             "stringValue": "Very or much."
                           },
                           "definition": {
                             "stringValue": "Very or too much."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Очень или слишком."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -325,6 +361,24 @@
                                       }
                                     }
                                   }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "She moved to Paris **way** back in the 70s."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I finished my dinner **way** before everyone else."
+                                      }
+                                    }
+                                  }
                                 }
                               ]
                             }
@@ -340,5 +394,8 @@
         }
       ]
     }
+  },
+  "transcription": {
+    "stringValue": "weɪ"
   }
 }

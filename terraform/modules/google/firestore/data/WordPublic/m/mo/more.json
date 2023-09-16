@@ -3,7 +3,22 @@
     "booleanValue": true
   },
   "ngrams": {
-    "arrayValue": {}
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "more"
+        },
+        {
+          "stringValue": "mor"
+        },
+        {
+          "stringValue": "mo"
+        },
+        {
+          "stringValue": "m"
+        }
+      ]
+    }
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -27,7 +42,19 @@
                             "stringValue": "Greater."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Больше."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -75,7 +102,19 @@
                             "stringValue": "Again."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Снова."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -120,7 +159,22 @@
                             "stringValue": "A bigger or extra amount."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": true
+                                      },
+                                      "text": {
+                                        "stringValue": "Больший или дополнительный объём."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -183,7 +237,19 @@
                             "stringValue": "Larger in size or number."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Больше по размеру или количеству."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -240,52 +306,28 @@
                       "mapValue": {
                         "fields": {
                           "complexDefinition": {
-                            "stringValue": "Connecting alternative items to indicate an extended operation."
-                          },
-                          "definition": {
-                            "stringValue": "Connects more items to extend an operation."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {}
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": [
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "She wanted to have pizza, **more** her friends preferred sushi."
-                                      }
-                                    }
-                                  }
-                                },
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "I enjoy painting, **more** I find drawing even more captivating."
-                                      }
-                                    }
-                                  }
-                                }
-                              ]
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
                             "stringValue": "Introducing a further question, response, or action as a follow-up."
                           },
                           "definition": {
                             "stringValue": "Starts a further question or action."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": true
+                                      },
+                                      "text": {
+                                        "stringValue": "Более того."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -322,5 +364,8 @@
         }
       ]
     }
+  },
+  "transcription": {
+    "stringValue": "mɔr"
   }
 }

@@ -3,7 +3,13 @@
     "booleanValue": true
   },
   "ngrams": {
-    "arrayValue": {}
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "i"
+        }
+      ]
+    }
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -24,7 +30,19 @@
                             "stringValue": "The word someone uses when referring to himself or herself."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Слово, которое кто-то использует, когда обращается к себе самому или самой себе."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -70,5 +88,8 @@
         }
       ]
     }
+  },
+  "transcription": {
+    "stringValue": "aɪ"
   }
 }

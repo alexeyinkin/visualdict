@@ -3,7 +3,25 @@
     "booleanValue": true
   },
   "ngrams": {
-    "arrayValue": {}
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "these"
+        },
+        {
+          "stringValue": "thes"
+        },
+        {
+          "stringValue": "the"
+        },
+        {
+          "stringValue": "th"
+        },
+        {
+          "stringValue": "t"
+        }
+      ]
+    }
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -24,10 +42,25 @@
                             "stringValue": "Used to identify a specific person or thing close at hand or being indicated or experienced."
                           },
                           "definition": {
-                            "stringValue": "Used to point at something close or recently mentioned."
+                            "stringValue": "Used to point at something plural, close or recently mentioned."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": true
+                                      },
+                                      "text": {
+                                        "stringValue": "Используется для указания на что-то во множественном числе, близкое или недавно упомянутое."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -73,5 +106,8 @@
         }
       ]
     }
+  },
+  "transcription": {
+    "stringValue": "ðiːz"
   }
 }

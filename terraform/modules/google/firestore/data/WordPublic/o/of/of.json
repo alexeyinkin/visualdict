@@ -3,7 +3,16 @@
     "booleanValue": true
   },
   "ngrams": {
-    "arrayValue": {}
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "of"
+        },
+        {
+          "stringValue": "o"
+        }
+      ]
+    }
   },
   "partOfSpeechSenses": {
     "arrayValue": {
@@ -24,7 +33,22 @@
                             "stringValue": "Showing origin or source."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": true
+                                      },
+                                      "text": {
+                                        "stringValue": "Показывает источник или происхождение."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -69,7 +93,22 @@
                             "stringValue": "Showing cause or reason."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": true
+                                      },
+                                      "text": {
+                                        "stringValue": "Обозначает причину."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -114,7 +153,22 @@
                             "stringValue": "Showing material or substance."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": true
+                                      },
+                                      "text": {
+                                        "stringValue": "Показывает материал."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -159,7 +213,22 @@
                             "stringValue": "Showing part-whole relationship."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": true
+                                      },
+                                      "text": {
+                                        "stringValue": "Показывает отношение часть-целое."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -195,7 +264,22 @@
                             "stringValue": "Showing identifying quality."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": true
+                                      },
+                                      "text": {
+                                        "stringValue": "Показывает идентифицирующее качество."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -222,7 +306,19 @@
                             "stringValue": "Emphasizing or characterizing the noun that follows it."
                           },
                           "definitionTranslations": {
-                            "mapValue": {}
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Подчеркивает или характеризует существительное, следующее за ним."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           },
                           "usages": {
                             "arrayValue": {
@@ -231,7 +327,7 @@
                                   "mapValue": {
                                     "fields": {
                                       "text": {
-                                        "stringValue": "That monster of a dog scared the kids."
+                                        "stringValue": "That monster **of** a dog scared the kids."
                                       }
                                     }
                                   }
@@ -240,7 +336,7 @@
                                   "mapValue": {
                                     "fields": {
                                       "text": {
-                                        "stringValue": "She's a jewel of a person, always helping others."
+                                        "stringValue": "She's a jewel **of** a person, always helping others."
                                       }
                                     }
                                   }
@@ -249,7 +345,7 @@
                                   "mapValue": {
                                     "fields": {
                                       "text": {
-                                        "stringValue": "This book is a treasure of a read, full of wisdom and insights."
+                                        "stringValue": "This book is a treasure **of** a read, full of wisdom and insights."
                                       }
                                     }
                                   }
@@ -268,5 +364,8 @@
         }
       ]
     }
+  },
+  "transcription": {
+    "stringValue": "ʌv"
   }
 }

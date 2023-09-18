@@ -27,31 +27,30 @@ class UsageEditWidget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
-                child: MyPadding(
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const Text('💬'),
-                      const MySpacing(),
-                      Expanded(
-                        child: Column(
-                          children: [
-                            TextField(
-                              controller: controller.textController,
-                              maxLines: null,
-                            ),
-                            CommentField(
-                              controller: controller,
-                              padding: MyPaddingEnum.top,
-                            ),
-                          ],
-                        ),
+                child: Row(
+                  children: [
+                    const MySpacing(),
+                    const Text('💬'),
+                    const MySpacing(),
+                    Expanded(
+                      child: Column(
+                        children: [
+                          TextField(
+                            controller: controller.textController,
+                            focusNode: controller.focusNode,
+                            maxLines: null,
+                          ),
+                          CommentField(
+                            controller: controller,
+                            padding: MyPaddingEnum.top,
+                          ),
+                        ],
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
-              Column(
+              Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   IsVisibleToggle(controller: controller),
@@ -69,6 +68,7 @@ class UsageEditWidget extends StatelessWidget {
 class UsageEditingController extends ValueNotifier<Usage?>
     with CommentableControllerMixin, IsVisibleControllerMixin {
   final textController = TextEditingController();
+  final focusNode = FocusNode();
 
   UsageEditingController() : super(null) {
     commentController.addListener(notifyListeners);
@@ -95,5 +95,12 @@ class UsageEditingController extends ValueNotifier<Usage?>
     isVisible = newValue?.isVisible ?? true;
     textController.text = newValue?.text ?? '';
     super.value = newValue;
+  }
+
+  @override
+  void dispose() {
+    textController.dispose();
+    focusNode.dispose();
+    super.dispose();
   }
 }

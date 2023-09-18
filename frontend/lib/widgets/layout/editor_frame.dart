@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../theme/my_theme_extension.dart';
-import '../../theme/theme.dart';
 import 'is_visible_frame.dart';
 
 class EditorFrame extends StatelessWidget {
@@ -19,7 +18,8 @@ class EditorFrame extends StatelessWidget {
 
     return IsVisibleFrame(
       isVisible: isVisible,
-      child: MyPadding(
+      child: Padding(
+        padding: const EdgeInsets.all(2),
         child: ColoredBox(
           color: ext.nestingColor,
           child: child,

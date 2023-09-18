@@ -23,16 +23,57 @@ class WordScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    switch (RepositoryEngineEnum.current) {
+      case RepositoryEngineEnum.flutterFire:
+        return _buildFlutterFire();
+
+      case RepositoryEngineEnum.terraformJson:
+        return _buildTerraformJson();
+    }
+  }
+
+  Widget _buildFlutterFire() {
     return MyScaffold(
       scrolls: true,
       body: StreamBuilder(
         stream: notifier.bloc.states,
-        builder: _buildOnChange,
+        builder: _buildFlutterFireOnChange,
       ),
     );
   }
 
-  Widget _buildOnChange(
+  Widget _buildFlutterFireOnChange(
+    BuildContext context,
+    AsyncSnapshot<ModelByIdState<String, WordPublic>> snapshot,
+  ) {
+    final status = snapshot.data?.status;
+
+    switch (status) {
+      case LoadStatus.error:
+        return const LoadingErrorWidget();
+
+      case null:
+      case LoadStatus.notTried:
+      case LoadStatus.loading:
+        return const SmallCircularProgressIndicator();
+
+      case LoadStatus.ok:
+        final wordPublic = snapshot.data!.model!;
+        return WordDetailsViewWidget(wordPublic);
+    }
+  }
+
+  Widget _buildTerraformJson() {
+    return MyScaffold(
+      scrolls: false,
+      body: StreamBuilder(
+        stream: notifier.bloc.states,
+        builder: _buildTerraformJsonOnChange,
+      ),
+    );
+  }
+
+  Widget _buildTerraformJsonOnChange(
     BuildContext context,
     AsyncSnapshot<ModelByIdState<String, WordPublic>> snapshot,
   ) {
@@ -50,32 +91,33 @@ class WordScreen extends StatelessWidget {
       case LoadStatus.ok:
         final wordPublic = snapshot.data!.model!;
 
-        switch (RepositoryEngineEnum.current) {
-          case RepositoryEngineEnum.flutterFire:
-            return WordDetailsViewWidget(wordPublic);
-
-          case RepositoryEngineEnum.terraformJson:
-            return ModelViewOrEditWidget(
-              createController: () => WordPublicEditingController(wordPublic),
-              editBuilder: (_, __, c) => WordDetailsEditWidget(c),
-              model: wordPublic,
-              saveCallback: _save,
-              viewBuilder: (_, w) => WordDetailsViewWidget(w),
-              buttonRowBuilder: (context, row) => Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  ElevatedButton(
-                    onPressed: notifier.bloc.reload,
-                    child: Text("Reload"),
-                  ),
-                  const MySpacing(),
-                  const MySpacing(),
-                  row,
-                ],
-              ),
-            );
-        }
+        return Expanded(
+          child: ModelViewOrEditWidget(
+            createController: () => WordPublicEditingController(wordPublic),
+            editBuilder: (_, __, c, buttons) => FixedHeaderWidget(
+              header: buttons,
+              child: WordDetailsEditWidget(c),
+            ),
+            model: wordPublic,
+            saveCallback: _save,
+            viewBuilder: (_, w, buttons) => FixedHeaderWidget(
+              header: buttons,
+              child: WordDetailsViewWidget(w),
+            ),
+            buttonRowBuilder: (context, row) => Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                ElevatedButton(
+                  onPressed: notifier.bloc.reload,
+                  child: Text("Reload"),
+                ),
+                const MySpacing(),
+                const MySpacing(),
+                row,
+              ],
+            ),
+          ),
+        );
     }
   }
 

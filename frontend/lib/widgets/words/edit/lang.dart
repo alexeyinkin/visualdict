@@ -13,6 +13,7 @@ class LangEditWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       controller: controller.textController,
+      decoration: null,
     );
   }
 }

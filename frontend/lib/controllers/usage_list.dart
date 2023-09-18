@@ -4,8 +4,11 @@ import 'package:model_editors/model_editors.dart';
 
 import '../widgets/words/edit/usage.dart';
 
-class UsageListEditingController
-    extends ListEditingController<Usage, UsageEditingController> {
+class UsageListEditingController extends ListEditingController<
+    Usage,
+    UsageEditingController
+//
+    > {
   bool _isGenerating = false;
   String? _currentAction;
 

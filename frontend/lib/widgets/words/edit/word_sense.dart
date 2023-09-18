@@ -6,14 +6,15 @@ import '../../../controllers/commentable.dart';
 import '../../../controllers/is_visible.dart';
 import '../../../controllers/lang.dart';
 import '../../../controllers/translation.dart';
+import '../../../controllers/translations.dart';
 import '../../../controllers/usage_list.dart';
 import '../../../theme/my_theme_extension.dart';
 import '../../../theme/theme.dart';
 import '../../buttons/comment.dart';
 import '../../buttons/is_visible.dart';
 import '../../buttons/settings.dart';
-import '../../layout/editor_frame.dart';
 import '../../layout/is_visible_frame.dart';
+import 'add_translation_button.dart';
 import 'comment_field.dart';
 import 'part_of_speech_senses.dart';
 import 'translation_line.dart';
@@ -88,21 +89,13 @@ class WordSenseEditWidget extends StatelessWidget {
                     ),
                     ReorderableMapEditor(
                       controller: controller.definitionTranslationsController,
-                      itemBuilder: (_, c, index) => EditorFrame(
-                        child: TranslationLineEditWidget(c),
-                      ),
+                      itemBuilder: (_, c, index) =>
+                          TranslationLineEditWidget(c),
                       shrinkWrap: true,
                     ),
-                    CollectionAddButtonBuilder(
+                    AddTranslationButton(
                       controller: controller.definitionTranslationsController,
-                      enabledBuilder: (_) => IconButton(
-                        onPressed: () =>
-                            controller.definitionTranslationsController.add(
-                          '',
-                          null,
-                        ),
-                        icon: const Icon(Icons.translate),
-                      ),
+                      lang: 'ru',
                     ),
                     const MySpacing(),
                     UsagesEditWidget(
@@ -139,13 +132,7 @@ class SenseEditingController extends ValueNotifier<Sense?>
   bool _isAdvanced = false;
   final complexDefinitionController = TextEditingController();
   final definitionController = TextEditingController();
-  final definitionTranslationsController = MapEditingController<
-      String,
-      Translation,
-      LangEditingController,
-      TranslationEditingController
-      //
-      >(
+  final definitionTranslationsController = TranslationMapEditingController(
     createKeyController: LangEditingController.new,
     createValueController: TranslationEditingController.new,
     maxLength: 10000,

@@ -45,9 +45,10 @@ class UsagesEditWidget extends StatelessWidget {
                 CollectionAddButtonBuilder(
                   controller: controller,
                   enabledBuilder: (_) => IconButton(
-                    onPressed: () => controller.add(
-                      null,
-                    ),
+                    onPressed: () {
+                      final c = controller.add(null);
+                      c.focusNode.requestFocus();
+                    },
                     icon: const Text('💬'),
                   ),
                 ),

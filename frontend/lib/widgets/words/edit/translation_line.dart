@@ -21,24 +21,22 @@ class TranslationLineEditWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MyPadding(
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          SizedBox(
-            width: 30,
-            child: LangEditWidget(
-              controller: controller.keyController,
-            ),
+    return Row(
+      children: [
+        const MySpacing(),
+        SizedBox(
+          width: 30,
+          child: LangEditWidget(
+            controller: controller.keyController,
           ),
-          const MySpacing(),
-          Expanded(
-            child: TranslationEditWidget(
-              controller: controller.valueController,
-            ),
+        ),
+        const MySpacing(),
+        Expanded(
+          child: TranslationEditWidget(
+            controller: controller.valueController,
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

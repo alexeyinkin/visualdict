@@ -21,6 +21,7 @@ class TranslationEditWidget extends StatelessWidget {
             Expanded(
               child: TextField(
                 controller: controller.textController,
+                focusNode: controller.focusNode,
                 maxLines: null,
               ),
             ),

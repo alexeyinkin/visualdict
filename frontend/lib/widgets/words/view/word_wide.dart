@@ -1,6 +1,7 @@
 import 'package:common_dart/common_dart.dart';
 import 'package:flutter/widgets.dart';
 
+import '../../../models/repository_engine.dart';
 import '../../../theme/theme.dart';
 import '../word_image_or_not.dart';
 import 'image_prompt.dart';
@@ -34,6 +35,9 @@ class WordWideViewWidget extends StatelessWidget {
         ),
         const MySpacing(),
         Expanded(
+          flex: RepositoryEngineEnum.current == RepositoryEngineEnum.flutterFire
+              ? 1
+              : 3,
           child: WordTextContentViewWidget(
             wordPublic,
             wordVisible: true,

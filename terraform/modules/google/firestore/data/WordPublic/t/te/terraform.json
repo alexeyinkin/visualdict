@@ -1,4 +1,55 @@
 {
+  "image": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "e3e1ed7c93"
+        },
+        "prompt": {
+          "stringValue": "forest on Mars"
+        },
+        "timestamp": {
+          "integerValue": "1694927071"
+        }
+      }
+    }
+  },
+  "isVisible": {
+    "booleanValue": false
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "terraform"
+        },
+        {
+          "stringValue": "terrafor"
+        },
+        {
+          "stringValue": "terrafo"
+        },
+        {
+          "stringValue": "terraf"
+        },
+        {
+          "stringValue": "terra"
+        },
+        {
+          "stringValue": "terr"
+        },
+        {
+          "stringValue": "ter"
+        },
+        {
+          "stringValue": "te"
+        },
+        {
+          "stringValue": "t"
+        }
+      ]
+    }
+  },
   "partOfSpeechSenses": {
     "arrayValue": {
       "values": [
@@ -15,19 +66,39 @@
                       "mapValue": {
                         "fields": {
                           "complexDefinition": {
-                            "stringValue": "Refers to the hypothetical process of deliberately modifying the atmosphere, temperature, surface topography or ecology of a planet, moon or other body to be similar to those of Earth to make it habitable by humans."
+                            "stringValue": "The act or process of changing a planet's conditions to make it resemble Earth and thus suitable for human life."
                           },
                           "definition": {
-                            "stringValue": "The act of changing a planet to make it like Earth."
+                            "stringValue": "Making another planet suitable for humans to live on."
                           },
                           "definitionTranslations": {
                             "mapValue": {
-                              "fields": {}
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Преобразование другой планеты для пригодности проживания на ней людей."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
                             }
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Scientists aim to **terraform** Mars for future human habitation."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -36,20 +107,37 @@
                     {
                       "mapValue": {
                         "fields": {
-                          "complexDefinition": {
-                            "stringValue": "The act or process of changing a planet's conditions to make it resemble Earth and thus suitable for human life."
-                          },
                           "definition": {
-                            "stringValue": "The process of making another planet suitable for humans to live on."
+                            "stringValue": "Making a run-down rented apartment suitable for living."
                           },
                           "definitionTranslations": {
                             "mapValue": {
-                              "fields": {}
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Приведение в порядок запущенной арендованной квартиры."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
                             }
                           },
                           "usages": {
                             "arrayValue": {
-                              "values": []
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "He began to **terraform** his new, dilapidated studio apartment."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -63,5 +151,20 @@
         }
       ]
     }
+  },
+  "pronunciation": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "236ac42834"
+        },
+        "timestamp": {
+          "integerValue": "1694926464"
+        }
+      }
+    }
+  },
+  "transcription": {
+    "stringValue": "ˈtɛrəfɔrm"
   }
 }

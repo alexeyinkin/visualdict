@@ -39,7 +39,8 @@ Answer with only the transcription and nothing more.''',
   final match = re.firstMatch(content);
 
   if (match == null) {
-    throw Exception('Cannot parse: ┤$content├');
+    return content;
+    //throw Exception('Cannot parse: ┤$content├');
   }
   return match[1]!;
 }

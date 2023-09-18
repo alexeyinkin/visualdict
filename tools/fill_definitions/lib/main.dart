@@ -156,12 +156,16 @@ PartOfSpeechEnum? parsePos(String pos) {
       return PartOfSpeechEnum.conjunction;
 
     case 'slang noun':
+    case 'noun, slang':
       return PartOfSpeechEnum.noun;
 
     case 'infinite marker':
     case 'infinitive marker':
     case 'suffix':
       return PartOfSpeechEnum.particle;
+
+    case 'prep':
+      return PartOfSpeechEnum.preposition;
 
     case 'demonstrative pronoun':
     case 'interrogative pronoun':

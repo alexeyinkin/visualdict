@@ -13,6 +13,12 @@ Future<void> main(List<String> rawArgs) async {
   };
 
   final jsonFile = getWordPublicJsonFile(args.word, toRepositoryRoot: _toRoot);
+
+  if (!args.force && jsonFile.existsSync()) {
+    print('Word exists, skipping: ${args.word}');
+    exit(1);
+  }
+
   final jsonContent = replacePatterns(
     File('assets/${CollectionsEnum.WordPublic.name}.json.template')
         .readAsStringSync(),

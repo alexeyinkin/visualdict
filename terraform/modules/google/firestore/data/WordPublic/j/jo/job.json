@@ -1,0 +1,596 @@
+{
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "job"
+        },
+        {
+          "stringValue": "jo"
+        },
+        {
+          "stringValue": "j"
+        }
+      ]
+    }
+  },
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "noun"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A paid position of regular employment."
+                          },
+                          "definition": {
+                            "stringValue": "A paid regular work."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Оплачиваемая регулярная работа."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Job** satisfaction is vital for personal happiness."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "She landed a high-paying **job** in marketing."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "His **job** as a lawyer is quite demanding."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A task or piece of work, especially one that is paid."
+                          },
+                          "definition": {
+                            "stringValue": "A paid task."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Оплачиваемое задание."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Job** hunting can be a very challenging task."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "My new **job** offers comprehensive health benefits."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "This summer **job** will help me save for college."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A responsibility or duty."
+                          },
+                          "definition": {
+                            "stringValue": "A duty."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Обязанность."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Job** assignments were distributed among team members."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Her daily **job** is taking care of the children."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "His **job** was to ensure the guests were comfortable."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A difficult task or problem."
+                          },
+                          "definition": {
+                            "stringValue": "A hard task."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Трудное задание."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Job** one is fixing this broken fence today."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Preparing Thanksgiving dinner is quite the **job**."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Finishing this novel will be a serious **job** for me."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A criminal act, especially a robbery."
+                          },
+                          "definition": {
+                            "stringValue": "A criminal act."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Преступное деяние."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Job** is often used in detective novels to describe heists."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The **job** was carefully planned but still went wrong."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "After the **job**, we'll lay low in Mexico."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "verb"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "To work at a job or jobs."
+                          },
+                          "definition": {
+                            "stringValue": "To work."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Работать."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "He's been **job**bing as a freelance programmer recently."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I've been **job**bing at a local restaurant for extra cash."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "After college, she started **job**bing for a prominent law firm."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "To perform a task or job."
+                          },
+                          "definition": {
+                            "stringValue": "To do a task."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Выполнить задачу."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Job** me to finish the project by Friday."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Could you **job** these files for me today?"
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "He **jobbed** throughout the night to meet the deadline."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "To cheat or swindle."
+                          },
+                          "definition": {
+                            "stringValue": "To cheat."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Обманывать."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Job** your customers and they'll stop trusting you."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "He was caught **jobbing** his business partners."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I won't **job** you, I swear."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "To make or manufacture something."
+                          },
+                          "definition": {
+                            "stringValue": "To make something."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Сделать что-то."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Job** that chair together quickly before the guests arrive."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Can you **job** a rough schedule for the project?"
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Betty decided to **job** a makeshift ladder from the scattered wood."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "transcription": {
+    "stringValue": "dʒɑb"
+  }
+}

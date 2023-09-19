@@ -1,0 +1,467 @@
+{
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "month"
+        },
+        {
+          "stringValue": "mont"
+        },
+        {
+          "stringValue": "mon"
+        },
+        {
+          "stringValue": "mo"
+        },
+        {
+          "stringValue": "m"
+        }
+      ]
+    }
+  },
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "noun"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A unit of time, used with calendars, which is approximately as long as a natural period related to the motion of the Moon."
+                          },
+                          "definition": {
+                            "stringValue": "A period of time, used in calendars, roughly based on the Moon's cycle."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Период времени, используемый в календарях, приблизительно основанный на цикле движения Луны."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Month** by **month**, my savings account grows."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "She was away for a whole **month**."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "My gym membership charges me every **month**."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A period of 30 days, 31 days, or some alternation thereof."
+                          },
+                          "definition": {
+                            "stringValue": "A time period of 30 or 31 days."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Период времени в 30 или 31 день."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Month** is the time it takes for the moon to orbit."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "She was on vacation for a whole **month**."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The **month** of May is full of holidays."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A period into which a year is divided, historically based on the phases of the moon and amounting to approximately 30 days or 28 to 31 days."
+                          },
+                          "definition": {
+                            "stringValue": "A division of a year, typically 28 to 31 days long."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Разделение года, обычно длительностью от 28 до 31 дня."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Month** has flown by since we started our project."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "She will be back from vacation next **month**."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Their wedding is scheduled for the following **month**."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "The time from any day of one calendar month to the corresponding day of the next."
+                          },
+                          "definition": {
+                            "stringValue": "The time from one day of a month to the same day in the next month."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Время от одного дня месяца до того же дня в следующем месяце."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Month** passed since she moved to Spain."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "In a **month**, my vacation leave starts."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "They celebrated their relationship every **month** since they started dating."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "An extended period of time that is not specifically defined."
+                          },
+                          "definition": {
+                            "stringValue": "An undefined extended period of time."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Неопределенно продолжительный период времени."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "She's been crying for **month** over that breakup."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "He has been waiting for the promotion for a **month**."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "It felt like a **month** before she finally responded to him."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A fiscal or business term signifying a period of time."
+                          },
+                          "definition": {
+                            "stringValue": "A business or financial period of time."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Бизнес или финансовый период времени."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Month**-end is always busy with financial reporting."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "His car insurance premium is due next **month**."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The fiscal **month** ended with a favorable balance."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A unit used in measuring the age of something or someone, consisting of approximately 30 days."
+                          },
+                          "definition": {
+                            "stringValue": "A 30-day unit for measuring age."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "30-дневная единица измерения возраста."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Month** two marked his first blissful smile."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "She began crawling on her ninth **month**."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "In his sixth **month**, he could sit unassisted."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "transcription": {
+    "stringValue": "mʌnθ"
+  }
+}

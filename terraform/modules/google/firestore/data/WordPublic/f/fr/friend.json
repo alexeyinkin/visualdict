@@ -1,0 +1,905 @@
+{
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "friend"
+        },
+        {
+          "stringValue": "frien"
+        },
+        {
+          "stringValue": "frie"
+        },
+        {
+          "stringValue": "fri"
+        },
+        {
+          "stringValue": "fr"
+        },
+        {
+          "stringValue": "f"
+        }
+      ]
+    }
+  },
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "noun"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A person whom one knows and with whom one has a bond of mutual affection, typically exclusive of sexual or family relations."
+                          },
+                          "definition": {
+                            "stringValue": "A person one knows and likes."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Человек, которого знаешь и любишь."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Friend**, please pass the salt."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "John is my best **friend**."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "You've always been a true **friend** to me."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A person who supports a particular cause, organization, or country by giving financial or other help."
+                          },
+                          "definition": {
+                            "stringValue": "A person who gives support to a cause or organization."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Человек, который оказывает поддержку делу или организации."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Friend** of the museum, she donated annually."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "John is a committed **friend** to animal rescue organizations."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "As a **friend** to the library, she promotes literacy programs."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "An acquaintance or a stranger one comes into contact with."
+                          },
+                          "definition": {
+                            "stringValue": "Someone one runs into."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Кого-то, на кого кто-то натолкнулся."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Friend**, we meet again in this busy marketplace."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I bumped into an old **friend** at the grocery store today."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Unexpectedly, I crossed paths with a childhood **friend** at the concert."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A person who is not an enemy or who is on the same side."
+                          },
+                          "definition": {
+                            "stringValue": "A person who is not an enemy."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Человек, который не является врагом."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Friend**, you don't have to fear; we're on the same side."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "In this vast universe, every alien isn't a **friend**."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "A trustworthy **friend** is someone who doesn't betray your trust."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A familiar or helpful thing."
+                          },
+                          "definition": {
+                            "stringValue": "Something that is helpful or comfortable."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Что-то, что является полезным или комфортным."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Friend**, this blanket brings me warmth during winter nights."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "A hot cup of coffee is a **friend** on early mornings."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "In my solitude, music is my **friend**."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A contact in a social networking service."
+                          },
+                          "definition": {
+                            "stringValue": "A social media contact."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Контакт в социальных сетях."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Friend** me on Facebook, we'll stay connected."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I'll add you as a **friend** on Instagram."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "She's not just a **friend** on LinkedIn, but also in life."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A member of the Religious Society of Friends; a Quaker."
+                          },
+                          "definition": {
+                            "stringValue": "A member of the Religious Society of Friends."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Член Религиозного общества Друзей."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Friend** Hannah is very dedicated to her religious beliefs."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "In our community, Adam is respected as a devoted **Friend**."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "As a **Friend**, she fully abides the practice of simple living."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A patron or supporter of a specified person or thing."
+                          },
+                          "definition": {
+                            "stringValue": "A backer of a specific person or thing."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Сторонник конкретного человека или вещи."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Friend** of education reform, she continuously funds progressive schools."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "As a **friend** of sustainable farming, he supports local farmers."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "She is a considered a **friend** of the arts community."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A person one likes and trusts. "
+                          },
+                          "definition": {
+                            "stringValue": "A person one trusts and likes a lot."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Человек, которому доверяют и который нравится."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Friend**, can you help me move this weekend?"
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "My **friend** always knows how to make me laugh."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I share my deepest secrets with my best **friend**."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "An ally in a particular matter."
+                          },
+                          "definition": {
+                            "stringValue": "A helper in a specific situation."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Помощник в конкретной ситуации."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Friend**, my dog was my protector against burglars."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "In this wilderness, fire was his only **friend**."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "My phone was my **friend** for directions and communication."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "A person attached to another by feelings of affection or personal regard."
+                          },
+                          "definition": {
+                            "stringValue": "A person one is warmly attached to."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Человек к которому у тебя теплые чувства."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Friend**, why have you not answered my messages?"
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "My best **friend** and I shared countless childhood memories."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Is your **friend** coming to the party tonight?"
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "verb"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "To add (someone) to a list of friends or contacts on a social networking website."
+                          },
+                          "definition": {
+                            "stringValue": "To add a person to a social media contact list."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Добавить человека в список контактов социальных сетей."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Friend** me on Instagram to see my latest photos."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I decided to **friend** my co-worker on Facebook last night."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "You should **friend** us on Twitter for updates on our events."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "To act as a friend to (someone) by offering help or support. "
+                          },
+                          "definition": {
+                            "stringValue": "To give help or support to someone."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Оказывать помощь или поддержку кому-то."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Friend** me through this difficult task, would you?"
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "He decided to **friend** her during her recovery process."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Will you **friend** him in his academic pursuits?"
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "To treat someone in a friendly way; to befriend. "
+                          },
+                          "definition": {
+                            "stringValue": "To treat someone kindly and supportively."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Обращаться с кем-то с добротой и поддержкой."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Friend** that lonely kid so they feel welcome here."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "He decided to **friend** her despite their past disagreements."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "If you can, always **friend** those in need."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "transcription": {
+    "stringValue": "fɹɛnd"
+  }
+}

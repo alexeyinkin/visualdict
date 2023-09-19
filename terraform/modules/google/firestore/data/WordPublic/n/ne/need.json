@@ -1,4 +1,7 @@
 {
+  "isVisible": {
+    "booleanValue": true
+  },
   "ngrams": {
     "arrayValue": {
       "values": [
@@ -60,7 +63,7 @@
                                   "mapValue": {
                                     "fields": {
                                       "text": {
-                                        "stringValue": "**Need** for food and water was immediate after the earthquake."
+                                        "stringValue": "She was in dire **need** of medical attention after the accident."
                                       }
                                     }
                                   }
@@ -69,7 +72,7 @@
                                   "mapValue": {
                                     "fields": {
                                       "text": {
-                                        "stringValue": "The man's constant headaches pointed to a **need** for medical attention."
+                                        "stringValue": "**Need** for reliable internet in remote education."
                                       }
                                     }
                                   }
@@ -78,7 +81,7 @@
                                   "mapValue": {
                                     "fields": {
                                       "text": {
-                                        "stringValue": "In remote areas, there is a great **need** for internet access."
+                                        "stringValue": "There is a critical **need** for clean water in Flint."
                                       }
                                     }
                                   }
@@ -120,7 +123,7 @@
                                   "mapValue": {
                                     "fields": {
                                       "text": {
-                                        "stringValue": "*There's a rising **need** for mental health programs in schools.*"
+                                        "stringValue": "**Need** for water increased during the heatwave."
                                       }
                                     }
                                   }
@@ -129,7 +132,7 @@
                                   "mapValue": {
                                     "fields": {
                                       "text": {
-                                        "stringValue": "*The hurricane victims have urgent **need** for food and shelter.*"
+                                        "stringValue": "**Need** for education is crucial for societal development."
                                       }
                                     }
                                   }
@@ -138,67 +141,7 @@
                                   "mapValue": {
                                     "fields": {
                                       "text": {
-                                        "stringValue": "*Families in poverty often struggle to meet basic **need** for nutrition."
-                                      }
-                                    }
-                                  }
-                                }
-                              ]
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "A stitch; a necessary part of a piece."
-                          },
-                          "definition": {
-                            "stringValue": "A vital part of a piece."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {
-                                "ru": {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "Жизненно важная часть элемента."
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": [
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "**Need** is integral to their survival strategy."
-                                      }
-                                    }
-                                  }
-                                },
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "The organization recognizes the **need** for fundraising efforts."
-                                      }
-                                    }
-                                  }
-                                },
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "Her report underlined the **need** for better communication."
+                                        "stringValue": "The pandemic highlighted the **need** for accessible healthcare."
                                       }
                                     }
                                   }
@@ -239,8 +182,11 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
+                                      "isLocked": {
+                                        "booleanValue": true
+                                      },
                                       "text": {
-                                        "stringValue": "Абсолютно необходимо что-то."
+                                        "stringValue": "Абсолютно нуждаться что-то."
                                       }
                                     }
                                   }
@@ -315,7 +261,7 @@
                                   "mapValue": {
                                     "fields": {
                                       "text": {
-                                        "stringValue": "**Need** a cup of coffee to stay awake."
+                                        "stringValue": "**Need** a cup of coffee."
                                       }
                                     }
                                   }
@@ -325,195 +271,6 @@
                                     "fields": {
                                       "text": {
                                         "stringValue": "I **need** a vacation to refresh myself."
-                                      }
-                                    }
-                                  }
-                                },
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "She **need** a break to compose herself."
-                                      }
-                                    }
-                                  }
-                                }
-                              ]
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "To request or seek after."
-                          },
-                          "definition": {
-                            "stringValue": "To ask or search for something."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {
-                                "ru": {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "Спрашивать или искать что-то."
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": [
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "**Need** to ask you where you bought those shoes."
-                                      }
-                                    }
-                                  }
-                                },
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "I **need** to search for a good gluten-free bakery."
-                                      }
-                                    }
-                                  }
-                                },
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "She **need** to ask for directions to the nearest gas station."
-                                      }
-                                    }
-                                  }
-                                }
-                              ]
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "To be necessary (to someone)."
-                          },
-                          "definition": {
-                            "stringValue": "To be necessary to someone."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {
-                                "ru": {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "Быть необходимым для кого-то."
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": [
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "**Need** you to understand that I made a mistake."
-                                      }
-                                    }
-                                  }
-                                },
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "I **need** your help to complete this project on time."
-                                      }
-                                    }
-                                  }
-                                },
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "The plants **need** watering every other day."
-                                      }
-                                    }
-                                  }
-                                }
-                              ]
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "To be in need of."
-                          },
-                          "definition": {
-                            "stringValue": "To be in a state of necessity."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {
-                                "ru": {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "Находиться в состоянии необходимости."
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": [
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "**Need** to recharge your phone, it's running low on power."
-                                      }
-                                    }
-                                  }
-                                },
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "She **needs** to find shelter before the storm arrives."
-                                      }
-                                    }
-                                  }
-                                },
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "They truly **need** to improve their communication skills."
                                       }
                                     }
                                   }
@@ -531,7 +288,7 @@
                             "stringValue": "To implore or beg for."
                           },
                           "definition": {
-                            "stringValue": "To beg for something."
+                            "stringValue": "To require someone to do something."
                           },
                           "definitionTranslations": {
                             "mapValue": {
@@ -539,8 +296,11 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
+                                      "isLocked": {
+                                        "booleanValue": true
+                                      },
                                       "text": {
-                                        "stringValue": "Просить о чем-то."
+                                        "stringValue": "Нуждаться в том, чтобы кто-то сделал что-то."
                                       }
                                     }
                                   }
@@ -555,7 +315,7 @@
                                   "mapValue": {
                                     "fields": {
                                       "text": {
-                                        "stringValue": "**Need**ing a favor, he approached his friend quietly."
+                                        "stringValue": "**Need** you to finish the report by tomorrow."
                                       }
                                     }
                                   }
@@ -564,7 +324,7 @@
                                   "mapValue": {
                                     "fields": {
                                       "text": {
-                                        "stringValue": "All the homeless man could do was **need** some kindness."
+                                        "stringValue": "We **need** her to start the presentation."
                                       }
                                     }
                                   }
@@ -573,7 +333,7 @@
                                   "mapValue": {
                                     "fields": {
                                       "text": {
-                                        "stringValue": "He found himself **need**ing her approval for his artwork."
+                                        "stringValue": "They **need** him to sign the contract immediately."
                                       }
                                     }
                                   }

@@ -152,8 +152,11 @@ PartOfSpeechEnum? parsePos(String pos) {
     case 'indefinite article':
       return PartOfSpeechEnum.article;
 
-    case 'exclamation':
+    case 'subordinating conjunction':
       return PartOfSpeechEnum.conjunction;
+
+    case 'exclamation':
+      return PartOfSpeechEnum.interjection;
 
     case 'slang noun':
     case 'noun, slang':

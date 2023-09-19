@@ -1,6 +1,7 @@
 import 'package:common_dart/common_dart.dart';
 import 'package:common_dart_backend/common_dart_backend.dart';
 import 'package:dart_openai/dart_openai.dart';
+import 'package:retry/retry.dart';
 
 import 'args.dart';
 
@@ -46,11 +47,14 @@ Future<void> main(List<String> rawArgs) async {
 
       final text = args.mock
           ? translateMock(args.word, args.lang)
-          : await translate(
-              word: args.word,
-              lang: args.lang,
-              pos: posSenses.partOfSpeech,
-              definition: sense.definition,
+          : await retry(
+              () => translate(
+                word: args.word,
+                lang: args.lang,
+                pos: posSenses.partOfSpeech,
+                definition: sense.definition,
+              ),
+              maxAttempts: 3,
             );
       sense.definitionTranslations[args.lang] = Translation(
         isLocked: false,

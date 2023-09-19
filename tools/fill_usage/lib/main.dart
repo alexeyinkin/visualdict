@@ -1,5 +1,6 @@
 import 'package:common_dart/common_dart.dart';
 import 'package:common_dart_backend/common_dart_backend.dart';
+import 'package:retry/retry.dart';
 
 import 'args.dart';
 
@@ -37,12 +38,15 @@ Future<void> main(List<String> rawArgs) async {
       if (args.mock) {
         texts = getUsageMocks(args.word);
       } else {
-        texts = await ChatGpt4Service().getWordUsage(
-          args.word,
-          pos: posSenses.partOfSpeech,
-          definition: sense.definition,
-          count: args.count,
-          involving: args.involving,
+        texts = await retry(
+          () => ChatGpt4Service().getWordUsage(
+            args.word,
+            pos: posSenses.partOfSpeech,
+            definition: sense.definition,
+            count: args.count,
+            involving: args.involving,
+          ),
+          maxAttempts: 3,
         );
 
         print('${posSenses.partOfSpeech.name}: ${sense.definition}');

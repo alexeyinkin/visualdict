@@ -7,3 +7,4 @@ environment:
 dependencies:
   common_dart: { path: ../../common_dart }
   common_dart_backend: { path: ../../common_dart_backend }
+  retry: ^3.1.2

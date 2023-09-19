@@ -1,6 +1,7 @@
 import 'package:common_dart/common_dart.dart';
 import 'package:common_dart_backend/common_dart_backend.dart';
 import 'package:dart_openai/dart_openai.dart';
+import 'package:retry/retry.dart';
 
 const _toRoot = '../..';
 
@@ -20,7 +21,10 @@ Future<void> main(List<String> rawArgs) async {
 Future<List<PartOfSpeechSenses>> getDefinitions(WordArgs args) async {
   final (complexDefinitions, definitions) = args.mock
       ? getDefinitionsContentMock(args.word)
-      : await getDefinitionsContent(args.word);
+      : await retry(
+          () => getDefinitionsContent(args.word),
+          maxAttempts: 3,
+        );
 
   final result = <PartOfSpeechSenses>[];
   final complexLines = complexDefinitions.split('\n');

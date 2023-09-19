@@ -1,5 +1,6 @@
 import 'package:common_dart_backend/common_dart_backend.dart';
 import 'package:dart_openai/dart_openai.dart';
+import 'package:retry/retry.dart';
 
 const _toRoot = '../..';
 
@@ -11,7 +12,10 @@ Future<void> main(List<String> rawArgs) async {
 
   map['transcription'] = args.mock
       ? getTranscriptionMock(args.word)
-      : await getTranscription(args.word);
+      : await retry(
+          () => getTranscription(args.word),
+          maxAttempts: 3,
+        );
 
   writeWordPublicMap(args.word, map, toRepositoryRoot: _toRoot);
 }

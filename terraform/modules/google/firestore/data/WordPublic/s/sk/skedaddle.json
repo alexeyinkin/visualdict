@@ -1,4 +1,19 @@
 {
+  "image": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "282e81c2ff"
+        },
+        "prompt": {
+          "stringValue": "Man running away from a bee swarm"
+        },
+        "timestamp": {
+          "integerValue": "1695199486"
+        }
+      }
+    }
+  },
   "isVisible": {
     "booleanValue": true
   },
@@ -62,8 +77,11 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
+                                      "isLocked": {
+                                        "booleanValue": true
+                                      },
                                       "text": {
-                                        "stringValue": "Быстро уходить."
+                                        "stringValue": "Быстро убегать."
                                       }
                                     }
                                   }
@@ -74,6 +92,15 @@
                           "usages": {
                             "arrayValue": {
                               "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "He accidentally disturbed a beehive and had to **skedaddle** fast."
+                                      }
+                                    }
+                                  }
+                                },
                                 {
                                   "mapValue": {
                                     "fields": {
@@ -114,6 +141,18 @@
           }
         }
       ]
+    }
+  },
+  "pronunciation": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "eb0fe3e2e7"
+        },
+        "timestamp": {
+          "integerValue": "1695199364"
+        }
+      }
     }
   },
   "transcription": {

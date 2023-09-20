@@ -1,4 +1,19 @@
 {
+  "image": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "88363fbf65"
+        },
+        "prompt": {
+          "stringValue": "Glossy magazine covers on a rack"
+        },
+        "timestamp": {
+          "integerValue": "1695199503"
+        }
+      }
+    }
+  },
   "isVisible": {
     "booleanValue": true
   },
@@ -53,69 +68,6 @@
               "senses": {
                 "arrayValue": {
                   "values": [
-                    {
-                      "mapValue": {
-                        "fields": {
-                          "complexDefinition": {
-                            "stringValue": "Existing or occurring at or on the surface."
-                          },
-                          "definition": {
-                            "stringValue": "Found on the surface."
-                          },
-                          "definitionTranslations": {
-                            "mapValue": {
-                              "fields": {
-                                "ru": {
-                                  "mapValue": {
-                                    "fields": {
-                                      "isLocked": {
-                                        "booleanValue": true
-                                      },
-                                      "text": {
-                                        "stringValue": "Поверхностный"
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          },
-                          "usages": {
-                            "arrayValue": {
-                              "values": [
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "**Superficial** scratches decorated the antique desk's surface."
-                                      }
-                                    }
-                                  }
-                                },
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "The wound was only **superficial** and didn't need stitches."
-                                      }
-                                    }
-                                  }
-                                },
-                                {
-                                  "mapValue": {
-                                    "fields": {
-                                      "text": {
-                                        "stringValue": "Her sunburn was only **superficial** and faded within a week."
-                                      }
-                                    }
-                                  }
-                                }
-                              ]
-                            }
-                          }
-                        }
-                      }
-                    },
                     {
                       "mapValue": {
                         "fields": {
@@ -175,6 +127,60 @@
                           }
                         }
                       }
+                    },
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Existing or occurring at or on the surface."
+                          },
+                          "definition": {
+                            "stringValue": "Found on the surface."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "isLocked": {
+                                        "booleanValue": true
+                                      },
+                                      "text": {
+                                        "stringValue": "Поверхностный"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "The wound was only **superficial** and didn't need stitches."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Her sunburn was only **superficial** and faded within a week."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
                     }
                   ]
                 }
@@ -183,6 +189,18 @@
           }
         }
       ]
+    }
+  },
+  "pronunciation": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "d79ffe9848"
+        },
+        "timestamp": {
+          "integerValue": "1695199364"
+        }
+      }
     }
   },
   "transcription": {

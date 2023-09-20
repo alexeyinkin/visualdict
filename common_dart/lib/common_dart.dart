@@ -12,3 +12,4 @@ export 'src/models/word_public.dart';
 export 'src/util/converters.dart';
 export 'src/util/map.dart';
 export 'src/util/paths.dart';
+export 'src/util/throwable.dart';

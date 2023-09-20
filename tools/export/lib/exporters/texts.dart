@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:math';
 
 import 'package:common_dart/common_dart.dart';
 import 'package:common_dart_backend/common_dart_backend.dart';
@@ -55,7 +56,9 @@ Future<void> exportTexts({
 
   final senses = options.values.map((record) => record.$2).cast<Sense>();
   final definitions = senses.map((s) => s.definitionTranslations[lang]?.text);
-  final usages = senses.map((s) => s.usages).expand((usages) => usages);
+  final usages = senses
+      .map((s) => s.usages)
+      .expand((usages) => usages.sublist(0, min(usages.length, 2)));
 
   final exportWordDir = getExportWordDir(word, toRepositoryRoot: toRoot);
   if (!exportWordDir.existsSync()) {

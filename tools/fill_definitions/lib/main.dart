@@ -11,7 +11,11 @@ Future<void> main(List<String> rawArgs) async {
 
   final map = getWordPublicMap(args.word, toRepositoryRoot: _toRoot);
 
-  final posSenses = await getDefinitions(args);
+  final posSenses = await retry(
+    () => errorToException(getDefinitions(args)),
+    maxAttempts: 3,
+  );
+
   final grouped = PartOfSpeechSenses.groupByPos(posSenses);
   map['partOfSpeechSenses'] =
       grouped.map((o) => o.toJson()).toList(growable: false);
@@ -21,10 +25,7 @@ Future<void> main(List<String> rawArgs) async {
 Future<List<PartOfSpeechSenses>> getDefinitions(WordArgs args) async {
   final (complexDefinitions, definitions) = args.mock
       ? getDefinitionsContentMock(args.word)
-      : await retry(
-          () => getDefinitionsContent(args.word),
-          maxAttempts: 3,
-        );
+      : await getDefinitionsContent(args.word);
 
   final result = <PartOfSpeechSenses>[];
   final complexLines = complexDefinitions.split('\n');
@@ -148,6 +149,8 @@ PartOfSpeechEnum? parsePos(String pos) {
     case 'slang adjective':
       return PartOfSpeechEnum.adjective;
 
+    case 'comparative adverb':
+    case 'conjunctive adverb':
     case 'interrogative adverb':
       return PartOfSpeechEnum.adverb;
 
@@ -160,6 +163,7 @@ PartOfSpeechEnum? parsePos(String pos) {
       return PartOfSpeechEnum.conjunction;
 
     case 'exclamation':
+    case 'single-word interjection':
       return PartOfSpeechEnum.interjection;
 
     case 'slang noun':

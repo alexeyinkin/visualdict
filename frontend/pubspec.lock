@@ -679,37 +679,42 @@ packages:
   model_editors:
     dependency: "direct main"
     description:
-      path: "../../dart/flutter-model-editors"
-      relative: true
-    source: path
+      name: model_editors
+      sha256: "77110077a39af2f686a3c549a71a70bd57a5c3a22e1f3bb22c61fc4c2afda2f4"
+      url: "https://pub.dev"
+    source: hosted
     version: "0.4.0"
   model_fetch:
     dependency: "direct main"
     description:
-      path: "../../dart/dart-model-fetch/model_fetch"
-      relative: true
-    source: path
-    version: "0.5.5"
+      name: model_fetch
+      sha256: a5485ec14dbfffd7e9673ec39c1c06ffb0c6ac2c50aaaea2131b3188d66d0371
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.5.6"
   model_fetch_firestore:
     dependency: "direct main"
     description:
-      path: "../../dart/dart-model-fetch/model_fetch_firestore"
-      relative: true
-    source: path
-    version: "0.5.5"
+      name: model_fetch_firestore
+      sha256: f003365d23d8becc0a77286e733206d77c277de47fabea7931734838c5b16c45
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.5.6"
   model_fetch_firestore_json_files:
     dependency: "direct main"
     description:
-      path: "../../dart/dart-model-fetch/model_fetch_firestore_json_files"
-      relative: true
-    source: path
-    version: "0.5.5"
+      name: model_fetch_firestore_json_files
+      sha256: bd6bffbf7285e09f42e956e2e82df498b1205ae7cd5d4d35258ae095df8b2005
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.5.6"
   model_fetch_flutter:
     dependency: "direct main"
     description:
-      path: "../../dart/dart-model-fetch/model_fetch_flutter"
-      relative: true
-    source: path
+      name: model_fetch_flutter
+      sha256: efce1de36bcc5216c979536577d188cb29939193c7939688b126f350b94158b0
+      url: "https://pub.dev"
+    source: hosted
     version: "0.5.5"
   model_interfaces:
     dependency: "direct main"

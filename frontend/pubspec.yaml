@@ -26,10 +26,10 @@ dependencies:
   google_fonts: ^5.1.0
   json_annotation: ^4.8.1
   keyed_collection_widgets: ^0.4.3
-  model_editors: ^0.2.0
-  model_fetch: ^0.5.5
-  model_fetch_firestore: ^0.5.5
-  model_fetch_firestore_json_files: ^0.5.5
+  model_editors: ^0.4.0
+  model_fetch: ^0.5.6
+  model_fetch_firestore: ^0.5.6
+  model_fetch_firestore_json_files: ^0.5.6
   model_fetch_flutter: ^0.5.5
   model_interfaces: ^0.3.1
   shared_preferences: ^2.2.1
@@ -44,11 +44,11 @@ dev_dependencies:
   total_lints: ^3.0.0
 
 dependency_overrides:
-  model_editors: { path: ../../dart/flutter-model-editors }
-  model_fetch: { path: ../../dart/dart-model-fetch/model_fetch }
-  model_fetch_firestore: { path: ../../dart/dart-model-fetch/model_fetch_firestore }
-  model_fetch_firestore_json_files: { path: ../../dart/dart-model-fetch/model_fetch_firestore_json_files }
-  model_fetch_flutter: { path: ../../dart/dart-model-fetch/model_fetch_flutter }
+#  model_editors: { path: ../../dart/flutter-model-editors }
+#  model_fetch: { path: ../../dart/dart-model-fetch/model_fetch }
+#  model_fetch_firestore: { path: ../../dart/dart-model-fetch/model_fetch_firestore }
+#  model_fetch_firestore_json_files: { path: ../../dart/dart-model-fetch/model_fetch_firestore_json_files }
+#  model_fetch_flutter: { path: ../../dart/dart-model-fetch/model_fetch_flutter }
 
 flutter:
   uses-material-design: true

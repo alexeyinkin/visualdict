@@ -12,6 +12,7 @@ dependencies:
   cloud_firestore: ^4.8.4
   common_dart: { path: ../common_dart }
   common_dart_backend: { path: ../common_dart_backend }
+  country_ip: ^2.0.1
   easy_localization: ^3.0.2
   easy_localization_loader: { git: { url: https://github.com/aissat/easy_localization_loader.git, ref: efca2087b52198c7fbd6a59488d149a4b1ec939c } }
   enum_map: ^0.3.0
@@ -22,6 +23,7 @@ dependencies:
   flutter_markdown: ^0.6.17+1
   flutter_svg: ^2.0.7
   fluttertoast: ^8.2.2
+  get_ip_address: ^0.0.6
   get_it: ^7.6.0
   google_fonts: ^5.1.0
   json_annotation: ^4.8.1
@@ -44,6 +46,7 @@ dev_dependencies:
   total_lints: ^3.0.0
 
 dependency_overrides:
+  country_ip: { git: { url: https://github.com/alexeyinkin/country_ip, ref: 7dd577b296ecc0f2ba3209058c511bd599b44c8f } }
 #  model_editors: { path: ../../dart/flutter-model-editors }
 #  model_fetch: { path: ../../dart/dart-model-fetch/model_fetch }
 #  model_fetch_firestore: { path: ../../dart/dart-model-fetch/model_fetch_firestore }

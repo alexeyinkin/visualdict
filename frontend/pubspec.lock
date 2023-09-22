@@ -247,6 +247,15 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.1.1"
+  country_ip:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: "7dd577b296ecc0f2ba3209058c511bd599b44c8f"
+      resolved-ref: "7dd577b296ecc0f2ba3209058c511bd599b44c8f"
+      url: "https://github.com/alexeyinkin/country_ip"
+    source: git
+    version: "2.1.0"
   crypto:
     dependency: transitive
     description:
@@ -524,6 +533,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.2.0"
+  get_ip_address:
+    dependency: "direct main"
+    description:
+      name: get_ip_address
+      sha256: "0e973f1ad61bc4b0b1d99abc2c023d91d1ddb09709f5546f6972ace067c8576d"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.6"
   get_it:
     dependency: "direct main"
     description:

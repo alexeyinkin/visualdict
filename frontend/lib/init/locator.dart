@@ -8,6 +8,7 @@ import '../loader_factories/word_public.dart';
 import '../loader_factories/word_public_firestore.dart';
 import '../loader_factories/word_public_firestore_json_files.dart';
 import '../models/repository_engine.dart';
+import '../services/country.dart';
 import '../services/toast_notifier.dart';
 
 Future<void> initializeServiceLocator() async {
@@ -37,6 +38,7 @@ void _initializeLoaderFactories() {
 
 Future<void> _initializeServices() async {
   // GetIt.instance.registerSingleton(AuthenticationCubit());
+  GetIt.instance.registerSingleton(CountryService());
   GetIt.instance.registerSingleton(ToastNotifier());
 
   final settingsNotifier = SettingsNotifier();

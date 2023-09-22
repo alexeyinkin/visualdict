@@ -1,7 +1,9 @@
 import 'package:common_dart/common_dart.dart';
 import 'package:common_dart_backend/common_dart_backend.dart';
+import 'package:get_it/get_it.dart';
 import 'package:model_editors/model_editors.dart';
 
+import '../services/country.dart';
 import '../widgets/words/edit/usage.dart';
 
 class UsageListEditingController extends ListEditingController<
@@ -38,6 +40,7 @@ class UsageListEditingController extends ListEditingController<
     notifyListeners();
 
     try {
+      await GetIt.instance.get<CountryService>().assertAllowed();
       final result = await ChatGpt4Service().getWordUsage(
         word,
         pos: pos,

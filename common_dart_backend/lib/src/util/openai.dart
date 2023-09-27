@@ -3,6 +3,13 @@ import 'dart:io';
 import 'package:dart_openai/dart_openai.dart';
 
 void initOpenAiKey(String toRoot) {
-  final key = File('$toRoot/keys/openai_key.txt').readAsStringSync();
+  final file = File('$toRoot/keys/openai_key.txt');
+
+  if (!file.existsSync()) {
+    print('Skipping OpenAI initialization, no API key.');
+    return;
+  }
+
+  final key = file.readAsStringSync();
   OpenAI.apiKey = key;
 }

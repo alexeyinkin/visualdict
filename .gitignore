@@ -1,4 +1,5 @@
 .idea
+.DS_Store
 
 .dart_tool
 *.g.dart
@@ -12,6 +13,7 @@ build
 
 common_dart/pubspec.lock
 common_dart_backend/pubspec.lock
+common_dart_frontend/pubspec.lock
 
 /export
 keys

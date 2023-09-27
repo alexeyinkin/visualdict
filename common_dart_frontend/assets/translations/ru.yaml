@@ -1,0 +1,29 @@
+common:
+  footer: '© Алексей Инкин, 2023'
+  noTranslation: 'Нет перевода на русский'
+  title: 'Visual Dict'
+
+errors:
+  loading: 'Ошибка загрузки'
+
+ImagePromptWidget:
+  midjourneyMd: '**Запрос Midjourney:** *{prompt}*'
+
+NoImageWidget:
+  text: 'Нет картинки'
+
+pos:
+  full:
+    adverb: 'наречие'
+    adjective: 'прилагательное'
+    article: 'артикль'
+    conjunction: 'союз'
+    interjection: 'междометие'
+    noun: 'существительное'
+    particle: 'частица'
+    preposition: 'предлог'
+    pronoun: 'местоимение'
+    verb: 'глагол'
+
+search:
+  hint: 'Поиск'

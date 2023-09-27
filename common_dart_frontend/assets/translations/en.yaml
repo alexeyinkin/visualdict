@@ -1,0 +1,29 @@
+common:
+  footer: '© Alexey Inkin, 2023'
+  noTranslation: 'No translation to English'
+  title: 'Visual Dict'
+
+errors:
+  loading: 'Loading Error'
+
+ImagePromptWidget:
+  midjourneyMd: '**Midjourney Prompt:** *{prompt}*'
+
+NoImageWidget:
+  text: 'No Image'
+
+pos:
+  full:
+    adverb: 'adverb'
+    adjective: 'adjective'
+    article: 'article'
+    conjunction: 'conjunction'
+    interjection: 'interjection'
+    noun: 'noun'
+    particle: 'particle'
+    preposition: 'preposition'
+    pronoun: 'pronoun'
+    verb: 'verb'
+
+search:
+  hint: 'Search'

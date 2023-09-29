@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:app_state/app_state.dart';
 import 'package:common_dart_backend/common_dart_backend.dart';
 import 'package:common_dart_frontend/common_dart_frontend.dart';
@@ -16,7 +14,6 @@ import 'router/page_stacks.dart';
 import 'router/route_information_parser.dart';
 
 void main() async {
-  print(Directory.current);
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
 

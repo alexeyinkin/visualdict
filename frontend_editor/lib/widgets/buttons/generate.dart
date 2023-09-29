@@ -1,3 +1,4 @@
+import 'package:common_dart_backend/common_dart_backend.dart';
 import 'package:common_dart_frontend/common_dart_frontend.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -42,7 +43,7 @@ class GenerateButton extends StatelessWidget {
     return _isEnabled ? widget : GreyscaleWidget(child: widget);
   }
 
-  bool get _isEnabled => onPressed != null;
+  bool get _isEnabled => hasOpenAiKey && onPressed != null;
 
   Future<void> _onPressed(BuildContext context) async {
     if (!RawKeyboard.instance.keysPressed

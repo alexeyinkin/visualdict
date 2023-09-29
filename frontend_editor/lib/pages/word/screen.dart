@@ -21,7 +21,7 @@ class WordScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MyScaffold(
       delegate: appDelegate,
-      scrolls: false,
+      bodySize: BodySize.infinite,
       body: StreamBuilder(
         stream: notifier.bloc.states,
         builder: _buildTerraformJsonOnChange,
@@ -47,31 +47,29 @@ class WordScreen extends StatelessWidget {
       case LoadStatus.ok:
         final wordPublic = snapshot.data!.model!;
 
-        return Expanded(
-          child: ModelViewOrEditWidget(
-            createController: () => WordPublicEditingController(wordPublic),
-            editBuilder: (_, __, c, buttons) => FixedHeaderWidget(
-              header: buttons,
-              child: WordDetailsEditWidget(c),
-            ),
-            model: wordPublic,
-            saveCallback: _save,
-            viewBuilder: (_, w, buttons) => FixedHeaderWidget(
-              header: buttons,
-              child: WordDetailsViewWidget(w),
-            ),
-            buttonRowBuilder: (context, row) => Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                ElevatedButton(
-                  onPressed: notifier.bloc.reload,
-                  child: Text("Reload"),
-                ),
-                const MySpacing(),
-                const MySpacing(),
-                row,
-              ],
-            ),
+        return ModelViewOrEditWidget(
+          createController: () => WordPublicEditingController(wordPublic),
+          editBuilder: (_, __, c, buttons) => FixedHeaderWidget(
+            header: buttons,
+            child: WordDetailsEditWidget(c),
+          ),
+          model: wordPublic,
+          saveCallback: _save,
+          viewBuilder: (_, w, buttons) => FixedHeaderWidget(
+            header: buttons,
+            child: WordDetailsViewWidget(w),
+          ),
+          buttonRowBuilder: (context, row) => Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              ElevatedButton(
+                onPressed: notifier.bloc.reload,
+                child: Text("Reload"),
+              ),
+              const MySpacing(),
+              const MySpacing(),
+              row,
+            ],
           ),
         );
     }

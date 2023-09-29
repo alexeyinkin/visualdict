@@ -16,7 +16,7 @@ class WordsScreen extends StatelessWidget {
     return MyScaffold(
       delegate: appDelegate,
       maxWidth: MySizes.maxHomePageWidth,
-      scrolls: true,
+      bodySize: BodySize.finite,
       body: context.isMobileScreen()
           ? const NarrowWordsWidget()
           : const WideWordsWidget(),

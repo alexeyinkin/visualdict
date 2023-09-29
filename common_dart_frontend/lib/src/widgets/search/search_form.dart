@@ -6,6 +6,7 @@ import 'package:model_fetch/model_fetch.dart';
 
 import '../../filters/word_public.dart';
 import '../../loader_factories/word_public.dart';
+import '../../services/toast_notifier.dart';
 import 'search_result_line.dart';
 
 class SearchForm extends StatefulWidget {
@@ -35,18 +36,23 @@ class _SearchFormState extends State<SearchForm> {
         },
 
         optionsBuilder: (value) async {
-          final filter = WordPublicFilter(search: value.text);
-          final factory = GetIt.instance.get<WordPublicLoaderFactory>();
-          final bloc = factory.frozenListBloc(filter);
-          Iterable<WordPublic> result = [];
+          try {
+            final filter = WordPublicFilter(search: value.text);
+            final factory = GetIt.instance.get<WordPublicLoaderFactory>();
+            final bloc = factory.frozenListBloc(filter);
+            Iterable<WordPublic> result = [];
 
-          bloc.states.listen((CollectionState<WordPublic> state) {
-            result = state.items;
-          });
+            bloc.states.listen((CollectionState<WordPublic> state) {
+              result = state.items;
+            });
 
-          await bloc.loadMoreIfCan();
+            await bloc.loadMoreIfCan();
 
-          return result;
+            return result;
+          } on Exception catch (ex) {
+            GetIt.instance.get<ToastNotifier>().addThrowable(ex);
+            rethrow;
+          }
         },
 
         optionsViewBuilder: (_, onSelected, options) {

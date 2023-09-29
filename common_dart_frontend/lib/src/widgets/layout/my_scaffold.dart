@@ -1,6 +1,6 @@
-import 'package:common_dart_frontend/src/controllers/app_delegate.dart';
 import 'package:flutter/material.dart';
 
+import '../../controllers/app_delegate.dart';
 import '../../theme/my_theme_extension.dart';
 import '../../theme/theme.dart';
 import '../../util/build_context.dart';
@@ -13,28 +13,28 @@ import 'horizontal_black_line.dart';
 import 'my_padding.dart';
 
 class MyScaffold extends StatelessWidget {
+  final Widget body;
+  final AppDelegate delegate;
+  final double? maxWidth;
+  final bool padding;
+  final BodySize bodySize;
+
   const MyScaffold({
     required this.body,
     required this.delegate,
-    required this.scrolls,
+    required this.bodySize,
     this.maxWidth,
     this.padding = true,
   });
 
   const MyScaffold.loading({
     required this.delegate,
-    required this.scrolls,
     this.maxWidth,
     this.padding = true,
-  }) : body = const Center(
+  })  : bodySize = BodySize.infinite,
+        body = const Center(
           child: SmallCircularProgressIndicator(),
         );
-
-  final Widget body;
-  final AppDelegate delegate;
-  final double? maxWidth;
-  final bool padding;
-  final bool scrolls;
 
   @override
   Widget build(BuildContext context) {
@@ -53,18 +53,24 @@ class MyScaffold extends StatelessWidget {
       child = MyPadding(child: child);
     }
 
-    child = Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        if (scrolls) child else Expanded(child: child),
-        const HorizontalBlackLine(),
-        const FooterWidget(),
-      ],
-    );
-
-    if (scrolls) {
-      child = SingleChildScrollView(child: child);
-    }
+    child = switch (bodySize) {
+      BodySize.finite => SingleChildScrollView(
+          child: Column(
+            children: [
+              child,
+              const HorizontalBlackLine(),
+              const FooterWidget(),
+            ],
+          ),
+        ),
+      BodySize.infinite => Column(
+          children: [
+            Expanded(child: child),
+            const HorizontalBlackLine(),
+            const FooterWidget(),
+          ],
+        ),
+    };
 
     return Stack(
       children: [
@@ -163,4 +169,17 @@ class _WideHeader extends StatelessWidget {
       ),
     );
   }
+}
+
+enum BodySize {
+  /// The body is finite and defines its own height.
+  /// It is Container, Column, a shrink-wrapped ListView, etc.
+  /// The footer goes after the body and is not initially visible on long pages.
+  finite,
+
+  /// The body is infinite and must be given a finite viewport.
+  /// It is a non-shrink-wrapped ListView, a SingleChildScrollView,
+  /// a column with Expanded, etc.
+  /// The footer sticks to the bottom and is always visible.
+  infinite,
 }

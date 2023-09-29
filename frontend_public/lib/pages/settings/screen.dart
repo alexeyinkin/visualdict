@@ -16,7 +16,7 @@ class SettingsScreen extends StatelessWidget {
     return MyScaffold(
       delegate: appDelegate,
       maxWidth: MySizes.maxTextPageWidth,
-      scrolls: false,
+      bodySize: BodySize.infinite,
       body: Column(
         children: [
           H2Widget(
@@ -28,7 +28,6 @@ class SettingsScreen extends StatelessWidget {
               'language': LanguageSwitchWidget(showText: true),
             },
           ),
-          const Expanded(child: SizedBox()),
         ],
       ),
     );

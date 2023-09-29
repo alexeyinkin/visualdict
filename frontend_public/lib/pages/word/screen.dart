@@ -15,7 +15,7 @@ class WordScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MyScaffold(
       delegate: appDelegate,
-      scrolls: true,
+      bodySize: BodySize.finite,
       body: StreamBuilder(
         stream: notifier.bloc.states,
         builder: _buildOnChange,

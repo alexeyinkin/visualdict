@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:common_dart_frontend/common_dart_frontend.dart';
 import 'package:get_it/get_it.dart';
 
@@ -10,6 +12,9 @@ Future<void> initializeServiceLocator() async {
 }
 
 void _initializeLoaderFactories() {
+  // https://github.com/flutter/flutter/issues/135740
+  Directory.current = Directory(Platform.environment['PWD'] ?? '/');
+
   GetIt.instance.registerSingleton<WordPublicLoaderFactory>(
     WordPublicFirestoreJsonFilesLoaderFactory(),
   );

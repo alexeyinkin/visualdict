@@ -1,4 +1,7 @@
 {
+  "isVisible": {
+    "booleanValue": false
+  },
   "ngrams": {
     "arrayValue": {
       "values": [
@@ -47,8 +50,11 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
+                                      "isLocked": {
+                                        "booleanValue": true
+                                      },
                                       "text": {
-                                        "stringValue": "Вытянуть руку, чтобы коснуться или схватить что-то."
+                                        "stringValue": "Вытянуть руку, чтобы коснуться или схватить что-то.."
                                       }
                                     }
                                   }
@@ -636,7 +642,7 @@
                       "mapValue": {
                         "fields": {
                           "complexDefinition": {
-                            "stringValue": "To amount to (a total). "
+                            "stringValue": "To amount to (a total)."
                           },
                           "definition": {
                             "stringValue": "To equal a certain total."
@@ -756,7 +762,7 @@
                       "mapValue": {
                         "fields": {
                           "complexDefinition": {
-                            "stringValue": "To be able to touch something with an outstretched arm or on tiptoes. "
+                            "stringValue": "To be able to touch something with an outstretched arm or on tiptoes."
                           },
                           "definition": {
                             "stringValue": "To be able to touch something by stretching an arm or standing on tiptoes."
@@ -936,7 +942,7 @@
                       "mapValue": {
                         "fields": {
                           "complexDefinition": {
-                            "stringValue": "To undesirably spread a fluid, stain, or color to an adjacent area. "
+                            "stringValue": "To undesirably spread a fluid, stain, or color to an adjacent area."
                           },
                           "definition": {
                             "stringValue": "To spread a fluid, stain, or color to a nearby area."
@@ -1431,7 +1437,7 @@
                       "mapValue": {
                         "fields": {
                           "complexDefinition": {
-                            "stringValue": "The jurisdiction or extent of a court's legal authority. "
+                            "stringValue": "The jurisdiction or extent of a court's legal authority."
                           },
                           "definition": {
                             "stringValue": "The authority or power of a court."

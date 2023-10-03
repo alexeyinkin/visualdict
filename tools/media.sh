@@ -1,11 +1,18 @@
 #!/bin/bash
 
-word=$1
+for word in "$@"
+do
 
-cd set_image
-dart lib/main.dart $word --public
-cd ..
+  echo ""
+  echo "=== $word ==="
+  echo ""
 
-#cd set_pronunciation
-#dart lib/main.dart $word
-#cd ..
+  cd set_image
+  dart lib/main.dart $word --public
+  cd ..
+
+  #cd set_pronunciation
+  #dart lib/main.dart $word
+  #cd ..
+
+done

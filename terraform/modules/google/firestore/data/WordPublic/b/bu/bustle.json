@@ -143,8 +143,11 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
+                                      "isLocked": {
+                                        "booleanValue": true
+                                      },
                                       "text": {
-                                        "stringValue": "Занятая и взволнованная активность."
+                                        "stringValue": "Сильная и возбуждённая активность."
                                       }
                                     }
                                   }
@@ -203,8 +206,11 @@
                                 "ru": {
                                   "mapValue": {
                                     "fields": {
+                                      "isLocked": {
+                                        "booleanValue": true
+                                      },
                                       "text": {
-                                        "stringValue": "Рамка, используемая для придания объема задней части женского платья."
+                                        "stringValue": "Рамка, используемая для придания объёма задней части женского платья."
                                       }
                                     }
                                   }

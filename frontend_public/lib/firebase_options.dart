@@ -26,10 +26,7 @@ class DefaultFirebaseOptions {
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
@@ -60,5 +57,14 @@ class DefaultFirebaseOptions {
     authDomain: 'visualdict-prod.firebaseapp.com',
     storageBucket: 'visualdict-prod.appspot.com',
     measurementId: 'G-9BLD5RDPYW',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyC4_JNRjD9pciym6wCxEEvyfJJ1s7S8z98',
+    appId: '1:33584385076:ios:0c739ca64a06fd8afd8e61',
+    messagingSenderId: '33584385076',
+    projectId: 'visualdict-prod',
+    storageBucket: 'visualdict-prod.appspot.com',
+    iosBundleId: 'com.alexeyinkin.visualdict.v1',
   );
 }

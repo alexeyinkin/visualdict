@@ -13,6 +13,8 @@ class WordScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isMobile = context.isMobileScreen();
+
     return MyScaffold(
       delegate: appDelegate,
       bodySize: BodySize.finite,
@@ -20,6 +22,7 @@ class WordScreen extends StatelessWidget {
         stream: notifier.bloc.states,
         builder: _buildOnChange,
       ),
+      padding: !isMobile,
     );
   }
 

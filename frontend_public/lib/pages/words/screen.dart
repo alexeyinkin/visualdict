@@ -13,13 +13,16 @@ class WordsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isMobile = context.isMobileScreen();
+
     return MyScaffold(
       delegate: appDelegate,
       maxWidth: MySizes.maxHomePageWidth,
       bodySize: BodySize.finite,
-      body: context.isMobileScreen()
+      body: isMobile
           ? const NarrowWordsWidget()
           : const WideWordsWidget(),
+      padding: !isMobile,
     );
   }
 }
@@ -29,7 +32,7 @@ class NarrowWordsWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const RecentImagedWordsWidget(spacing: false);
   }
 }
 
@@ -43,7 +46,7 @@ class WideWordsWidget extends StatelessWidget {
       children: [
         Expanded(child: WordOfTheDayWidget()),
         SizedBox(width: 30),
-        Expanded(child: RecentImagedWordsWidget()),
+        Expanded(child: RecentImagedWordsWidget(spacing: true)),
       ],
     );
   }

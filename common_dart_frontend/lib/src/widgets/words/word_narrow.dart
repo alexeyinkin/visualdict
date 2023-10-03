@@ -17,14 +17,21 @@ class WordNarrowViewWidget extends StatelessWidget {
           fontSize: WordImageFontSizes.large.size,
         ),
         const MySpacing(),
-        WordTextContentViewWidget(
-          wordPublic,
-          wordVisible: false,
+        MyPadding(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              WordTextContentViewWidget(
+                wordPublic,
+                wordVisible: false,
+              ),
+              if (wordPublic.image?.prompt != null) ...[
+                const MySpacing(),
+                ImagePromptViewWidget(wordPublic.image!),
+              ],
+            ],
+          ),
         ),
-        if (wordPublic.image?.prompt != null) ...[
-          const MySpacing(),
-          ImagePromptViewWidget(wordPublic.image!),
-        ],
       ],
     );
   }

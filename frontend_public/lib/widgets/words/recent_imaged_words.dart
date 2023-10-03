@@ -5,7 +5,11 @@ import 'package:flutter/widgets.dart';
 import 'word_grid.dart';
 
 class RecentImagedWordsWidget extends StatelessWidget {
-  const RecentImagedWordsWidget();
+  final bool spacing;
+
+  const RecentImagedWordsWidget({
+    required this.spacing,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +19,7 @@ class RecentImagedWordsWidget extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         H2Widget('RecentImagedWordsWidget.text'.tr()),
-        const MySpacing(),
+        if (spacing) const MySpacing(),
         const WordGridWidget(filter: filter),
       ],
     );

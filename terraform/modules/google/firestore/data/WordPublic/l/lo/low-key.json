@@ -1,0 +1,152 @@
+{
+  "image": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "d4e2625671"
+        },
+        "prompt": {
+          "stringValue": "Person meditating in a quiet, dimly lit room"
+        },
+        "timestamp": {
+          "integerValue": "1696330052"
+        }
+      }
+    }
+  },
+  "isVisible": {
+    "booleanValue": true
+  },
+  "ngrams": {
+    "arrayValue": {
+      "values": [
+        {
+          "stringValue": "low-key"
+        },
+        {
+          "stringValue": "low-ke"
+        },
+        {
+          "stringValue": "low-k"
+        },
+        {
+          "stringValue": "low-"
+        },
+        {
+          "stringValue": "low"
+        },
+        {
+          "stringValue": "lo"
+        },
+        {
+          "stringValue": "l"
+        }
+      ]
+    }
+  },
+  "partOfSpeechSenses": {
+    "arrayValue": {
+      "values": [
+        {
+          "mapValue": {
+            "fields": {
+              "partOfSpeech": {
+                "stringValue": "adjective"
+              },
+              "senses": {
+                "arrayValue": {
+                  "values": [
+                    {
+                      "mapValue": {
+                        "fields": {
+                          "complexDefinition": {
+                            "stringValue": "Having a low intensity or quiet and subdued tones."
+                          },
+                          "definition": {
+                            "stringValue": "Quiet and not intense."
+                          },
+                          "definitionTranslations": {
+                            "mapValue": {
+                              "fields": {
+                                "ru": {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Тихий и неинтенсивный."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "usages": {
+                            "arrayValue": {
+                              "values": [
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "I appreciate a **low-key** weekend with no plans."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Low-key** music played in the background during dinner."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "Her **low-key** personality was calming in stressful situations."
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "mapValue": {
+                                    "fields": {
+                                      "text": {
+                                        "stringValue": "**Low-key** lighting creates a serene bedroom ambiance."
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "pronunciation": {
+    "mapValue": {
+      "fields": {
+        "hash": {
+          "stringValue": "4655434f20"
+        },
+        "timestamp": {
+          "integerValue": "1696330342"
+        }
+      }
+    }
+  },
+  "transcription": {
+    "stringValue": "loʊˈki"
+  }
+}

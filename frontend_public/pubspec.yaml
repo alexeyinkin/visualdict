@@ -43,7 +43,6 @@ dev_dependencies:
   total_lints: ^3.1.1
 
 dependency_overrides:
-  app_state: { path: ../../dart/flutter-app-state/app_state }
 #  model_editors: { path: ../../dart/flutter-model-editors }
 #  model_fetch: { path: ../../dart/dart-model-fetch/model_fetch }
 #  model_fetch_firestore: { path: ../../dart/dart-model-fetch/model_fetch_firestore }

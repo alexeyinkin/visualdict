@@ -41,6 +41,19 @@ $paragraphs''';
     return requestParagraphs(prompt);
   }
 
+  Future<List<String>> getImageGenerationPrompts(String word) async {
+    final prompt = '''
+I will ask you to generate textual prompts to a neural network that generates images. When generating the prompts, keep in mind that:
+1. The network is very poor in understanding relationships between words. It just gives highest value to words in the beginning and progressively less value to each next word.
+2. Stick to things that can be pictured, with more focus on composition and less on actions. If anything cannot be recognized by a simple image recognizer, it should not be given as a prompt.
+3. The network cannot tint actions with emotions or adjectives, so do not use anything like "someone is doing something in such a way".
+
+Imagine a scene based on the word "$word". Generate prompts for it.
+''';
+
+    return requestParagraphs(prompt);
+  }
+
   Future<String> request(String prompt);
 
   Future<List<String>> requestParagraphs(String prompt) async {

@@ -9,7 +9,7 @@ import '../constants.dart';
 const _maxDefinitionsLength = 200;
 
 Future<void> exportTexts({
-  required Image image,
+  required WordImage image,
   required String lang,
   required List<PartOfSpeechSenses> partOfSpeechSenses,
   required String transcription,

@@ -16,7 +16,7 @@ Future<void> main(List<String> rawArgs) async {
   final map = getWordPublicMap(args.word, toRepositoryRoot: toRoot);
   final wordRaw = getWordRaw(args.word, toRepositoryRoot: toRoot);
 
-  final image = Image.fromJson(map['image']);
+  final image = WordImage.fromJson(map['image']);
   final partOfSpeechSenses = (map['partOfSpeechSenses'] as Iterable)
       .map((map) => PartOfSpeechSenses.fromJson(map))
       .toList()

@@ -1,7 +1,9 @@
 import 'package:common_dart_frontend/common_dart_frontend.dart';
 import 'package:flutter/widgets.dart';
 
+import '../../controllers/image_generation.dart';
 import '../../controllers/word_public.dart';
+import '../images/image_prompt_generation.dart';
 import 'word_text_content.dart';
 
 class WordWideEditWidget extends StatelessWidget {
@@ -21,6 +23,10 @@ class WordWideEditWidget extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
+              ImagePromptGenerationWidget(
+                controller: ImageGenerationController(),
+                wordPublic: wordPublic,
+              ),
               WordImageOrNotWidget(
                 wordPublic,
                 fontSize: WordImageFontSizes.large.size,

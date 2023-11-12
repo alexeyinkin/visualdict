@@ -127,6 +127,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.1"
+  midjourney_client:
+    dependency: transitive
+    description:
+      name: midjourney_client
+      sha256: a43383381a6a9d441c710fb201452d4b95cfa48e80725f8a2e53402b2461b7bf
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.4.1-pre.3"
   model_interfaces:
     dependency: transitive
     description:
@@ -151,6 +159,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.1.2"
+  snowflaker:
+    dependency: transitive
+    description:
+      name: snowflaker
+      sha256: "521c696255a6271b73a4e0bfcae6bdcb023253c45050f0f089d67b012b298d1c"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.0"
   source_span:
     dependency: transitive
     description:
@@ -183,6 +199,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.3.2"
+  ws:
+    dependency: transitive
+    description:
+      name: ws
+      sha256: "79bfebd5cfcef7d6fb302193ed84d738dcede2a5a0734f47f7d249532591ccf3"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.1.2"
   yaml:
     dependency: transitive
     description:

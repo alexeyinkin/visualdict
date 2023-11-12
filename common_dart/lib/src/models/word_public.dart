@@ -18,7 +18,7 @@ class WordPublic implements WithId<String> {
   final String id;
 
   @JsonKey(includeIfNull: false)
-  final Image? image;
+  final WordImage? image;
 
   @JsonKey(defaultValue: false)
   final bool isVisible;

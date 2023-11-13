@@ -1,20 +1,20 @@
+import 'package:common_dart_backend/common_dart_backend.dart';
 import 'package:midjourney_client/midjourney_client.dart' as midjourney_client;
 
 import '../constants/midjourney.dart';
+import '../constants/paths.dart';
 import '../models/image_client_message.dart';
 import 'image_service.dart';
-
-const _token =
-    'Nzk5ODkyNzI4MTI0MDE0NjA0.GEJzUa.a8AqMPO16luL-zO8dFgKpvTTcFEJIOWwgdL2zw';
 
 class MidjourneyService extends ImageAiService {
   final _client = midjourney_client.Midjourney();
 
   Future<void> _initializeClient() async {
+    final token = getMjToken(toRepositoryRoot);
     await _client.initialize(
       serverId: mjServerId,
       channelId: mjChannelId,
-      token: _token,
+      token: token,
       logLevel: midjourney_client.MLoggerLevel.verbose,
     );
   }

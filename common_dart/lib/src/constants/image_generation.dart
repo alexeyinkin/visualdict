@@ -1,0 +1,1 @@
+const imageGenerationNumber = 4;

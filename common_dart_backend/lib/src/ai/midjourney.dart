@@ -1,6 +1,6 @@
 import 'package:midjourney_client/midjourney_client.dart' as midjourney_client;
 
-import '../models/image_message.dart';
+import '../models/image_client_message.dart';
 import 'image.dart';
 
 // store somewhere
@@ -22,15 +22,15 @@ class MidjourneyService extends ImageAiService {
   }
 
   @override
-  Future<ImageMessage> generateImages(String prompt, int n) async {
+  Future<ImageClientMessage> generateImages(String prompt, int n) async {
     await _initializeClient();
     final image = await _client.imagine(prompt).finished;
-    return ImageMessage.fromMidjourney(image);
+    return ImageClientMessage.fromMidjourney(image);
   }
 
   @override
-  Future<ImageMessage> upscaleImage(
-    ImageMessage imageMessage,
+  Future<ImageClientMessage> upscaleImage(
+    ImageClientMessage imageMessage,
     int index,
   ) async {
     await _initializeClient();
@@ -40,12 +40,12 @@ class MidjourneyService extends ImageAiService {
           index,
         )
         .finished;
-    return ImageMessage.fromMidjourney(image);
+    return ImageClientMessage.fromMidjourney(image);
   }
 
   @override
-  Future<ImageMessage> variateImage(
-    ImageMessage imageMessage,
+  Future<ImageClientMessage> variateImage(
+    ImageClientMessage imageMessage,
     int index,
   ) async {
     await _initializeClient();
@@ -55,6 +55,6 @@ class MidjourneyService extends ImageAiService {
           index,
         )
         .finished;
-    return ImageMessage.fromMidjourney(image);
+    return ImageClientMessage.fromMidjourney(image);
   }
 }

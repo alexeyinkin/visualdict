@@ -1,32 +1,35 @@
 import 'package:common_dart_backend/common_dart_backend.dart';
 import 'package:flutter/widgets.dart';
+import 'package:model_editors/model_editors.dart';
 
-import '../message_types/abstract.dart';
-import '../message_types/generated_image.dart';
-import '../message_types/upscaled_image.dart';
+import 'image_generation.dart';
 
-class ImagePromptGenerationController extends ValueNotifier<String?> {
-  bool isChecked = false;
-  final promptTextController = TextEditingController();
-  final List<ImagePromptContent> content = [];
+class ImagePromptGenerationController extends ChangeNotifier {
+  final List<ImagePromptGenerator> generators = [
+    ChatGpt4ManualInstructionsImagePromptGenerator(),
+  ];
+  final promptControllerList =
+      ListEditingController<String, ImageGenerationController>(
+    createItemController: ImageGenerationController.new,
+    maxLength: 30,
+  );
 
-  ImagePromptGenerationController() : super(null);
-
-  Future<void> generateImages(String prompt) async {
-    final result = await MidjourneyService().generateImages(prompt, 4);
-    content.add(GeneratedImage(imageMessage: result));
-    notifyListeners();
+  Future<void> generateImagePrompts(String word) async {
+    final prompts = await generators.first.getImageGenerationPrompts(word);
+    prompts.forEach(promptControllerList.add);
   }
+}
 
-  Future<void> upscaleImage(ImageMessage imageMessage, int index) async {
-    final result = await MidjourneyService().upscaleImage(imageMessage, index);
-    content.add(UpscaledImage(imageMessage: result));
-    notifyListeners();
-  }
+class ChatGpt4ManualInstructionsImagePromptGenerator
+    implements ImagePromptGenerator {
+  ChatGpt4ManualInstructionsImagePromptGenerator();
 
-  Future<void> variateImage(ImageMessage imageMessage, int index) async {
-    final result = await MidjourneyService().variateImage(imageMessage, index);
-    content.add(GeneratedImage(imageMessage: result));
-    notifyListeners();
+  @override
+  Future<List<String>> getImageGenerationPrompts(String word) async {
+    return ChatGpt4Service().getImageGenerationPrompts(word);
   }
+}
+
+abstract interface class ImagePromptGenerator {
+  Future<List<String>> getImageGenerationPrompts(String word);
 }

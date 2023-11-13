@@ -6,9 +6,9 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../controllers/image_generation.dart';
 import '../../controllers/image_prompt_generation.dart';
-import '../../message_types/abstract.dart';
-import '../../message_types/generated_image.dart';
-import '../../message_types/upscaled_image.dart';
+import '../../image_generation_content/abstract.dart';
+import '../../image_generation_content/generated_image.dart';
+import '../../image_generation_content/upscaled_image.dart';
 
 class ImagePromptGenerationWidget extends StatelessWidget {
   const ImagePromptGenerationWidget({
@@ -16,7 +16,7 @@ class ImagePromptGenerationWidget extends StatelessWidget {
     required this.wordPublic,
   });
 
-  final ImageGenerationController controller;
+  final ImagePromptGenerationController controller;
   final WordPublic wordPublic;
 
   @override
@@ -30,16 +30,16 @@ class ImagePromptGenerationWidget extends StatelessWidget {
               controller: controller.promptControllerList,
               enabledBuilder: (_) => IconButton(
                 onPressed: () async {
-                  await controller.generatePrompts(wordPublic.id);
+                  await controller.generateImagePrompts(wordPublic.id);
                 },
-                icon: const Text('💬'),
+                icon: const Text('Generate image prompts'),
               ),
             ),
             ReorderableListEditor(
               controller: controller.promptControllerList,
               itemBuilder: (_, c, index) => Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10),
-                child: _PromptWidget(
+                child: _ImagePromptWidget(
                   controller: c,
                 ),
               ),
@@ -53,9 +53,9 @@ class ImagePromptGenerationWidget extends StatelessWidget {
   }
 }
 
-class _PromptWidget extends StatelessWidget {
-  final ImagePromptGenerationController controller;
-  const _PromptWidget({
+class _ImagePromptWidget extends StatelessWidget {
+  final ImageGenerationController controller;
+  const _ImagePromptWidget({
     required this.controller,
   });
 
@@ -84,7 +84,7 @@ class _PromptWidget extends StatelessWidget {
           child: Column(
             children: controller.content
                 .map(
-                  (e) => _ImagePromptContentWidget(
+                  (e) => _ImageGenerationContentWidget(
                     content: e,
                     controller: controller,
                   ),
@@ -97,11 +97,11 @@ class _PromptWidget extends StatelessWidget {
   }
 }
 
-class _ImagePromptContentWidget extends StatelessWidget {
-  final ImagePromptContent content;
-  final ImagePromptGenerationController controller;
+class _ImageGenerationContentWidget extends StatelessWidget {
+  final ImageGenerationContent content;
+  final ImageGenerationController controller;
 
-  const _ImagePromptContentWidget({
+  const _ImageGenerationContentWidget({
     required this.content,
     required this.controller,
   });
@@ -133,7 +133,7 @@ class _GeneratedImageWidget extends StatelessWidget {
     required this.controller,
   });
 
-  final ImagePromptGenerationController controller;
+  final ImageGenerationController controller;
   final GeneratedImage generatedImage;
 
   @override
@@ -142,7 +142,7 @@ class _GeneratedImageWidget extends StatelessWidget {
       children: [
         Image.network(generatedImage.imageMessage.uri),
         _GeneratedImageButtons(
-          imageMessage: generatedImage.imageMessage,
+          imageClientMessage: generatedImage.imageMessage,
           controller: controller,
         ),
       ],
@@ -156,7 +156,7 @@ class _UpscaledImageWidget extends StatelessWidget {
     required this.controller,
   });
 
-  final ImagePromptGenerationController controller;
+  final ImageGenerationController controller;
   final UpscaledImage upscaledImage;
 
   @override
@@ -173,12 +173,12 @@ class _UpscaledImageWidget extends StatelessWidget {
 }
 
 class _GeneratedImageButtons extends StatelessWidget {
-  final ImagePromptGenerationController controller;
-  final ImageMessage imageMessage;
+  final ImageGenerationController controller;
+  final ImageClientMessage imageClientMessage;
 
   const _GeneratedImageButtons({
     required this.controller,
-    required this.imageMessage,
+    required this.imageClientMessage,
   });
 
   @override
@@ -187,24 +187,24 @@ class _GeneratedImageButtons extends StatelessWidget {
       children: [
         Wrap(
           children: [
-            for (int i = 1; i <= 4; i++)
+            for (int i = 1; i <= imageGenerationNumber; i++)
               TextButton(
                 onPressed: () async {
-                  await controller.upscaleImage(imageMessage, i);
+                  await controller.upscaleImage(imageClientMessage, i);
                 },
                 child: Text('U$i'),
               ),
             _DiscordLinkButton(
-              messageId: imageMessage.messageId,
+              messageId: imageClientMessage.messageId,
             ),
           ],
         ),
         Wrap(
           children: [
-            for (int i = 1; i <= 4; i++)
+            for (int i = 1; i <= imageGenerationNumber; i++)
               TextButton(
                 onPressed: () async {
-                  await controller.variateImage(imageMessage, i);
+                  await controller.variateImage(imageClientMessage, i);
                 },
                 child: Text('V$i'),
               ),
@@ -230,7 +230,7 @@ class _DiscordLinkButton extends StatelessWidget {
             'https://discord.com/channels/$mjServerId/$mjChannelId/$messageId';
         await launchUrl(Uri.parse(url));
       },
-      child: Text('D'),
+      child: const Text('Discord'),
     );
   }
 }

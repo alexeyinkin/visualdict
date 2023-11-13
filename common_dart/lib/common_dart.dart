@@ -1,3 +1,4 @@
+export 'src/constants/image_generation.dart';
 export 'src/constants/languages.dart';
 export 'src/constants/resolutions.dart';
 export 'src/models/collections_enum.dart';

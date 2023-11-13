@@ -4,7 +4,6 @@ import 'package:json_annotation/json_annotation.dart';
 part 'image.g.dart';
 
 @JsonSerializable(explicitToJson: true)
-// renamed to avoid confusion with Image from material.dart
 class WordImage {
   final int timestamp;
   final String? hash;
@@ -17,9 +16,9 @@ class WordImage {
   });
 
   factory WordImage.fromJson(Map<String, dynamic> json) =>
-      _$ImageFromJson(json);
+      _$WordImageFromJson(json);
 
-  Map<String, dynamic> toJson() => _$ImageToJson(this);
+  Map<String, dynamic> toJson() => _$WordImageToJson(this);
 
   Uri getFullUrl(String word) {
     return Uri(

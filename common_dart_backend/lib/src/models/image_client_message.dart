@@ -1,12 +1,12 @@
 import 'package:midjourney_client/midjourney_client.dart' as midjourney_client;
 
-class ImageMessage {
+class ImageClientMessage {
   final String messageId;
   final String content;
   final String uri;
   final String id;
 
-  ImageMessage({
+  ImageClientMessage({
     required this.messageId,
     required this.content,
     required this.uri,
@@ -21,10 +21,10 @@ class ImageMessage {
         id: id,
       );
 
-  factory ImageMessage.fromMidjourney(
+  factory ImageClientMessage.fromMidjourney(
     midjourney_client.MidjourneyMessageImageFinish message,
   ) {
-    return ImageMessage(
+    return ImageClientMessage(
       messageId: message.messageId,
       content: message.content,
       uri: message.uri!,

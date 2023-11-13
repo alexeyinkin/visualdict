@@ -1,9 +1,15 @@
-import '../models/image_message.dart';
+import '../models/image_client_message.dart';
 
 abstract class ImageAiService {
-  Future<ImageMessage> generateImages(String prompt, int n);
+  Future<ImageClientMessage> generateImages(String prompt, int n);
 
-  Future<ImageMessage> upscaleImage(ImageMessage imageMessage, int index);
+  Future<ImageClientMessage> upscaleImage(
+    ImageClientMessage imageMessage,
+    int index,
+  );
 
-  Future<ImageMessage> variateImage(ImageMessage imageMessage, int index);
+  Future<ImageClientMessage> variateImage(
+    ImageClientMessage imageMessage,
+    int index,
+  );
 }

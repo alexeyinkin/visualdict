@@ -1,11 +1,9 @@
 import 'package:midjourney_client/midjourney_client.dart' as midjourney_client;
 
+import '../constants/midjourney.dart';
 import '../models/image_client_message.dart';
-import 'image.dart';
+import 'image_service.dart';
 
-// store somewhere
-const mjServerId = '662267976984297473';
-const mjChannelId = '1008571023047798794';
 const _token =
     'Nzk5ODkyNzI4MTI0MDE0NjA0.GEJzUa.a8AqMPO16luL-zO8dFgKpvTTcFEJIOWwgdL2zw';
 

@@ -1,14 +1,15 @@
 import 'package:common_dart/common_dart.dart';
-import 'package:common_dart_backend/common_dart_backend.dart';
 import 'package:flutter/material.dart';
 import 'package:model_editors/model_editors.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../constants/midjourney.dart';
 import '../../controllers/image_generation.dart';
 import '../../controllers/image_prompt_generation.dart';
 import '../../image_generation_content/abstract.dart';
 import '../../image_generation_content/generated_image.dart';
 import '../../image_generation_content/upscaled_image.dart';
+import '../../models/image_client_message.dart';
 
 class ImagePromptGenerationWidget extends StatelessWidget {
   const ImagePromptGenerationWidget({

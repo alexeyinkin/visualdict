@@ -1,5 +1,4 @@
-import 'package:common_dart_backend/common_dart_backend.dart';
-
+import '../models/image_client_message.dart';
 import 'abstract.dart';
 
 class UpscaledImage extends ImageGenerationContent {

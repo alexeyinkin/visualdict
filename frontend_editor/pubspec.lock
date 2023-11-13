@@ -638,7 +638,7 @@ packages:
     source: hosted
     version: "1.11.0"
   midjourney_client:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: midjourney_client
       sha256: a43383381a6a9d441c710fb201452d4b95cfa48e80725f8a2e53402b2461b7bf

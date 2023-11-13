@@ -1,1 +1,3 @@
-class ImageGenerationContent {}
+class ImageGenerationContent {
+  const ImageGenerationContent();
+}

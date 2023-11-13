@@ -11,23 +11,37 @@ class ImageGenerationController extends ValueNotifier<String?> {
 
   ImageGenerationController() : super(null);
 
-  Future<void> generateImages(String prompt) async {
-    final result = await MidjourneyService().generateImages(
-      prompt,
-      imageGenerationNumber,
+  Future<void> generate({
+    required String prompt,
+  }) async {
+    final result = await MidjourneyService().generate(
+      prompt: prompt,
+      count: imageGenerationCount,
     );
     content.add(GeneratedImage(imageMessage: result));
     notifyListeners();
   }
 
-  Future<void> upscaleImage(ImageClientMessage imageMessage, int index) async {
-    final result = await MidjourneyService().upscaleImage(imageMessage, index);
+  Future<void> upscale({
+    required ImageClientMessage generatedImagesMessage,
+    required int index,
+  }) async {
+    final result = await MidjourneyService().upscale(
+      generatedImagesMessage: generatedImagesMessage,
+      index: index,
+    );
     content.add(UpscaledImage(imageMessage: result));
     notifyListeners();
   }
 
-  Future<void> variateImage(ImageClientMessage imageMessage, int index) async {
-    final result = await MidjourneyService().variateImage(imageMessage, index);
+  Future<void> variate({
+    required ImageClientMessage generatedImagesMessage,
+    required int index,
+  }) async {
+    final result = await MidjourneyService().variate(
+      generatedImagesMessage: generatedImagesMessage,
+      index: index,
+    );
     content.add(GeneratedImage(imageMessage: result));
     notifyListeners();
   }

@@ -2,7 +2,7 @@ export 'src/constants/image_generation.dart';
 export 'src/constants/languages.dart';
 export 'src/constants/resolutions.dart';
 export 'src/models/collections_enum.dart';
-export 'src/models/image.dart';
+export 'src/models/word_image.dart';
 export 'src/models/part_of_speech_enum.dart';
 export 'src/models/part_of_speech_senses.dart';
 export 'src/models/pronunciation.dart';

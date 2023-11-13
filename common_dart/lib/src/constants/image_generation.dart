@@ -1,1 +1,1 @@
-const imageGenerationNumber = 4;
+const imageGenerationCount = 4;

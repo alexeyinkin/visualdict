@@ -6,7 +6,7 @@ class ImageClientMessage {
   final String uri;
   final String id;
 
-  ImageClientMessage({
+  const ImageClientMessage({
     required this.messageId,
     required this.content,
     required this.uri,

@@ -22,21 +22,24 @@ class MidjourneyService extends ImageAiService {
   }
 
   @override
-  Future<ImageClientMessage> generateImages(String prompt, int n) async {
+  Future<ImageClientMessage> generate({
+    required String prompt,
+    required int count,
+  }) async {
     await _initializeClient();
     final image = await _client.imagine(prompt).finished;
     return ImageClientMessage.fromMidjourney(image);
   }
 
   @override
-  Future<ImageClientMessage> upscaleImage(
-    ImageClientMessage imageMessage,
-    int index,
-  ) async {
+  Future<ImageClientMessage> upscale({
+    required ImageClientMessage generatedImagesMessage,
+    required int index,
+  }) async {
     await _initializeClient();
     final image = await _client
         .upscale(
-          imageMessage.midjourneyMessage,
+          generatedImagesMessage.midjourneyMessage,
           index,
         )
         .finished;
@@ -44,14 +47,14 @@ class MidjourneyService extends ImageAiService {
   }
 
   @override
-  Future<ImageClientMessage> variateImage(
-    ImageClientMessage imageMessage,
-    int index,
-  ) async {
+  Future<ImageClientMessage> variate({
+    required ImageClientMessage generatedImagesMessage,
+    required int index,
+  }) async {
     await _initializeClient();
     final image = await _client
         .variation(
-          imageMessage.midjourneyMessage,
+          generatedImagesMessage.midjourneyMessage,
           index,
         )
         .finished;

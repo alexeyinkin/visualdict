@@ -73,7 +73,7 @@ class _ImagePromptWidget extends StatelessWidget {
             ),
             IconButton(
               onPressed: () async {
-                await controller.generateImages(controller.value!);
+                await controller.generate(prompt: controller.value!);
               },
               icon: const Icon(Icons.generating_tokens),
             ),
@@ -89,7 +89,7 @@ class _ImagePromptWidget extends StatelessWidget {
                     controller: controller,
                   ),
                 )
-                .toList(),
+                .toList(growable: false),
           ),
         )
       ],
@@ -187,10 +187,13 @@ class _GeneratedImageButtons extends StatelessWidget {
       children: [
         Wrap(
           children: [
-            for (int i = 1; i <= imageGenerationNumber; i++)
+            for (int i = 1; i <= imageGenerationCount; i++)
               TextButton(
                 onPressed: () async {
-                  await controller.upscaleImage(imageClientMessage, i);
+                  await controller.upscale(
+                    generatedImagesMessage: imageClientMessage,
+                    index: i,
+                  );
                 },
                 child: Text('U$i'),
               ),
@@ -201,10 +204,13 @@ class _GeneratedImageButtons extends StatelessWidget {
         ),
         Wrap(
           children: [
-            for (int i = 1; i <= imageGenerationNumber; i++)
+            for (int i = 1; i <= imageGenerationCount; i++)
               TextButton(
                 onPressed: () async {
-                  await controller.variateImage(imageClientMessage, i);
+                  await controller.variate(
+                    generatedImagesMessage: imageClientMessage,
+                    index: i,
+                  );
                 },
                 child: Text('V$i'),
               ),

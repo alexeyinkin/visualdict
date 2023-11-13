@@ -4,7 +4,7 @@ import 'abstract.dart';
 
 class GeneratedImage extends ImageGenerationContent {
   final ImageClientMessage imageMessage;
-  GeneratedImage({
+  const GeneratedImage({
     required this.imageMessage,
   });
 }

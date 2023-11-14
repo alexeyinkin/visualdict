@@ -11,8 +11,8 @@ import '../../image_generation_content/upscaled_image.dart';
 import '../../models/image_client_message.dart';
 import '../../utils/functions.dart';
 
-class ImagePromptGenerationWidget extends StatelessWidget {
-  const ImagePromptGenerationWidget({
+class ImageGenerationWidget extends StatelessWidget {
+  const ImageGenerationWidget({
     required this.controller,
     required this.wordPublic,
   });

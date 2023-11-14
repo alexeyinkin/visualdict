@@ -229,10 +229,10 @@ packages:
     dependency: transitive
     description:
       name: collection
-      sha256: f092b211a4319e98e5ff58223576de6c2803db36221657b46c82574721240687
+      sha256: ee67cb0715911d28db6bf4af1026078bd6f0128b07a5f66fb2ed94ec6783c09a
       url: "https://pub.dev"
     source: hosted
-    version: "1.17.2"
+    version: "1.18.0"
   common_dart:
     dependency: "direct main"
     description:
@@ -633,10 +633,18 @@ packages:
     dependency: transitive
     description:
       name: meta
-      sha256: "3c74dbf8763d36539f114c799d8a2d87343b5067e9d796ca22b5eb8437090ee3"
+      sha256: d584fa6707a52763a52446f02cc621b077888fb63b93bbcb1143a7be5a0c0c04
       url: "https://pub.dev"
     source: hosted
-    version: "1.9.1"
+    version: "1.11.0"
+  midjourney_client:
+    dependency: "direct main"
+    description:
+      name: midjourney_client
+      sha256: a43383381a6a9d441c710fb201452d4b95cfa48e80725f8a2e53402b2461b7bf
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.4.1-pre.3"
   mime:
     dependency: transitive
     description:
@@ -898,6 +906,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.99"
+  snowflaker:
+    dependency: transitive
+    description:
+      name: snowflaker
+      sha256: "521c696255a6271b73a4e0bfcae6bdcb023253c45050f0f089d67b012b298d1c"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.0"
   source_gen:
     dependency: transitive
     description:
@@ -1098,6 +1114,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.0.8"
+  ws:
+    dependency: transitive
+    description:
+      name: ws
+      sha256: "79bfebd5cfcef7d6fb302193ed84d738dcede2a5a0734f47f7d249532591ccf3"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.1.2"
   xdg_directories:
     dependency: transitive
     description:

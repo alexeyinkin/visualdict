@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 import 'package:model_interfaces/model_interfaces.dart';
 
 import '../util/converters.dart';
-import 'image.dart';
+import 'word_image.dart';
 import 'part_of_speech_senses.dart';
 import 'pronunciation.dart';
 
@@ -18,7 +18,7 @@ class WordPublic implements WithId<String> {
   final String id;
 
   @JsonKey(includeIfNull: false)
-  final Image? image;
+  final WordImage? image;
 
   @JsonKey(defaultValue: false)
   final bool isVisible;

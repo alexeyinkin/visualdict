@@ -65,7 +65,7 @@ Future<void> main(List<String> rawArgs) async {
 
   final map = getWordPublicMap(args.word, toRepositoryRoot: _toRoot);
 
-  final image = Image(
+  final image = WordImage(
     timestamp: secondsSinceEpoch,
     hash: hash,
     prompt: wordRaw.prompt,

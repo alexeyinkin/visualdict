@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart' hide Image;
 import 'package:flutter_markdown/flutter_markdown.dart';
 
 class ImagePromptViewWidget extends StatelessWidget {
-  final Image image;
+  final WordImage image;
 
   const ImagePromptViewWidget(this.image);
 

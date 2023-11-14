@@ -4,9 +4,9 @@ import 'package:midjourney_client/midjourney_client.dart' as midjourney_client;
 import '../constants/midjourney.dart';
 import '../constants/paths.dart';
 import '../models/image_client_message.dart';
-import 'image_service.dart';
+import 'image_generation.dart';
 
-class MidjourneyService extends ImageAiService {
+class MidjourneyService extends ImageGenerationService {
   final _client = midjourney_client.Midjourney();
 
   Future<void> _initializeClient() async {
@@ -22,7 +22,6 @@ class MidjourneyService extends ImageAiService {
   @override
   Future<ImageClientMessage> generate({
     required String prompt,
-    required int count,
   }) async {
     await _initializeClient();
     final image = await _client.imagine(prompt).finished;

@@ -4,6 +4,7 @@ import 'package:model_editors/model_editors.dart';
 
 import 'image_generation.dart';
 
+/// Controls prompts for image generation.
 class ImagePromptGenerationController extends ChangeNotifier {
   final List<ImagePromptGenerator> generators = [
     ChatGpt4ManualInstructionsImagePromptGenerator(),

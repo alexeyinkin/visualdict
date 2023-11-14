@@ -1,9 +1,8 @@
 import '../models/image_client_message.dart';
 
-abstract class ImageAiService {
+abstract class ImageGenerationService {
   Future<ImageClientMessage> generate({
     required String prompt,
-    required int count,
   });
 
   Future<ImageClientMessage> upscale({

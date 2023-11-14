@@ -1,5 +1,6 @@
 import 'package:midjourney_client/midjourney_client.dart' as midjourney_client;
 
+/// Wrapper for client message classes, such as MidjourneyMessageImageFinish.
 class ImageClientMessage {
   final String messageId;
   final String content;

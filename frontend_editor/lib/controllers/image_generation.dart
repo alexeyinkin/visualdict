@@ -1,4 +1,3 @@
-import 'package:common_dart/common_dart.dart';
 import 'package:flutter/widgets.dart';
 
 import '../image_generation_content/abstract.dart';
@@ -17,7 +16,6 @@ class ImageGenerationController extends ValueNotifier<String?> {
   }) async {
     final result = await MidjourneyService().generate(
       prompt: prompt,
-      count: imageGenerationCount,
     );
     content.add(GeneratedImage(imageMessage: result));
     notifyListeners();

@@ -15,6 +15,7 @@ class WordImageWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
+        // TODO(nausharipov): show asset image?
         CachedNetworkImage(
           imageUrl: wordPublic.image!.getFullUrl(wordPublic.id).toString(),
         ),

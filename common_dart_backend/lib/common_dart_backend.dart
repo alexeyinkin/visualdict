@@ -10,6 +10,7 @@ export 'src/models/word_raw.dart';
 export 'src/util/args.dart';
 export 'src/util/crypto.dart';
 export 'src/util/datetime.dart';
+export 'src/util/image.dart';
 export 'src/util/iterable.dart';
 export 'src/util/json.dart';
 export 'src/util/mj_token.dart';

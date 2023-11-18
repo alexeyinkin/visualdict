@@ -7,7 +7,6 @@ import 'package:path/path.dart';
 
 import 'args.dart';
 
-const _toRoot = '../..';
 const _quality = 90; // Out of 100
 const _imageMagickCommand = 'convert';
 
@@ -21,17 +20,29 @@ const _nonHashSizes = [
 ];
 
 Future<void> main(List<String> rawArgs) async {
-  initOpenAiKey(_toRoot);
   final args = WordImageArgs.parse(rawArgs);
+  initOpenAiKey(args.toRoot);
 
   if (!args.public) {
     throw UnimplementedError('Non-public words are not implemented yet.');
   }
 
-  final srcDir = getRawWordDir(args.word, toRepositoryRoot: _toRoot);
-  final srcFile = File('${srcDir.path}/${args.word}.png');
-  final wordRaw = getWordRaw(args.word, toRepositoryRoot: _toRoot);
-  final dstDir = getProcessedWordDir(args.word, toRepositoryRoot: _toRoot);
+  final srcDir = getRawWordDir(
+    args.word,
+    toRepositoryRoot: args.toRoot,
+  );
+  final srcFile = getWordPngFile(
+    directory: srcDir,
+    fileName: args.word,
+  );
+  final wordRaw = getWordRaw(
+    args.word,
+    toRepositoryRoot: args.toRoot,
+  );
+  final dstDir = getProcessedWordDir(
+    args.word,
+    toRepositoryRoot: args.toRoot,
+  );
 
   final secondsSinceEpoch = clock.now().secondsSinceEpoch;
   final hash = getFileHashForName(srcFile.readAsBytesSync());
@@ -63,7 +74,10 @@ Future<void> main(List<String> rawArgs) async {
     );
   }
 
-  final map = getWordPublicMap(args.word, toRepositoryRoot: _toRoot);
+  final map = getWordPublicMap(
+    args.word,
+    toRepositoryRoot: args.toRoot,
+  );
 
   final image = WordImage(
     timestamp: secondsSinceEpoch,
@@ -72,7 +86,11 @@ Future<void> main(List<String> rawArgs) async {
   );
   map['image'] = image.toJson();
 
-  writeWordPublicMap(args.word, map, toRepositoryRoot: _toRoot);
+  writeWordPublicMap(
+    args.word,
+    map,
+    toRepositoryRoot: args.toRoot,
+  );
 }
 
 void _deleteOldImages({

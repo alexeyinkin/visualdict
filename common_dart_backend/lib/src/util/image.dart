@@ -1,9 +1,8 @@
-import 'dart:io';
-
 import 'package:common_dart/common_dart.dart';
 import 'package:http/http.dart' as http;
 
 import 'paths.dart';
+import 'save_from_raw.dart';
 
 Future<void> _saveRawImage({
   required String imageUrl,
@@ -38,23 +37,20 @@ seed: 3163154358
 ''');
 }
 
-Future<void> saveImage({
-  required String imageUrl,
+Future<void> saveImageFromUrl({
+  required Uri imageUrl,
   required WordPublic wordPublic,
-  String toRepositoryRoot = '..',
+  required String toRepositoryRoot,
 }) async {
   await _saveRawImage(
-    imageUrl: imageUrl,
+    imageUrl: imageUrl.toString(),
     wordPublic: wordPublic,
     toRepositoryRoot: toRepositoryRoot,
   );
 
-  // generates content in /static
-  await Process.run('dart', [
-    '../tools/set_image/lib/main.dart',
+  await saveFromRaw(
     wordPublic.id,
-    '--toRoot',
-    toRepositoryRoot,
-    '--public',
-  ]);
+    public: true,
+    toRepositoryRoot: toRepositoryRoot,
+  );
 }

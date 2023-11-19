@@ -16,6 +16,7 @@ export 'src/util/json.dart';
 export 'src/util/mj_token.dart';
 export 'src/util/openai.dart';
 export 'src/util/paths.dart';
+export 'src/util/save_from_raw.dart';
 export 'src/util/string.dart';
 export 'src/util/terraform.dart';
 export 'src/util/word_raw.dart';

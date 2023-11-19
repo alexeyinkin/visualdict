@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:model_editors/model_editors.dart';
 
 import '../../constants/midjourney.dart';
+import '../../constants/paths.dart';
 import '../../controllers/image_generation.dart';
 import '../../controllers/image_prompt_generation.dart';
 import '../../image_generation_content/abstract.dart';
@@ -98,7 +99,7 @@ class _ImagePromptWidget extends StatelessWidget {
                 )
                 .toList(growable: false),
           ),
-        )
+        ),
       ],
     );
   }
@@ -182,9 +183,10 @@ class _UpscaledImageWidget extends StatelessWidget {
         ),
         ElevatedButton(
           onPressed: () async {
-            await saveImage(
+            await saveImageFromUrl(
               wordPublic: wordPublic,
-              imageUrl: upscaledImage.imageMessage.uri,
+              imageUrl: Uri.parse(upscaledImage.imageMessage.uri),
+              toRepositoryRoot: toRepositoryRoot,
             );
           },
           child: const Text('Save image'),

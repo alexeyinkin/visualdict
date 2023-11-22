@@ -1,8 +1,10 @@
 import 'package:common_dart/common_dart.dart';
+import 'package:common_dart_backend/common_dart_backend.dart';
 import 'package:flutter/material.dart';
 import 'package:model_editors/model_editors.dart';
 
 import '../../constants/midjourney.dart';
+import '../../constants/paths.dart';
 import '../../controllers/image_generation.dart';
 import '../../controllers/image_prompt_generation.dart';
 import '../../image_generation_content/abstract.dart';
@@ -42,6 +44,7 @@ class ImageGenerationWidget extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(vertical: 10),
                 child: _ImagePromptWidget(
                   controller: c,
+                  wordPublic: wordPublic,
                 ),
               ),
               showDeleteThisAndAfterButtons: true,
@@ -58,7 +61,10 @@ class _ImagePromptWidget extends StatelessWidget {
   final ImageGenerationController controller;
   const _ImagePromptWidget({
     required this.controller,
+    required this.wordPublic,
   });
+
+  final WordPublic wordPublic;
 
   @override
   Widget build(BuildContext context) {
@@ -88,11 +94,12 @@ class _ImagePromptWidget extends StatelessWidget {
                   (e) => _ImageGenerationContentWidget(
                     content: e,
                     controller: controller,
+                    wordPublic: wordPublic,
                   ),
                 )
                 .toList(growable: false),
           ),
-        )
+        ),
       ],
     );
   }
@@ -105,7 +112,10 @@ class _ImageGenerationContentWidget extends StatelessWidget {
   const _ImageGenerationContentWidget({
     required this.content,
     required this.controller,
+    required this.wordPublic,
   });
+
+  final WordPublic wordPublic;
 
   @override
   Widget build(BuildContext context) {
@@ -121,6 +131,7 @@ class _ImageGenerationContentWidget extends StatelessWidget {
       return _UpscaledImageWidget(
         controller: controller,
         upscaledImage: image,
+        wordPublic: wordPublic,
       );
     }
 
@@ -155,10 +166,12 @@ class _UpscaledImageWidget extends StatelessWidget {
   const _UpscaledImageWidget({
     required this.upscaledImage,
     required this.controller,
+    required this.wordPublic,
   });
 
   final ImageGenerationController controller;
   final UpscaledImage upscaledImage;
+  final WordPublic wordPublic;
 
   @override
   Widget build(BuildContext context) {
@@ -167,6 +180,16 @@ class _UpscaledImageWidget extends StatelessWidget {
         Image.network(upscaledImage.imageMessage.uri),
         _DiscordLinkButton(
           messageId: upscaledImage.imageMessage.messageId,
+        ),
+        ElevatedButton(
+          onPressed: () async {
+            await saveImageFromUrl(
+              wordPublic: wordPublic,
+              imageUrl: Uri.parse(upscaledImage.imageMessage.uri),
+              toRepositoryRoot: toRepositoryRoot,
+            );
+          },
+          child: const Text('Save image'),
         ),
       ],
     );

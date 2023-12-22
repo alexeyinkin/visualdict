@@ -229,10 +229,10 @@ packages:
     dependency: transitive
     description:
       name: collection
-      sha256: ee67cb0715911d28db6bf4af1026078bd6f0128b07a5f66fb2ed94ec6783c09a
+      sha256: f092b211a4319e98e5ff58223576de6c2803db36221657b46c82574721240687
       url: "https://pub.dev"
     source: hosted
-    version: "1.18.0"
+    version: "1.17.2"
   common_dart:
     dependency: "direct main"
     description:
@@ -630,21 +630,22 @@ packages:
     source: hosted
     version: "0.5.0"
   meta:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       name: meta
-      sha256: d584fa6707a52763a52446f02cc621b077888fb63b93bbcb1143a7be5a0c0c04
+      sha256: a6e590c838b18133bb482a2745ad77c5bb7715fb0451209e1a7567d416678b8e
       url: "https://pub.dev"
     source: hosted
-    version: "1.11.0"
+    version: "1.10.0"
   midjourney_client:
     dependency: "direct main"
     description:
-      name: midjourney_client
-      sha256: a43383381a6a9d441c710fb201452d4b95cfa48e80725f8a2e53402b2461b7bf
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.4.1-pre.3"
+      path: "."
+      ref: "hawkkiller/issue54"
+      resolved-ref: "76b1682b9e7d53ee16da69423bc46bd47be5f745"
+      url: "https://github.com/hawkkiller/midjourney_client.git"
+    source: git
+    version: "0.4.1-pre.4"
   mime:
     dependency: transitive
     description:

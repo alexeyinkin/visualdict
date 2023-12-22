@@ -5,14 +5,20 @@ import 'paths.dart';
 import 'save_from_raw.dart';
 
 Future<void> saveImageFromUrl({
+  required String? jobId,
   required Uri imageUrl,
-  required WordPublic wordPublic,
+  required String prompt,
+  required int? seed,
   required String toRepositoryRoot,
+  required WordPublic wordPublic,
 }) async {
   await _saveRawImage(
+    jobId: jobId,
     imageUrl: imageUrl.toString(),
-    wordPublic: wordPublic,
+    prompt: prompt,
+    seed: seed,
     toRepositoryRoot: toRepositoryRoot,
+    wordPublic: wordPublic,
   );
 
   await saveFromRaw(
@@ -23,7 +29,10 @@ Future<void> saveImageFromUrl({
 }
 
 Future<void> _saveRawImage({
+  required String? jobId,
   required String imageUrl,
+  required String prompt,
+  required int? seed,
   required String toRepositoryRoot,
   required WordPublic wordPublic,
 }) async {
@@ -47,10 +56,10 @@ Future<void> _saveRawImage({
   );
 
   await png.writeAsBytes(response.bodyBytes);
-  // TODO(nausharipov): fill metadata.
+
   await yaml.writeAsString('''
-prompt: 'Rings inside a cut tree trunk showing age'
-jobId: 'b22fbbcb-439d-4ad3-bd41-7de46647ccc3'
-seed: 3163154358
+prompt: '$prompt'
+jobId: $jobId
+seed: $seed
 ''');
 }

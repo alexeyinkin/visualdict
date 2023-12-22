@@ -24,7 +24,12 @@ class MidjourneyService extends ImageGenerationService {
     required String prompt,
   }) async {
     await _initializeClient();
-    final image = await _client.imagine(prompt).finished;
+    final image = await _client
+        .imagine(
+          prompt,
+          seed: 12345,
+        )
+        .finished;
     return ImageClientMessage.fromMidjourney(image);
   }
 

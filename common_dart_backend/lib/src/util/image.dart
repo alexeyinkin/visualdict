@@ -29,6 +29,7 @@ Future<void> saveImageFromUrl({
 }
 
 Future<void> _saveRawImage({
+  // TODO(nausharipov): put into ImageMetadata?
   required String? jobId,
   required String imageUrl,
   required String prompt,

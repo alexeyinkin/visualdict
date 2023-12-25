@@ -1,7 +1,7 @@
 name: frontend_editor
 
 environment:
-  sdk: ^3.0.5
+  sdk: ^3.0.0
   flutter: '>=3.10.0'
 
 dependencies:
@@ -44,6 +44,7 @@ dev_dependencies:
   total_lints: ^3.0.0
 
 dependency_overrides:
+  # The Mac app only works with Flutter v3.13.6, so meta had to be overriden.
   # Because every version of midjourney_client from git depends on meta ^1.11.0 and every version of flutter from sdk depends on meta 1.10.0, midjourney_client from git is incompatible with flutter from sdk. So, because frontend_editor depends on both flutter from sdk and midjourney_client from git, version solving failed.
   meta: '1.10.0'
 #  model_editors: { path: ../../dart/flutter-model-editors }

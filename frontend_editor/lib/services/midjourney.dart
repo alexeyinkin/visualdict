@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:common_dart_backend/common_dart_backend.dart';
 import 'package:midjourney_client/midjourney_client.dart' as midjourney_client;
 
@@ -27,7 +29,7 @@ class MidjourneyService extends ImageGenerationService {
     final image = await _client
         .imagine(
           prompt,
-          seed: 12345,
+          seed: Random().nextInt(100000),
         )
         .finished;
     return ImageClientMessage.fromMidjourney(image);

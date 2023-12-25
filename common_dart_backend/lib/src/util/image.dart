@@ -1,22 +1,19 @@
 import 'package:common_dart/common_dart.dart';
 import 'package:http/http.dart' as http;
 
+import '../models/generated_image_metadata.dart';
 import 'paths.dart';
 import 'save_from_raw.dart';
 
 Future<void> saveImageFromUrl({
-  required String? jobId,
+  required GeneratedImageMetadata metadata,
   required Uri imageUrl,
-  required String prompt,
-  required int? seed,
   required String toRepositoryRoot,
   required WordPublic wordPublic,
 }) async {
   await _saveRawImage(
-    jobId: jobId,
     imageUrl: imageUrl.toString(),
-    prompt: prompt,
-    seed: seed,
+    metadata: metadata,
     toRepositoryRoot: toRepositoryRoot,
     wordPublic: wordPublic,
   );
@@ -29,11 +26,8 @@ Future<void> saveImageFromUrl({
 }
 
 Future<void> _saveRawImage({
-  // TODO(nausharipov): put into ImageMetadata?
-  required String? jobId,
   required String imageUrl,
-  required String prompt,
-  required int? seed,
+  required GeneratedImageMetadata metadata,
   required String toRepositoryRoot,
   required WordPublic wordPublic,
 }) async {
@@ -59,8 +53,8 @@ Future<void> _saveRawImage({
   await png.writeAsBytes(response.bodyBytes);
 
   await yaml.writeAsString('''
-prompt: '$prompt'
-jobId: $jobId
-seed: $seed
+prompt: '${metadata.parentImagePrompt}'
+jobId: ${metadata.upscaledImageJobId}
+seed: ${metadata.parentImageSeed}
 ''');
 }

@@ -26,7 +26,10 @@ dependencies:
   input_dialog: ^0.1.1
   json_annotation: ^4.8.1
   keyed_collection_widgets: ^0.4.3
-  midjourney_client: ^0.4.1-pre.3
+  midjourney_client:
+    git:
+      url: https://github.com/hawkkiller/midjourney_client.git
+      ref: hawkkiller/issue54
   model_editors: ^0.4.0
   model_fetch: ^0.5.6
   model_fetch_firestore_json_files: ^0.5.6
@@ -41,6 +44,9 @@ dev_dependencies:
   total_lints: ^3.0.0
 
 dependency_overrides:
+  # The Mac app only works with Flutter v3.13.6, so meta had to be overriden.
+  # Because every version of midjourney_client from git depends on meta ^1.11.0 and every version of flutter from sdk depends on meta 1.10.0, midjourney_client from git is incompatible with flutter from sdk. So, because frontend_editor depends on both flutter from sdk and midjourney_client from git, version solving failed.
+  meta: '1.10.0'
 #  model_editors: { path: ../../dart/flutter-model-editors }
 #  model_fetch: { path: ../../dart/dart-model-fetch/model_fetch }
 #  model_fetch_firestore_json_files: { path: ../../dart/dart-model-fetch/model_fetch_firestore_json_files }

@@ -184,9 +184,14 @@ class _UpscaledImageWidget extends StatelessWidget {
         ElevatedButton(
           onPressed: () async {
             await saveImageFromUrl(
-              wordPublic: wordPublic,
+              metadata: GeneratedImageMetadata(
+                upscaledImageJobId: upscaledImage.imageMessage.jobId,
+                parentImagePrompt: upscaledImage.parentMessage.content,
+                parentImageSeed: upscaledImage.parentMessage.seed,
+              ),
               imageUrl: Uri.parse(upscaledImage.imageMessage.uri),
               toRepositoryRoot: toRepositoryRoot,
+              wordPublic: wordPublic,
             );
           },
           child: const Text('Save image'),

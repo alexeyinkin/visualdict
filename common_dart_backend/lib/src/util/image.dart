@@ -1,18 +1,21 @@
 import 'package:common_dart/common_dart.dart';
 import 'package:http/http.dart' as http;
 
+import '../models/generated_image_metadata.dart';
 import 'paths.dart';
 import 'save_from_raw.dart';
 
 Future<void> saveImageFromUrl({
+  required GeneratedImageMetadata metadata,
   required Uri imageUrl,
-  required WordPublic wordPublic,
   required String toRepositoryRoot,
+  required WordPublic wordPublic,
 }) async {
   await _saveRawImage(
     imageUrl: imageUrl.toString(),
-    wordPublic: wordPublic,
+    metadata: metadata,
     toRepositoryRoot: toRepositoryRoot,
+    wordPublic: wordPublic,
   );
 
   await saveFromRaw(
@@ -24,6 +27,7 @@ Future<void> saveImageFromUrl({
 
 Future<void> _saveRawImage({
   required String imageUrl,
+  required GeneratedImageMetadata metadata,
   required String toRepositoryRoot,
   required WordPublic wordPublic,
 }) async {
@@ -47,10 +51,10 @@ Future<void> _saveRawImage({
   );
 
   await png.writeAsBytes(response.bodyBytes);
-  // TODO(nausharipov): fill metadata.
+
   await yaml.writeAsString('''
-prompt: 'Rings inside a cut tree trunk showing age'
-jobId: 'b22fbbcb-439d-4ad3-bd41-7de46647ccc3'
-seed: 3163154358
+prompt: '${metadata.parentImagePrompt}'
+jobId: ${metadata.upscaledImageJobId}
+seed: ${metadata.parentImageSeed}
 ''');
 }

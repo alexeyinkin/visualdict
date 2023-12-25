@@ -29,7 +29,12 @@ class ImageGenerationController extends ValueNotifier<String?> {
       generatedImagesMessage: generatedImagesMessage,
       index: index,
     );
-    content.add(UpscaledImage(imageMessage: result));
+    content.add(
+      UpscaledImage(
+        imageMessage: result,
+        parentMessage: generatedImagesMessage,
+      ),
+    );
     notifyListeners();
   }
 

@@ -6,6 +6,7 @@ export 'src/media/ffmpeg_args.dart';
 export 'src/media/image_magick.dart';
 export 'src/media/mp3.dart';
 export 'src/media/pronunciation.dart';
+export 'src/models/generated_image_metadata.dart';
 export 'src/models/word_raw.dart';
 export 'src/util/args.dart';
 export 'src/util/crypto.dart';
